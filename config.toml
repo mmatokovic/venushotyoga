@@ -1,0 +1,5 @@
+baseURL = 'http://venushotyoga.hr/'
+languageCode = 'hr'
+title = 'Venus Hot Yoga'
+
+theme = 'ananke'
