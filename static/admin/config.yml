@@ -41,3 +41,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
+      - file: "content/classes/index.md"
+        label: "Classes"
+        name: "classes"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Start time", name: "start", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false }

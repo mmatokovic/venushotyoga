@@ -14,3 +14,15 @@ title = 'Venus Hot Yoga'
     name = "About"
     url = "/about"
     weight = 20
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "classes"
+    name = "Classes"
+    url = "/classes"
+    weight = 20

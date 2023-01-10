@@ -1,5 +1,6 @@
 ---
-title: "About"
+title: "O nama"
+description: "O nama"
 ---
 
-Here's a bit about me.
+Here's a bit about yoga.
