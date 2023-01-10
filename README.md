@@ -8,6 +8,8 @@ The [Venus Hot Yoga](https://venushotyoga.hr) website frontend built with Tailwi
 
 https://divineyogastudio1.wixsite.com/my-site
 https://docs.netlify.com/large-media/setup/
+https://herotofu.com/solutions/guides/hugo-contact-form
+
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 
