@@ -1,9 +1,7 @@
-{{ partial "header.html" . }}
-
-<h1>Page Not Found</h1>
-
-<p>This page doesn't exist.</p>
-
-<p><a href="/">Go back to the home page</a></p>
-
-{{ partial "footer.html" . }}
+{{ define "main"}}
+    <main id="main">
+      <div>
+       <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
+      </div>
+    </main>
+{{ end }}

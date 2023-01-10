@@ -1,6 +1,7 @@
 ---
-title: Venus Hot Yoga - Learn to Code Faster
-lastmod: 2022-09-27T08:36:36-07:00
-draft: false
-description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti. 
+title: "Venus Hot Yoga"
+blurb: "HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti."
+section:
+    heading: "A Subsection"
+    text: "You can put even more content in here."
 ---
