@@ -11,7 +11,8 @@
         <meta name="description" content="{{ site.Params.Description }}" />
     {{ end }}
     <title>{{ $title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $style := $css | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

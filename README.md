@@ -10,6 +10,7 @@ https://divineyogastudio1.wixsite.com/my-site
 https://docs.netlify.com/large-media/setup/
 https://herotofu.com/solutions/guides/hugo-contact-form
 https://www.flux-academy.com/blog/the-best-websites-for-web-design-inspiration
+https://www.youtube.com/watch?v=Ecm1OcljA2o
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 
