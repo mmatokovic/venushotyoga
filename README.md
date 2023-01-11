@@ -5,7 +5,7 @@ The [Venus Hot Yoga](https://venushotyoga.hr) website frontend built with Tailwi
 ### Useful links
 * [Netlify CMS & Git Gateway - Email not confirmed](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690)
 * [Netlify CMS Hugo](https://www.netlifycms.org/docs/hugo/)
-
+https://answers.netlify.com/t/cant-push-after-trying-to-setup-large-media/31125/10
 https://divineyogastudio1.wixsite.com/my-site
 https://docs.netlify.com/large-media/setup/
 https://herotofu.com/solutions/guides/hugo-contact-form

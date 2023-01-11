@@ -2,6 +2,8 @@ baseURL = 'http://venushotyoga.hr/'
 languageCode = 'hr'
 title = 'Venus Hot Yoga'
 
+enableRobotsTXT = true
+
 [menu]
   [[menu.main]]
     identifier = "posts"
