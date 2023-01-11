@@ -9,7 +9,7 @@ https://answers.netlify.com/t/cant-push-after-trying-to-setup-large-media/31125/
 https://divineyogastudio1.wixsite.com/my-site
 https://docs.netlify.com/large-media/setup/
 https://herotofu.com/solutions/guides/hugo-contact-form
-
+https://www.flux-academy.com/blog/the-best-websites-for-web-design-inspiration
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 

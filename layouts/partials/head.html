@@ -1,19 +1,17 @@
 {{ $title := print .Site.Title " | " .Title }}
 {{ $description := .Description | default .Summary }}
-{{ $title = .Title }}
-{{ if .IsHome }}
-    {{ $title = .Site.Title }}
-{{end}}
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:description" content="{{ $description }}" />
-    <meta property="og:title" content="{{ $title }}" />
-    <meta property="og:url" content="{{ .Permalink | absURL }}" />
+    <meta name="description" content="{{ $description }}" />
 
+    {{ if .IsHome }}
+        {{ $title = .Site.Title }}
+        <meta name="description" content="{{ site.Params.Description }}" />
+    {{ end }}
+    <title>{{ $title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!--<script src="https://cdn.tailwindcss.com"></script> Add Tailwindcss CDN script -->
-    {{ template "_internal/opengraph.html" . }}
 </head>

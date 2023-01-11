@@ -1,0 +1,26 @@
+{{ define "header" }}
+	{{ partial "header" }}
+{{ end }}
+
+
+{{ define "main" }}
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" placeholder="name"/></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" placeholder="email"/></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit" value="Send message">Send</button>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+</form>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer" }}
+{{ end }}
