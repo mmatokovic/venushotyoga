@@ -1,18 +1,21 @@
-{{ $title := print .Site.Title " | " .Title }}
-{{ $description := .Description | default .Summary }}
-
+{{ $css := resources.Get "css/main.css" }}
+{{ $style := $css | resources.PostCSS }}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $description }}" />
-
-    {{ if .IsHome }}
-        {{ $title = .Site.Title }}
-        <meta name="description" content="{{ site.Params.Description }}" />
-    {{ end }}
-    <title>{{ $title }}</title>
-    {{ $css := resources.Get "css/main.css" }}
-    {{ $style := $css | resources.PostCSS }}
+    <meta name="description" content="{{ site.Params.Description }}" />
+    
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="text/javascript">
+        function changeClass(){
+            document.getElementById("MyElement").classList.toggle('MyClass');
+        }
+
+        function changeDisplay(){
+            document.getElementById("mobile-menu").classList.toggle('hidden');
+        }
+    </script>
+    {{ template "_internal/opengraph.html" . }}
 </head>

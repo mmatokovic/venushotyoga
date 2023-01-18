@@ -2,111 +2,21 @@ baseURL = 'http://venushotyoga.hr/'
 languageCode = 'hr'
 title = 'Venus Hot Yoga'
 
-enableRobotsTXT = true
+[taxonomies]
+  series = 'series'
 
-[menu]
-  [[menu.main]]
-    identifier = "classes"
-    name = "Classes"
-    url = "/classes"
-    weight = 10
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
 
-    [[menu.main]]
-      identifier = "online"
-      name = "Online"
-      url = "/classes/online"
-      parent = "classes"
-      weight = 1
-    
-    [[menu.main]]
-      identifier = "private"
-      name = "Private"
-      url = "/classes/private"
-      parent = "classes"
-      weight = 1
-    
-    [[menu.main]]
-      identifier = "visit"
-      name = "Visit"
-      url = "/classes/visit"
-      parent = "classes"
-      weight = 1
-  
-  [[menu.main]]
-    identifier = "education"
-    name = "Education"
-    url = "/education"
-    weight = 15
-    
-    [[menu.main]]
-      identifier = "book"
-      name = "Book"
-      url = "/education/book"
-      parent = "education"
-      weight = 1
-    
-    [[menu.main]]
-      identifier = "training"
-      name = "Training"
-      url = "/education/training"
-      parent = "education"
-      weight = 1
+[[menu.main]]
+identifier = "products"
+name = "Products"
+url = "/products/"
 
-  [[menu.main]]
-    identifier = "lpg"
-    name = "Lpg"
-    url = "/lpg"
-    weight = 20
-
-    [[menu.main]]
-      identifier = "endermolift"
-      name = "Endermolift"
-      url = "/lpg/endermolift"
-      parent = "lpg"
-      weight = 1
-
-    [[menu.main]]
-      identifier = "lipomassage"
-      name = "Lipomassage"
-      url = "/lpg/lipomassage"
-      parent = "lpg"
-      weight = 1
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 25
-  
-    [[menu.main]]
-      identifier = "gallery"
-      name = "Gallery"
-      url = "/about/gallery"
-      parent = "about"
-      weight = 1
-    
-    [[menu.main]]
-      identifier = "testimonials"
-      name = "Testimonials"
-      url = "/about/testimonials"
-      parent = "about"
-      weight = 1
-    
-    [[menu.main]]
-      identifier = "yoga"
-      name = "Yoga"
-      url = "/about/yoga"
-      parent = "about"
-      weight = 1
-
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
-    weight = 30
-  
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact"
-    weight = 35
+[[menu.main]]
+parent = "products"
+weight = 20
+  [menu.main.params]
+  divider = true
