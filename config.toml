@@ -6,14 +6,13 @@ title = 'Venus Hot Yoga'
   series = 'series'
 
 [[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
+name = "Blog"
+url = "/posts"
 
 [[menu.main]]
 identifier = "products"
 name = "Products"
-url = "/products/"
+url = "/products"
 
 [[menu.main]]
 parent = "products"

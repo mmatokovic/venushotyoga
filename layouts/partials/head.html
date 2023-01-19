@@ -9,12 +9,32 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script type="text/javascript">
+
         function changeClass(){
             document.getElementById("MyElement").classList.toggle('MyClass');
         }
 
         function changeDisplay(){
+            document.getElementById("mobile-menu-toggle").classList.toggle('block');
+            document.getElementById("mobile-menu-toggle").classList.toggle('block');
             document.getElementById("mobile-menu").classList.toggle('hidden');
+
+            document.getElementById('mobile-menu').setAttribute("aria-hidden", "true") ;
+        }
+
+        function addDisabled(){
+            input.toggleAttribute("disabled");
+        }
+
+        function areaTrigger(x){
+            const theTrigger = document.getElementById('mobile-form-control');
+            const theForm = document.querySelectorAll('.l-header__mobile-form');
+
+            // Assuming x in your for-loop is the element you want to toggle the aria-expanded attribute on:
+            for (const x of theForm) {
+                x.classList.toggle('show');
+                x.setAttribute('aria-expanded', x.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+            }
         }
     </script>
     {{ template "_internal/opengraph.html" . }}

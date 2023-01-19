@@ -13,6 +13,8 @@ https://www.flux-academy.com/blog/the-best-websites-for-web-design-inspiration
 https://www.youtube.com/watch?v=Ecm1OcljA2o
 https://www.globalforestwatch.org/ footer
 https://www.youtube.com/watch?v=nVie2PPIqTY&t=846s
+https://merakiui.com/components/blog
+https://tailblocks.cc/
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 
