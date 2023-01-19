@@ -2,7 +2,6 @@
 title: Prvi yoga vikend u Poreču 2021
 date: 2023-01-10T10:15:37.576Z
 image: "featured.jpg"
-series: []
 author: "Vjerna"
 tags: 
 - Yoga
