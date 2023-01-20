@@ -1,16 +1,16 @@
 {{ define "main" }}
 <section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-6 py-10 mx-auto">
-      <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">{{ .Title }}:</h1>
-      {{ range (last 1 .Data.Pages).ByDate}}
-      {{- $image := resources.Get .Params.image -}}
-      <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-          {{ $image := .Resources.GetMatch .Params.image }}
-          {{ with $image }}
-          <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-          {{ end }}
+      <div class="inline-flex search js-only">
+        <input type="text" id="search" name="search" placeholder="Pretraži postove..." class="ml-3 w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      {{ range (first 1 .Data.Pages).ByDate}}
+      <div id="newest-posts">
+        <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+          {{ $image := .Page.Resources.GetMatch .Params.image }}
+          <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="{{ $image.RelPermalink }}" width="" height="">
           <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-              <p class="text-sm text-blue-500 uppercase">{{ .Params.tags }}</p>
+              <p class="text-sm text-blue-500 uppercase">{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
               <a href="{{ .RelPermalink }}" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline md:text-3xl">
                 {{ .Title }}
               </a>
@@ -38,26 +38,27 @@
                   </div>
               </div>
           </div>
+        </div>
       </div>
       {{ end }}
   </div>
 </section>
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
+  <div class="container px-5 py-14 mx-auto">
+    <div class="flex flex-wrap -m-4" id="artlist">
+      {{ $number := 0 -}}
       {{ range .Data.Pages }}
-      <div class="p-4 md:w-1/3">
+      {{- $number = add $number 1 -}}
+      <div id="post" class="p-4 md:w-1/3" data-tags="{{.Params.Tags}}" {{ if gt $number .Site.Params.indexarticles }}class=""{{ end }}>
         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          {{ $image := .Resources.GetMatch .Params.image }}
-          {{ with $image }}
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-          {{ end }}
+          {{ $image := .Page.Resources.GetMatch .Params.image }}
+          <a href="{{ .RelPermalink }}"><img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $image.RelPermalink }}"></a>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{{ .Params.tags }}</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ .Title }}</h1>
+            <a href="{{ .RelPermalink }}"><h1 class="title-font text-lg hover:underline font-medium text-gray-900 mb-3">{{ .Title }}</h1></a>
             <p class="leading-relaxed mb-3">{{ .Summary }}</p>
             <div class="flex items-center flex-wrap ">
-              <a href="{{ .RelPermalink }}" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Pročitaj više...
+              <a href="{{ .RelPermalink }}" class="text-indigo-500 hover:underline inline-flex items-center md:mb-2 lg:mb-0">Pročitaj više...
                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
@@ -70,11 +71,14 @@
                 </svg>{{ .ReadingTime }} minute čitanja.
               </span>
               <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                {{ .Date.Format "January 2, 2006" }}
+                {{ .Date.Format "02. 01. 2006." }}
               </span>
             </div>
           </div>
         </div>
       </div>
       {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}

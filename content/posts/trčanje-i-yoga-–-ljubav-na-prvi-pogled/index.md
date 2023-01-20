@@ -2,6 +2,12 @@
 title: Trčanje i Yoga – ljubav na prvi pogled
 date: 2023-01-19T22:48:55.533Z
 image: running-1705716_1280.jpg
+author: Vjerna Nevistić
+tags:
+  - yoga
+  - Trčanje
+  - vježbanje
+  - popularnost
 ---
 Kao prvo moram vam nešto priznati: ja se još nisam zaljubila u trčanje! iako ponekad otrčim s mužem krug oko kvarta i sasvim mi je lijepo, iako sam na Kineziološkom fakultetu godinu i pol vježbala sve discipline iz atletike i iako cijela moja obitelj trči i uživa u tome. Moja aktivnost je yoga, točnije hot yoga, a to je hatha yoga tj izvođenje yoga pozicija statičnim načinom na toplini od 37 stupnjeva Celziusa i 40% vlažnosti zraka. Pitat ćete se možda kakve veze i sličnosti to ima sa trčanjem? I veće nego što se na prvi pogled čini! Kao prvo i trčanje i yoga dobivaju masovno na popularnosti u današnje vrijeme i to upravo zato što se njima može baviti zaista svatko. U trčanju to kreće od sasvim rekreativnog trčkaranja pa do ozbiljnih natjecatelja, a u yogi od izvođenja yoga pozicija (koje se zovu asane) koje su jednostavne i lagane pa do kompliciranih i zahtjevnih. No osim ovog fizičkog aspekta yoge po meni je još važniji psihički aspekt i stanje uma u koji nas yoga stavlja a to je: izvođenje yoga pozicija, pa i onih najkompliciranijih, s umom prepunim različitih misli i nekoncentrirano je početničko vježbanje, dok je izvođenje najjednostavnijih pozicija s umom usredotočenim na trenutak i u stanju bez misli napredno je vježbanje yoge. Znam da se to stanje bez misli pojavljuje i kod naprednjih trkača.
 

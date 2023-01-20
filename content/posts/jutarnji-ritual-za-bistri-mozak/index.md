@@ -2,6 +2,12 @@
 title: Jutarnji ritual za bistri mozak
 date: 2023-01-19T22:51:04.438Z
 image: alarm-clock-2116007_1280.jpg
+author: Vjerna Nevistić
+tags:
+  - jutro
+  - vježbanje
+  - yoga
+  - ritual
 ---
 Bilo da ste ranoranilac ili noćna sova ovaj kratki ritual nakon buđenja pomoći će vam da postignete maksimalnu bistrinu i efikasnost u vrlo kratkom vremenu.
 

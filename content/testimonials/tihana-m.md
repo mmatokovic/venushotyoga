@@ -1,0 +1,5 @@
+---
+title: "Tihana M."
+image: /images/testimonial/IMG-tihana-m.jpg
+testimonial: “Probala sam više manje sve tipove vježbanja i nekako sam se u jogi našla. Nisam osobit ljubitelj visokih temperatura (dapače, jedina sam u garderobi koja se veseli zimi  :)), ali nakon par početnih treninga skužila sam da mi je samo taj element falio. Na treningu se oznojim kao da sam otrčala maraton, mislim da me čak i nešto od runners high-a šusne u glavu jer se osjećam polublaženo nakon ;) Postura tijela u potpunosti mi se promijenila. Ravnoteža, i tijela i uma, polako mi se vraća. Sve sam snažnija. Sad samo čekam dan kad ću uz pomoć trenerica Vjerne i Nikoline dubiti na glavi. U dane "kad mi se ništa ne da" obavezno odem po dozu pozitive u studio, jer sam sigurna da ću nakon sata i šalice čaj zadovoljna izaći van.”
+---

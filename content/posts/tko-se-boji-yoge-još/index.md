@@ -2,6 +2,11 @@
 title: Tko se boji yoge još?
 date: 2023-01-19T22:48:13.385Z
 image: yoga-1812695_1280.jpg
+author: Vjerna Nevistić
+tags:
+  - yoga
+  - Strah
+  - vježbanje
 ---
 U posljednjih dvadesetak godina yoga je postala mega popularna u svijetu, a ta se popularnost u posljednjih desetak godina polako proširila i u Hrvatskoj. Mnogo se piše o neospornim dobrobitima yoge, vrstama yoge, tehnikama disanja. U ovom tekstu željela bih se osvrnuti na neke od najčešćih strahova vezanih uz vježbanje yoga pozicija (asana).
 

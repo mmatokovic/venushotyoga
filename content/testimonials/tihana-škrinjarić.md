@@ -1,0 +1,5 @@
+---
+title: "Tihana Škrinjarić"
+image: /images/testimonial/IMG-Tihana-škrinjaric.jpg
+testimonial: “Pred nekoliko godina, vježbajući jogu ljeti uz more, shvatila sam koliko mi toplina odgovara te sam pri povratku tražila i našla hot yogu. I to je bilo to.... Puno sam fleksibilnija u toplom prostoru, a znojeći se izbacujem toksine iz tijela, tako da se poslije hot yoge osjećam kao da sam izašla iz saune....lagano, osviježeno i puna energije a i koža mi je ljepša. prokrvljena i izgleda zdravije zbog pojačane cirkulacije. A i što se tiče održavanja tjelesne težine hot yoga puno pomaže.Nedavno se je moj prijatelj vagao prije i poslije joge je imao 3 i pol kile manje...!!!!Da to je voda ali ipak....Vrlo je spretno što u istom prostoru možemo koristiti i LPG aparate za lice i tijelo, koji su vrlo efikasni, a voditeljica Vjerna Nevistić je izvrsna, stručna i topla pedagoginja, koja me svojim nenametljivim načinom potiče da maksimalno uspješno izvodim asane, tako da se i moji problemi ravnoteže i krutosti kralježnice iz dana u dan sve više riješavaju... ”
+---

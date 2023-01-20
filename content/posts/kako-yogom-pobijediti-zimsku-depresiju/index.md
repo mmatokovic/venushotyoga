@@ -2,6 +2,13 @@
 title: Kako yogom pobijediti zimsku depresiju?
 date: 2023-01-19T22:39:46.144Z
 image: people-2573216_1280.jpg
+author: Vjerna Nevistić
+tags:
+  - Yoga
+  - Trening
+  - energija
+  - vježbanja
+  - depresija
 ---
 Kada prođu praznici i Božično i Novogodišnje blještavilo mnogi osjećamo laganu depresiju i pad energije. Često je tu i koja kila viška, navikli smo na kasnije buđenje, a odmor je gotov i treba povući punom snagom u Novoj godini.
 
