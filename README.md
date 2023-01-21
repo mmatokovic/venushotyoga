@@ -13,8 +13,13 @@ https://www.flux-academy.com/blog/the-best-websites-for-web-design-inspiration
 https://www.youtube.com/watch?v=Ecm1OcljA2o
 https://www.globalforestwatch.org/ footer
 https://www.youtube.com/watch?v=nVie2PPIqTY&t=846s
+https://yoga-zadar.weebly.com/
+https://thaimassageacademy.org/
+https://www.sofiaskilitsi.com/about/?lang=en
+https://www.youtube.com/watch?v=zJjJuS7LgS8
 https://merakiui.com/components/blog
 https://tailblocks.cc/
+https://tina.io/docs/
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 

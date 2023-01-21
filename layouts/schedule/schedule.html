@@ -1,0 +1,24 @@
+{{ define "main" }}
+<table class="table-fixed">
+    <thead>
+      <tr>
+        <th>Start Time</th>
+        <th>Ponedeljak</th>
+        <th>Utorak</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{ range .Params.termin}}
+      <tr>
+        <td>{{.startTime}}</td> 
+        {{ if eq .dan "ponedeljak" }}
+            <td>{{ .usluga }}</td>
+        {{ end }}
+        {{ if eq .dan "utorak" }}
+            <td>{{ .usluga }}</td>
+        {{ end }}
+      </tr>
+    {{ end }}
+    </tbody>
+</table>
+{{ end }}
