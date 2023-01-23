@@ -59,7 +59,7 @@ collections:
           - label: Termin
             name: termin
             collapsed: true
-            widget: object
+            widget: list
             fields:
             - label: Dan
               name: dan
