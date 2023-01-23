@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=zJjJuS7LgS8
 https://merakiui.com/components/blog
 https://tailblocks.cc/
 https://tina.io/docs/
+https://www.json2yaml.com/
+https://discourse.gohugo.io/t/accessing-data-from-json-data-files/22179/2
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 

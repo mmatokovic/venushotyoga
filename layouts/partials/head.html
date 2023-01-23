@@ -15,11 +15,7 @@
         }
 
         function changeDisplay(){
-            document.getElementById("mobile-menu-toggle").classList.toggle('block');
-            document.getElementById("mobile-menu-toggle").classList.toggle('block');
-            document.getElementById("mobile-menu").classList.toggle('hidden');
-
-            document.getElementById('mobile-menu').setAttribute("aria-hidden", "true") ;
+            document.getElementById('mobile-menu').toggleAttribute("hidden") ;
         }
 
         function addDisabled(){

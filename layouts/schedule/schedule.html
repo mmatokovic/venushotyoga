@@ -1,24 +1,82 @@
 {{ define "main" }}
-<table class="table-fixed">
-    <thead>
-      <tr>
-        <th>Start Time</th>
-        <th>Ponedeljak</th>
-        <th>Utorak</th>
-      </tr>
-    </thead>
-    <tbody>
-    {{ range .Params.termin}}
-      <tr>
-        <td>{{.startTime}}</td> 
-        {{ if eq .dan "ponedeljak" }}
-            <td>{{ .usluga }}</td>
-        {{ end }}
-        {{ if eq .dan "utorak" }}
-            <td>{{ .usluga }}</td>
-        {{ end }}
-      </tr>
-    {{ end }}
-    </tbody>
-</table>
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-6 py-10 mx-auto">
+        <div>
+            <table class="min-w-full text-center border-spacing-px">
+                <thead class="bg-white border-b">
+                  <tr>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left"></th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Ponedeljak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Utorak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Srijeda</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Četvrtak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Petak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Subota</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {{ range $i,$p := .Params.raspored }}
+                  <tr class={{if not (modBool $i 2)}}"bg-white text-left"{{ else }} "bg-gray-100 text-left"{{end}}>
+                    <td>{{ .startTime }}</td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Ponedeljak" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{end}}
+                    </td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Utorak" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{ end }}
+                    </td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Srijeda" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{ end }}
+                    </td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Četvrtak" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{ end }}
+                    </td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Petak" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{ end }}
+                    </td>
+                    <td>
+                        {{ range .termin }}{{ if eq .dan "Subota" }}
+                        <div class="bg-amber-500">
+                            {{ .usluga }}<br>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
+                        </div>
+                        {{ end }}{{ end }}
+                    </td>
+                  </tr>
+                {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 {{ end }}
