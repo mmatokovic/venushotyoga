@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
-  branch: dev
+  local_backend: true
+  branch: prod
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
@@ -43,11 +44,48 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/classes/index.md"
-        label: "Classes"
-        name: "classes"
+      - file: "content/schedule/_index.md"
+        label: Schedule
+        name: schedule
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - {label: "Location", name: "location", widget: "map" }
+        - label: Raspored
+          name: raspored
+          collapsed: true
+          widget: list
+          fields:
+          - label: Start Time
+            name: startTime
+            widget: string
+          - label: Termin
+            name: termin
+            collapsed: true
+            widget: object
+            fields:
+            - label: Dan
+              name: dan
+              widget: select
+              options:
+              - label: Ponedeljak
+                value: Ponedeljak
+              - label: Utorak
+                value: Utorak
+              - label: Srijeda
+                value: Srijeda
+              - label: Četvrtak
+                value: Četvrtak
+              - label: Petak
+                value: Petak
+              - label: Subota
+                value: Subota
+            - label: Usluga
+              name: usluga
+              widget: string
+            - label: StartTime
+              name: startTime
+              widget: string
+            - label: EndTime
+              name: endTime
+              widget: string
+            - label: Opis
+              name: opis
+              widget: string
