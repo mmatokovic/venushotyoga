@@ -1,8 +1,8 @@
-<footer class="text-gray-600 body-font">
+<footer class="text-white body-font bg-tamno-zeleno">
   <div class="container px-5 py-12 mx-auto">
     <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
       {{ range .Site.Menus.main }}
-      <a class="mr-5 hover:text-gray-900 cursor-pointer{{ if $.IsMenuCurrent "main" . }} text-rose-400" aria-current="page{{ end }}" href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}</a>
+      <a class="mr-5 hover:text-white cursor-pointer" href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}</a>
       {{ end }}
     </div>
   </div>
@@ -10,46 +10,40 @@
     <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
       <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
         <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-          <label for="footer-field" class="leading-7 text-sm text-gray-600">KONTAKTIRAJTE NAS</label>
-          <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <label for="footer-field" class="leading-7 text-sm text-white">KONTAKTIRAJTE NAS</label>
+          <input type="text" id="footer-field" name="footer-field" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">ŽELIM NOVOSTI</button>
-        <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center"> Budite informirani o novim tehnikama, tečajevima, proizvodima i događajima.
-          <br class="lg:block hidden">Bezuvjetno volim dijeliti svoju strast prema jogi, tajlandskoj masaži i svom zagrljaju!
-          <br><br>
+        <button class="inline-flex text-white bg-krem border-0 py-2 px-6 focus:outline-none hover:opacity-85 rounded">ŽELIM NOVOSTI</button>
+        <p class="text-white-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center"> Budite informirani o novim tehnikama, tečajevima, knjigama i događajima.
+          <br class="lg:block hidden">
           Topli zagrljaj,
           Vjerna
         </p>
       </div>
       <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-        <a href="{{ site.Data.links.facebook }}" class="text-gray-500">
+        <a href="{{ site.Data.links.facebook }}" target="_blank" class="" title="Facebook">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a href="{{ site.Data.links.instagram }}" class="ml-3 text-gray-500">
+        <a href="{{ site.Data.links.instagram }}" target="_blank" class="ml-3" title="Instagram">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a href="{{ site.Data.links.youtube }}" class="ml-3 text-gray-500">
-          <svg fill="text-gray-500" width="20" height="20" stroke="currentColor" version="1.1" id="Layer_1" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 310 310" xml:space="preserve">
-            <g id="XMLID_822_">
-              <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991 c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764 c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861 C204.394,157.263,202.325,160.684,199.021,162.41z"/>
-            </g>
-          </svg>
+        <a class="ml-3" href="{{ site.Data.links.youtube }}" target="_blank" rel="noopener noreferrer">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="2" viewBox="0 0 1024 1024" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"></path></svg>
+        </a>
+        <a href="{{ .Permalink }}index.xml" class="ml-3" title="RSS Feed">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
         </a>
       </span>
     </div>
   </div>
-  <div class="bg-gray-100">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">&copy;{{ dateFormat "2006" now }} {{ .Site.Title }} -
-        <a href="{{ site.Data.links.github }}" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@mmatokovic</a>
-      </p>
-      <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Sva prava pridržana</span>
-    </div>
+  <div class="border-t border-white container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row font-mono">
+    <p class="text-sm text-center sm:text-left">&copy;{{ dateFormat "2006" now }} Dodir anticelulitni studio - Sva prava pridržana</p>
+    <a href="{{ site.Data.links.github }}" class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-white text-sm" target="_blank" rel="noopener noreferrer">@mmatokovic</a>
   </div>
 </footer>
 <script>

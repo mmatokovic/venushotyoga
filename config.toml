@@ -3,19 +3,4 @@ languageCode = 'hr'
 title = 'Venus Hot Yoga'
 
 [taxonomies]
-  series = 'series'
-
-[[menu.main]]
-name = "Blog"
-url = "/posts/"
-
-[[menu.main]]
-identifier = "books"
-name = "Books"
-url = "/books/"
-
-[[menu.main]]
-parent = "books"
-weight = 20
-  [menu.main.params]
-  divider = true
+series = 'series'

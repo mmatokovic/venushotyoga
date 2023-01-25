@@ -10,14 +10,16 @@
     "tailwindcss": "^3.2.4"
   },
   "scripts": {
-    "hugo": "hugo server --disableFastRender"
+    "dev": "hugo server --forceSyncStatic",
+    "hugo": "hugo server --disableFastRender",
+    "build": "hugo"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmatokovic/venushotyoga.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mislav Matoković",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mmatokovic/venushotyoga/issues"

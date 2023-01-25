@@ -3,7 +3,7 @@ title: Raspored
 date: 2022-07-06T00:36:24-08:00
 description: Raspored
 menu: main
-weight: 20
+weight: 4
 raspored:
 - startTime: '09:30'
   termin:
@@ -44,3 +44,5 @@ raspored:
     endTime: '20:00'
     opis: u studiu
 ---
+* Za sve satove je potrebno prethodno se najaviti
+* Ukoliko ne možete doći molimo da se odjavite 12 sati prije
