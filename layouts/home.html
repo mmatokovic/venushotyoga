@@ -3,6 +3,7 @@
 {{ end }} 
 
 {{ define "main" }}
+
 <h1>{{ .Params.title }}</h1>
 
 <p>{{ .Params.blurb }}</p>
@@ -10,36 +11,8 @@
 <h2>{{ .Params.section.heading }}</h2>
 
 <p>{{ .Params.section.text }}</p>
-<div class="flex flex-wrap justify-center md:-mx-4 sm:-mx-8 py-8">
-	<div style="max-width: 280px;" animate-down="" animate-delay-="" 1="" class="w-full sm:w-1/2 lg:w-1/4 md:px-4 sm:px-8 mb-8 sm:mb-16 is-shown" animate-observing="true">
-		<a target="" href="https://bud.agency/seo/" style="background-image: linear-gradient(to top, #3159A1, #2a4b98)" class="text-center h-full transition hover:shadow-light-blue hover:transform-scale-up cursor-pointer flex flex-col items-center p-6 rounded shadow">
-			<img decoding="async" loading="lazy" width="167" height="192" class="h-48 mb-8 object-contain" src="https://bud.agency/wp-content/uploads/2019/07/Bud_digitalHomepage_icons5.png.webp" alt="seo-services"><h3 class="font-semibold text-xl mt-auto">SEO</h3>
-		</a>
-	</div>
-	<div style="max-width: 280px;" animate-down="" animate-delay-="" 2="" class="w-full sm:w-1/2 lg:w-1/4 md:px-4 sm:px-8 mb-8 sm:mb-16 is-shown" animate-observing="true">
-		<a target="" href="https://bud.agency/google-ads/" style="background-image: linear-gradient(to top, #3159A1, #2a4b98)" class="text-center h-full transition hover:shadow-light-blue hover:transform-scale-up cursor-pointer flex flex-col items-center p-6 rounded shadow">
-			<img decoding="async" loading="lazy" width="167" height="192" class="h-48 mb-8 object-contain" src="https://bud.agency/wp-content/uploads/2019/08/Bud_digitalHomepage_icons6.png.webp" alt="google-ads-services"><h3 class="font-semibold text-xl mt-auto">Google Ads</h3>
-		</a>
-	</div>
-	<div style="max-width: 280px;" animate-down="" animate-delay-="" 3="" class="w-full sm:w-1/2 lg:w-1/4 md:px-4 sm:px-8 mb-8 sm:mb-16 is-shown" animate-observing="true">
-		<a target="" href="https://bud.agency/social-media/" style="background-image: linear-gradient(to top, #3159A1, #2a4b98)" class="text-center h-full transition hover:shadow-light-blue hover:transform-scale-up cursor-pointer flex flex-col items-center p-6 rounded shadow">
-			<img decoding="async" loading="lazy" width="167" height="192" class="h-48 mb-8 object-contain" src="https://bud.agency/wp-content/uploads/2019/08/Bud_digitalHomepage_icons7.png.webp" alt="social-media-marketing-services"><h3 class="font-semibold text-xl mt-auto">Social Media</h3>
-		</a>
-	</div>
-</div>
-<div class="flex flex-col sm:flex-row justify-between px-5 md:px-0 mb-16 items-center">
-	<h2 class="text-4xl mb-5 sm:mb-0 font-semibold">Digital Marketing Stories From The Trail…</h2>
-	<div class="flex">
-		<span class="prev-slide transition cursor-pointer w-12 h-12 rounded-full flex items-center justify-center border-solid border-greyish-blue border group hover:border-medium-blue-500 hover:bg-medium-blue-500 mr-5">
-			&lsaquo;
-		</span>
-		<span class="next-slide transition cursor-pointer w-12 h-12 rounded-full flex items-center justify-center border-solid border-greyish-blue border group hover:border-medium-blue-500 hover:bg-medium-blue-500">
-			<p class="font-bold text-3xl">&rsaquo;</p>
-		</span>
-	</div>
-</div>
-{{ end }} 
 
+{{ end }} 
 {{ define "footer" }} 
 	{{ partial "footer" }} 
 {{ end }}

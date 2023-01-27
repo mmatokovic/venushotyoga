@@ -2,8 +2,7 @@
 title: Raspored
 date: 2022-07-06T00:36:24-08:00
 description: Raspored
-menu: main
-weight: 4
+layout: "schedule"
 raspored:
 - startTime: '09:30'
   termin:

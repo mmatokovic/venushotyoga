@@ -2,34 +2,34 @@
 <section class="text-gray-600 body-font overflow-hidden">
     <div class="container px-6 py-10 mx-auto">
         <div>
-            <table class=" min-w-full text-center border-spacing border-separate">
+            <table class="min-w-full text-center border-spacing-px">
                 <thead class="bg-white border-b">
                   <tr>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center"></th>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Ponedeljak</th>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Utorak</th>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Srijeda</th>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Četvrtak</th>
-                      <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Petak</th>
-                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">Subota</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left"></th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Ponedeljak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Utorak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Srijeda</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Četvrtak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Petak</th>
+                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">Subota</th>
                   </tr>
                 </thead>
                 <tbody>
                 {{ range $i,$p := .Params.raspored }}
-                  <tr class={{if not (modBool $i 2)}}"bg-white text-center"{{ else }} "bg-gray-100 text-center"{{end}}>
+                  <tr class={{if not (modBool $i 2)}}"bg-white text-left"{{ else }} "bg-gray-100 text-left"{{end}}>
                     <td>{{ .startTime }}</td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Ponedeljak" }}
-                        <div class="bg-amber-500 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
-                            <span class="text-sm">{{ .startTime}} - {{ .endTime }}</span><br>
+                            {{ .startTime}} - {{ .endTime }}<br>
                             {{ .opis }}
                         </div>
                         {{ end }}{{end}}
                     </td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Utorak" }}
-                        <div class="bg-amber-500 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
                             {{ .startTime}} - {{ .endTime }}<br>
                             {{ .opis }}
@@ -38,25 +38,25 @@
                     </td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Srijeda" }}
-                        <div class="bg-cyan-700 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
-                            <span class="text-sm font-medium">{{ .startTime}} - {{ .endTime }}</span><br>
-                            <span class="text-xs">{{ .opis }}</span>
+                            {{ .startTime}} - {{ .endTime }}<br>
+                            {{ .opis }}
                         </div>
                         {{ end }}{{ end }}
                     </td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Četvrtak" }}
-                        <div class="bg-teal-700 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
-                            <span class="text-sm">{{ .startTime}} - {{ .endTime }}</span><br>
+                            {{ .startTime}} - {{ .endTime }}<br>
                             {{ .opis }}
                         </div>
                         {{ end }}{{ end }}
                     </td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Petak" }}
-                        <div class="bg-emerald-700 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
                             {{ .startTime}} - {{ .endTime }}<br>
                             {{ .opis }}
@@ -65,7 +65,7 @@
                     </td>
                     <td>
                         {{ range .termin }}{{ if eq .dan "Subota" }}
-                        <div class="bg-sky-700 text-teal-100">
+                        <div class="bg-amber-500">
                             {{ .usluga }}<br>
                             {{ .startTime}} - {{ .endTime }}<br>
                             {{ .opis }}

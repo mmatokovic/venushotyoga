@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font bg-gradient-rare-wind">
     <div class="container px-5 py-24 mx-auto flex flex-col">
       <div class="lg:w-4/6 mx-auto">
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">{{ .Title }}</h2>
@@ -28,4 +28,32 @@
       </div>
     </div>
 </section>
+<div animate-down="" class="border-t border-solid border-faint flex flex-col items-center justify-center text-center pt-24 pb-24 md:pb-40 mt-24 is-shown" animate-observing="true">
+  <h5 class="font-semibold">Podijelite ovaj članak</h5>
+  <div class="mt-6 flex -mx-4">
+    <div class="px-4">
+      <a class="border-solid border border-greyish-blue rounded-full w-12 h-12 flex justify-center items-center" target="_blank" rel="nofollow noreferrer" href="//www.facebook.com/sharer/sharer.php?u=https://bud.agency/bud-logo-refresh/">
+      <i class="text-lg icon-facebook"></i>
+      </a>
+    </div>
+    <div class="px-4">
+      <a class="border-solid border border-greyish-blue rounded-full w-12 h-12 flex justify-center items-center" target="_blank" rel="nofollow noreferrer" href="https://twitter.com/intent/tweet?text=Blueprint For An Identity: The Bud Logo Refresh https://bud.agency/bud-logo-refresh/">
+      <i class="text-lg icon-twitter"></i>
+      </a>
+    </div>
+    <div class="px-4">
+      <a class="border-solid border border-greyish-blue rounded-full w-12 h-12 flex justify-center items-center" target="_blank" rel="nofollow noreferrer" href="//www.linkedin.com/shareArticle?mini=true&amp;url=https://bud.agency/bud-logo-refresh/&amp;title=Blueprint For An Identity: The Bud Logo Refresh">
+      <i class="text-lg icon-linkedin"></i>
+      </a>
+    </div>
+    <div class="px-4">
+      <a class="border-solid border border-greyish-blue rounded-full w-12 h-12 flex justify-center items-center" target="_blank" rel="nofollow noreferrer" href="mailto:?subject=Bud Agency: Blueprint For An Identity: The Bud Logo Refresh&amp;body=Check out this latest article from Bud Agency: https://bud.agency/bud-logo-refresh/">
+      <i class="text-lg icon-email"></i>
+      </a>
+    </div>
+  </div>
+</div>
+{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}
+
+{{with .Next}}{{.Permalink}}{{end}}
 {{ end }}

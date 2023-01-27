@@ -1,5 +1,5 @@
 ---
-title: "Otkrijete 8 tajni zašto Vježbati Yogu"
+title: Otkrijete 8 tajni zašto Vježbati Yogu
 date: 2022-07-06T00:36:24-08:00
 description: Vodim vas na malo putovanje kako pospješiti svoj život uz tajne drevnih majstora! Od fizičkog do mentalnog zdravlja, joga je nesumnjivo jedna od najkorisnijih praksi na svijetu. Yoga je 5.000 godina stara disciplina iz Indije. Razvijena je kao niz vježbi ujedinjenja uma i tijela.
 image: cover.png

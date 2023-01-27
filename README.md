@@ -25,6 +25,7 @@ https://discourse.gohugo.io/t/accessing-data-from-json-data-files/22179/2
 http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/
 https://www.youtube.com/watch?v=idYUy3hf3D0
 https://bud.agency/
+https://webgradients.com/
 
 GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UC1lOH5pcK-vE1bTua4w4QiQ&maxResults=10&order=date&key=[YOUR_API_KEY] HTTP/1.1
 

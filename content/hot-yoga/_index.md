@@ -1,3 +1,10 @@
+---
+title: "Hot Yoga"
+date: 2022-07-06T00:36:24-08:00
+description: Home
+menu: main
+weight: 2
+---
 HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti.
 
 Hatha yoga asane su sustav vježbanja kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice.

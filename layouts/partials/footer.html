@@ -6,43 +6,41 @@
       {{ end }}
     </div>
   </div>
-  <div class="border-t border-gray-200">
-    <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-      <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-        <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-          <label for="footer-field" class="leading-7 text-sm text-white">KONTAKTIRAJTE NAS</label>
-          <input type="text" id="footer-field" name="footer-field" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <button class="inline-flex text-white bg-krem border-0 py-2 px-6 focus:outline-none hover:opacity-85 rounded">ŽELIM NOVOSTI</button>
-        <p class="text-white-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center"> Budite informirani o novim tehnikama, tečajevima, knjigama i događajima.
-          <br class="lg:block hidden">
-          Topli zagrljaj,
-          Vjerna
-        </p>
+  <div class="container px-5 py-12 flex flex-wrap mx-auto items-center">
+    <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+      <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+        <label for="footer-field" class="leading-7 text-sm text-white">KONTAKTIRAJTE NAS</label>
+        <input type="text" id="footer-field" name="footer-field" class="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
       </div>
-      <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-        <a href="{{ site.Data.links.facebook }}" target="_blank" class=" " title="Facebook">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
-        <a href="{{ site.Data.links.instagram }}" target="_blank" class="ml-3" title="Instagram">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        <a class="ml-3" href="{{ site.Data.links.youtube }}" target="_blank" rel="noopener noreferrer">
-          <svg stroke="currentColor" fill="currentColor" stroke-width="2" viewBox="0 0 1024 1024" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"></path></svg>
-        </a>
-        <a href="{{ .Permalink }}index.xml" class="ml-3" title="RSS Feed">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
-        </a>
-      </span>
+      <button class="inline-flex text-white bg-krem border-0 py-2 px-6 focus:outline-none hover:opacity-85 rounded">ŽELIM NOVOSTI</button>
+      <p class="text-white-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center"> Budite informirani o novim tehnikama, tečajevima, knjigama i događajima.
+        <br class="lg:block hidden">
+        Topli zagrljaj,
+        Vjerna
+      </p>
     </div>
+    <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+      <a href="{{ site.Data.links.facebook }}" target="_blank" class=" " title="Facebook">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a href="{{ site.Data.links.instagram }}" target="_blank" class="ml-3" title="Instagram">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3" href="{{ site.Data.links.youtube }}" target="_blank" rel="noopener noreferrer">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="2" viewBox="0 0 1024 1024" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"></path></svg>
+      </a>
+      <a href="{{ .Permalink }}index.xml" class="ml-3" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+      </a>
+    </span>
   </div>
   <div class="border-t border-white container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row font-mono">
-    <p class="text-sm text-center sm:text-left">&copy;{{ dateFormat "2006" now }} Dodir anticelulitni studio - Sva prava pridržana</p>
+    <p class="text-sm text-center sm:text-left">&copy;{{ dateFormat "2006" now }} {{ .Site.Title }} - Sva prava pridržana</p>
     <a href="{{ site.Data.links.github }}" class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-white text-sm" target="_blank" rel="noopener noreferrer">@mmatokovic</a>
   </div>
 </footer>

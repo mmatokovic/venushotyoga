@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'mandala-pattern': "url('/images/vectors/mandala.svg')",
         'open-lotus': "url('/images/vectors/open-lotus.png')",
+        'clouds': "url('/assets/img/ui/clouds.png')",
       },
       fontFamily: {
         'architects-daughter': ['Architects Daughter', 'cursive'],

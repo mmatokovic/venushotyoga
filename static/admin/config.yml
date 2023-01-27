@@ -44,7 +44,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-      - file: "content/schedule/_index.md"
+      - file: "content/hot-yoga/schedule/_index.md"
         label: Schedule
         name: schedule
         fields:
