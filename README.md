@@ -24,10 +24,16 @@ https://www.json2yaml.com/
 https://discourse.gohugo.io/t/accessing-data-from-json-data-files/22179/2
 http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/
 https://www.youtube.com/watch?v=idYUy3hf3D0
+https://bud.agency/
 
 GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UC1lOH5pcK-vE1bTua4w4QiQ&maxResults=10&order=date&key=[YOUR_API_KEY] HTTP/1.1
 
 A yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor. It may also include resources such as articles on the history and philosophy of yoga, tips for beginners, and descriptions of different yoga poses. Some yoga websites also offer online classes or tutorials, and may feature a blog or forum for discussion among practitioners.
+
+https://emailmatrix.ru/blog/web-design-trends-2020/
+https://medium.com/@downgraf/best-product-website-design-inspiration-b7e0a3475165
+
+
 ### ToDo before prod
 * Change branch back to main in `static>admin>config.yml`
 

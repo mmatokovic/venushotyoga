@@ -7,8 +7,8 @@
     {{ if isset .Params "tags" }}
     <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
 	{{ end -}}
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/x-icon" sizes="192x192" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.ico">
     <link rel="apple-touch-icon" href="favicon.ico">
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
@@ -20,7 +20,9 @@
         }
 
         function changeDisplay(){
-            document.getElementById('mobile-menu').toggleAttribute("hidden") ;
+            document.getElementById('mobile-menu').toggleAttribute("hidden");
+            document.getElementById('open').toggleAttribute("hidden");
+            document.getElementById('notopen').toggleAttribute("hidden");
         }
 
         function addDisabled(){
@@ -37,6 +39,13 @@
                 x.setAttribute('aria-expanded', x.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
             }
         }
+    </script>
+    <script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('menu-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
     </script>
     <script>
     // @license magnet:?xt=urn:btih:5ac446d35272cc2e4e85e4325b146d0b7ca8f50c&dn=unlicense.txt Unlicense
