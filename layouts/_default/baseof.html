@@ -1,3 +1,4 @@
+{{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
 <!DOCTYPE html>
 <html lang="hr">
     {{- partial "head.html" . -}}
@@ -7,6 +8,6 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
-        {{- partial "footer2.html" . -}}
+        <script src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
     </body>
 </html>

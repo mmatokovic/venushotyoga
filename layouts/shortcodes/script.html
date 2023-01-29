@@ -1,0 +1,7 @@
+{{ $file := .resources.Get "file" | readFile }}
+{{ $lang := .Get "language" }}
+{{ (print "```" $lang "\n" $file "\n```") | markdownify }}
+{{/* % code file="/static/some-script.js" language="js" % */}}
+
+{{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
+<script src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
