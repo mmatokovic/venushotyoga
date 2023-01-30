@@ -1,28 +1,15 @@
 {
   "name": "venushotyoga",
   "version": "1.0.0",
-  "description": "The [Venus Hot Yoga](https://venushotyoga.hr) website frontend built with Tailwind, Hugo, netlify.",
-  "main": "index.js",
+  "description": "The Venus Hot Yoga website built with Tailwind, Hugo and netlify.",
+  "author": "Mislav Matoković <misalv.mat@hotmail.com>",
+  "repository": "github:mmatokovic/venushotyoga",
+  "license": "Apache-2.0",
+  "homepage": "https://venushotyoga.hr",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.2.4"
-  },
-  "scripts": {
-    "dev": "hugo server --forceSyncStatic",
-    "hugo": "hugo server --disableFastRender",
-    "build": "hugo"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mmatokovic/venushotyoga.git"
-  },
-  "keywords": [],
-  "author": "Mislav Matoković",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mmatokovic/venushotyoga/issues"
-  },
-  "homepage": "https://github.com/mmatokovic/venushotyoga#readme"
+  }
 }

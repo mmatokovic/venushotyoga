@@ -1,7 +1,10 @@
 baseURL = 'http://venushotyoga.hr/'
 languageCode = 'hr'
 title = 'Venus Hot Yoga'
+
 enableRobotsTXT = true
+enableGitInfo = true
+
 [sitemap]
   changefreq = 'monthly'
   filename = 'sitemap.xml'
