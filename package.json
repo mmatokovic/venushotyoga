@@ -1,7 +1,7 @@
 {
   "name": "venushotyoga",
   "version": "1.0.0",
-  "description": "The Venus Hot Yoga website built with Tailwind, Hugo and netlify.",
+  "description": "The Venus Hot Yoga website hosted on Netlify, built with Hugo! ",
   "author": "Mislav Matoković <misalv.mat@hotmail.com>",
   "repository": "github:mmatokovic/venushotyoga",
   "license": "Apache-2.0",
@@ -10,8 +10,6 @@
     "autoprefixer": "^10.4.13",
     "autotrack": "^2.4.1",
     "instant.page": "^5.1.1",
-    "netlify-cms-app": "^2.15.72",
-    "netlify-identity-widget": "^1.9.2",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "swiper": "^8.4.7",

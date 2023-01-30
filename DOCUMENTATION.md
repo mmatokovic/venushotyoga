@@ -1,6 +1,11 @@
 # Documentation
 
-## 📃 Useful links
+## 📝 ToDo
+
+* Google maps API
+* Contact page
+
+## 📜 Useful links
 
 * [Netlify CMS & Git Gateway - Email not confirmed](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690)
 * [Netlify CMS Hugo](https://www.netlifycms.org/docs/hugo/)
@@ -26,8 +31,7 @@
 
 ## ✨ Before production
 
-Add to `netlify.toml`
-
+Add to `netlify.toml`:
 ```toml
 [[redirects]]
 from = "https://venushotyoga.netlify.com/*"
