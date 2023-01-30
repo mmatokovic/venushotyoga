@@ -1,13 +1,26 @@
-{{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
 <!DOCTYPE html>
-<html lang="hr">
-    {{- partial "head.html" . -}}
+<html lang="{{ .Site.LanguageCode }}">
+    {{ partial "head.html" . }}
     <body class="font-comfortaa">
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-        <script src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
+        {{ partial "header.html" . }}
+        <main id="content">
+        {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer.html" . }}
+        {{ $scripts := resources.Get "scripts/main.ts" }}
+        {{ $options := dict "minify" true }}
+        {{ $js := $scripts | js.Build $options }}
+        <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+        <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                  });
+                }
+              });
+            }
+        </script>
     </body>
 </html>

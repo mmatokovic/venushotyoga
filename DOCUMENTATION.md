@@ -13,6 +13,8 @@
 * [Google Analytics](http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/)
 * [Web Gradients](https://webgradients.com/)
 * [Hyper UI](https://www.hyperui.dev/)
+* [Observatory](https://observatory.mozilla.org/analyze/venushotyoga.netlify.app?third-party=false)
+* [Aloralabs](https://github.com/aloralabs/homepage)
 
 ## 🎨 Website insirations
 
