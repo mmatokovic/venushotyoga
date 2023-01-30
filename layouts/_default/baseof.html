@@ -1,11 +1,13 @@
+{{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
 <!DOCTYPE html>
-<html>
+<html lang="hr">
     {{- partial "head.html" . -}}
     <body class="font-comfortaa">
         {{- partial "header.html" . -}}
-        <div id="content" class="bg-mandala-pattern bg-center bg-no-repeat bg-cover">
+        <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        <script src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
     </body>
 </html>

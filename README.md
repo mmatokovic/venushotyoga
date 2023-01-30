@@ -1,27 +1,20 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c8794e70-aeca-447c-ae8b-a157524c6ac2/deploy-status)](https://app.netlify.com/sites/venushotyoga/deploys)
+
 ## Venus Hot Yoga
-The [Venus Hot Yoga](https://venushotyoga.hr) website frontend built with Tailwind, Hugo, netlify. 
 
+The Venus Hot Yoga website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/) using [TinaCMS](https://tina.io/).
 
-### Useful links
-* [Netlify CMS & Git Gateway - Email not confirmed](https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690)
-* [Netlify CMS Hugo](https://www.netlifycms.org/docs/hugo/)
-https://answers.netlify.com/t/cant-push-after-trying-to-setup-large-media/31125/10
-https://divineyogastudio1.wixsite.com/my-site
-https://docs.netlify.com/large-media/setup/
-https://herotofu.com/solutions/guides/hugo-contact-form
-https://www.flux-academy.com/blog/the-best-websites-for-web-design-inspiration
-https://www.youtube.com/watch?v=Ecm1OcljA2o
-https://www.globalforestwatch.org/ footer
-https://www.youtube.com/watch?v=nVie2PPIqTY&t=846s
-https://yoga-zadar.weebly.com/
-https://thaimassageacademy.org/
-https://www.sofiaskilitsi.com/about/?lang=en
-https://www.youtube.com/watch?v=zJjJuS7LgS8
-https://merakiui.com/components/blog
-https://tailblocks.cc/
-https://tina.io/docs/
-https://www.json2yaml.com/
-https://discourse.gohugo.io/t/accessing-data-from-json-data-files/22179/2
-### ToDo before prod
-* Change branch back to main in `static>admin>config.yml`
+A Yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor.  
 
+*It may also include resources such as articles on the history and philosophy of yoga, tips for beginners, and descriptions of different yoga poses. Some yoga websites also offer online classes or tutorials, and may feature a blog or forum for discussion among practitioners.*
+
+## Branches
+
+* The `prod` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
+* The `dev` branch is where we store changes that are related to the next release.
+
+## License
+[Apache License 2.0](LICENSE)
+
+## Author Information
+[Mislav Matoković](https://github.com/mmatokovic)

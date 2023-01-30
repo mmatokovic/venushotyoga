@@ -1,8 +1,7 @@
 User-agent: *
-{{/* robotstxt.org - if ENV production variable is false robots will be disallowed. */ -}}
-{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  -}}
-Allow: /
+Disallow: 404.html
+Disallow: /admin/
+{{ range .Pages }}
+allow: {{ .RelPermalink }}
+{{ end }}
 Sitemap: {{ "/sitemap.xml" | absURL }}
-{{ else -}}
-Disallow: /
-{{ end -}}

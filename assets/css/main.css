@@ -6,6 +6,29 @@
 
 @layer base {
     ul, ol {
-      list-style: revert;
+      list-style-type: none;
     }
+}
+
+.active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: #c79449;
+}
+
+.bg-gradient-to-bottom-dusk-blue-to-cobalt {
+  background-image: linear-gradient(180deg,#294887,#1d3f83);
+}
+
+.bg-gradient-rare-wind {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.bg-dark-slate-blue-800 {
+  background-color: #162950;
+}
+
+.bg-gradient-to-bottom-dusk {
+  background-image: linear-gradient(to bottom, #1f3776, #1b3260);
 }
