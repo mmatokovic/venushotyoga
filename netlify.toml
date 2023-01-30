@@ -1,16 +1,17 @@
 [build]
-  command = "hugo"
-  publish = "public"
+command = "hugo --minify"
+publish = "public"
 
 [context.production.environment]
-  HUGO_VERSION = "0.110.0"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
+HUGO_VERSION = "0.110.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
 [[headers]]
 for = "*"
 [headers.values]
 Strict-Transport-Security = "max-age=31536000; preload"
+Referrer-Policy = 'strict-origin-when-cross-origin'
 X-Frame-Options = "DENY"
 X-Content-Type-Options = "nosniff"
 X-XSS-Protection = "1; mode=block"

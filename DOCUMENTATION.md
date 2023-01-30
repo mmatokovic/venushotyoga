@@ -23,3 +23,14 @@
 * [Yoga Zadar](https://yoga-zadar.weebly.com/)
 * [Thai Massage Academy](https://thaimassageacademy.org/)
 * [Bud Agency](https://bud.agency/)
+
+## ✨ Before production
+
+Add to `netlify.toml`
+
+```toml
+[[redirects]]
+from = "https://venushotyoga.netlify.com/*"
+to = "https://venushotyoga.com/:splat"
+force = true
+```
