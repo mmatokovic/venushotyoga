@@ -47,6 +47,20 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
+window.addEventListener('scroll', function() {
+
+  let btt = document.getElementById('btt');
+
+  if (window.scrollY >= 1080) {
+      btt.classList.remove('hidden');
+      btt.classList.add('block');
+  } else {
+      btt.classList.add('hidden');
+      btt.classList.remove('block');
+  }
+
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     for (const e of document.getElementsByClassName("js-only")) {
         e.classList.remove("js-only");

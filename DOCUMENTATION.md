@@ -4,6 +4,9 @@
 
 * Google maps API
 * Contact page
+* CMS options 
+  * Edit pages: testimonials, posts, schedule, homepage, About
+  * Media and File upload
 
 ## 📜 Useful links
 
@@ -20,6 +23,12 @@
 * [Hyper UI](https://www.hyperui.dev/)
 * [Observatory](https://observatory.mozilla.org/analyze/venushotyoga.netlify.app?third-party=false)
 * [Aloralabs](https://github.com/aloralabs/homepage)
+* [Tailwind Stamps](https://tailwindcss.5balloons.info/)
+* [Flowbite](https://flowbite.com/blocks/)
+* [hugo-landing-page](https://github.com/ttntm/hugo-landing-page)
+* [Tailwind Awesome](https://www.tailwindawesome.com/?technology=10)
+* [Moderncss](https://moderncss.dev/)
+* [Parallax Effect](https://daily-dev-tips.com/posts/tailwind-css-parallax-effect/)
 
 ## 🎨 Website insirations
 
@@ -28,6 +37,8 @@
 * [Yoga Zadar](https://yoga-zadar.weebly.com/)
 * [Thai Massage Academy](https://thaimassageacademy.org/)
 * [Bud Agency](https://bud.agency/)
+* [Cristi Christensen](https://www.cristichristensen.com/)
+* [Github Blog](https://github.blog/)
 
 ## ✨ Before production
 

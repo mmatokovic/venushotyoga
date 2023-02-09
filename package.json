@@ -6,7 +6,13 @@
   "repository": "github:mmatokovic/venushotyoga",
   "license": "Apache-2.0",
   "homepage": "https://venushotyoga.hr",
+  "scripts": {
+    "start": "hugo server",
+    "deploy": "hugo --minify"
+  },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.13",
     "autotrack": "^2.4.1",
     "instant.page": "^5.1.1",

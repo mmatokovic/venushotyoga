@@ -9,12 +9,15 @@
       list-style-type: none;
     }
 }
-
 .active {
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
   text-decoration-color: #c79449;
+  color: linear-gradient(140deg, #D2A8FF 12.09%, #F778BA 42.58%, #FF7B72 84.96%);
+}
+.bg-gradient-true-sunset{
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 .bg-gradient-to-bottom-dusk-blue-to-cobalt {
