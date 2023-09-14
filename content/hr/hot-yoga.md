@@ -2,7 +2,7 @@
 title: Hot Yoga
 slug: hot-yoga
 date: 2022-07-06T00:36:24-08:00
-description: Hot yoga
+description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima.
 menu:
 - main
 - footer

@@ -9,3 +9,4 @@ menu:
 - footer
 weight: 5
 ---
+![Letak](/images/letak_yoga_vikend.jpg)

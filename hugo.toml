@@ -22,7 +22,7 @@ enableGitInfo = true
 
 [Params]
   description = "I am description of website structure data"
-  logo = "favicon-32x32.png"
+  logo = "favicon.png"
   copyright = "Apache-2.0"
   dateFormat = "02. 01. 2006."
 

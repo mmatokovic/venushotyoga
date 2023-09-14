@@ -27,6 +27,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				'home-featured': "url('/images/image6.jpeg')",
+				'mobilift': "url('/images/mobilift.jpg')",
+				'product-integral': "url('/images/product-integral.jpg')",
 			}
 		}
 	}

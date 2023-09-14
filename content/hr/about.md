@@ -3,14 +3,14 @@ title: O Nama
 slug: o-nama
 date: 2022-07-06T00:30:07-08:00
 draft: false
-description: O nama
+description: Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
 image: /images/studio-16.jpg
 menu: main
 weight: 1
 ---
 
 ## O Strudiju
-​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
+Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
 Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
 
 Vlasnica Venus Hot Yoga studija je Vjerna Nevistić. Vjerna je završila Kineziološki fakultet u Zagrebu, MBA u Pragu na američkom sveučilištu UNYP. Sedam godina živjela I radila je u Americi kao privatni trener I yoga instruktor  (Chicago, Dallas Phoenix),a u Pragu tri godine gdje je otvorila tada prvi hot yoga studio u Českoj 2003 g. Majka je tri sina  koji uz borilačke sportove redovito vježbaju hot yogu. uUz to, Vjerna je vanjski predavač na Kineziološkom fakultetu, gdje studentima sa zadovoljstvom drži predavanja o yogi.
@@ -44,7 +44,7 @@ U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 |  | |
 |---------|---------|
 | ![Akarna-Dhanurasana-s-obrnutim-hvatom](/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg "Akarna Dhanurasana s obrnutim hvatom") | ![Akarna-Dhanurasana](/images/Akarna-Dhanurasana.jpg "Akarna Dhanurasana") |
-    
+
 Od malena se aktivno bavila i borilačkim sportom Budokai kod svog ujaka dr. Emina Topića te se natjecala u katama (3. mjesto na svjetskom prvenstvu u katama u Veneciji 1989.g)
 
 Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi upravo nosi i sličan naslov: Yoga- disciplinom do slobode. U njoj predstavlja klasifikaciju 196 asana podjeljenih u 18 grupa u odnosu na položaj gornjeg i donjeg dijela tijela na podlogu što omogućava voditeljima lakše slaganje sata a polaznicima jasnije i pravilnije izvođenje... (više o knjizi link)

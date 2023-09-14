@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (popup) {
         setTimeout(() => {
             popup.classList.remove('hidden');
-        }, 2000);
+        }, 4000);
 
         if (closeButton) {
             closeButton.addEventListener('click', () => {

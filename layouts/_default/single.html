@@ -24,17 +24,30 @@
     <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-contain prose-td:{utility} prose-ol:px-9 text-xl">
       {{ .Content }}
     </article>
-    {{ if or (eq .File.BaseFileName "hot-yoga") (eq .File.BaseFileName "rejuvenation") }}
-    {{ with site.GetPage "pricing" }}
-      <a href="{{ .Permalink }}">View Prices</a>
-    {{ end }}
+  <div class="mx-auto max-w-6xl px-4 py-3 sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 bg-cosmic-latte rounded-lg">
+    {{ if eq .File.BaseFileName "rejuvenation" }}
+      {{ with site.GetPage "pricing" }}
+        <p class="text-center font-medium sm:text-left">
+          To see the prices
+        </p>
+        <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}#rejuvenation">View Prices</a>
+      {{ end }}
+    {{ else if eq .File.BaseFileName "hot-yoga"}}
+      {{ with .Site.GetPage "pricing" }}
+      <p class="text-center font-medium sm:text-left">
+        To see the prices
+      </p>
+      <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">View Prices</a>
+      {{ end }}
     {{ else }}
     {{ with .Site.GetPage "faq" }}
-      <a href="{{ .Permalink }}">faq</a>
+      <p class="text-center font-medium sm:text-left">
+        If you have any questions
+      </p>
+      <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">FAQ</a>
     {{ end }}
-  {{ end }}
-  
-  
+    {{ end }}
+  </div>
   </section>
 </main>
 {{ end }}
