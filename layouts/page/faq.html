@@ -3,10 +3,13 @@
   <div class="mw-auto  text-center border-b-4 border-yellow-300 mb-4">
     <h2 class="text-3xl font-bold sm:text-4xl ">{{ .Title }}</h2>
   </div>
-  <div class="mb-8">
+  <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:{utility} text-xl">
+    {{ .Content }}
+  </article>
+  <div class="my-8">
     <h2 class="max-w-none text-2xl leading-8 font-light">{{ .Params.description }}</h2>
   </div>
-  <div class="space-y-4">
+  <div class="space-y-4 text-xl">
     {{ range $index, $faq := .Params.faq }}
       <details class="group" {{ if eq $index 0 }}open{{ end }}>
         <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">

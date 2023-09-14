@@ -22,11 +22,11 @@ module.exports = {
 				'hazelnut': '#cfb095',
 				'ecru': '#c2b280',
 				'french-beige': '#a67b5b',
-				'khaki': '#c3bo91',
+				'khaki': '#c3b091',
 				'tuscan': '#fad6a5',
 			},
 			backgroundImage: {
-				'home-featured': "url('/images/gallery035.jpg')",
+				'home-featured': "url('/images/image6.jpeg')",
 			}
 		}
 	}

@@ -51,7 +51,7 @@ Puni tretman lica traje 30 minuta, a isto tako je moguće odabrati kratki tretma
 
 Princip tretmana na aparatima LPG je svojevrstan ”lifestyle” kao što redovito vježbamo tako su i tretmani za lice vježba koja održava lice mladim i svježim. Za najbolje i trajnije rezultate potrebno je 10-30 tretmana na početku ovisno o godinama i problemu. Između paketa nije potrebno raditi pauzu, mogu se provoditi češće (2-3x tjedno) ili rijeđe (2-4x mjesečno) ovisno o tome kako želite. Općenito se češće dolazi dok ne postignemo željeni rezultat, te ga zatim održavamo rijeđim dolascima, te ukoliko želimo još bolji rezultat ponovo dolazimo u ritmu 2-3x tjedno.
 
-### Danijel Deni Jeremić
+## Danijel Deni Jeremić
 
 Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
 

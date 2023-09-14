@@ -1,12 +1,17 @@
 ---
 title: Prvi yoga vikend u Poreču 2021
-date: 2023-01-20T10:15:37.576Z
+description: I am description of blog post structure data
 author: Vjerna Nevistić
+date: 2023-01-20T10:15:37.576Z
+featured_image: images/featured.jpg
 tags:
   - Yoga
   - Trening
   - Blogging
-image: images/featured.jpg
+keywords:
+  - Yoga
+  - Trening
+  - Blogging
 ---
 Prije tjedan dana vratili smo se s yoga vikenda u Poreču. Bili smo smješteni u hotelu Valamar Diamant koji je osim izvanredne hrane (neki polaznici kazu i predobre ) ponudio  korištenje bazena, teretane, sauna, zabavnih igara za odrasle i djecu...  
 

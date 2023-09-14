@@ -8,14 +8,14 @@
       </div>
       <div class="hidden sm:flex items-center justify-center space-x-6 font-medium">
       {{ range .Site.Menus.main }}
-        <a class="text-gray-700 transition ease-in hover:text-pink-300 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline underline-offset-4 decoration-2 decoration-pink-500{{ end }}" href="{{ .URL | absLangURL }}">
+        <a class="text-gray-700 transition ease-in hover:text-camel {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline decoration-wavy underline-offset-4 decoration-2 decoration-buff{{ end }}" href="{{ .URL | absLangURL }}">
           {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
         </a>
       {{ end }}
     </div>
     <div class="flex items-center ml-3.5 gap-4">
         <ul class="font-bold text-pink-400">
-        {{ if .Site.IsMultiLingual }}
+          {{ if .Site.IsMultiLingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
               <li><a href="#" class="hidden">{{ .LanguageName }} </a></li>

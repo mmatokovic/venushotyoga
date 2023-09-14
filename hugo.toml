@@ -9,16 +9,27 @@ enableGitInfo = true
 
 [languages]
   [languages.en]
-    languageName = 'En'
+    languageName = '🇬🇧'
     contentDir = 'content/en'
     weight = 2
   [languages.hr]
-    languageName = 'Hr'
+    languageName = '🇭🇷'
     contentDir = 'content/hr'
     weight = 1
 
-[params]
+[Author]
+  name = "Vjerna Nevistić"
+
+[Params]
+  description = "I am description of website structure data"
+  logo = "favicon-32x32.png"
+  copyright = "Apache-2.0"
   dateFormat = "02. 01. 2006."
+
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [sitemap]
   changefreq = 'monthly'
@@ -28,7 +39,7 @@ enableGitInfo = true
 [module]
   [module.hugoVersion]
     extended = false
-    min      = "0.115.1"
+    min      = "0.116.1"
   [[module.mounts]]
     source = "assets"
     target = "assets"

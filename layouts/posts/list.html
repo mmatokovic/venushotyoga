@@ -29,7 +29,7 @@
         {{- $number = add $number 1 -}}
         <div id="post" class="p-4 md:w-1/3" data-tags="{{.Params.Tags}}" {{ if gt $number .Site.Params.indexarticles }}class=""{{ end }}>
           <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-            {{ with resources.Get .Params.image }}
+            {{ with resources.Get .Params.featured_image }}
             {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
             {{ if $image }}
             <picture>

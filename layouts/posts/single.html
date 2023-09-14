@@ -20,7 +20,7 @@
         </span>
       </div>
       <div class="rounded-lg h-100 overflow-hidden">
-        {{ with resources.Get .Params.image }}
+        {{ with resources.Get .Params.featured_image }}
         <img class="object-cover object-center h-full w-full" src="{{ .RelPermalink }}" alt="For Good Eyes Only">
         {{ end }}  
       </div>

@@ -1,9 +1,14 @@
 ---
 title: Jutarnji ritual za bistri mozak
-tags: [ Lifestyle, Strength, Philosophy]
+description: I am description of blog post structure data
 date: 2023-01-19T22:51:04.438Z
 author: Vjerna Nevistić
-image: images/alarm-clock-2116007_1280.jpg
+featured_image: images/alarm-clock-2116007_1280.jpg
+images:
+  - images/disanje-768x1581.jpg
+  - images/cucanj.jpg
+tags: [Lifestyle, Strength, Philosophy]
+keywords: [Lifestyle, Strength, Philosophy]
 ---
 Bilo da ste ranoranilac ili noćna sova ovaj kratki ritual nakon buđenja pomoći će vam da postignete maksimalnu bistrinu i efikasnost u vrlo kratkom vremenu.
 

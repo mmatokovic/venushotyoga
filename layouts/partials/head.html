@@ -4,19 +4,21 @@
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+{{ $author :=  or (.Params.author) (.Site.Author.name) }}
 <head>
   <!--Add the Netlify Identity Widget-->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ partial "site_schema.html" . }}
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta charset="utf-8" />
   {{ hugo.Generator }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
-  <meta name="author" content="mmatokovic"/>
+  <meta name="author" content="{{ $author }}"/>
   <meta name="theme-color" content="#ffffff"/>
   {{ if isset .Params "tags" }}
-    <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}" />
+    <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ end }}" />
   {{ end -}}
   {{- template "_internal/twitter_cards.html" . }}
   {{- template "_internal/opengraph.html" . }}

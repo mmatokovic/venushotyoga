@@ -1,13 +1,24 @@
 ---
 title: Zašto nam trebaju yoga vikendi
-date: 2023-08-19T22:48:55.533Z
-image: images/Padangustasana.jpg
+description: I am description of blog post structure data
 author: Vjerna Nevistić
+date: 2023-08-19T22:48:55.533Z
+featured_image: images/Padangustasana.jpg
+images:
+  - images/Padangustasana.jpg
+  - images/Vrksasana.jpg
+  - images/bruno.jpg
+  - images/Nikky.jpg
 tags:
-  - yoga
-  - Trčanje
-  - vježbanje
-  - popularnost
+  - "yoga"
+  - "Trčanje"
+  - "vježbanje"
+  - "popularnost"
+keywords:
+  - "yoga"
+  - "Trčanje"
+  - "vježbanje"
+  - "popularnost"
 ---
 
 ZAŠTO NAM TREBAJU YOGA VIKENDI?

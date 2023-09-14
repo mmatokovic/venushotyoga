@@ -1,13 +1,21 @@
 ---
 title: Što nas čini starijima?
-date: 2023-01-19T22:49:44.699Z
+description: I am description of blog post structure data
 author: Vjerna Nevistić
+date: 2023-01-19T22:49:44.699Z
+featured_image: images/zasto-izgledamo-starije.jpg
+images:
+  - images/Padangustasana.jpg
 tags:
   - starije
   - mladost
   - tijelo
   - vježbanje
-image: images/zasto-izgledamo-starije.jpg
+keywords:
+  - starije
+  - mladost
+  - tijelo
+  - vježbanje
 ---
 Zašto izgledamo starije nego što zaista jesmo!?  
 Postoji par razloga zbog kojih nas drugi pa I mi sebe sami percipiramo starijima ili mlađima od naše kronološke dobi, a ukoliko ih uspijemo kontrolirati i ispraviti ”vječna mladost” je zagarantirana. 

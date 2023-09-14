@@ -1,9 +1,21 @@
 ---
 title: Kako yogom pobijediti zimsku depresiju?
-date: 2023-01-19
+description: I am description of blog post structure data
 author: Vjerna Nevistić
-image: images/featured.jpg
+date: 2023-01-19
+featured_image: images/featured.jpg
+images:
+  - images/zimska1.jpg
+  - images/delfin.png
+  - images/zimska4.jpg
+  - images/zimska5.jpg
 tags:
+  - Yoga
+  - Trening
+  - energija
+  - vježbanja
+  - depresija
+keywords:
   - Yoga
   - Trening
   - energija

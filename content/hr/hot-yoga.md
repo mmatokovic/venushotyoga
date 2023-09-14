@@ -53,11 +53,15 @@ raspored:
         opis: u studiu
 ---
 
+{{<schedule>}}
+
 HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima.
 
 Hatha yoga je statičan sustav vježbanja asana (yoga pozicija) kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice. Pojedini satovi su dinamičniji stilovi yoge koji se takođe mogu vježbati na toplini, no uvijek se rade kratke stanke u kojima se vježbači odmore i popiju vode. Mnogima ovi uvjeti treniranja zvuče naporno – kamoli da se uz to još i vježba – ali tko se jednom navikne, može računati na niz benefita koji nas čine fokusiranijima, snažnijima, zdravijima i – sretnijima. Ukoliko mislite da vježbanje na toplini nije za vas dajte si 3 do 5 sati i naviknut ćete se na nju. Dugogodišnji vježbači traže i grijalicu više. Tijekom vježbanja, bilo kada možete se leći i odmoriti pa dopustiti toplini da opusti vaše tijelo i um kao u sauni
 
-Koje su dobrobiti hot yoge?
+[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
+
+## Koje su dobrobiti hot yoge?
 
 Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna.
 
@@ -79,7 +83,11 @@ Osim razvijanja snage, fleksibilnosti i mentalne koncentracije, yoga poze pomaž
 
 Takođe pomažu postizanju idealne tjelesne težine i oblikuju tijelo, na jednom treningu prosječno se potroši 350 do 600 kcal ovisno o tjelesnoj građi i koliko se trudite. Kako yoga djeluje i na centre koji reguliraju apetit, probavu, san I ostale faktore koji igraju važnu ulogu za postizanje zdravog tijela s idealnom masom redovito vježbanje vam garantira lijep izgled bez muke.
 
-Za koga hot yoga nije primjerena:
+|  | |
+|---------|---------|
+| ![Eka-pada-Bakasana-II](/images/Eka-pada-Bakasana-II.jpg "Eka pada Bakasana II") | ![studio-13](/images/studio-13.jpg "studio-13") |
+
+## Za koga hot yoga nije primjerena:
 
 Za trudnice koje do sada nisu vježbale na toplini. Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konzultirati
 
@@ -87,9 +95,7 @@ svog liječnika prije početka vježbanja a preporučamo im yogu bez povišene t
 
 U studiju imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
 
-{{<schedule>}}
-
-## Online Live Yoga
+<!-- ## Online Live Yoga
 
 Satovima se mogu priključiti svi osim apsolutnih početnika u yogi. Istima se preporučuje vježbanje uživo u studiju.
 Prakticiranje yoge uvijek je najbolje i najefektnije u studiju s učiteljem. No, ponekad smo lijeni izaći iz svoje zone komfora, pa zašto onda ne pokušati s online satovima? U svakom trenutku možete nam se, nakon nekog vremena, pridružiti u studiju - našoj maloj oazi mira i sreće :)
@@ -101,7 +107,7 @@ Upute za ONLINE prijavu:
 
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
-* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova.
+* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
 
 ## BON TON
 
@@ -114,8 +120,9 @@ Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strplj
 * Razgovarajte sa svojim učiteljem prije nastave o svim ozljedama ili stanjima koja imate.
 * Dođite na predavanje dobro hidrirani i izbjegavajte velike obroke dva sata prije vježbanja.
 
+![Anantasana-3](/images/Anantasana-3.jpg "Anantasana")
 
-### Pogodnosti 
+## Pogodnosti 
 
 * Iznajmljivanje prostirki za jogu i ručnika
 * Kombucha i voda u kutiji za kupovinu.

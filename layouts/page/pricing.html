@@ -1,80 +1,104 @@
 {{ define "main" }}
 <main class=" max-w-6xl px-5 py-5 mx-auto my-8 font-nunito">
-    <div class="mw-auto text-center border-b-4 border-yellow-300 mb-4">
-        <h2 class="text-3xl font-bold sm:text-4xl">
-            {{ .Title }}
-        </h2>
-    </div>
-  <article class="prose max-w-none prose-h2:text-pink-400 prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover">
+	<div class="mw-auto text-center border-b-4 border-yellow-300 mb-4">
+		<h2 class="text-3xl font-bold sm:text-4xl">
+			{{ .Title }}
+		</h2>
+	</div>
+  <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-contain prose-td:{utility} prose-ol:px-9 text-xl">
     {{ .Content }}
   </article>
-  <div class="flex flex-col md:flex-row">
-    <section class="w-full md:w-1/2">
-      <div class="text-center border-b-4 border-yellow-300 mb-4">
-        <h2 class="text-3xl font-bold sm:text-4xl">Cijenik Yoge</h2>
-      </div>
-      {{ $prices := .Params.prices }}
-      <table class="min-w-full bg-white">
-        <thead>
-          <tr>
-            <th class="py-3 px-6 text-left">Usluga</th>
-            <th class="py-3 px-6 text-left">Cijena</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range $i, $price := $prices }}
-          <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-            <td class="py-4 px-6">{{ $price.service }}</td>
-            <td class="py-4 px-6">{{ $price.price }}</td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-    </section>
-   </div>
-   {{ $services := .Params.services }}
-	<div class="mw-auto text-center border-b-4 border-yellow-300 mb-4">
-		<h2 class="text-3xl font-bold sm:text-4xl">Cijenik</h2>
-	</div>
-	<div class="flex flex-col md:flex-row">
-		<div class="w-full md:w-1/2 border-r-4 border-yellow-300 mb-4">
-			<table class="min-w-full bg-white">
-				<caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
-				<thead>
-					<tr>
-						<th class="py-3 px-6 text-left">Usluga</th>
-						<th class="py-3 px-6 text-left">Cijena</th>
-					</tr>
-				</thead>
-				<tbody>
-					{{ range $i, $p := (index $services 0).prices }}
-					<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-						<td class="py-4 px-6">{{ $p.service }}</td>
-						<td class="py-4 px-6">{{ $p.price }}</td>
-					</tr>
-					{{ end }}
-				</tbody>
-			</table>
+	<section>
+		<div class="mw-auto text-center border-b-4 border-yellow-300 mb-4">
+			<h2 class="text-3xl font-bold sm:text-4xl">Hot Yoga</h2>
 		</div>
-		<div class="w-full md:w-1/2">
-			<table class="min-w-full bg-white">
-				<caption class="py-3 px-6 font-bold">LPG Cellu</caption>
-				<thead>
-					<tr>
-						<th class="py-3 px-6 text-left">Usluga</th>
-						<th class="py-3 px-6 text-left">Cijena</th>
-					</tr>
-				</thead>
-				<tbody>
-					{{ range $i, $p := (index $services 1).prices }}
-					<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-						<td class="py-4 px-6">{{ $p.service }}</td>
-						<td class="py-4 px-6">{{ $p.price }}</td>
-					</tr>
-					{{ end }}
-				</tbody>
-			</table>
+		{{ $hotyoga := .Params.hotyoga }}
+		<div class="flex flex-col md:flex-row">
+			<div class="w-full md:w-1/2 border-r-4 border-yellow-300 mb-4">
+				<table class="min-w-full bg-white">
+					<caption class="py-3 px-6 font-bold">Trening</caption>
+					<thead>
+						<tr>
+							<th class="py-3 px-6 text-left">Usluga</th>
+							<th class="py-3 px-6 text-left">Cijena</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{ range $i, $p := (index $hotyoga 0).prices }}
+						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
+							<td class="py-4 px-6">{{ $p.service }}</td>
+							<td class="py-4 px-6">{{ $p.price }}</td>
+						</tr>
+						{{ end }}
+					</tbody>
+				</table>
+			</div>
+			<div class="w-full md:w-1/2">
+				<table class="min-w-full bg-white">
+					<caption class="py-3 px-6 font-bold">Dodatne Usluge</caption>
+					<thead>
+						<tr>
+							<th class="py-3 px-6 text-left">Usluga</th>
+							<th class="py-3 px-6 text-left">Cijena</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{ range $i, $p := (index $hotyoga 1).prices }}
+						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
+							<td class="py-4 px-6">{{ $p.service }}</td>
+							<td class="py-4 px-6">{{ $p.price }}</td>
+						</tr>
+						{{ end }}
+					</tbody>
+				</table>
+			</div>
 		</div>
-	</div>
+	</section>
+	<section>
+		<div class="mw-auto text-center border-b-4 border-yellow-300 mb-4">
+			<h2 class="text-3xl font-bold sm:text-4xl">Pomlađivanje</h2>
+		</div>
+		{{ $rejuvenation := .Params.rejuvenation }}
+		<div class="flex flex-col md:flex-row">
+			<div class="w-full md:w-1/2 border-r-4 border-yellow-300 mb-4">
+				<table class="min-w-full bg-white">
+					<caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
+					<thead>
+						<tr>
+							<th class="py-3 px-6 text-left">Usluga</th>
+							<th class="py-3 px-6 text-left">Cijena</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{ range $i, $p := (index $rejuvenation 0).prices }}
+						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
+							<td class="py-4 px-6">{{ $p.service }}</td>
+							<td class="py-4 px-6">{{ $p.price }}</td>
+						</tr>
+						{{ end }}
+					</tbody>
+				</table>
+			</div>
+			<div class="w-full md:w-1/2">
+				<table class="min-w-full bg-white">
+					<caption class="py-3 px-6 font-bold">LPG Cellu</caption>
+					<thead>
+						<tr>
+							<th class="py-3 px-6 text-left">Usluga</th>
+							<th class="py-3 px-6 text-left">Cijena</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{ range $i, $p := (index $rejuvenation 1).prices }}
+						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
+							<td class="py-4 px-6">{{ $p.service }}</td>
+							<td class="py-4 px-6">{{ $p.price }}</td>
+						</tr>
+						{{ end }}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
 </main>
 {{ end }}
