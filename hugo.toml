@@ -1,0 +1,55 @@
+baseURL = 'https://venushotyoga.netlify.app'
+languageCode = 'hr'
+title = 'Venus Hot Yoga'
+defaultContentLanguage = 'hr'
+
+enableEmoji = true
+enableRobotsTXT = true
+enableGitInfo = true
+
+[languages]
+  [languages.en]
+    languageName = 'En'
+    contentDir = 'content/en'
+    weight = 2
+  [languages.hr]
+    languageName = 'Hr'
+    contentDir = 'content/hr'
+    weight = 1
+
+[params]
+  dateFormat = "02. 01. 2006."
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min      = "0.115.1"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/watching/hugo_stats.json"
+  [[module.mounts]]
+    source = 'static/images'
+    target = 'assets/images'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/watching/hugo_stats\\.json"
+    target = "styles\\.css"
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js|ts|jsx|tsx)"
+    target = "js"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"

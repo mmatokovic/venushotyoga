@@ -1,0 +1,80 @@
+[menu_name]
+  other = 'Izbornik'
+    
+[menu_call_to_action]
+  other = 'Javite nam se :)'
+
+[home_hero_title]
+  other = 'Dizajnirajte, gradite i upravljajte imovinom bolje'
+
+[home_how_to]
+  other = 'Kako se pripremiti'
+
+[home_what_to_wear]
+  other = 'Što obuči'
+
+[home_what_to_wear_text]
+  other = 'Soba je vruća, većina ljudi je udobna u minimalnoj odjeći koja se lako rasteže kada je mokra: za muškarce, kratke hlače s podstavom, za žene, kratke hlače ili tajice sa sportskom grudnom ili tenkovskom navlakom. Materijali koji upijaju vlagu obično su ugodniji od pamuka.'
+
+[home_what_you_need]
+  other = 'Što ponjeti'
+
+[home_what_you_need_text]
+  other = 'Prostirač za jogu, veliki ručnik i boca za vodu za klasu. Ovi artikli su također dostupni u studiju za najam ili kupnju. Možda ćete htjeti donijeti dodatni ručnik i zamjenu odjeće za tuš nakon sata.'
+
+[home_when_to_arrive]
+  other = 'Kada doći'
+
+[home_when_to_arrive_text]
+  other = 'Studio se otvara 30 minuta prije početka nastave. Ostavite dovoljno vremena da se pripremite za tečaj i imate nekoliko minuta za mirno sjedenje ili ležanje u studiju prije početka nastave.'
+
+[home_what_to_do_in_advance]
+  other = 'Što učiniti unaprijed'
+
+[home_what_to_do_in_advance_text]
+  other = 'Dođite u razred hidratizirano i s praznim želucem. Ako trebate jesti 1-2 sata prije nastave, odaberite laganu hranu.'
+
+[contact]
+  other = 'Kontaktirajte nas'
+
+[contact_question]
+  other = 'Imate li pitanja o Hot Yogi?'
+
+[contact_information]
+  other = 'Ovdje smo da Vam pomognemo!'
+
+[contact_name]
+  other = 'Ime'
+
+[contact_address]
+  other = 'Adresa'
+
+[contact_email]
+  other = 'Email'
+
+[contact_phone]
+  other = 'Mobitel'
+
+[contact_message]
+  other = 'Poruka'
+
+[contact_enquiry]
+  other = 'Pošalji'
+  
+[contact_location]
+  other = '1. kat u prolazu'
+
+[contact_parking]
+  other = 'Mjesto za parkiranje 🙂:'
+
+[about]
+  other = 'O nama'
+
+[rights]
+  other = 'Sva prava pridržana'
+
+[404_cantfind]
+  other = 'Ne možemo pronaći tu stranicu.'
+
+[404_home]
+  other = 'Natrag na Početnu'

@@ -1,0 +1,25 @@
+{{- $image := resources.Get .Destination -}}
+
+{{- if $image -}}
+  <picture>
+    {{- $webpImage := $image.Resize (printf "%dx%d webp q100"  1080 720 ) }}
+    {{- $jpgImage := $image.Resize (printf "%dx%d jpg q100"  1080 720 ) }}
+    
+    <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+    <source srcset="{{ $jpgImage.RelPermalink }}" type="image/jpeg">
+    
+    <img 
+    src="{{ $jpgImage.RelPermalink }}" loading="lazy" decoding="async"
+      {{ with .Text}} alt="{{ . }}" {{ else }} alt="{{ .Page.Title }}" {{ end }}
+      {{ with .Title}} title="{{ . }}"{{ end }}
+    />
+  </picture>
+{{- else -}}
+  <img 
+    src="{{ .Destination | safeURL }}" 
+    loading="lazy"
+    decoding="async"
+    {{ with .Text}} alt="{{ . }}" {{ else }} alt="{{ .Page.Title }}" {{ end }}
+    {{ with .Title}} title="{{ . }}"{{ end }} 
+  /> 
+{{- end -}}

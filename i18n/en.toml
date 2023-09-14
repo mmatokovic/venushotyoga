@@ -1,0 +1,129 @@
+[menu_name]
+  other = 'Menu'
+  
+[menu_call_to_action]
+  other = 'Call Us :)'
+
+[home_hero_title]
+  other = 'Design, Build and operate assets better'
+
+[home_how_to]
+  other = 'How to prepare'
+
+[home_what_to_wear]
+  other = 'What to Wear'
+
+[home_what_to_wear_text]
+  other = 'The room is hot, most people are comfortable in minimal clothing that stretches easily when wet: for men, shorts with a liner, for women, shorts or leggings with a sports bra or tank top. Materials that wick moisture tend to be more comfortable than cotton.'
+
+[home_what_you_need]
+  other = "What you’ll need"
+
+[home_what_you_need_text]
+  other = 'A yoga mat, a large towel and a water bottle for class. These items are also available at the studio for rental or purchase. You may want to bring an extra towel and change of clothes for a shower after class.'
+
+[home_when_to_arrive]
+  other = 'When to Arrive'
+
+[home_when_to_arrive_text]
+  other = 'The studio opens 30 minutes before class starts. Please allow enough time to get ready for class and have a few minutes to sit or lie quietly in the studio before class begins.'
+
+[home_what_to_do_in_advance]
+  other = 'What to do in Advance'
+
+[home_what_to_do_in_advance_text]
+  other = 'Come to class hydrated and with an empty stomach. If you do need to eat 1-2  hours before class, choose light foods.'
+
+
+[about_hero_title]
+  other = 'We Build and create'
+
+[trust]
+  other = 'Trusted by companies'
+
+[contact]
+  other = 'Contact us'
+
+[contact_question]
+  other = 'Do you have any questions about hot Yogi?'
+
+[contact_information]
+  other = "We're here to help you!"
+
+[contact_name]
+  other = 'Name'
+
+[contact_address]
+  other = 'Address'
+
+[contact_email]
+  other = 'Email'
+
+[contact_phone]
+  other = 'Mobile'
+
+[contact_message]
+  other = 'Message'
+
+[contact_enquiry]
+  other = 'Send'
+
+[contact_location]
+  other = '1.st floor in a passage'
+
+[contact_parking]
+  other = 'Parking info:'
+
+[about]
+  other = 'About Us'
+
+[about_text]
+  other = """
+  Tvrtka se od 1990. bavim raznim građevinskim radovima, od tuženja do završnih radova. Imamo tim sa višegodišnjim iskustvom što osigurava sigurnu izradu vaših zahtjeva. Sa sjedištem smo u Zagrebu, trudimo da djelujemo u i ostalim djelovima Hrvatske što iznimno pozitivno utiče na naš napredak kao i uspjeh. Tvrtka se u osnovi bavi gradjevinskim radovima, zidarskim radovima - rohbau, suhom gradjom, kao i završnim radovima, podnim, zidnim oblogama.
+  U tvrtki imamo tim stučnjaka, koji se bave građevinskim nadzorom i vođenjem projekta. Koristimo novu, modernu i suvremenu mehanizaciju, tehnologiju. Trudimo se da ispunimo sve vaše zahtjeve, te da na taj načim izmamio zadovoljstvo koje nam je iznimno važno. Uvjerite se samo u našu brzinu, odgovornost i kvalitet, kontaktirajte nas.
+  """
+
+[real_estate]
+  other = 'Nekretnine'
+
+[real_estate_text]
+  other = 'Ako tražite novi dom, obratite nam se s povjerenjem jer je svaki naš projekt potpuno prilagođen potrebama života u 21. stoljeću. To prije svega znači da, osim pouzdanosti, kvaliteti izvedbe i opremanju prostora, maksimalnu pozornost posvećujemo i izboru mikro-lokacije. To podrazumijeva blizinu svih potrebnih institucija poput škola, domova zdravlja, rekreativnih i zabavnih sadržaja, ali isto tako i snažan doticaj s prirodom.'
+
+[services]
+  other = 'Services'
+
+[references]
+  other = 'References'
+
+[service_oversight]
+  other = 'nadzorni inženjer'
+
+[service_oversight_text]
+  other = 'Građevinski nadzor pri gradnji, nadzor građevinske konstrukcije, smanjenje troškova gradnje, pregled ugrađenih materijala, nadzor izvođača u gradnji.'
+
+[service_excavation]
+  other = 'iskopi, mini bager'
+
+[service_excavation_text]
+  other = 'Iskop građevinske jame, iskop za kanalizaciju, drenaža, konsolidiranje teren.'
+
+[service_construction]
+  other = 'građevinski radovi'
+
+[service_construction_text]
+  other = 'Renovacija okoliša, novogradnja kuće, podpora za zid, rušenje zida, betonske stepenice, betonski podrum, betonska ploča, hidroizolacija balkona, pouzdani zidarski radovi, izvođač gradnje.'
+
+[service_new_construction]
+  other = 'novogradnja'
+
+[service_new_construction_text]
+  other = 'Nova kuća, nadgradnja, individualna kuća, dvojna kuća, apartmani, povoljna klasična kuća od opeke, izvođač gradnje.'
+
+[rights]
+  other = 'all rights reserved'
+
+[404_cantfind]
+  other = "We can't find that page."
+
+[404_home]
+  other = 'Go Back Home'

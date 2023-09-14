@@ -1,0 +1,33 @@
+const typography = require('@tailwindcss/typography');
+
+module.exports = {
+	content: ['./hugo_stats.json'],
+	plugins: [typography],
+	theme: {
+		fontFamily: {
+			'quicksand': ['Quicksand', 'sans-serif'],
+			'nunito': ['Nunito', 'sans-serif']
+		},
+		extend: {
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				'beige': '#f5f5dc',
+				'almond': '#eed9c4',
+				'bisque': '#ffe4c4',
+				'buff': '#daa06d',
+				'camel': '#c19a6b',
+				'cosmic-latte': '#fffde7',
+				'daesert-sand': '#edc9af',
+				'hazelnut': '#cfb095',
+				'ecru': '#c2b280',
+				'french-beige': '#a67b5b',
+				'khaki': '#c3bo91',
+				'tuscan': '#fad6a5',
+			},
+			backgroundImage: {
+				'home-featured': "url('/images/gallery035.jpg')",
+			}
+		}
+	}
+};

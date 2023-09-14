@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="flex flex-col h-screen bg-white">
+    <header>
+        <h1>{{.Title}}</h1>
+    </header>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    {{.Content}}
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Data.Pages }}
+        <article class="post-snippet">
+            <h3>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+        </article>
+    {{ end }}
+</div>
+{{ end }}

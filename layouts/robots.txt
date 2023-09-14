@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /admin/
+{{ range .Pages }}
+allow: {{ .RelPermalink }}
+{{ end }}
+Sitemap: {{ "/sitemap.xml" | absURL }}

@@ -1,0 +1,107 @@
+<div class="overflow-x-auto">
+  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+    <caption class="text-gray-600 text-3xl font-bold sm:text-4xl mb-2">
+      Raspored
+    </caption>
+    <thead class="ltr:text-left rtl:text-right">
+      <tr class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        <th>
+          Time
+        </th>
+        <th>
+          Ponedeljak
+        </th>
+        <th>
+          Utorak
+        </th>
+        <th>
+          Srijeda
+        </th>
+        <th>
+          Četvrtak
+        </th>
+        <th>
+          Petak
+        </th>
+        <th>
+          Subota
+        </th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      {{ range $i, $p := .Page.Params.raspored }}
+      <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+          {{ .startTime }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700 ">
+          {{ range .termin }}
+            {{ if eq .dan "Ponedeljak" }}
+            <div class="bg-amber-200 text-center">
+              {{ .usluga }}<br>
+              {{ .startTime}} - {{ .endTime }}<br>
+              {{ .opis }}
+            </div>
+            {{ end }}
+          {{ end }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          {{ range .termin }}
+          {{ if eq .dan "Utorak" }}
+          <div class="bg-amber-200 text-center">
+            {{ .usluga }}<br>
+            {{ .startTime}} - {{ .endTime }}<br>
+            {{ .opis }}
+          </div>
+          {{ end }}
+        {{ end }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          {{ range .termin }}
+          {{ if eq .dan "Srijeda" }}
+          <div class="bg-amber-200 text-center">
+            {{ .usluga }}<br>
+            {{ .startTime}} - {{ .endTime }}<br>
+            {{ .opis }}
+          </div>
+          {{ end }}
+        {{ end }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          {{ range .termin }}
+          {{ if eq .dan "Četvrtak" }}
+          <div class="bg-amber-200 text-center">
+            {{ .usluga }}<br>
+            {{ .startTime}} - {{ .endTime }}<br>
+            {{ .opis }}
+          </div>
+          {{ end }}
+        {{ end }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          {{ range .termin }}
+          {{ if eq .dan "Petak" }}
+          <div class="bg-amber-200 text-center">
+            {{ .usluga }}<br>
+            {{ .startTime}} - {{ .endTime }}<br>
+            {{ .opis }}
+          </div>
+          {{ end }}
+        {{ end }}
+        </td>
+        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+          {{ range .termin }}
+          {{ if eq .dan "Subota" }}
+          <div class="bg-amber-200 text-center">
+            {{ .usluga }}<br>
+            {{ .startTime}} - {{ .endTime }}<br>
+            {{ .opis }}
+          </div>
+          {{ end }}
+        {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
