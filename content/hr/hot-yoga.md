@@ -87,7 +87,7 @@ Takođe pomažu postizanju idealne tjelesne težine i oblikuju tijelo, na jednom
 |---------|---------|
 | ![Eka-pada-Bakasana-II](/images/Eka-pada-Bakasana-II.jpg "Eka pada Bakasana II") | ![studio-13](/images/studio-13.jpg "studio-13") |
 
-## Za koga hot yoga nije primjerena:
+## Za koga hot yoga nije primjerena
 
 Za trudnice koje do sada nisu vježbale na toplini. Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konzultirati
 
@@ -95,11 +95,14 @@ svog liječnika prije početka vježbanja a preporučamo im yogu bez povišene t
 
 U studiju imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
 
-<!-- ## Online Live Yoga
+### Zašto hot yoga?
+
+'Hot yoga treninzi intenzivni su i razvijaju snagu, izdržljivost, fleksibilnost i ravnotežu. Satovi su prikladni za sve, od potpunih početnika do naprednih vježbača yoge i sportaša. U hot yogi nema boli već je dovoljno napraviti samo mali dio yoga pozicije pravilno i već se mogu osjetiti sve dobrobiti. Ako nekome i ne odgovara toplina i vlažnost, na te specifične uvjete vježbanja naviknu se nakon od 2 do 5 puta, a prilikom vježbanja uvijek se u dvorani može leći i odmoriti'', kaže. 'Hot yoga klasičnoj yogi dodaje još neke dobrobiti poput detoksikacije jer se intenzivnim znojenjem tijelo čisti od toksina, smanjuje se otečenost tijela, a koža postaje čista i sjajna. Uz detoksikaciju dobrobit hot yoge je i ta da je tijelo na toplini fleksibilnije te se lakše izvode yoga pozicije, a mogućnost povreda svedena je na minimum'', objašnjava.''Hot yogu teško je vježbati kod kuće upravo zbog uvjeta topline i vlažnosti koji su postignuti u studiju. Također su u dvorani pročišćivači zraka tako da nikad nije zagušljivo, a polaznici se intenzivno znoje što ih rashlađuje. Kod kuće posebno treba pripaziti na pravilno zagrijavanje tijela prije vježbanja', Hot yoga odlična je za sve koji žele smršavjeti jer su treninzi intenzivni i na jednom se potroši od 500 do 1000 kalorija.
+
+## Online Live Yoga
 
 Satovima se mogu priključiti svi osim apsolutnih početnika u yogi. Istima se preporučuje vježbanje uživo u studiju.
 Prakticiranje yoge uvijek je najbolje i najefektnije u studiju s učiteljem. No, ponekad smo lijeni izaći iz svoje zone komfora, pa zašto onda ne pokušati s online satovima? U svakom trenutku možete nam se, nakon nekog vremena, pridružiti u studiju - našoj maloj oazi mira i sreće :)
-
 
 Upute za ONLINE prijavu:
 
@@ -107,7 +110,7 @@ Upute za ONLINE prijavu:
 
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
-* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
+* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova.
 
 ## BON TON
 
@@ -122,8 +125,3 @@ Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strplj
 
 ![Anantasana-3](/images/Anantasana-3.jpg "Anantasana")
 
-## Pogodnosti 
-
-* Iznajmljivanje prostirki za jogu i ručnika
-* Kombucha i voda u kutiji za kupovinu.
-* Tuševi i svlačionice dostupni su svim studentima

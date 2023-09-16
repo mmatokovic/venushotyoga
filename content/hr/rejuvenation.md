@@ -21,7 +21,6 @@ Tada sam imala skoro 36 godina i mogu reći da sam se veselila eksperimentu kako
 
 I danas redovito održavam tijelo tretmanima na aparatu, kao prvo jer su silno ugodni, dubinski masiraju tijelo, a uz to imam i potpuni estetski efekt. Od 35 godine počela sam raditi i tretmane lica na Lpgu jer izvanredno održavaju tonus lica, rješavaju bore i nepravilnosti koje dobivamo starenjem i mimikom lica, s njima izgledam kao ja samo koju godinu mlađe.
 
-
 ## Anticelulitni tretmani za mršavljenje
 
 Aparatom Lpg Cellu M6 Integral S uspješno se rješava problem celulita, otečenosti, opuštene kože nakon dijete ili poroda te je moguće smanjiti masne naslage na kritičnim dijelovima tijela kao struk, bedra, bokovi jastučići na koljenima ili unutarnjoj strani noge. Cijelo tijelo se preoblikuje i rješavamo probleme koje ni vježbanjem niti dijetom ne možemo dohvatiti.Tretman traje 45 minuta, a tretira se cijelo tijelo, jer je celulit rješiv jedino ako se pokrene limfni sustav, cirkulacija i probava. Poseban naglasak daje se na kritične dijelove tijela u kojima je za npr 10 tretmana moguće izgubiti; u struku do 10 cm, u bedrima 5 cm, stražnjici 8- 10cm, koljena 3 do 5 cm, nadlaktice do 3 cm – rezultati su takvi u 95% tretiranih klijentica I klijenata. Tretmani su pogodni i za muškarce koji se najčešće odlučuju na smanjenje obujma struka .
@@ -51,8 +50,8 @@ Puni tretman lica traje 30 minuta, a isto tako je moguće odabrati kratki tretma
 
 Princip tretmana na aparatima LPG je svojevrstan ”lifestyle” kao što redovito vježbamo tako su i tretmani za lice vježba koja održava lice mladim i svježim. Za najbolje i trajnije rezultate potrebno je 10-30 tretmana na početku ovisno o godinama i problemu. Između paketa nije potrebno raditi pauzu, mogu se provoditi češće (2-3x tjedno) ili rijeđe (2-4x mjesečno) ovisno o tome kako želite. Općenito se češće dolazi dok ne postignemo željeni rezultat, te ga zatim održavamo rijeđim dolascima, te ukoliko želimo još bolji rezultat ponovo dolazimo u ritmu 2-3x tjedno.
 
-## Danijel Deni Jeremić
+### ​Pomlađivanje tijela i lica? Zvuči kao znanstvena fantastika!
 
-Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
+​'Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.'
 
-![Danijel](/images/Danijel.jpg "Danijel")
+![studio-2](/images/studio-2.jpg "studio-2")

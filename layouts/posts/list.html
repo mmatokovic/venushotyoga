@@ -62,5 +62,5 @@
 {{ $scripts := resources.Get "scripts/search.ts" }}
 {{ $options := dict "minify" true }}
 {{ $js := $scripts | js.Build $options }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer data-turbolinks-suppress-warning></script>
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{ end }}

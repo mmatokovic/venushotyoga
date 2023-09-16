@@ -9,7 +9,8 @@ menu: main
 weight: 1
 ---
 
-## O Strudiju
+## O Studiju
+
 Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
 Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
 
@@ -17,9 +18,13 @@ Vlasnica Venus Hot Yoga studija je Vjerna Nevistić. Vjerna je završila Kinezio
 
 Venus hot yoga studio u Zagrebu otvoren je od 2010 godine.
 
+### Pogodnosti
 
+* Iznajmljivanje prostirki za jogu i ručnika
+* Kombucha i voda u kutiji za kupovinu.
+* Tuševi i svlačionice dostupni su svim studentima
 
-## Vjerna Nevistić 
+## Vjerna Nevistić
 
 Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem osnove kineziološke transformacije (promjene putem pokreta), te upisuje doktorat s temom yoge na Kineziološkom fakuletetu. Yogu je počela vježbati sa 14. godina kao dodatak plesnim treninzima koje je pohađala u Školi za ritmiku i ples Ane Maletić (završila je školu sa zvanjem plesnog pedagoga). Davne 1992 na Kineziološkom fakuletu se i formalno predavala yoga pod vodstvom tadašnjih pionira yoge i transformacije putem pokreta prof.dr. Dušana Metikoša i prof. Miškovića u Hrvatskoj. Vjerna već niz godina predaje osnove yoge studentima na Kineziološkom fakultetu u Zagrebu.
 
@@ -37,9 +42,9 @@ U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 
 -sa sportašima koji su yogu izabrali kao dodatnu aktivnost najčešće za povećanje fleksibilnosti, ravnoteže koordinacije i bolje funkcije disanja te relaksacije, npr hokejaši, trkači i trkačice, plivači mlađih kategorija, borilački sportovi kick boksing i boks, ronioci...
 
-- sa ljudima koji dolaze zbog bolova u leđima, kukovima, kojenima, nesanice,aritmije, lagane depresije, pretilosti i još mnogo drugih problema te ih kroz redovito prakticiranje asana i pranayama rješavaju
+* sa ljudima koji dolaze zbog bolova u leđima, kukovima, kojenima, nesanice,aritmije, lagane depresije, pretilosti i još mnogo drugih problema te ih kroz redovito prakticiranje asana i pranayama rješavaju
 
-- djecom, studentima, starijim dobnim skupinama, rekreativcima
+* djecom, studentima, starijim dobnim skupinama, rekreativcima
 
 |  | |
 |---------|---------|
@@ -51,17 +56,18 @@ Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi
 
 Za individualni sat s Vjernom možete se prijaviti na br tel: 095 576 3818
 
-### Zašto hot yoga?
-
-'Hot yoga treninzi intenzivni su i razvijaju snagu, izdržljivost, fleksibilnost i ravnotežu. Satovi su prikladni za sve, od potpunih početnika do naprednih vježbača yoge i sportaša. U hot yogi nema boli već je dovoljno napraviti samo mali dio yoga pozicije pravilno i već se mogu osjetiti sve dobrobiti. Ako nekome i ne odgovara toplina i vlažnost, na te specifične uvjete vježbanja naviknu se nakon od 2 do 5 puta, a prilikom vježbanja uvijek se u dvorani može leći i odmoriti'', kaže. 'Hot yoga klasičnoj yogi dodaje još neke dobrobiti poput detoksikacije jer se intenzivnim znojenjem tijelo čisti od toksina, smanjuje se otečenost tijela, a koža postaje čista i sjajna. Uz detoksikaciju dobrobit hot yoge je i ta da je tijelo na toplini fleksibilnije te se lakše izvode yoga pozicije, a mogućnost povreda svedena je na minimum'', objašnjava.''Hot yogu teško je vježbati kod kuće upravo zbog uvjeta topline i vlažnosti koji su postignuti u studiju. Također su u dvorani pročišćivači zraka tako da nikad nije zagušljivo, a polaznici se intenzivno znoje što ih rashlađuje. Kod kuće posebno treba pripaziti na pravilno zagrijavanje tijela prije vježbanja', Hot yoga odlična je za sve koji žele smršavjeti jer su treninzi intenzivni i na jednom se potroši od 500 do 1000 kalorija.
-
-
 |  | |
 |---------|---------|
 | ![studio-7](/images/studio-7.jpg "studio-7") | ![studio-12](/images/studio-12.jpg "studio-12") |
 
-### ​Pomlađivanje tijela i lica? Zvuči kao znanstvena fantastika!
+## Danijel Deni Jeremić
 
-​'Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.'
+Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
 
-![studio-2](/images/studio-2.jpg "studio-2")
+![Danijel](/images/Danijel.jpg "Danijel")
+
+## Ana Pojatina
+
+Ana prakticira yogu više od 20 godina. Temelje yoge upoznala je u sustavu Joge u svakodnevnom životu, a zatim je nakon nekog vremena pohađala radionice i seminare Iyengar yoge te one u tradiciji T. Krishnamacharye. Učila je i od Vjerne Nevistić, čije satove i seminare i danas rado pohađa. Profesionalno se bavi grafičkim dizajnom, pogotovo u području nakladništva, te uređuje knjige iz područja duhovnosti i osobnog razvoja.
+
+![Ana](/images/Ana_Pojatina.png "DaniAnajel")

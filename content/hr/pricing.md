@@ -21,7 +21,7 @@ hotyoga:
         price: 100 €
   - category: "Dodatne"
     prices:
-      - service: Privatni sat (60 min) sa instrukturom
+      - service: Privatni sat (60 min) sa Vjernom
         price: 100 €
       - service: Najam dvorane/60 min
         price: 20 €
@@ -50,8 +50,8 @@ rejuvenation:
         price: "34 €"
 ---
 
-## Pogodnosti 
+## Pogodnosti
 
-* Voda u boci, kokosova voda, Kombucha i ograničeni izbor prostirki za jogu dostupni su za kupnju.
-* Tuševi i svlačionice dostupni su svim studentima
-* Prije kupnje pažljivo razmotrite [Raspored](/hot-yoga). Pakete ne možemo stonirati, obustaviti ili vratiti novac
+* Iznajmljivanje prostirki za jogu.
+* Najam dvorane
+* Prije kupnje pažljivo razmotrite [Raspored](/hot-yoga).

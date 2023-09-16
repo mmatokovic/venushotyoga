@@ -14,7 +14,9 @@ A Yoga website typically includes information on the different types of yoga pra
 * The `feature/` branch used for work on new feature.
 
 ## License
+
 [Apache License 2.0](LICENSE)
 
 ## Author Information
+
 [Mislav Matoković](https://github.com/mmatokovic)

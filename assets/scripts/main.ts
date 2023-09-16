@@ -1,5 +1,8 @@
 import "instant.page"
 import "autotrack"
+import * as Turbo from "@hotwired/turbo"
+
+Turbo.start()
 
 const hamburger = document.getElementById("hamburger-btn");
 const close = document.getElementById("close-btn");

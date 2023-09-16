@@ -1,104 +1,153 @@
 {{ define "main" }}
 <main class=" max-w-6xl px-5 py-5 mx-auto my-8 font-nunito">
-	<div class="mw-auto text-center border-b-4 border-buff-300 mb-4">
-		<h2 class="text-3xl font-bold sm:text-4xl">
-			{{ .Title }}
-		</h2>
-	</div>
+    <div class="mw-auto text-center border-b-4 border-buff mb-4">
+        <h2 class="text-3xl font-bold sm:text-4xl">
+            {{ .Title }}
+        </h2>
+    </div>
   <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-contain prose-td:{utility} prose-ol:px-9 text-xl">
     {{ .Content }}
   </article>
-	<section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="hotyoga">
-		<div class="mw-auto text-center border-b-4 border-buff mb-4">
-			<h2 class="text-3xl font-bold sm:text-4xl">Hot Yoga</h2>
-		</div>
-		{{ $hotyoga := .Params.hotyoga }}
-		<div class="flex flex-col md:flex-row">
-			<div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
-				<table class="min-w-full bg-white">
-					<caption class="py-3 px-6 font-bold">Trening</caption>
-					<thead>
-						<tr>
-							<th class="py-3 px-6 text-left">Usluga</th>
-							<th class="py-3 px-6 text-left">Cijena</th>
-						</tr>
-					</thead>
-					<tbody>
-						{{ range $i, $p := (index $hotyoga 0).prices }}
-						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-							<td class="py-4 px-6">{{ $p.service }}</td>
-							<td class="py-4 px-6">{{ $p.price }}</td>
-						</tr>
-						{{ end }}
-					</tbody>
-				</table>
-			</div>
-			<div class="w-full md:w-1/2">
-				<table class="min-w-full bg-white">
-					<caption class="py-3 px-6 font-bold">Dodatne Usluge</caption>
-					<thead>
-						<tr>
-							<th class="py-3 px-6 text-left">Usluga</th>
-							<th class="py-3 px-6 text-left">Cijena</th>
-						</tr>
-					</thead>
-					<tbody>
-						{{ range $i, $p := (index $hotyoga 1).prices }}
-						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-							<td class="py-4 px-6">{{ $p.service }}</td>
-							<td class="py-4 px-6">{{ $p.price }}</td>
-						</tr>
-						{{ end }}
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</section>
-	<section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="rejuvenation">
-		<div class="mw-auto text-center border-b-4 border-buff mb-4">
-			<h2 class="text-3xl font-bold sm:text-4xl">Pomlađivanje</h2>
-		</div>
-		{{ $rejuvenation := .Params.rejuvenation }}
-		<div class="flex flex-col md:flex-row">
-			<div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
-				<table class="min-w-full bg-white">
-					<caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
-					<thead>
-						<tr>
-							<th class="py-3 px-6 text-left">Usluga</th>
-							<th class="py-3 px-6 text-left">Cijena</th>
-						</tr>
-					</thead>
-					<tbody>
-						{{ range $i, $p := (index $rejuvenation 0).prices }}
-						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-							<td class="py-4 px-6">{{ $p.service }}</td>
-							<td class="py-4 px-6">{{ $p.price }}</td>
-						</tr>
-						{{ end }}
-					</tbody>
-				</table>
-			</div>
-			<div class="w-full md:w-1/2">
-				<table class="min-w-full bg-white">
-					<caption class="py-3 px-6 font-bold">LPG Cellu</caption>
-					<thead>
-						<tr>
-							<th class="py-3 px-6 text-left">Usluga</th>
-							<th class="py-3 px-6 text-left">Cijena</th>
-						</tr>
-					</thead>
-					<tbody>
-						{{ range $i, $p := (index $rejuvenation 1).prices }}
-						<tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-							<td class="py-4 px-6">{{ $p.service }}</td>
-							<td class="py-4 px-6">{{ $p.price }}</td>
-						</tr>
-						{{ end }}
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</section>
+    <section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="hotyoga">
+        <div class="mw-auto text-center border-b-4 border-buff mb-4">
+            <h2 class="text-3xl font-bold sm:text-4xl">Hot Yoga</h2>
+        </div>
+        {{ $hotyoga := .Params.hotyoga }}
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
+                <table class="min-w-full bg-white">
+                    <caption class="py-3 px-6 font-bold">Trening</caption>
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 text-left">Usluga</th>
+                            <th class="py-3 px-6 text-left">Cijena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $i, $p := (index $hotyoga 0).prices }}
+                        <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
+                            <td class="py-4 px-6">{{ $p.service }}</td>
+                            <td class="py-4 px-6">{{ $p.price }}</td>
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-full md:w-1/2">
+                <table class="min-w-full bg-white">
+                    <caption class="py-3 px-6 font-bold">Dodatne Usluge</caption>
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 text-left">Usluga</th>
+                            <th class="py-3 px-6 text-left">Cijena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $i, $p := (index $hotyoga 1).prices }}
+                        <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
+                            <td class="py-4 px-6">{{ $p.service }}</td>
+                            <td class="py-4 px-6">{{ $p.price }}</td>
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="rejuvenation">
+        <div class="mw-auto text-center border-b-4 border-buff mb-4">
+            <h2 class="text-3xl font-bold sm:text-4xl">Pomlađivanje</h2>
+        </div>
+        {{ $rejuvenation := .Params.rejuvenation }}
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
+                <table class="min-w-full bg-white">
+                    <caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 text-left">Usluga</th>
+                            <th class="py-3 px-6 text-left">Cijena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $i, $p := (index $rejuvenation 0).prices }}
+                        <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
+                            <td class="py-4 px-6">{{ $p.service }}</td>
+                            <td class="py-4 px-6">{{ $p.price }}</td>
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-full md:w-1/2">
+                <table class="min-w-full bg-white">
+                    <caption class="py-3 px-6 font-bold">LPG Cellu</caption>
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 text-left">Usluga</th>
+                            <th class="py-3 px-6 text-left">Cijena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $i, $p := (index $rejuvenation 1).prices }}
+                        <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
+                            <td class="py-4 px-6">{{ $p.service }}</td>
+                            <td class="py-4 px-6">{{ $p.price }}</td>
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+          <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+            <h2 class="max-w-xl text-4xl font-bold tracking-tight text-camel sm:text-5xl">
+              Pročitajte komentare naših polaznika...
+            </h2>
+            <div class="mt-8 flex gap-4 lg:mt-0">
+              <button aria-label="Previous slide" id="keen-slider-previous" class="rounded-full border border-camel p-3 text-camel transition hover:bg-khaki  hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                </svg>
+              </button>
+              <button aria-label="Next slide"  id="keen-slider-next" class="rounded-full border border-camel p-3 text-camel transition hover:bg-khaki  hover:text-white">
+                <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+            <div id="keen-slider" class="keen-slider">
+              {{ range .Site.Data.testimonials.testimonials }}
+              <div class="keen-slider__slide">
+                <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                  <div>
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-khaki sm:text-3xl">
+                        {{ .name }}
+                      </p>
+                      <p class="mt-4 leading-relaxed text-gray-700">
+                        {{ .testimonial | truncate  550 "…" }}
+                      </p>
+                    </div>
+                  </div>
+                  <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    &mdash; {{ .name }}
+                  </footer>
+                </blockquote>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+    </section>
 </main>
+
+{{ $scripts := resources.Get "scripts/slider.ts" }}
+{{ $options := dict "minify" true }}
+{{ $js := $scripts | js.Build $options }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{ end }}
