@@ -6,7 +6,7 @@
     <div class="flex sm:flex-nowrap flex-wrap mb-8">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-200 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
         <iframe class="absolute inset-0 grayscale-0 opacity-100" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0316221827887!2d15.976189358966554!3d45.81365157522736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7433d3f99dd%3A0x2ef7bf07f917f496!2sVenus%20hot%20yoga!5e1!3m2!1shr!2shr!4v1694898746823!5m2!1shr!2shr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md invisible md:visible ">
           <div class="lg:w-1/2 px-6">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">{{ T "contact_address" }}</h2>
             <p class="mt-1">{{ site.Data.links.adresa }} 
@@ -40,7 +40,21 @@
         <button class="text-white bg-ecru border-0 py-2 px-6 focus:outline-none hover:bg-khaki rounded text-lg">{{ T "contact_enquiry" }}</button>
       </div>
     </div>
-  <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:{utility} text-xl">
+    <div class="bg-white relative flex flex-wrap py-6 visible md:hidden ">
+        <div class="lg:w-1/2 px-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">{{ T "contact_address" }}</h2>
+          <p class="mt-1">{{ site.Data.links.adresa }} 
+            <br>{{ T "contact_location" }}
+          </p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">{{ T "contact_email" }}</h2>
+          <a href="mailto:{{ site.Data.links.mail }}" class="text-indigo-500 leading-relaxed">{{ site.Data.links.mail }}</a>
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">{{ T "contact_phone" }}</h2>
+          <a class="leading-relaxed" href="tel:{{ site.Data.links.tel }}">{{ site.Data.links.tel }}</a>
+        </div>
+      </div>
+  <article class="prose max-w-none prose-td:inline-block md:prose-td:table-cell prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:{utility} text-xl">
     {{ .Content }}
   </article>
 </section>

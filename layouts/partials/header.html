@@ -37,10 +37,10 @@
       </div>
     </div>
   </nav>
-  <aside id="mobile-menu" class="fixed inset-0 z-10 h-screen w-full backdrop-blur-sm px-4 sm:px-6 lg:px-8" hidden>
+  <aside id="mobile-menu" class="fixed inset-0 z-10 h-screen w-full bg-white backdrop-blur-sm px-4 sm:px-6 lg:px-8" hidden>
     <div class="flex h-16 items-center w-full justify-between gap-4 overflow-hidden">
       <div class="flex-1 md:flex md:items-center">
-        <a class="text-gray-500 text-2xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
+        <a class="text-camel font-bold text-3xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
           {{ .Site.Title }}
         </a>
       </div>
@@ -51,28 +51,30 @@
       </div>
     </div>
     <div class="flex flex-col justify-center">
-      <nav class="text-black text-4xl font-extrabold divide-y">
+      <nav class="text-ecru text-3xl font-extrabold divide-y">
         {{- range .Site.Menus.main}}
           <a class="block relative p-6 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline underline-offset-4{{ end }}" href="{{ .URL }}">
             {{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}
           </a>
         {{- end}}
       </nav>
-      <div class="block relative text-black text-center uppercase">
+      <div class="block relative text-ecru text-center uppercase">
         {{ T "menu_call_to_action" }}
       </div>
         <ul class="relative inline-flex justify-center">
           <li class="m-2">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
-                <path d="M27.7 54.4C42.446 54.4 54.4 42.446 54.4 27.7C54.4 12.954 42.446 1 27.7 1C12.954 1 1 12.954 1 27.7C1 42.446 12.954 54.4 27.7 54.4Z" stroke="black" stroke-width="0.6684" stroke-miterlimit="10"></path> <path d="M27.7 33.2C24.7 33.2 22.2 30.7 22.2 27.7C22.2 24.7 24.7 22.2 27.7 22.2C30.7 22.2 33.1999 24.7 33.1999 27.7C33.1999 30.7 30.7 33.2 27.7 33.2ZM27.7 24C25.7 24 24 25.6 24 27.7C24 29.7 25.6 31.4 27.7 31.4C29.7 31.4 31.4 29.8 31.4 27.7C31.2999 25.6 29.7 24 27.7 24Z" fill="black"></path> 
-                <path d="M32.8 38.4H22.6C19.5 38.4 17 35.9 17 32.8V22.6C17 19.5 19.5 17 22.6 17H32.8C35.9 17 38.4 19.5 38.4 22.6V32.8C38.4 35.9 35.9 38.4 32.8 38.4ZM22.6 18.8C20.5 18.8 18.8 20.5 18.8 22.6V32.8C18.8 34.9 20.5 36.6 22.6 36.6H32.8C34.9 36.6 36.6 34.9 36.6 32.8V22.6C36.6 20.5 34.9 18.8 32.8 18.8H22.6Z" fill="black"></path> <path d="M33.3 23.2C34.018 23.2 34.6 22.618 34.6 21.9C34.6 21.182 34.018 20.6 33.3 20.6C32.582 20.6 32 21.182 32 21.9C32 22.618 32.582 23.2 33.3 23.2Z" fill="black"></path>
+              <svg width="55" height="55" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg" class="fill-none">
+                <path d="M27.7 54.4C42.446 54.4 54.4 42.446 54.4 27.7C54.4 12.954 42.446 1 27.7 1C12.954 1 1 12.954 1 27.7C1 42.446 12.954 54.4 27.7 54.4Z" stroke="black" stroke-width="0.6684" stroke-miterlimit="10"></path> 
+                <path d="M27.7 33.2C24.7 33.2 22.2 30.7 22.2 27.7C22.2 24.7 24.7 22.2 27.7 22.2C30.7 22.2 33.1999 24.7 33.1999 27.7C33.1999 30.7 30.7 33.2 27.7 33.2ZM27.7 24C25.7 24 24 25.6 24 27.7C24 29.7 25.6 31.4 27.7 31.4C29.7 31.4 31.4 29.8 31.4 27.7C31.2999 25.6 29.7 24 27.7 24Z" fill="black"></path> 
+                <path d="M32.8 38.4H22.6C19.5 38.4 17 35.9 17 32.8V22.6C17 19.5 19.5 17 22.6 17H32.8C35.9 17 38.4 19.5 38.4 22.6V32.8C38.4 35.9 35.9 38.4 32.8 38.4ZM22.6 18.8C20.5 18.8 18.8 20.5 18.8 22.6V32.8C18.8 34.9 20.5 36.6 22.6 36.6H32.8C34.9 36.6 36.6 34.9 36.6 32.8V22.6C36.6 20.5 34.9 18.8 32.8 18.8H22.6Z" fill="black"></path> 
+                <path d="M33.3 23.2C34.018 23.2 34.6 22.618 34.6 21.9C34.6 21.182 34.018 20.6 33.3 20.6C32.582 20.6 32 21.182 32 21.9C32 22.618 32.582 23.2 33.3 23.2Z" fill="black"></path>
               </svg>
             </a>
           </li> 
           <li class="m-2">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+              <svg width="55" height="55" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg" class="fill-none">
                 <path d="M27.3001 54.4C42.0461 54.4 54.0001 42.446 54.0001 27.7C54.0001 12.954 42.0461 1 27.3001 1C12.5541 1 0.600098 12.954 0.600098 27.7C0.600098 42.446 12.5541 54.4 27.3001 54.4Z" stroke="black" stroke-width="0.6684" stroke-miterlimit="10"></path> 
                 <path d="M33.1001 20.8V17H29.8001C27.2001 17 25.0001 19.1 25.0001 21.8V25.3H21.6001V29.2H25.0001V38.4H29.1001V29.1H32.2001L32.8001 25.2H29.1001V22.4C29.1001 21.5 29.8001 20.7 30.8001 20.7H33.1001V20.8Z" fill="black"></path>
               </svg>

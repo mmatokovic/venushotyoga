@@ -14,7 +14,7 @@
         </div>
         {{ $hotyoga := .Params.hotyoga }}
         <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
+            <div class="w-full md:w-1/2 border-r-2 border-buff mb-4">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">Trening</caption>
                     <thead>
@@ -27,7 +27,7 @@
                         {{ range $i, $p := (index $hotyoga 0).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                             <td class="py-4 px-6">{{ $p.service }}</td>
-                            <td class="py-4 px-6">{{ $p.price }}</td>
+                            <td class="py-4 px-6 text-amber-500">{{ $p.price }}</td>
                         </tr>
                         {{ end }}
                     </tbody>
@@ -46,7 +46,7 @@
                         {{ range $i, $p := (index $hotyoga 1).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                             <td class="py-4 px-6">{{ $p.service }}</td>
-                            <td class="py-4 px-6">{{ $p.price }}</td>
+                            <td class="py-4 px-6 text-amber-500">{{ $p.price }}</td>
                         </tr>
                         {{ end }}
                     </tbody>
@@ -60,7 +60,7 @@
         </div>
         {{ $rejuvenation := .Params.rejuvenation }}
         <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 border-r-4 border-buff mb-4">
+            <div class="w-full md:w-1/2 border-r-2 border-buff mb-4">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
                     <thead>
@@ -73,7 +73,7 @@
                         {{ range $i, $p := (index $rejuvenation 0).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                             <td class="py-4 px-6">{{ $p.service }}</td>
-                            <td class="py-4 px-6">{{ $p.price }}</td>
+                            <td class="py-4 px-6 text-amber-500">{{ $p.price }}</td>
                         </tr>
                         {{ end }}
                     </tbody>
@@ -92,7 +92,7 @@
                         {{ range $i, $p := (index $rejuvenation 1).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                             <td class="py-4 px-6">{{ $p.service }}</td>
-                            <td class="py-4 px-6">{{ $p.price }}</td>
+                            <td class="py-4 px-6 text-amber-500">{{ $p.price }}</td>
                         </tr>
                         {{ end }}
                     </tbody>
@@ -126,9 +126,12 @@
                 <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
                   <div>
                     <div class="mt-4">
-                      <p class="text-2xl font-bold text-khaki sm:text-3xl">
-                        {{ .name }}
-                      </p>
+                        <div class="flex items-center gap-4">
+                            <img alt="Man" src="{{ .image }}" class="h-24 w-24 rounded-full object-cover">
+                            <p class="text-2xl font-bold text-khaki sm:text-3xl">
+                              {{ .name }}
+                            </p>
+                        </div>
                       <p class="mt-4 leading-relaxed text-gray-700">
                         {{ .testimonial | truncate  550 "…" }}
                       </p>

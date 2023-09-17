@@ -6,7 +6,7 @@
 {{ end }}
 <main>
   <section class="overflow-hidden bg-home-featured bg-cover bg-[center] bg-no-repeat ">
-    <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-40">
+    <div class="bg-black/25 p-32 md:p-12 sm:py-32 lg:px-16 lg:py-52">
       <div class="text-center ltr:sm:text-left rtl:sm:text-right">
         <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
           Venus Hot Yoga
@@ -16,7 +16,7 @@
         </p>
         <div class="mt-4 sm:mt-8">
           {{ with .Site.GetPage "contact" }}
-          <a href="{{ .RelPermalink }}" class="uppercase cinline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+          <a href="{{ .RelPermalink }}" class="uppercase inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
             {{ T "contact"}}
           </a>
           {{ end }}
@@ -24,7 +24,7 @@
       </div>
     </div>
   </section>
-  <section class="text-black max-w-6xl px-5 py-5 mx-auto my-8 font-nunito bg-blob bg-cover bg-no-repeat">
+  <section class="text-black max-w-6xl px-5 py-5 mx-auto font-nunito">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-lg text-center">
         <h2 class="text-3xl font-bold sm:text-4xl">{{ T "home_how_to" }}</h2>
@@ -76,9 +76,12 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-      <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+  <section class="px-5 py-5 my-8 mx-auto">
+    <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">Naše usluge</h2>
+    </div>
+    <div class="mx-auto max-w-screen-xl px-4 my-4 sm:px-6 lg:px-8 sm:py-12 lg:py-4">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
           <picture>
             <source srcset="/images/gallery170.jpg" type="image/webp">
@@ -106,9 +109,7 @@
         </div>
       </div>
     </div>
-  </section>
-  <section>
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-screen-xl px-4 my-4 sm:px-6 lg:px-8 sm:py-12 lg:py-4">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
           <picture>
