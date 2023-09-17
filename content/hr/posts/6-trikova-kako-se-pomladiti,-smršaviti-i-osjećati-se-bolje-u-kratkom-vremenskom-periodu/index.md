@@ -4,6 +4,7 @@ description: Svatko od nas u nekom trenutku želi promjenu! Stara poslovica kaž
 author: Vjerna Nevistić
 date: 2022-07-06T00:36:24-08:00
 featured_image: images/6-trikova.png
+category: ebook
 tags: [poslovica, promjena, ebook]
 keywords: [poslovica, promjenu, ebook]
 ---

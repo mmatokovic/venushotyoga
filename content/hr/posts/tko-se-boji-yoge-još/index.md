@@ -4,6 +4,7 @@ description: I am description of blog post structure data
 author: Vjerna Nevistić
 date: 2023-01-19T22:48:13.385Z
 featured_image: images/yoga-1812695_1280.jpg
+category: blog
 images:
   - images/Padangustasana.jpg
 tags:

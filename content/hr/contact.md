@@ -17,6 +17,6 @@ weight: 6
 
 Mjesto za parkiranje 🙂:
 
-* Kaptol centar - 1€
-* Cascade - 1€
-* Langov trg - 1€
+* Garaža Centar Kaptol - 1.80€/h, Nova Ves 17
+* Cascade - 1€/h - Ul. Ivana Tkalčića 88
+* Langov trg - 1.60€/h, - Trg Josipa Langa 13

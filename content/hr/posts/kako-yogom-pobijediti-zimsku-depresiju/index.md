@@ -4,6 +4,7 @@ description: I am description of blog post structure data
 author: Vjerna Nevistić
 date: 2023-01-19
 featured_image: images/featured.jpg
+category: blog
 images:
   - images/zimska1.jpg
   - images/delfin.png

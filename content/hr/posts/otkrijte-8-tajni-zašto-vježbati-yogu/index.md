@@ -4,6 +4,7 @@ description: Vodim vas na malo putovanje kako pospješiti svoj život uz tajne d
 author: Vjerna Nevistić
 date: 2022-07-06T00:36:24-08:00
 featured_image: images/otkrijte-8-tajni-zašto-vježbati-yogu.png
+category: ebook
 tags:
   - "yoga"
   - "život"

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <section class="text-gray-600 body-font overflow-hidden max-w-6xl px-5 py-5 mx-auto my-8 font-nunito">
+  <section class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 font-nunito">
     <div class="mw-auto  text-center border-b-4 border-buff mb-4">
       <h2 class="text-3xl font-bold sm:text-4xl">
         {{ .Title }}
@@ -24,7 +24,7 @@
     <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-contain prose-td:{utility} prose-ol:px-9 text-xl">
       {{ .Content }}
     </article>
-  <div class="mx-auto max-w-6xl px-4 py-3 sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 bg-cosmic-latte rounded-lg">
+  <div class="mx-auto max-w-6xl px-4 py-3 sm:flex sm:items-center sm:justify-center sm:px-6 bg-cosmic-latte rounded-lg">
     {{ if eq .File.BaseFileName "rejuvenation" }}
       {{ with site.GetPage "pricing" }}
         <p class="text-center font-medium sm:text-left">
