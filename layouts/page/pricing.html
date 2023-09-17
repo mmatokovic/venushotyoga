@@ -5,24 +5,15 @@
             {{ .Title }}
         </h2>
     </div>
-  <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-contain prose-td:{utility} prose-ol:px-9 text-xl">
-    {{ .Content }}
-  </article>
-    <section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="hotyoga">
+    <section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="hot-yoga">
         <div class="mw-auto text-center border-b-4 border-buff mb-4">
-            <h2 class="text-3xl font-bold sm:text-4xl">Hot Yoga</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl text-camel">Hot Yoga</h2>
         </div>
         {{ $hotyoga := .Params.hotyoga }}
         <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 border-r-2 border-buff mb-4">
+            <div class="w-full md:w-1/2 lg:border-r-2 lg:border-buff mb-4">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">Trening</caption>
-                    <thead>
-                        <tr>
-                            <th class="py-3 px-6 text-left">Usluga</th>
-                            <th class="py-3 px-6 text-left">Cijena</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         {{ range $i, $p := (index $hotyoga 0).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
@@ -36,12 +27,6 @@
             <div class="w-full md:w-1/2">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">Dodatne Usluge</caption>
-                    <thead>
-                        <tr>
-                            <th class="py-3 px-6 text-left">Usluga</th>
-                            <th class="py-3 px-6 text-left">Cijena</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         {{ range $i, $p := (index $hotyoga 1).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
@@ -56,19 +41,13 @@
     </section>
     <section class="px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" id="rejuvenation">
         <div class="mw-auto text-center border-b-4 border-buff mb-4">
-            <h2 class="text-3xl font-bold sm:text-4xl">Pomlađivanje</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl text-camel">Pomlađivanje</h2>
         </div>
         {{ $rejuvenation := .Params.rejuvenation }}
         <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 border-r-2 border-buff mb-4">
+            <div class="w-full md:w-1/2 lg:border-r-2 lg:border-buff mb-4">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">LPG Mobilift</caption>
-                    <thead>
-                        <tr>
-                            <th class="py-3 px-6 text-left">Usluga</th>
-                            <th class="py-3 px-6 text-left">Cijena</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         {{ range $i, $p := (index $rejuvenation 0).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
@@ -82,12 +61,6 @@
             <div class="w-full md:w-1/2">
                 <table class="min-w-full bg-white">
                     <caption class="py-3 px-6 font-bold">LPG Cellu</caption>
-                    <thead>
-                        <tr>
-                            <th class="py-3 px-6 text-left">Usluga</th>
-                            <th class="py-3 px-6 text-left">Cijena</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         {{ range $i, $p := (index $rejuvenation 1).prices }}
                         <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">

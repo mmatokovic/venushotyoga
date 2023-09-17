@@ -13,6 +13,7 @@ module.exports = {
 				transparent: 'transparent',
 				current: 'currentColor',
 				'beige': '#f5f5dc',
+                'wheat': '#F3D9A9',
 				'almond': '#eed9c4',
 				'bisque': '#ffe4c4',
 				'buff': '#daa06d',

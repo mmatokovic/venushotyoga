@@ -1,5 +1,5 @@
 <header class="">
-  <nav class="top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 font-nunito text-lg">
+  <nav class="top-0 z-10 font-nunito text-lg">
     <div class="max-w-6xl px-5 py-5 mx-auto flex items-center space-y-0  ">
       <div class="flex-grow flex justify-start">
         <a href="{{ .Site.BaseURL | relLangURL }}" class="flex items-center font-bold text-ecru mr-4">
@@ -18,10 +18,10 @@
           {{ if .Site.IsMultiLingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
-              <li><a href="#" class="hidden">{{ .LanguageName }} </a></li>
+              <li><a href="#" class="hidden"><img src="{{ .Params.LanguageEmoji }}" width="24" height="24" alt="Icon" /></a></li>
             {{ else }}
               {{ range $.Translations }}
-              <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>
+              <li><a href="{{ .Permalink }}" class=""><img src="{{ .Language.Params.LanguageEmoji }}" width="24" height="24" alt="Icon" /></a></li>
               {{ end }}
             {{ end }}
           {{ end }}
@@ -37,7 +37,7 @@
       </div>
     </div>
   </nav>
-  <aside id="mobile-menu" class="fixed inset-0 z-10 h-screen w-full bg-white backdrop-blur-sm px-4 sm:px-6 lg:px-8" hidden>
+  <aside id="mobile-menu" class="fixed inset-0 z-10 h-screen w-full bg-white px-4 sm:px-6 lg:px-8" hidden>
     <div class="flex h-16 items-center w-full justify-between gap-4 overflow-hidden">
       <div class="flex-1 md:flex md:items-center">
         <a class="text-camel font-bold text-3xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">

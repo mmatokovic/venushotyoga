@@ -16,11 +16,51 @@
         </p>
         <div class="mt-4 sm:mt-8">
           {{ with .Site.GetPage "contact" }}
-          <a href="{{ .RelPermalink }}" class="uppercase inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+          <a href="{{ .RelPermalink }}" class="uppercase inline-block rounded-full bg-ecru px-4 py-3 lg:px-12 lg:py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
             {{ T "contact"}}
           </a>
           {{ end }}
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-white text-xl">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div class="mx-auto text-center text-black">
+          <h2 class="text-3xl font-bold sm:text-4xl">
+          </h2>
+          <p class="mt-4">
+            Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
+          </p>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {{ with .Site.GetPage "about" }}
+        <a class="bg-tuscan block rounded-xl p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
+          <h2 class="text-xl font-bold text-blck">O nama</h2>
+          <p class="mt-1 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+            possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+          </p>
+        </a>
+        {{ end }}
+        {{ with .Site.GetPage "hot-yoga" }}
+        <a class="bg-hazelnut block rounded-xl p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}#schedule">
+          <h2 class="text-xl font-bold text-blck">Yoga Raspored</h2>
+          <p class="mt-1 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+            possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+          </p>
+        </a>
+        {{ end }}
+        {{ with .Site.GetPage "pricing" }}
+        <a class="bg-french-beige block rounded-xl p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
+          <h2 class="text-xl font-bold text-blck">Cijenik</h2>
+          <p class="mt-1 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+            possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+          </p>
+        </a>
+        {{ end }}
       </div>
     </div>
   </section>
@@ -100,6 +140,11 @@
               hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
               minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
             </p>
+            {{ with .Site.GetPage "pricing" }}
+            <a href="{{ .Permalink }}#hot-yoga" class="float-right mt-8 ml-4 inline-block rounded bg-wheat px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+              {{ .Title }}
+            </a>
+            {{ end }}
             {{ with .Site.GetPage "hot-yoga" }}
             <a href="{{ .RelPermalink }}" class="float-right mt-8 inline-block rounded bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
               {{ .Title }}
@@ -125,9 +170,14 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
             atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
             veniam tempora deserunt? Molestiae eius quidem quam repellat.
-          </p>
+          </p> 
+            {{ with .Site.GetPage "pricing" }}
+            <a href="{{ .Permalink }}#rejuvenation" class="mt-8 inline-block rounded bg-wheat px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+              {{ .Title }}
+            </a>
+            {{ end }}
           {{ with .Site.GetPage "rejuvenation" }}
-          <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+          <a href="{{ .RelPermalink }}" class="mt-8 ml-4 inline-block rounded bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
             {{ .Title }}
           </a>
           {{ end }}
