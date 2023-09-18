@@ -9,16 +9,14 @@
     <source srcset="{{ $jpgImage.RelPermalink }}" type="image/jpeg">
     
     <img 
-    src="{{ $jpgImage.RelPermalink }}" loading="lazy" decoding="async"
+    src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async"
       {{ with .Text}} alt="{{ . }}" {{ else }} alt="{{ .Page.Title }}" {{ end }}
       {{ with .Title}} title="{{ . }}"{{ end }}
     />
   </picture>
 {{- else -}}
   <img 
-    src="{{ .Destination | safeURL }}" 
-    loading="lazy"
-    decoding="async"
+    src="{{ .Destination | safeURL }}" loading="lazy" decoding="async"
     {{ with .Text}} alt="{{ . }}" {{ else }} alt="{{ .Page.Title }}" {{ end }}
     {{ with .Title}} title="{{ . }}"{{ end }} 
   /> 

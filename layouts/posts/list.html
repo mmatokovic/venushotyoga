@@ -10,6 +10,9 @@
   <section>
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div>
+        <h5 class="font-bold">
+          Latest Blog
+        </h5>
         {{ $blogs := where .Site.Pages "Params.category" "blog" | first 1 }}
         {{ range $blog := $blogs }}
         <article class="group">
@@ -40,6 +43,9 @@
         {{ end }}
       </div>
         <div>
+            <h5 class="font-bold">
+                Latest E-Books
+            </h5>
           {{ $ebooks := where .Site.Pages "Params.category" "ebook" | first 2 }}
           {{ range $ebook := $ebooks }}
             <article class="flex bg-white mb-4 transition hover:shadow-xl">
@@ -79,7 +85,7 @@
   <section class="text-gray-600 body-font">
     <div class="mw-auto border-b-4 border-buff my-4">
         <h2 class="text-2xl font-bold sm:text-4xl">
-            Blog posts
+            Blog Posts
         </h2>
     </div>
     <div class="py-5">

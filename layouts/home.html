@@ -5,7 +5,7 @@
 {{ end }}
 {{ end }}
 <main>
-  <section class="overflow-hidden bg-home-featured bg-cover bg-[center] bg-no-repeat ">
+  <section class="overflow-hidden bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat ">
     <div class="bg-black/25 py-14 px-20 md:p-12 sm:py-32 lg:px-16 lg:py-52">
       <div class="text-center ltr:sm:text-left rtl:sm:text-right">
         <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
@@ -142,11 +142,11 @@
                 minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
               </p>
               {{ with .Site.GetPage "hot-yoga" }}
-              <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+              <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-tuscan px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
                 {{ .Title }}
               </a>
               {{ with .Site.GetPage "pricing" }}
-              <a href="{{ .Permalink }}#hot-yoga" class="mt-8 inline-block rounded bg-wheat px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+              <a href="{{ .Permalink }}#hot-yoga" class="mt-8 inline-block rounded bg-hazelnut px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
                 {{ .Title }}
               </a>
               {{ end }}
@@ -173,12 +173,12 @@
               veniam tempora deserunt? Molestiae eius quidem quam repellat.
             </p> 
             {{ with .Site.GetPage "rejuvenation" }}
-            <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-ecru px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+            <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-tuscan px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
               {{ .Title }}
             </a>
             {{ end }}
             {{ with .Site.GetPage "pricing" }}
-            <a href="{{ .Permalink }}#rejuvenation" class="mt-8 inline-block rounded bg-wheat px-12 py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+            <a href="{{ .Permalink }}#rejuvenation" class="mt-8 inline-block rounded bg-hazelnut px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
               {{ .Title }}
             </a>
             {{ end }}
