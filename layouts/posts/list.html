@@ -43,20 +43,16 @@
           {{ $ebooks := where .Site.Pages "Params.category" "ebook" | first 2 }}
           {{ range $ebook := $ebooks }}
             <article class="flex bg-white mb-4 transition hover:shadow-xl">
-                <div class="hidden sm:block sm:basis-40">
+                <div class="basis-40 block">
                   {{ with resources.Get .Params.featured_image }}
                   {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
                   {{ if $image }}
                   <picture>
                     <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-                  <img
-                    alt="ebook"
-                    src="{{ $image.RelPermalink }}"
-                    class="h-full w-full object-contain"
-                  />
-                </picture>
-                {{ end }}
-                {{ end }}
+                    <img alt="ebook" src="{{ $image.RelPermalink }}" class="h-full w-full object-contain"/>
+                  </picture>
+                  {{ end }}
+                  {{ end }}
                 </div>
                 <div class="flex flex-1 flex-col justify-between">
                   <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
@@ -69,11 +65,8 @@
                       {{ .Summary }}
                     </p>
                   </div>
-                  <div class="sm:flex sm:items-end sm:justify-end">
-                    <a
-                      href="{{ .RelPermalink }}"
-                      class="block bg-tuscan px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
-                    >
+                  <div class="flex items-end justify-end">
+                    <a href="{{ .RelPermalink }}" class="block bg-tuscan px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
                       Order E-Book
                     </a>
                   </div>

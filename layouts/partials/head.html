@@ -4,10 +4,19 @@
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2016" }}
+{{- $js := resources.Get "scripts/turbo.ts" | js.Build $opts -}}
+{{- if hugo.IsProduction }}
+  {{ $js = $js | fingerprint }}
+{{ end -}}
+
 {{ $author :=  or (.Params.author) (.Site.Author.name) }}
 <head>
   <!--Add the Netlify Identity Widget-->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }} integrity="{{ $js.Data.Integrity }}" {{ end }} defer></script>
   {{ partial "site_schema.html" . }}
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta charset="utf-8" />

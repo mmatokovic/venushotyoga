@@ -8,7 +8,7 @@
     {{ $scripts := resources.Get "scripts/main.ts" }}
     {{ $options := dict "minify" true }}
     {{ $js := $scripts | js.Build $options }}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer data-turbo-suppress-warning></script>
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

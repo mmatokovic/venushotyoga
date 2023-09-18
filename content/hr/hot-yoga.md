@@ -6,20 +6,9 @@ description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30
 menu:
 - main
 - footer
+image: /images/plato_1_b_ISPRVAK_Facebook.jpg
 weight: 2
 raspored:
-  - startTime: 09:30
-    termin:
-      - dan: Četvrtak
-        usluga: Restorativna
-        startTime: 09:30
-        endTime: 11:00
-        opis: u studiu
-      - dan: Ponedeljak
-        usluga: Yoga
-        startTime: 09:30
-        endTime: 11:00
-        opis: Online
   - startTime: 10:00
     termin:
       - dan: Srijeda
