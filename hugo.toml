@@ -34,8 +34,8 @@ enableGitInfo = true
 
 
 [frontmatter]
-date = ["date", "publishDate", "lastmod"]
-lastmod = ["lastmod", ":git", "date", "publishDate"]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [sitemap]
   changefreq = 'monthly'
@@ -70,3 +70,8 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
   [[build.cachebusters]]
     source = "assets/.*\\.(.*)$"
     target = "$1"
+
+[security]
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
