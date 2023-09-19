@@ -3,9 +3,9 @@ languageCode = 'hr'
 title = 'Venus Hot Yoga'
 defaultContentLanguage = 'hr'
 
-enableEmoji = true
 enableRobotsTXT = true
 enableGitInfo = true
+enableEmoji = true
 
 [languages]
   [languages.en]
@@ -38,8 +38,8 @@ enableGitInfo = true
   lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [sitemap]
-  changefreq = 'monthly'
-  filename = 'sitemap.xml'
+  changefreq = "monthly"
+  filename = "sitemap.xml"
   priority = 0.5
 
 [module]

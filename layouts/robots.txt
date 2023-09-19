@@ -1,8 +1,7 @@
 User-agent: *
 Disallow: /404.html
 Disallow: /admin/
-Disallow: /thank-you/
 {{ range .Pages }}
 allow: {{ .RelPermalink }}
 {{ end }}
-Sitemap: {{ "/sitemap.xml" | absURL }}
+Sitemap: https://venushotyoga.netlify.app/sitemap.xml

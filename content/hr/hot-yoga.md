@@ -42,19 +42,39 @@ raspored:
         opis: u studiu
 ---
 
-{{<schedule>}}
+{{< schedule >}}
 
-HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima.
+HOT YOGA je intenzivan trening u trajanju 75 ili 90 minuta, na kojem ćete povećati snagu, izdržljivost, fleksibilnost, ravnotežu, koordinaciju i uz to se dobro zabaviti.
 
-Hatha yoga je statičan sustav vježbanja asana (yoga pozicija) kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice. Pojedini satovi su dinamičniji stilovi yoge koji se takođe mogu vježbati na toplini, no uvijek se rade kratke stanke u kojima se vježbači odmore i popiju vode. Mnogima ovi uvjeti treniranja zvuče naporno – kamoli da se uz to još i vježba – ali tko se jednom navikne, može računati na niz benefita koji nas čine fokusiranijima, snažnijima, zdravijima i – sretnijima. Ukoliko mislite da vježbanje na toplini nije za vas dajte si 3 do 5 sati i naviknut ćete se na nju. Dugogodišnji vježbači traže i grijalicu više. Tijekom vježbanja, bilo kada možete se leći i odmoriti pa dopustiti toplini da opusti vaše tijelo i um kao u sauni
+HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima{{< read-more >}}
+
+* Hatha yoga je statičan sustav vježbanja asana (yoga pozicija) kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice
+
+* Pojedini satovi su dinamičniji stilovi yoge koji se takođe mogu vježbati na toplini, no uvijek se rade kratke stanke u kojima se vježbači odmore i popiju vode. Mnogima ovi uvjeti treniranja zvuče naporno – kamoli da se uz to još i vježba – ali tko se jednom navikne, može računati na niz benefita koji nas čine fokusiranijima, snažnijima, zdravijima i – sretnijima
+
+* Ukoliko mislite da vježbanje na toplini nije za vas dajte si 3 do 5 sati i naviknut ćete se na nju. Dugogodišnji vježbači traže i grijalicu više. Tijekom vježbanja, bilo kada možete se leći i odmoriti pa dopustiti toplini da opusti vaše tijelo i um kao u sauni
+{{< /read-more >}}
 
 [hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
 ## Koje su dobrobiti hot yoge?
 
-Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna.
+Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna {{< read-more >}}
 
-Vježbanje yoge na toplini je intenzivan kardio trening, srce tuče brže jer više krvi dolazi do kože i omogućava hlađenje. Prema mjerenjima (Medicine and Science in sport and exscercise, Svibanj 2014) srce za vrijeme hot yoga sata radi otprilike kao kod brzog hodanja od 5,5 km na sat.
+* Vježbanje yoge na toplini je intenzivan kardio trening, srce tuče brže jer više krvi dolazi do kože i omogućava hlađenje. Prema mjerenjima (Medicine and Science in sport and exscercise, Svibanj 2014) srce za vrijeme hot yoga sata radi otprilike kao kod brzog hodanja od 5,5 km na sat.
+
+* U toplom okruženju i disanje nam je dublje te vježbamo pluća šireći ih da prime veću količinu zraka. Na taj način više opskrbljujemo tijelo kisikom te se osjećamo opuštenije i bez stresa.
+
+* Na toplini tijelo brzo dolazi na ,,radnu temperature,, puno je pokrtljivije I smanjena je mogućnost ozljeda naravno ako se pozicije izvode pravilno i bez prisutnosti boli.
+
+* Pomaže postizanju idealne tjelesne težine i oblikuje tijelo, na jednom treningu prosječno se potroši 350 do 600 kcal ovisno o tjelesnoj građi i koliko se trudite. Yoga djeluje i na centre koji reguliraju apetit, probavu, san I ostale faktore koji igraju
+{{< /read-more >}}
+
+### Satovi su prikladni za svakoga, od potpunih početnika do naprednih vježbača i yogija
+
+Nije bitno koliko dobro izvodite yoga poziciju niti koliko ste rastezljivi, bitno je da poziciju, ili samo jedan njezin dio, pokušate izvesti potpuno pravilno i tada možete uživati njeno cjelovito dobro djelovanje.
+
+tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
 
 U toplom okruženju i disanje nam je dublje te vježbamo pluća šireći ih da prime veću količinu zraka. Na taj način više opskrbljujemo tijelo kisikom te se osjećamo opuštenije i bez stresa.
 
@@ -62,15 +82,9 @@ Na toplini tijelo brzo dolazi na ,,radnu temperature,, puno je pokrtljivije I sm
 
 Satovi su prikladni za svakoga, od potpunih početnika do naprednih vježbača i yogija. Nije bitno koliko dobro izvodite yoga poziciju niti koliko ste rastezljivi, bitno je da poziciju, ili samo jedan njezin dio, pokušate izvesti potpuno pravilno i tada možete uživati njeno cjelovito dobro djelovanje.
 
-Grupe su male, od šest do 12 polaznika, tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
+## Grupe su male, od šest do 12 polaznika
 
-Svaki polaznik radi koliko može i bez obzira izvede li samo dio asane ili njenu naprednu verziju svi imaju jednake dobrobiti kad ju izvode pravilno.
-
-Mnogima ovi uvjeti treniranja zvuče naporno – kamoli da se uz to još i vježba – ali tko se jednom navikne može računati na niz benefita koji nas čine fokusiranijima, snažnijima, zdravijima i – sretnijima.
-
-Osim razvijanja snage, fleksibilnosti i mentalne koncentracije, yoga poze pomažu čišćenju i revitalizaciji unutarnjih organa, balansiraju hormonalni sustav te potiču mentalnu i emocijonalnu mirnoću.
-
-Takođe pomažu postizanju idealne tjelesne težine i oblikuju tijelo, na jednom treningu prosječno se potroši 350 do 600 kcal ovisno o tjelesnoj građi i koliko se trudite. Kako yoga djeluje i na centre koji reguliraju apetit, probavu, san I ostale faktore koji igraju važnu ulogu za postizanje zdravog tijela s idealnom masom redovito vježbanje vam garantira lijep izgled bez muke.
+tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
 
 |  | |
 |---------|---------|
@@ -78,15 +92,10 @@ Takođe pomažu postizanju idealne tjelesne težine i oblikuju tijelo, na jednom
 
 ## Za koga hot yoga nije primjerena
 
-Za trudnice koje do sada nisu vježbale na toplini. Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konzultirati
-
-svog liječnika prije početka vježbanja a preporučamo im yogu bez povišene temperature.
+Za **trudnice** koje do sada nisu vježbale na toplini. 
+Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konzultirati **svog liječnika** prije početka vježbanja a preporučamo im yogu bez povišene temperature.
 
 U studiju imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
-
-### Zašto hot yoga?
-
-'Hot yoga treninzi intenzivni su i razvijaju snagu, izdržljivost, fleksibilnost i ravnotežu. Satovi su prikladni za sve, od potpunih početnika do naprednih vježbača yoge i sportaša. U hot yogi nema boli već je dovoljno napraviti samo mali dio yoga pozicije pravilno i već se mogu osjetiti sve dobrobiti. Ako nekome i ne odgovara toplina i vlažnost, na te specifične uvjete vježbanja naviknu se nakon od 2 do 5 puta, a prilikom vježbanja uvijek se u dvorani može leći i odmoriti'', kaže. 'Hot yoga klasičnoj yogi dodaje još neke dobrobiti poput detoksikacije jer se intenzivnim znojenjem tijelo čisti od toksina, smanjuje se otečenost tijela, a koža postaje čista i sjajna. Uz detoksikaciju dobrobit hot yoge je i ta da je tijelo na toplini fleksibilnije te se lakše izvode yoga pozicije, a mogućnost povreda svedena je na minimum'', objašnjava.''Hot yogu teško je vježbati kod kuće upravo zbog uvjeta topline i vlažnosti koji su postignuti u studiju. Također su u dvorani pročišćivači zraka tako da nikad nije zagušljivo, a polaznici se intenzivno znoje što ih rashlađuje. Kod kuće posebno treba pripaziti na pravilno zagrijavanje tijela prije vježbanja', Hot yoga odlična je za sve koji žele smršavjeti jer su treninzi intenzivni i na jednom se potroši od 500 do 1000 kalorija.
 
 ## Online Live Yoga
 
@@ -113,4 +122,3 @@ Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strplj
 * Dođite na predavanje dobro hidrirani i izbjegavajte velike obroke dva sata prije vježbanja.
 
 ![Anantasana-3](/images/Anantasana-3.jpg "Anantasana")
-

@@ -12,6 +12,12 @@
   img {
     content-visibility: auto;
   }
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
 }
 
 @layer utilities {
@@ -70,6 +76,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -77,4 +84,5 @@
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-display: swap;
 }
