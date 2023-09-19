@@ -10,9 +10,9 @@
     "license": "{{ .Site.Params.Copyright }}"
 }
 </script>
-{{ else if .IsPage }}
-{{ $author :=  or (.Params.author) (.Site.Author.name) }}
-{{ $org_name :=  .Site.Title }}
+{{ else if .IsPage -}}
+{{ $author :=  or (.Params.author) (.Site.Author.name) -}}
+{{ $org_name :=  .Site.Title -}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -62,4 +62,4 @@
     "keywords" : [ {{ range $index, $keyword := .Params.keywords }}{{ if $index }}, {{ end }}"{{ $keyword }}" {{ end }}]
 }
 </script>
-{{ end }}
+{{ end -}}

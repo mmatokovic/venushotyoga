@@ -71,8 +71,7 @@
         <div class="mt-8 space-y-4 lg:mt-0">
           <p class="mt-8">Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.</p>
           <p>Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.</p>
-          <turbo-frame>
-            <form name="newsletter" action="/api/submit" method="post" class="mt-6 w-full" data-netlify="true" netlify-honeypot="bot-field">
+            <form class="mt-6 w-full" name="newsletter" id="newsletter" action="#" method="post" data-netlify="true" netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="newsletter" />
               <p class="hidden">
                 <label><input name="bot-field" /></label>
@@ -85,7 +84,6 @@
                 </button>
               </div>
             </form>
-          </turbo-frame>
          </div>
       </div>
     </div>
