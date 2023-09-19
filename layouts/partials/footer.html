@@ -71,19 +71,21 @@
         <div class="mt-8 space-y-4 lg:mt-0">
           <p class="mt-8">Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.</p>
           <p>Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.</p>
-          <form name="newsletter" action="/api/submit" method="post" class="mt-6 w-full" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="newsletter" />
-            <p class="hidden">
-              <label><input name="bot-field" /></label>
-            </p>
-            <div  class="rounded-md border border-gray-100 p-2 sm:flex sm:items-center sm:gap-4">
-              <label for="UserEmail" class="sr-only"> Email </label>
-              <input name="subscriber" type="email" id="UserEmail" placeholder="pero.peric@email.com" required="required" class="w-full h-full focus:outline-none focus:ring focus:ring-ecru sm:text-sm"/>
-              <button type="submit" class="mt-1 w-full rounded bg-ecru px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-khaki sm:mt-0 sm:w-auto sm:shrink-0">
-                Sign Up
-              </button>
-            </div>
-          </form>
+          <turbo-frame>
+            <form name="newsletter" action="/api/submit" method="post" class="mt-6 w-full" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="newsletter" />
+              <p class="hidden">
+                <label><input name="bot-field" /></label>
+              </p>
+              <div  class="rounded-md border border-gray-100 p-2 sm:flex sm:items-center sm:gap-4">
+                <label for="UserEmail" class="sr-only"> Email </label>
+                <input name="subscriber" type="email" id="UserEmail" placeholder="pero.peric@email.com" required="required" class="w-full h-full focus:outline-none focus:ring focus:ring-ecru sm:text-sm"/>
+                <button type="submit" class="mt-1 w-full rounded bg-ecru px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-khaki sm:mt-0 sm:w-auto sm:shrink-0">
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </turbo-frame>
          </div>
       </div>
     </div>
