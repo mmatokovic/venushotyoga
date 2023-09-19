@@ -55,9 +55,9 @@ const handleSubmit = (event: Event) => {
         console.log("Form successfully submitted");
         
         // Show the "send" div
-        const sendDiv = document.getElementById("send");
-        if (sendDiv) {
-          sendDiv.style.display = "block";
+        const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+        if (submitButton) {
+            submitButton.style.backgroundColor = "green";
         }
       })
       .catch((error) => alert(error));
