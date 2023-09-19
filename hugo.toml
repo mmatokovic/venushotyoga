@@ -70,8 +70,3 @@ enableGitInfo = true
   [[build.cachebusters]]
     source = "assets/.*\\.(.*)$"
     target = "$1"
-
-[security]
-  [security.http]
-    methods = ['(?i)GET|POST']
-    urls = ['.*']
