@@ -1,0 +1,21 @@
+<section>
+	<div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
+		<div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+			{{ if .IsNamedParams }}
+			<div class="{{ if .Get "class" }}{{ .Get "class" }} relative h-64 overflow-hidden rounded-lg sm:h-80{{else}}relative h-64 overflow-hidden rounded-lg sm:h-80{{ end }}">
+			{{ $image := .Get "src" | resources.Get }}
+			{{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
+				<picture>
+					<source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+					<img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full !object-cover"/>
+				</picture>
+			</div>
+			{{ end }}
+			<div class="lg:py-4">
+				<article class="space-y-4 text-gray-600 prose prose-h2:!mt-0">
+					{{ .Inner | markdownify }}
+				</article>
+			</div>
+		</div>
+	</div>
+</section>

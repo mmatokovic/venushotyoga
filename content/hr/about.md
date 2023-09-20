@@ -17,6 +17,9 @@ Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je it
 Vlasnica Venus Hot Yoga studija je Vjerna Nevistić. Vjerna je završila Kineziološki fakultet u Zagrebu, MBA u Pragu na američkom sveučilištu UNYP. Sedam godina živjela I radila je u Americi kao privatni trener I yoga instruktor  (Chicago, Dallas Phoenix),a u Pragu tri godine gdje je otvorila tada prvi hot yoga studio u Českoj 2003 g. Majka je tri sina  koji uz borilačke sportove redovito vježbaju hot yogu. uUz to, Vjerna je vanjski predavač na Kineziološkom fakultetu, gdje studentima sa zadovoljstvom drži predavanja o yogi.
 
 Venus hot yoga studio u Zagrebu otvoren je od 2010 godine.
+|  | |
+|---------|---------|
+| ![studio-7](/images/studio-7.jpg "studio-7") | ![studio-12](/images/studio-12.jpg "studio-12") |
 
 ### Pogodnosti
 
@@ -54,20 +57,18 @@ Od malena se aktivno bavila i borilačkim sportom Budokai kod svog ujaka dr. Emi
 
 Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi upravo nosi i sličan naslov: Yoga- disciplinom do slobode. U njoj predstavlja klasifikaciju 196 asana podjeljenih u 18 grupa u odnosu na položaj gornjeg i donjeg dijela tijela na podlogu što omogućava voditeljima lakše slaganje sata a polaznicima jasnije i pravilnije izvođenje... (više o knjizi link)
 
-Za individualni sat s Vjernom možete se prijaviti na br tel: 095 576 3818
+**Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
 
-|  | |
-|---------|---------|
-| ![studio-7](/images/studio-7.jpg "studio-7") | ![studio-12](/images/studio-12.jpg "studio-12") |
+{{< section src="/images/Danijel.jpg" >}}
 
 ## Danijel Deni Jeremić
 
 Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
+{{< /section >}}
 
-![Danijel](/images/Danijel.jpg "Danijel")
+{{< section src="/images/Ana_Pojatina.png" class="lg:order-last">}}
 
 ## Ana Pojatina
 
 Ana prakticira yogu više od 20 godina. Temelje yoge upoznala je u sustavu Joge u svakodnevnom životu, a zatim je nakon nekog vremena pohađala radionice i seminare Iyengar yoge te one u tradiciji T. Krishnamacharye. Učila je i od Vjerne Nevistić, čije satove i seminare i danas rado pohađa. Profesionalno se bavi grafičkim dizajnom, pogotovo u području nakladništva, te uređuje knjige iz područja duhovnosti i osobnog razvoja.
-
-![Ana](/images/Ana_Pojatina.png "DaniAnajel")
+{{< /section >}}
