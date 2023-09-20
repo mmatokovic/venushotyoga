@@ -31,6 +31,15 @@ module.exports = {
 				'home-featured': "url('/images/image6.jpeg')",
 				'mobilift': "url('/images/mobilift.jpg')",
 				'product-integral': "url('/images/product-integral.jpg')",
+			},
+			animation: {
+				fadeInDown : 'fadeInDown 1s',
+			},
+			keyframes: {
+				fadeInDown : {
+				  'from': { opacity: 0, transform: 'translateY(-20px)' },
+				  'to': { opacity: 1, transform: 'translateY(0)' },
+				}
 			}
 		}
 	}
