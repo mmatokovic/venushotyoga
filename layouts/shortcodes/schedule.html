@@ -34,67 +34,67 @@
         <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
           {{ .startTime }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700 ">
+        <td class="whitespace-nowrap px-4 py-2 text-white ">
           {{ range .termin }}
             {{ if eq .dan "Ponedeljak" }}
-            <div class="bg-amber-200 text-center">
+            <div class="bg-tuscan  text-center">
               {{ .usluga }}<br>
-              {{ .startTime}} - {{ .endTime }}<br>
+              <span class="text-sm">{{ .startTime}} - {{ .endTime }}</span><br>
               {{ .opis }}
             </div>
             {{ end }}
           {{ end }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <td class="whitespace-nowrap px-4 py-2 text-white">
           {{ range .termin }}
           {{ if eq .dan "Utorak" }}
-          <div class="bg-amber-200 text-center">
+          <div class="bg-tuscan  text-center">
             {{ .usluga }}<br>
-            {{ .startTime}} - {{ .endTime }}<br>
+            <span class="text-xs">{{ .startTime}} - {{ .endTime }}</span><br>
             {{ .opis }}
           </div>
           {{ end }}
         {{ end }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <td class="whitespace-nowrap px-4 py-2 text-white">
           {{ range .termin }}
           {{ if eq .dan "Srijeda" }}
-          <div class="bg-amber-200 text-center">
+          <div class="bg-tuscan  text-center">
             {{ .usluga }}<br>
-            {{ .startTime}} - {{ .endTime }}<br>
+            <span class="text-xs">{{ .startTime}} - {{ .endTime }}</span><br>
             {{ .opis }}
           </div>
           {{ end }}
         {{ end }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <td class="whitespace-nowrap px-4 py-2 text-white">
           {{ range .termin }}
           {{ if eq .dan "Četvrtak" }}
-          <div class="bg-amber-200 text-center">
+          <div class="bg-tuscan  text-center">
             {{ .usluga }}<br>
-            {{ .startTime}} - {{ .endTime }}<br>
+            <span class="text-xs">{{ .startTime}} - {{ .endTime }}</span><br>
             {{ .opis }}
           </div>
           {{ end }}
         {{ end }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <td class="whitespace-nowrap px-4 py-2 text-white">
           {{ range .termin }}
           {{ if eq .dan "Petak" }}
-          <div class="bg-amber-200 text-center">
+          <div class="bg-tuscan  text-center">
             {{ .usluga }}<br>
-            {{ .startTime}} - {{ .endTime }}<br>
+            <span class="text-xs">{{ .startTime}} - {{ .endTime }}</span><br>
             {{ .opis }}
           </div>
           {{ end }}
         {{ end }}
         </td>
-        <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+        <td class="whitespace-nowrap px-4 py-2 text-white">
           {{ range .termin }}
           {{ if eq .dan "Subota" }}
-          <div class="bg-amber-200 text-center">
+          <div class="bg-tuscan  text-center">
             {{ .usluga }}<br>
-            {{ .startTime}} - {{ .endTime }}<br>
+            <span class="text-xs">{{ .startTime}} - {{ .endTime }}</span><br>
             {{ .opis }}
           </div>
           {{ end }}

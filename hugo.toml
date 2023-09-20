@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://venushotyoga.netlify.app'
 languageCode = 'hr'
 title = 'Venus Hot Yoga'
 defaultContentLanguage = 'hr'
@@ -6,6 +6,8 @@ defaultContentLanguage = 'hr'
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
 
 [languages]
   [languages.en]

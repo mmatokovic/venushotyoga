@@ -4,4 +4,4 @@ Disallow: /admin/
 {{ range .Pages }}
 allow: {{ .RelPermalink }}
 {{ end }}
-Sitemap: https://venushotyoga.netlify.app/sitemap.xml
+Sitemap: {{ "/sitemap.xml" | absURL }}

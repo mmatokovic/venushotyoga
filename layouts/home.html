@@ -118,20 +118,22 @@
   </section>
   <section class="text-black text-xl">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-      <div class="mx-auto max-w-lg text-center">
-          <h2 class="text-3xl font-bold sm:text-4xl">Naše usluge</h2>
-      </div>
       <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
-            <picture>
-              <source srcset="/images/gallery170.jpg" type="image/webp">
-              <img alt="Lava" src="/images/gallery170.jpg" class="absolute inset-0 h-full w-full object-cover"/>
-            </picture>
+            {{ with resources.Get "/images/gallery170.jpg" }}
+                {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+                <picture>
+                  <source srcset="{{ .RelPermalink }}" type="image/webp">
+                  <img alt="Lava" src="{{ .RelPermalink }}" class="absolute inset-0 h-full w-full object-cover"/>
+                </picture>
+                {{ end }}
+            {{ end }}
           </div>
           <div class="lg:py-16">
             <article class="space-y-4">
               <div class="max-w-3xl">
+                <label class="uppercase font-bold text-sm text-ecru">Focused on you</label>
                 <h2 class="text-3xl font-bold sm:text-4xl text-camel">
                   Hot Yoga
                 </h2>
@@ -142,7 +144,9 @@
                 minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
               </p>
               {{ with .Site.GetPage "hot-yoga" }}
-              <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-tuscan px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
+              <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
+                <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
               {{ with .Site.GetPage "pricing" }}
@@ -158,10 +162,14 @@
       <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-            <picture>
-              <source srcset="/images/Danijel.jpg" type="image/webp">
-              <img alt="Lava" src="/images/Danijel.jpg" class="absolute inset-0 h-full w-full object-cover"/>
-            </picture>
+            {{ with resources.Get "/images/Danijel.jpg" }}
+              {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+              <picture>
+                <source srcset="{{ .RelPermalink }}" type="image/webp">
+                <img alt="Lava" src="{{ .RelPermalink }}" class="absolute inset-0 h-full w-full object-cover"/>
+              </picture>
+              {{ end }}
+            {{ end }}
           </div>
           <div class="lg:py-16">
             <h2 class="text-3xl font-bold sm:text-4xl text-camel">
@@ -190,7 +198,7 @@
   <section class="text-black text-xl">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-lg text-center mb-5">
-        <h2 class="text-3xl font-bold sm:text-4xl">Latest Blogs</h2>
+        <h2 class="text-3xl font-bold sm:text-4xl text-camel">Latest Blogs</h2>
       </div>
       <div class="flex flex-wrap -m-4">
         {{ $latestPosts := (where .Site.RegularPages "Section" "posts").ByDate.Reverse | first 3 }}
@@ -198,10 +206,12 @@
         <div class="p-4 md:w-1/3">
           <article class="group">
             {{ with resources.Get .Params.featured_image }}
-            <picture>
-              <source srcset="{{ .RelPermalink }}" type="image/webp">
-              <img alt="Lava" src="{{ .RelPermalink }}" class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"/>
-            </picture>
+              {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
+              <picture>
+                <source srcset="{{ .RelPermalink }}" type="image/webp">
+                <img alt="Lava" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"/>
+              </picture>
+              {{ end }}
             {{ end }}
             <div class="p-4">
               <a href="{{ .RelPermalink }}">
