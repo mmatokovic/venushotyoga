@@ -59,16 +59,16 @@ Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi
 
 **Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
 
-{{< section src="/images/Danijel.jpg" >}}
+{{< aside-conent src="/images/Danijel.jpg" >}}
 
 ## Danijel Deni Jeremić
 
 Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
-{{< /section >}}
+{{< /aside-conent >}}
 
-{{< section src="/images/Ana_Pojatina.png" class="lg:order-last">}}
+{{< aside-conent src="/images/Ana_Pojatina.png" class="lg:order-last">}}
 
 ## Ana Pojatina
 
 Ana prakticira yogu više od 20 godina. Temelje yoge upoznala je u sustavu Joge u svakodnevnom životu, a zatim je nakon nekog vremena pohađala radionice i seminare Iyengar yoge te one u tradiciji T. Krishnamacharye. Učila je i od Vjerne Nevistić, čije satove i seminare i danas rado pohađa. Profesionalno se bavi grafičkim dizajnom, pogotovo u području nakladništva, te uređuje knjige iz područja duhovnosti i osobnog razvoja.
-{{< /section >}}
+{{< /aside-conent >}}

@@ -34,12 +34,22 @@ module.exports = {
 			},
 			animation: {
 				fadeInDown : 'fadeInDown 1s',
+				fadeInLeft : 'fadeInLeft 1s',
+				fadeInRight : 'fadeInRight 1s',
 			},
 			keyframes: {
 				fadeInDown : {
 				  'from': { opacity: 0, transform: 'translateY(-20px)' },
 				  'to': { opacity: 1, transform: 'translateY(0)' },
-				}
+				},
+				fadeInLeft : {
+				  'from': { opacity: 0, transform: 'translateX(-20px)' },
+				  'to': { opacity: 1, transform: 'translateX(0)' },
+				},
+				fadeInRight : {
+				  'from': { opacity: 0, transform: 'translateX(20px)' },
+				  'to': { opacity: 1, transform: 'translateX(0)' },
+				}  
 			}
 		}
 	}

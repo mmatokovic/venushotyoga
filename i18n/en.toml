@@ -5,7 +5,7 @@
   other = 'Call Us :)'
 
 [home_hero_title]
-  other = 'Design, Build and operate assets better'
+  other = 'Experience the benefits of authentic hot yoga that will change your life in a warm and welcoming community.'
 
 [home_how_to]
   other = 'How to prepare'
@@ -74,6 +74,27 @@
 [contact_parking]
   other = 'Parking info:'
 
+[blogs]
+  other = 'Blogs'
+
+[minutes_of_reading]
+  other = 'minutes of reading'
+
+[share_article]
+  other = 'Share this article'
+
+[latest_blog]
+  other = 'Latest Blog'
+
+[latest_ebooks]
+  other = 'Latest E-Books'
+
+[order_ebooks]
+  other = 'Order E-Book'
+
+[testimonials]
+  other = 'Read the comments of our participants'
+
 [about]
   other = 'About Us'
 
@@ -82,12 +103,23 @@
   Tvrtka se od 1990. bavim raznim građevinskim radovima, od tuženja do završnih radova. Imamo tim sa višegodišnjim iskustvom što osigurava sigurnu izradu vaših zahtjeva. Sa sjedištem smo u Zagrebu, trudimo da djelujemo u i ostalim djelovima Hrvatske što iznimno pozitivno utiče na naš napredak kao i uspjeh. Tvrtka se u osnovi bavi gradjevinskim radovima, zidarskim radovima - rohbau, suhom gradjom, kao i završnim radovima, podnim, zidnim oblogama.
   U tvrtki imamo tim stučnjaka, koji se bave građevinskim nadzorom i vođenjem projekta. Koristimo novu, modernu i suvremenu mehanizaciju, tehnologiju. Trudimo se da ispunimo sve vaše zahtjeve, te da na taj načim izmamio zadovoljstvo koje nam je iznimno važno. Uvjerite se samo u našu brzinu, odgovornost i kvalitet, kontaktirajte nas.
   """
+[rejuvenation]
+  other = 'Rejuvenation'
 
-[real_estate]
-  other = 'Nekretnine'
+[training]
+  other = 'Training'
 
-[real_estate_text]
-  other = 'Ako tražite novi dom, obratite nam se s povjerenjem jer je svaki naš projekt potpuno prilagođen potrebama života u 21. stoljeću. To prije svega znači da, osim pouzdanosti, kvaliteti izvedbe i opremanju prostora, maksimalnu pozornost posvećujemo i izboru mikro-lokacije. To podrazumijeva blizinu svih potrebnih institucija poput škola, domova zdravlja, rekreativnih i zabavnih sadržaja, ali isto tako i snažan doticaj s prirodom.'
+[additional_services]
+  other = 'Additional Services'
+
+[show_more]
+  other = 'Show More'
+
+[see_the_prices]
+  other = 'To see the prices'
+
+[questions]
+  other = 'If you have any questions'
 
 [services]
   other = 'Services'
@@ -121,6 +153,36 @@
 
 [rights]
   other = 'all rights reserved'
+
+[schedule]
+  other = 'Schedule'
+
+[time]
+  other = 'Time'
+
+[monday]
+  other = 'Monday'
+
+[tuesday]
+  other = 'Tuesday'
+
+[wednesday]
+  other = 'Wednesday'
+
+[thursday]
+  other = 'Thursday'
+
+[friday]
+  other = 'Friday'
+
+[saturday]
+  other = 'Saturday'
+
+[read_more]
+  other = '...Read More'
+
+[404_ohno]
+  other= 'Uh-oh!'
 
 [404_cantfind]
   other = "We can't find that page."

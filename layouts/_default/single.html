@@ -24,21 +24,21 @@
     {{ if eq .File.BaseFileName "rejuvenation" }}
       {{ with site.GetPage "pricing" }}
         <p class="text-center font-medium sm:text-left">
-          To see the prices
+          {{ T "see_the_prices" }}
         </p>
         <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}#rejuvenation">View Prices</a>
       {{ end }}
     {{ else if eq .File.BaseFileName "hot-yoga"}}
       {{ with .Site.GetPage "pricing" }}
       <p class="text-center font-medium sm:text-left">
-        To see the prices
+        {{ T "see_the_prices" }}
       </p>
       <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">View Prices</a>
       {{ end }}
     {{ else }}
     {{ with .Site.GetPage "faq" }}
       <p class="text-center font-medium sm:text-left">
-        If you have any questions
+        {{ T "questions" }}
       </p>
       <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">FAQ</a>
     {{ end }}

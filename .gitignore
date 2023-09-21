@@ -32,7 +32,6 @@ data/svelte.json
 .env
 hugo_stats.json
 .hugo_build.lock
-
 ToDo
 
 # Local Netlify folder

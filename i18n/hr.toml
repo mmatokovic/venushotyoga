@@ -5,7 +5,25 @@
   other = 'Javite nam se :)'
 
 [home_hero_title]
-  other = 'Dizajnirajte, gradite i upravljajte imovinom bolje'
+  other = 'Doživite prednosti izvorne vruće joge koje vam mijenjaju život u toploj i gostoljubivoj zajednici.'
+
+[see_the_prices]
+  other = 'Ako želite vidjeti cijene'
+
+[questions]
+  other = 'Ako imate ikakvih pitanja'
+
+[rejuvenation]
+  other = 'Pomlađivanje'
+
+[training]
+  other = 'Trening'
+
+[additional_services]
+  other = 'Dodatne Usluge'
+
+[show_more]
+  other = 'Prikaži više'
 
 [home_how_to]
   other = 'Kako se pripremiti'
@@ -70,8 +88,59 @@
 [about]
   other = 'O nama'
 
+[testimonials]
+  other = 'Pročitajte komentare naših polaznika'
+
+[minutes_of_reading]
+  other = 'minute čitanja'
+
+[share_article]
+  other = 'Podijelite ovaj članak'
+
+[blogs]
+  other = 'Blogs'
+
+[latest_blog]
+  other = 'Najnoviji blog'
+
+[latest_ebooks]
+  other = 'Najnovija E-Knjiga'
+
+[order_ebooks]
+  other = 'Naručite E-Knjigu'
+
 [rights]
   other = 'Sva prava pridržana'
+
+[schedule]
+  other = 'Raspored'
+
+[time]
+  other = 'Vrijeme'
+
+[monday]
+  other = 'Ponedeljak'
+
+[tuesday]
+  other = 'Utorak'
+
+[wednesday]
+  other = 'Srijeda'
+
+[thursday]
+  other = 'Četvrtak'
+
+[friday]
+  other = 'Petak'
+
+[saturday]
+  other = 'Subota'
+
+[read_more]
+  other = '...Saznaj više'
+
+[404_ohno]
+  other= 'O Ne!'
 
 [404_cantfind]
   other = 'Ne možemo pronaći tu stranicu.'
