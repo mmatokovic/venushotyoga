@@ -14,18 +14,14 @@ weight: 1
 Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
 Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
 
-Vlasnica Venus Hot Yoga studija je Vjerna Nevistić. Vjerna je završila Kineziološki fakultet u Zagrebu, MBA u Pragu na američkom sveučilištu UNYP. Sedam godina živjela I radila je u Americi kao privatni trener I yoga instruktor  (Chicago, Dallas Phoenix),a u Pragu tri godine gdje je otvorila tada prvi hot yoga studio u Českoj 2003 g. Majka je tri sina  koji uz borilačke sportove redovito vježbaju hot yogu. uUz to, Vjerna je vanjski predavač na Kineziološkom fakultetu, gdje studentima sa zadovoljstvom drži predavanja o yogi.
+{{< aside-content-slider 1="/images/studio-7.jpg" 2="/images/studio-12.jpg" class="lg:order-last">}}
+
+**Vlasnica Venus Hot Yoga studija je Vjerna Nevistić.**
+
+Vjerna je završila Kineziološki fakultet u Zagrebu, MBA u Pragu na američkom sveučilištu UNYP. Sedam godina živjela I radila je u Americi kao privatni trener I yoga instruktor  (Chicago, Dallas Phoenix),a u Pragu tri godine gdje je otvorila tada prvi hot yoga studio u Českoj 2003 g. Majka je tri sina  koji uz borilačke sportove redovito vježbaju hot yogu. uUz to, Vjerna je vanjski predavač na Kineziološkom fakultetu, gdje studentima sa zadovoljstvom drži predavanja o yogi.
 
 Venus hot yoga studio u Zagrebu otvoren je od 2010 godine.
-|  | |
-|---------|---------|
-| ![studio-7](/images/studio-7.jpg "studio-7") | ![studio-12](/images/studio-12.jpg "studio-12") |
-
-### Pogodnosti
-
-* Iznajmljivanje prostirki za jogu i ručnika
-* Kombucha i voda u kutiji za kupovinu.
-* Tuševi i svlačionice dostupni su svim studentima
+{{< /aside-content-slider >}}
 
 ## Vjerna Nevistić
 
@@ -33,25 +29,26 @@ Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem 
 
 1996 godine seli se u SAD gdje živi i radi kao fitness i yoga instruktor te osobni trener slijedećih sedam godina (Chicago, Dallas, Phoenix). Dalje se obrazuje i istražuje yoga pravce i škole. Tamo su se rodila njezina prva dva sina koji od malena vježbaju gimnastiku, borilačke sportove i yogu.
 
-2003. godine s obitelji dolazi u Prag gdje osniva svoj prvi hot yoga centar (i tada prvi u Češkoj). Završava stručni magisterij MBA na američko- švicarskom sveučilištu UNYP- Kurt Bosch Universitaire.
+{{< aside-conent src="/images/Akarna-Dhanurasana.jpg" >}}
 
-2007. godine vraća se u Hrvatsku te otvara Venus hot yoga studio u Zagrebu, Radićeva 3. U Zagrebu je rodila i trećeg sina koji se takođe intenzivno trenira košarku i yogu.
+2003 godine s obitelji dolazi u Prag gdje osniva svoj prvi hot yoga centar (i tada prvi u Češkoj). Završava stručni magisterij MBA na američko- švicarskom sveučilištu UNYP- Kurt Bosch Universitaire.
+
+2007 godine vraća se u Hrvatsku te otvara Venus hot yoga studio u Zagrebu, Radićeva 3. U Zagrebu je rodila i trećeg sina koji se takođe intenzivno trenira košarku i yogu.
+
+2021  osnovala je s kolegicom Asjom Petersen Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
+{{< /aside-conent >}}
 
 Redoviti putevi u Indiju su joj strast i profesija. Član je upravnog odbora literarno-socijalne nagrade TagorePrize koja se svake godine održava u New Delhiju u Indiji [Tagore Prize](https://www.tagoreprize.com "Tagore Prize"). Posjećuje hramove na Himalajama i različite yoga centre. Najdraži su joj je Morarji Desai National Institute of Yoga u New Delhiju čija je krilatica: ''Zdravlje, harmonija i sreća za sve kroz yogu'', a tamo uče i vježbaju yogu svi od običnih ljudi, terapeuta, vojnika u sklopu svoje obuke, te Haidakan Babaji Ashram skriven u Himalayama mističan, autentičan i malo poznat javnosti.
 
-2021. osnovala je s kolegicom Asjom Petersen Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
-
 U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 
--sa sportašima koji su yogu izabrali kao dodatnu aktivnost najčešće za povećanje fleksibilnosti, ravnoteže koordinacije i bolje funkcije disanja te relaksacije, npr hokejaši, trkači i trkačice, plivači mlađih kategorija, borilački sportovi kick boksing i boks, ronioci...
+{{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last">}}
+* sa sportašima koji su yogu izabrali kao dodatnu aktivnost najčešće za povećanje fleksibilnosti, ravnoteže koordinacije i bolje funkcije disanja te relaksacije, npr hokejaši, trkači i trkačice, plivači mlađih kategorija, borilački sportovi kick boksing i boks, ronioci...
 
 * sa ljudima koji dolaze zbog bolova u leđima, kukovima, kojenima, nesanice,aritmije, lagane depresije, pretilosti i još mnogo drugih problema te ih kroz redovito prakticiranje asana i pranayama rješavaju
 
 * djecom, studentima, starijim dobnim skupinama, rekreativcima
-
-|  | |
-|---------|---------|
-| ![Akarna-Dhanurasana-s-obrnutim-hvatom](/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg "Akarna Dhanurasana s obrnutim hvatom") | ![Akarna-Dhanurasana](/images/Akarna-Dhanurasana.jpg "Akarna Dhanurasana") |
+{{< /aside-conent >}}
 
 Od malena se aktivno bavila i borilačkim sportom Budokai kod svog ujaka dr. Emina Topića te se natjecala u katama (3. mjesto na svjetskom prvenstvu u katama u Veneciji 1989.g)
 

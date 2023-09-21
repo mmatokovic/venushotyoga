@@ -1,0 +1,43 @@
+<section>
+  <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+			<div class="{{ if .Get "class" }}{{ .Get "class" }} relative !h-full overflow-hidden rounded-lg sm:h-full{{else}}relative !h-full overflow-hidden rounded-lg sm:h-full{{ end }}">
+			<div id="image-keen-slider" class="keen-slider">
+					<button id="keen-slider-previous" class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+						<
+					</button>
+					<button id="keen-slider-next" class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+						>
+					</button>
+					{{ if .IsNamedParams }}
+					<div class="keen-slider__slide flex justify-center items-center">
+						{{ $image := .Get "1" | resources.Get }}
+						{{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
+						<picture class="not-prose">
+								<source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+								<img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
+						</picture>
+					</div>
+					<div class="keen-slider__slide flex justify-center items-center">
+						{{ $image := .Get "2" | resources.Get }}
+						{{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
+						<picture class="not-prose">
+								<source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
+								<img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
+						</picture>
+					</div>
+      	</div>
+			</div>
+      {{ end }}
+      <div class="lg:py-4">
+        <article class="space-y-4 text-gray-600 prose prose-h2:!mt-0 text-xl">
+          {{ .Inner | markdownify }}
+        </article>
+      </div>
+    </div>
+	</div>
+</section>
+{{ $scripts := resources.Get "scripts/imageSlider.ts" }}
+{{ $options := dict "minify" true }}
+{{ $js := $scripts | js.Build $options }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
