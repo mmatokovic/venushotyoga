@@ -13,7 +13,7 @@
 					<div class="keen-slider__slide flex justify-center items-center">
 						{{ $image := .Get "1" | resources.Get }}
 						{{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
-						<picture class="not-prose">
+						<picture class="mx-0 my-0">
 								<source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
 								<img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
 						</picture>
@@ -21,7 +21,7 @@
 					<div class="keen-slider__slide flex justify-center items-center">
 						{{ $image := .Get "2" | resources.Get }}
 						{{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
-						<picture class="not-prose">
+						<picture class="mx-0 my-0">
 								<source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
 								<img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
 						</picture>
