@@ -81,15 +81,11 @@ U toplom okruženju i disanje nam je dublje te vježbamo pluća šireći ih da p
 Na toplini tijelo brzo dolazi na ,,radnu temperature,, puno je pokrtljivije I smanjena je mogućnost ozljeda naravno ako se pozicije izvode pravilno i bez prisutnosti boli.
 
 Satovi su prikladni za svakoga, od potpunih početnika do naprednih vježbača i yogija. Nije bitno koliko dobro izvodite yoga poziciju niti koliko ste rastezljivi, bitno je da poziciju, ili samo jedan njezin dio, pokušate izvesti potpuno pravilno i tada možete uživati njeno cjelovito dobro djelovanje.
-
+{{< aside-conent src="/images/Eka-pada-Bakasana-II.jpg" >}}
 ## Grupe su male, od šest do 12 polaznika
 
 tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
-
-|  | |
-|---------|---------|
-| ![Eka-pada-Bakasana-II](/images/Eka-pada-Bakasana-II.jpg "Eka pada Bakasana II") | ![studio-13](/images/studio-13.jpg "studio-13") |
-
+{{< /aside-conent >}}
 ## Za koga hot yoga nije primjerena
 
 Za **trudnice** koje do sada nisu vježbale na toplini. 
@@ -109,7 +105,7 @@ Upute za ONLINE prijavu:
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
-
+{{< aside-conent src="/images/Anantasana-3.jpg"  class="lg:order-last" >}}
 ## BON TON
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
@@ -120,5 +116,4 @@ Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strplj
 * Izbjegavajte parfeme ili losione s jakim mirisima.
 * Razgovarajte sa svojim učiteljem prije nastave o svim ozljedama ili stanjima koja imate.
 * Dođite na predavanje dobro hidrirani i izbjegavajte velike obroke dva sata prije vježbanja.
-
-![Anantasana-3](/images/Anantasana-3.jpg "Anantasana")
+{{< /aside-conent >}}
