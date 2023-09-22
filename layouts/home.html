@@ -150,7 +150,9 @@
                 {{ .Title }}
               </a>
               {{ with .Site.GetPage "pricing" }}
-              <a href="{{ .Permalink }}#hot-yoga" class="mt-8 inline-block rounded bg-hazelnut px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
+              <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
+                <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
               {{ end }}
@@ -172,6 +174,7 @@
             {{ end }}
           </div>
           <div class="lg:py-16">
+            <label class="uppercase font-bold text-sm text-ecru">For you</label>
             <h2 class="text-3xl font-bold sm:text-4xl text-camel">
               Pomlađivanje
             </h2> 
@@ -181,12 +184,16 @@
               veniam tempora deserunt? Molestiae eius quidem quam repellat.
             </p> 
             {{ with .Site.GetPage "rejuvenation" }}
-            <a href="{{ .RelPermalink }}" class="mt-8 inline-block rounded bg-tuscan px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
+            <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
+              <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>
             {{ end }}
             {{ with .Site.GetPage "pricing" }}
-            <a href="{{ .Permalink }}#rejuvenation" class="mt-8 inline-block rounded bg-hazelnut px-12 py-3 text-sm font-medium text-white transition hover:opacity-75 focus:outline-none focus:ring focus:ring-yellow-400">
+            <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
+              <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>
             {{ end }}

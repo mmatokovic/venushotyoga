@@ -1,10 +1,10 @@
-<div class="overflow-x-auto" id="schedule">
-  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-    <caption class="text-gray-600 text-3xl font-bold sm:text-4xl mb-2">
+<section class="overflow-x-auto" id="schedule">
+  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm hidden md:table">
+    <caption class="text-white text-3xl font-bold sm:text-4xl mb-2">
       {{ T "schedule" }}
     </caption>
     <thead class="ltr:text-left rtl:text-right">
-      <tr class="whitespace-nowrap px-4 py-2 font-bold text-center text-gray-900">
+      <tr class="whitespace-nowrap px-4 py-2 font-bold text-center text-gray-900 font-bold">
         <th>
           {{ T "time" }}
         </th>
@@ -31,7 +31,7 @@
     <tbody class="divide-y divide-gray-200">
       {{ range $i, $p := .Page.Params.raspored }}
       <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 font-bold">
           {{ .startTime }}
         </td>
         <td class="whitespace-nowrap px-4 py-2 text-white ">
@@ -104,4 +104,108 @@
       {{ end }}
     </tbody>
   </table>
-</div>
+  <table class="bg-tuscan text-sm border-separate border-spacing-y-3 px-3 lg:hidden">
+    <caption class="text-white text-3xl font-bold sm:text-4xl mb-2">
+      {{ T "schedule" }}
+    </caption>
+    <tbody class="divide-y divide-gray-200">
+      
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Ponedeljak
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Ponedeljak" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Utorak
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Utorak" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Srijeda
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Srijeda" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Četvrtak
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Četvrtak" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Petak
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Petak" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+      <tr class="text-gray-900 font-bold text-sm">
+        <td colspan="2" class="whitespace-nowrap px-3 font-medium">
+          Subota
+        </td>
+      </tr>
+      {{ range .Page.Params.raspored }}{{ range .termin }}{{ if eq .dan "Subota" }}
+      <tr class="text-gray-900 font-bold bg-white my-4">
+        <td class="p-4">
+              <span class="font-bold">{{ .usluga }}</span><br>
+              <span class="capitalize text-xs">{{ .opis }}</span>
+            </td>
+          <td class="text-center align-middle">
+              <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          </td>
+        </tr>
+      {{ end }}{{ end}}{{ end}}
+    </tbody>
+  </table>
+</section>

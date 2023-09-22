@@ -97,7 +97,7 @@ Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konz
 
 U studiju imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
 
-## Online Live Yoga
+<!-- ## Online Live Yoga
 
 Satovima se mogu priključiti svi osim apsolutnih početnika u yogi. Istima se preporučuje vježbanje uživo u studiju.
 Prakticiranje yoge uvijek je najbolje i najefektnije u studiju s učiteljem. No, ponekad smo lijeni izaći iz svoje zone komfora, pa zašto onda ne pokušati s online satovima? U svakom trenutku možete nam se, nakon nekog vremena, pridružiti u studiju - našoj maloj oazi mira i sreće :)
@@ -108,7 +108,7 @@ Upute za ONLINE prijavu:
 
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
-* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova.
+* Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
 
 ## BON TON
 
