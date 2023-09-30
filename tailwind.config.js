@@ -12,6 +12,7 @@ module.exports = {
 			colors: {
 				transparent: 'transparent',
 				current: 'currentColor',
+				'bright-yellow': '#F4EBDF',
 				'beige': '#f5f5dc',
                 'wheat': '#F3D9A9',
 				'almond': '#eed9c4',
@@ -36,6 +37,9 @@ module.exports = {
 				fadeInDown : 'fadeInDown 1s',
 				fadeInLeft : 'fadeInLeft 1s',
 				fadeInRight : 'fadeInRight 1s',
+			},
+			listStyleImage: {
+				lotus: 'url("/images/svg/lotus-svgrepo-com.svg")',
 			},
 			keyframes: {
 				fadeInDown : {

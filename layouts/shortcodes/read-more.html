@@ -1,28 +1,8 @@
 <details class="inline open:inline">
-  <summary class="cursor-pointer inline text-ecru">
+  <summary id="read_more" class="cursor-pointer inline text-ecru">
     {{ T "read_more" }}
   </summary>
-  {{ .Inner | markdownify }}
+  <div class="bg-bright-yellow p-5 font-thin">
+    {{ .Inner | markdownify }}
+  </div>
 </details>
-
-<script>
-  (function () {
-    // Get all <details> elements
-    const detailsElements = document.querySelectorAll('details');
-  
-    // Loop through each <details> element
-    detailsElements.forEach(detailsElement => {
-      // Get the previous sibling element (the one before <details>)
-      const previousElement = detailsElement.previousElementSibling;
-  
-      // Check if there is a previous sibling element and it's not already having the "inline" class
-      if (previousElement && !previousElement.classList.contains('inline')) {
-        // Add the "inline" class to the previous sibling element
-        previousElement.classList.add('inline');
-      }
-    });
-  })();
-</script>
-
-
-

@@ -49,7 +49,7 @@
     {{ end }}
     </tbody>
   </table>
-  <table class="bg-tuscan text-sm border-separate border-spacing-y-3 px-3 lg:hidden">
+  <table class="bg-tuscan text-sm border-separate border-spacing-y-2 px-3 lg:hidden">
     <caption class=" text-3xl font-bold sm:text-4xl mb-2">
       {{ T "schedule" }}
     </caption>
@@ -59,16 +59,15 @@
         <td colspan="2" class="whitespace-nowrap px-3 font-bold">
           {{ .day }}
         </td>
-        <td></td>
       </tr>
       {{ range .appointments }}
       <tr class="text-gray-900 font-bold bg-white my-4">
-        <td class="p-4">
-              <span class="font-bold">{{ .service }}</span><br>
-              <span class="capitalize text-xs">{{ .description }}</span>
+        <td class="p-2">
+          <span class="font-bold">{{ .service }}</span><br>
+          <span class="capitalize text-xs">{{ .description }}</span>
         </td>
         <td class="text-center align-middle">
-            <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+          <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
           </td>
         </tr>
         {{ end }}

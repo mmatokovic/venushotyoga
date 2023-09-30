@@ -32,16 +32,6 @@ faq:
       i osjetili fizičke i mentalne dobrobiti koje dolazi s predanim vježbanjem!
   - question: Ima li tuševa u studiju?
     answer: Da! U svakoj svlačionici postoje dva tuša.
-  - question: Zašto Bikram joga?
-    answer: >-
-      Studija provedena 2015. otkrila je da Bikram joga, također poznata kao
-      vruća joga, značajno poboljšava snagu donjeg dijela tijela, jača gornji
-      dio tijela i ramena te pomaže u održavanju ravnoteže tijela u zdravlju.
-      Studija je također otkrila da su gustoća kostiju, krutost arterija, lipidi
-      u krvi i svjesnost znatno poboljšani.
-
-
-      Naši instruktori joge prakticiraju jogu dugi niz godina i iz prve su ruke iskusili pozitivne promjene zdravlja i svjesnosti koje proizlaze iz prakticiranja vruće joge.
 title: FAQ
 weight: 7
 description: Frequently Asked Questions About Hot Yoga

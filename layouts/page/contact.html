@@ -1,11 +1,13 @@
 {{ define "main" }}
-<section class="text-gray-600 body-font relative mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 font-nunito">
-  <div class="mw-auto  text-center border-b-4 border-buff mb-4">
-    <h2 class="text-3xl font-bold sm:text-4xl ">{{ .Title }}</h2>
-  </div>
+<section class="text-gray-600 body-font relative mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 ">
     <div class="flex sm:flex-nowrap flex-wrap mb-8">
       <div class="lg:w-2/3 md:w-1/2 bg-gray-200 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-        <iframe class="absolute inset-0 grayscale-0 opacity-100" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0316221827887!2d15.976189358966554!3d45.81365157522736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7433d3f99dd%3A0x2ef7bf07f917f496!2sVenus%20hot%20yoga!5e1!3m2!1shr!2shr!4v1694898746823!5m2!1shr!2shr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+          <div id="loadingIndicator" class="absolute inset-0 flex items-center justify-center bg-white opacity-75">
+            <p>Loading map...</p>
+          </div>       
+          <iframe class="absolute inset-0 grayscale-0 opacity-100" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0316221827887!2d15.976189358966554!3d45.81365157522736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7433d3f99dd%3A0x2ef7bf07f917f496!2sVenus%20hot%20yoga!5e1!3m2!1shr!2shr!4v1694898746823!5m2!1shr!2shr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md invisible md:visible ">
           <div class="lg:w-1/2 px-6">
             <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">{{ T "contact_address" }}</h2>
@@ -21,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
         <form name="contact" id="contact" data-netlify="true" netlify-honeypot="bot-field">
           <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
             {{ T "contact"}}

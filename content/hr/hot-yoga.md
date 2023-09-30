@@ -6,7 +6,7 @@ description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30
 menu:
 - main
 - footer
-image: /images/plato_1_b_ISPRVAK_Facebook.jpg
+image: /images/molitva.jpeg
 weight: 2
 schedule:
   - day: Srijeda
@@ -21,6 +21,10 @@ schedule:
         description: u studiju
   - day: Četvrtak
     appointments:
+      - service: Restorativan 
+        startTime: 09:30
+        endTime: 11:00
+        description: u studiju
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
@@ -54,6 +58,8 @@ HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Ce
 
 [hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
+![Image alt](images/leti.jpeg)
+
 ## Koje su dobrobiti hot yoge?
 
 Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna {{< read-more >}}
@@ -67,21 +73,10 @@ Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. De
 * Pomaže postizanju idealne tjelesne težine i oblikuje tijelo, na jednom treningu prosječno se potroši 350 do 600 kcal ovisno o tjelesnoj građi i koliko se trudite. Yoga djeluje i na centre koji reguliraju apetit, probavu, san I ostale faktore koji igraju
 {{< /read-more >}}
 
-### Satovi su prikladni za svakoga, od potpunih početnika do naprednih vježbača i yogija
-
-Nije bitno koliko dobro izvodite yoga poziciju niti koliko ste rastezljivi, bitno je da poziciju, ili samo jedan njezin dio, pokušate izvesti potpuno pravilno i tada možete uživati njeno cjelovito dobro djelovanje.
-
-tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
-
-U toplom okruženju i disanje nam je dublje te vježbamo pluća šireći ih da prime veću količinu zraka. Na taj način više opskrbljujemo tijelo kisikom te se osjećamo opuštenije i bez stresa.
-
-Na toplini tijelo brzo dolazi na ,,radnu temperature,, puno je pokrtljivije I smanjena je mogućnost ozljeda naravno ako se pozicije izvode pravilno i bez prisutnosti boli.
-
-Satovi su prikladni za svakoga, od potpunih početnika do naprednih vježbača i yogija. Nije bitno koliko dobro izvodite yoga poziciju niti koliko ste rastezljivi, bitno je da poziciju, ili samo jedan njezin dio, pokušate izvesti potpuno pravilno i tada možete uživati njeno cjelovito dobro djelovanje.
-{{< aside-conent src="/images/Eka-pada-Bakasana-II.jpg" >}}
+{{< aside-conent src="/images/gallery170.jpg" >}}
 ## Grupe su male, od šest do 12 polaznika
 
-tako da je pristup vrlo individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
+Pristup je individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
 {{< /aside-conent >}}
 ## Za koga hot yoga nije primjerena
 
@@ -103,14 +98,18 @@ Upute za ONLINE prijavu:
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
 {{< aside-conent src="/images/Anantasana-3.jpg"  class="lg:order-last" >}}
-## BON TON
+## BONTON
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
 
-* Pokušajte ostati u sobi tijekom nastave. Smirite se i odmorite se kada je potrebno.
-* Pobrinite se da svoju prostirku postavite tako da praktikanti iza vas mogu vidjeti.
-* Koristite veliki ručnik preko svoje prostirke tijekom nastave.
-* Izbjegavajte parfeme ili losione s jakim mirisima.
-* Razgovarajte sa svojim učiteljem prije nastave o svim ozljedama ili stanjima koja imate.
-* Dođite na predavanje dobro hidrirani i izbjegavajte velike obroke dva sata prije vježbanja.
+* TOČNOST-molimo vas da na satove dolazite 5-10 min ranije
+* OBUĆU ostavljamo u predvorju
+* MIRISI I PARFEMI - molimo vas da ne koristite dezodorane u spreju ni parfeme u yoga centru
+* ODJEĆA I OPREMA-slobodno ostavite svoju yoga prostirku i flašu za vodu, za sve ostale stvari yoga centar nema dovoljno mjesta. Izgubljene i ostavljene stvari čuvamo 2 tjedna!
+* ZAVRŠNA SAVASANA (Ležanje na leđima) - molimo vas da ne izlazite za vrijeme završne Savasane ili prije nje, osim u slučaju iznimne hitnosti koju najavite učitelju prije sata.
+* PITANJA ukoliko imate bilo kakvih pitanja postavite ih nakon sata uz čaj.
+* TELEFONI -ostaju u garderobi - stišani
+* ČLANARINE - nisu prenosive na drugu osobu
+* OTKAZIVANJE TRETMANA - ukoliko imate zakazanu masažu, tretman ili ste se prijavili na yoga sat na najavu, a ne možete doći molimo da otkažete 24 sata prije termina, u suprotnom računati ćemo * kao da ste iskoristili termin.
+* SATOVI NA NAJAVU- ukoliko se prijavite, a ne pojavite na satu računa se da ste iskoristili termin
 {{< /aside-conent >}}

@@ -38,6 +38,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Readme shortcode
+const detailsElements = document.querySelectorAll('details');
+
+detailsElements.forEach(detailsElement => {
+    const previousElement = detailsElement.previousElementSibling;
+
+    if (previousElement && !previousElement.classList.contains('inline')) {
+        previousElement.classList.add('inline');
+    }
+
+    detailsElement.addEventListener('toggle', () => {
+        const readMore = detailsElement.querySelector('#read_more') as HTMLElement;
+
+        if (detailsElement.open) {
+            readMore.style.display = 'none';
+        } else {
+            readMore.style.display = 'inline';
+        }
+    })
+})
+
+function hideLoading(): void {
+// Hide the loading indicator once the iframe has loaded
+const loadingIndicator: HTMLElement | null = document.getElementById('loadingIndicator');
+if (loadingIndicator) {
+    loadingIndicator.style.display = 'none';
+}
+}
+
+
 const handleSubmit = (event: Event) => {
     event.preventDefault();
   

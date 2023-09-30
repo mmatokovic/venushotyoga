@@ -11,16 +11,18 @@ weight: 1
 
 ## O Studiju
 
+Venus hot yoga studio otvoren je 2010 g. Nalazimo se u centru Zagreba u povijesnoj zgradi bana Jelačića koja je uspješno i neozlijeđeno preživjela tri velika potresa koliko je fleksibilna.
+Kod nas su svi dobrodošli i na satove yoge i na tretmane [pomlađivanja](/pomlađivanje "pomlađivanja") prirodnim i neinvanzivnim načinom. Uvijek možete kombinirati yogu sa nekim od tretmana ili ručnom masažom.
+
 Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
 Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
 
 {{< aside-content-slider 1="/images/studio-7.jpg" 2="/images/studio-12.jpg" class="lg:order-last">}}
 
-**Vlasnica Venus Hot Yoga studija je Vjerna Nevistić.**
+Satovi se održavaju na hrvatskom i engleskom jeziku.
 
-Vjerna je završila Kineziološki fakultet u Zagrebu, MBA u Pragu na američkom sveučilištu UNYP. Sedam godina živjela I radila je u Americi kao privatni trener I yoga instruktor  (Chicago, Dallas Phoenix),a u Pragu tri godine gdje je otvorila tada prvi hot yoga studio u Českoj 2003 g. Majka je tri sina  koji uz borilačke sportove redovito vježbaju hot yogu. uUz to, Vjerna je vanjski predavač na Kineziološkom fakultetu, gdje studentima sa zadovoljstvom drži predavanja o yogi.
+Venus hot yoga je i mjesto gdje se sklapaju prijateljstva uz čaj nakon sata, te gdje možete doći na razgovor ili konzultacije a naši terapeuti i instruktori Vjerna, Danijel, Ana i Nina stoje vam na usluzi
 
-Venus hot yoga studio u Zagrebu otvoren je od 2010 godine.
 {{< /aside-content-slider >}}
 
 ## Vjerna Nevistić
@@ -54,7 +56,7 @@ Od malena se aktivno bavila i borilačkim sportom Budokai kod svog ujaka dr. Emi
 
 Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi upravo nosi i sličan naslov: Yoga- disciplinom do slobode. U njoj predstavlja klasifikaciju 196 asana podjeljenih u 18 grupa u odnosu na položaj gornjeg i donjeg dijela tijela na podlogu što omogućava voditeljima lakše slaganje sata a polaznicima jasnije i pravilnije izvođenje... (više o knjizi link)
 
-**Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
+## **Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
 
 {{< aside-conent src="/images/Danijel.jpg" >}}
 

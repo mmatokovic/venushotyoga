@@ -8,7 +8,7 @@ A Yoga website typically includes information on the different types of yoga pra
 
 ## Branches
 
-* The `master` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
+* The `main` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
 * The `stage` branch is where we store changes that are related to the next release.
 * The `dev` branch is where we store changes that are related to the next release.
 * The `feature/` branch used for work on new feature.

@@ -1,6 +1,6 @@
 <section>
   <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 bg-bright-yellow">
       {{ if .IsNamedParams }}
       <div class="{{ if .Get "class" }}{{ .Get "class" }} relative !h-96 overflow-hidden rounded-lg sm:h-full{{else}}relative !h-96 overflow-hidden rounded-lg sm:h-full{{ end }}">
         {{ $image := .Get "src" | resources.Get }}
@@ -12,7 +12,7 @@
       </div>
       {{ end }}
       <div class="lg:py-4">
-        <article class="space-y-4 text-gray-600 prose prose-h2:!mt-0 text-xl">
+        <article class="space-y-4 text-gray-600 prose prose-h2:!mt-0 text-xl p-5 sm:p-1">
           {{ .Inner | markdownify }}
         </article>
       </div>

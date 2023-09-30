@@ -1,14 +1,14 @@
 <header class="">
-  <nav class="top-0 z-10 font-nunito text-lg">
+  <nav class="top-0 z-10 text-lg">
     <div class="max-w-screen-xl px-5 py-5 mx-auto flex items-center space-y-0">
       <div class="flex-grow flex justify-start">
         <a href="{{ .Site.BaseURL | relLangURL }}" class="flex items-center font-bold text-ecru mr-4">
-          {{ .Site.Title }}
+          <img src="/images/svg/twitter_header_photo_1.png" alt="logo" class=" h-16 absolute top-1">
         </a>
       </div>
       <div class="hidden sm:flex items-center justify-center space-x-6 font-medium">
       {{ range .Site.Menus.main }}
-        <a class="text-gray-700 transition ease-in hover:text-camel {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline decoration-wavy underline-offset-4 decoration-2 decoration-buff{{ end }}" href="{{ .URL | absLangURL }}">
+        <a class="text-gray-700 transition ease-in hover:text-camel {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline decoration-solid underline-offset-4 decoration-2 decoration-buff{{ end }}" href="{{ .URL | absLangURL }}">
           {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
         </a>
       {{ end }}

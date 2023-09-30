@@ -19,8 +19,6 @@ hotyoga:
         price: 80 €
       - service: 8 treninga vrijedi 1 mjeseca
         price: 100 €
-  - category: "Dodatne"
-    prices:
       - service: Privatni sat (60 min) sa Vjernom
         price: 100 €
       - service: Najam dvorane/60 min
@@ -31,23 +29,23 @@ hotyoga:
         price: 2 €
 rejuvenation:
   - category: "Mobilift"
-    prices: 
+    prices:
+      - service: "1 tretman tijela (45 min)"
+        price: "44 €"
+      - service: "10 tretmana tijela (45 min - vrijedi 6mj)"
+        price: "385 €"
       - service: "1 tretman lica (30 min - vrijedi 6mj)"
         price: "38 €"
       - service: "10 tretmana lica (30 min - vrijedi 6mj)"
         price: "345 €"
+  - category: "Cellu"
+    prices:
+      - service: "Anticelulitna ručna masaža (30min)"
+        price: "34 €"
       - service: "Ručna masaža (60 min)"
         price: "44 €"
       - service: "Ručna masaža (30 min)"
         price: "25 €"
-  - category: "Cellu"
-    prices:
-      - service: "1 tretman (45 min)"
-        price: "44 €"
-      - service: "10 tretmana (45 min - vrijedi 6mj)"
-        price: "385 €"
-      - service: "Anticelulitna ručna masaža (30min)"
-        price: "34 €"
 ---
 
 ## Pogodnosti
