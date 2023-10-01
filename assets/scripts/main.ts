@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Readme shortcode
-const detailsElements = document.querySelectorAll('details');
+const detailsElements = document.querySelectorAll('#read_more_details');
 
 detailsElements.forEach(detailsElement => {
     const previousElement = detailsElement.previousElementSibling;
@@ -66,7 +66,6 @@ if (loadingIndicator) {
     loadingIndicator.style.display = 'none';
 }
 }
-
 
 const handleSubmit = (event: Event) => {
     event.preventDefault();
