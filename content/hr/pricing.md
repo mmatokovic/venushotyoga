@@ -28,22 +28,28 @@ hotyoga:
       - service: Najam mata
         price: 2 €
 rejuvenation:
-  - category: "Mobilift"
+  - category: "Tijelo:"
     prices:
       - service: "1 tretman tijela (45 min)"
-        price: "44 €"
+        price: "45 €"
       - service: "10 tretmana tijela (45 min - vrijedi 6mj)"
-        price: "385 €"
+        price: "395 €"
+  - category: "Lice:"
+    prices:
       - service: "1 tretman lica (30 min - vrijedi 6mj)"
-        price: "38 €"
+        price: "39 €"
       - service: "10 tretmana lica (30 min - vrijedi 6mj)"
-        price: "345 €"
-  - category: "Cellu"
+        price: "350 €"
+  - category: "Rucne"
     prices:
       - service: "Anticelulitna ručna masaža (30min)"
         price: "34 €"
-      - service: "Ručna masaža (60 min)"
-        price: "44 €"
+      - service: "Refleksologija ručna masaža"
+        price: "46 €"
+      - service: "Masaža Stopala"
+        price: "25 €"
+      - service: "Ručna masaža (50 min)"
+        price: "46 €"
       - service: "Ručna masaža (30 min)"
         price: "25 €"
 ---
