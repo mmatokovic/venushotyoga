@@ -18,7 +18,7 @@
       </div>
       <div class="w-full md:w-1/2">
         <table class="min-w-full bg-white">
-          <caption class="py-3 px-4 font-bold">{{ T "additional_services" }}</caption>
+          <caption class="py-3 px-4 font-bold">{{ T "training" }}</caption>
           <tbody>
             {{ range $i, $p := (index $hotyoga 0).prices }}
             <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
@@ -39,9 +39,21 @@
       <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 lg:border-r-2 lg:border-buff mb-4">
           <table class="min-w-full bg-white">
-            <caption class="py-3 px-4 font-bold">LPG Mobilift/Celu</caption>
+            <caption class="py-3 px-4 font-bold">LPG Celu M6 Integral 2S</caption>
             <tbody>
+              <tr class="font-medium">
+               <td colspan="2">{{(index $rejuvenation 0).category}}</td> 
+              </tr>
               {{ range $i, $p := (index $rejuvenation 0).prices }}
+              <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
+                <td class="py-3 px-4">{{ $p.service }}</td>
+                <td class="py-3 px-4 text-amber-500">{{ $p.price }}</td>
+              </tr>
+              {{ end }}
+              <tr class="font-medium">
+                <td colspan="2">{{(index $rejuvenation 1).category}}</td> 
+              </tr>
+              {{ range $i, $p := (index $rejuvenation 1).prices }}
               <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                 <td class="py-3 px-4">{{ $p.service }}</td>
                 <td class="py-3 px-4 text-amber-500">{{ $p.price }}</td>
@@ -54,7 +66,7 @@
           <table class="min-w-full bg-white">
             <caption class="py-3 px-4 font-bold">Ručne Masaže</caption>
             <tbody>
-              {{ range $i, $p := (index $rejuvenation 1).prices }}
+              {{ range $i, $p := (index $rejuvenation 2).prices }}
               <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                 <td class="py-3 px-4">{{ $p.service }}</td>
                 <td class="py-3 px-4 text-amber-500">{{ $p.price }}</td>

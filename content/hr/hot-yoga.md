@@ -102,14 +102,11 @@ Upute za ONLINE prijavu:
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
 
-* TOČNOST-molimo vas da na satove dolazite 5-10 min ranije
-* OBUĆU ostavljamo u predvorju
+* TOČNOST - molimo vas da na satove dolazite 5-10 min ranije
 * MIRISI I PARFEMI - molimo vas da ne koristite dezodorane u spreju ni parfeme u yoga centru
-* ODJEĆA I OPREMA-slobodno ostavite svoju yoga prostirku i flašu za vodu, za sve ostale stvari yoga centar nema dovoljno mjesta. Izgubljene i ostavljene stvari čuvamo 2 tjedna!
 * ZAVRŠNA SAVASANA (Ležanje na leđima) - molimo vas da ne izlazite za vrijeme završne Savasane ili prije nje, osim u slučaju iznimne hitnosti koju najavite učitelju prije sata.
-* PITANJA ukoliko imate bilo kakvih pitanja postavite ih nakon sata uz čaj.
-* TELEFONI -ostaju u garderobi - stišani
-* ČLANARINE - nisu prenosive na drugu osobu
-* OTKAZIVANJE TRETMANA - ukoliko imate zakazanu masažu, tretman ili ste se prijavili na yoga sat na najavu, a ne možete doći molimo da otkažete 24 sata prije termina, u suprotnom računati ćemo * kao da ste iskoristili termin.
-* SATOVI NA NAJAVU- ukoliko se prijavite, a ne pojavite na satu računa se da ste iskoristili termin
+* TELEFONI - ostaju u garderobi - stišani
+* ČLANARINE - nisu prenosive na drugu osobu i traju mjesec dana od 1. dana u mjesecu do zadnjeg
+* OTKAZIVANJE TRETMANA - ukoliko imate zakazanu masažu, tretman ili ste se prijavili na yoga sat na najavu, a ne možete doći molimo da otkažete bar 12 sata prije termina, u suprotnom računati ćemo kao da ste iskoristili termin.
+* SATOVI NA NAJAVU - ukoliko se prijavite, a ne pojavite na satu računa se da ste iskoristili termin
 {{< /aside-conent >}}

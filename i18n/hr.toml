@@ -5,7 +5,7 @@
   other = 'Javite nam se :)'
 
 [home_hero_title]
-  other = 'Izvorne vruće joge koje vam mijenjaju život u toploj i gostoljubivoj zajednici.'
+  other = 'Upoznajte dobrobiti izvorne vruće joge koje vam mijenjaju život u toploj i gostoljubivoj zajednici.'
 
 [see_the_prices]
   other = 'Ako želite vidjeti cijene'
@@ -105,6 +105,9 @@
 
 [latest_ebooks]
   other = 'Najnovije E-Knjige'
+
+[ebooks]
+  other = 'E-Knjige'
 
 [order_ebooks]
   other = 'Naručite E-Knjigu'

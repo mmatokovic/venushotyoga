@@ -3,39 +3,34 @@ draft: false
 layout: faq
 slug: faq
 date: 2022-07-06T00:30:07-08:00
+image: /images/FAQ.jpg
 faq:
   - question: Što ako sam novi u Yogi?
-    answer: Naši satovi vruće Yoge prikladni su za sve razine iskustva, dobi i
-      tijela, s jasnim i detaljnim uputama iskusnih instruktora koji pružaju
-      podršku.
+    answer: Naši satovi vruće yoge prikladni su za sve, grupe su male a detaljne i jasne upute naših instruktora pruzaju sigurnost i podršku.
   - question: Što ako nisam u formi ili nisam fleksibilan?
-    answer: Povećanje fleksibilnosti i snage dio su onoga što se događa redovitom
-      vježbom. Ono što je važno je započeti i dopustiti procesu da se odvija!
-  - question: Zašto se soba grije?
+    answer: povecanje fleksibilnosti, snage, ravnoteze, izdrzljivosti i koordinacije dio je onoga sto se dedava redovnom vjezbom. Vazno je zapoceti i dopustiti procesu da se odvija!
+  - question: Kako se trebam pripremiti za sat?
     answer: >-
-      * Toplina pojačava vazodilataciju, tako da više krvi dolazi do mišića.
+      * Soba je vruća, ljudi biraju udobnu, rastezljivu odjeću. Muškarci nose kratke hlače s podstavom, žene kratke hlače ili tajice s grudnjacima ili tenkovskim majicama.
 
-      * Kada krv prolazi kroz tople mišiće, kisik se lakše oslobađa iz hemoglobina.
+      * Ponsesite: prostirač za jogu, veliki ručnik i boca za vodu za klasu..
 
-      * Mišići su elastičniji i manje osjetljivi na ozljede.
+      * Studio se otvara 30 minuta prije početka nastave.
 
-      * Toplina tijekom vježbanja poboljšava koordinaciju.
+      * Dođite u razred hidratizirano i s praznim želucem.
 
-      * Toplina smanjuje srčane nepravilnosti povezane s iznenadnim vježbanjem.
-
-      * Salo se lakše sagorijeva
-
-
-      **Napomena**: Mišići nisu jedini korisnici topline. Više temperature poboljšavaju funkciju živčanog sustava, što znači da se poruke brže prenose do i od mozga i leđne moždine.
+      * Ako trebate jesti 1-2 sata prije nastave, odaberite laganu hranu.'
   - question: Koliko često trebam vježbati?
     answer: Preporučamo pohađanje tečaja joge barem 3 puta tjedno kako biste vidjeli
       i osjetili fizičke i mentalne dobrobiti koje dolazi s predanim vježbanjem!
-  - question: Ima li tuševa u studiju?
-    answer: Da! U svakoj svlačionici postoje dva tuša.
+  - question: Moze li se tusirati nakon sata?
+    answer: Da! Studio je opremljen zenskom i.muskom svlacionicom i svaka ima svoje tuseve te gratis sapune za tusiranje i higijenske potrepstine.
 title: FAQ
 weight: 7
 description: Frequently Asked Questions About Hot Yoga
-menu: footer
+menu:
+- main
+- footer
 ---
 
 ## HOT YOGA TIPS FOR BEGINNERS
