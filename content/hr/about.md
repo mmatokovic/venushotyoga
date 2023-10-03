@@ -27,7 +27,7 @@ Venus hot yoga je i mjesto gdje se sklapaju prijateljstva uz čaj nakon sata, te
 
 ## Vjerna Nevistić
 
-Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem osnove kineziološke transformacije (promjene putem pokreta), te upisuje doktorat s temom yoge na Kineziološkom fakuletetu. Yogu je počela vježbati sa 14. godina kao dodatak plesnim treninzima koje je pohađala u Školi za ritmiku i ples Ane Maletić (završila je školu sa zvanjem plesnog pedagoga). Davne 1992 na Kineziološkom fakuletu se i formalno predavala yoga pod vodstvom tadašnjih pionira yoge i transformacije putem pokreta prof.dr. Dušana Metikoša i prof. Miškovića u Hrvatskoj. Vjerna već niz godina predaje osnove yoge studentima na Kineziološkom fakultetu u Zagrebu.
+Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem osnove kineziološke transformacije (promjene putem pokreta), te upisuje doktorat s temom yoge na Kineziološkom fakuletetu. Yogu je počela vježbati sa 14. godina kao dodatak plesnim treninzima koje je pohađala u Školi za ritmiku i ples Ane Maletić (završila je školu sa zvanjem plesnog pedagoga). Davne 1992 na Kineziološkom fakuletu se i formalno predavala yoga. Vjerna takođe već niz godina predaje osnove yoge studentima na Kineziološkom fakultetu u Zagrebu.
 
 1996 godine seli se u SAD gdje živi i radi kao fitness i yoga instruktor te osobni trener slijedećih sedam godina (Chicago, Dallas, Phoenix). Dalje se obrazuje i istražuje yoga pravce i škole. Tamo su se rodila njezina prva dva sina koji od malena vježbaju gimnastiku, borilačke sportove i yogu.
 
@@ -37,7 +37,7 @@ Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem 
 
 2007 godine vraća se u Hrvatsku te otvara Venus hot yoga studio u Zagrebu, Radićeva 3. U Zagrebu je rodila i trećeg sina koji se takođe intenzivno trenira košarku i yogu.
 
-2021  osnovala je s kolegicom Asjom Petersen Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
+2021 osnovala je Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
 {{< /aside-conent >}}
 
 Redoviti putevi u Indiju su joj strast i profesija. Član je upravnog odbora literarno-socijalne nagrade TagorePrize koja se svake godine održava u New Delhiju u Indiji [Tagore Prize](https://www.tagoreprize.com "Tagore Prize"). Posjećuje hramove na Himalajama i različite yoga centre. Najdraži su joj je Morarji Desai National Institute of Yoga u New Delhiju čija je krilatica: ''Zdravlje, harmonija i sreća za sve kroz yogu'', a tamo uče i vježbaju yogu svi od običnih ljudi, terapeuta, vojnika u sklopu svoje obuke, te Haidakan Babaji Ashram skriven u Himalayama mističan, autentičan i malo poznat javnosti.
@@ -45,6 +45,7 @@ Redoviti putevi u Indiju su joj strast i profesija. Član je upravnog odbora lit
 U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 
 {{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last">}}
+
 * sa sportašima koji su yogu izabrali kao dodatnu aktivnost najčešće za povećanje fleksibilnosti, ravnoteže koordinacije i bolje funkcije disanja te relaksacije, npr hokejaši, trkači i trkačice, plivači mlađih kategorija, borilački sportovi kick boksing i boks, ronioci...
 
 * sa ljudima koji dolaze zbog bolova u leđima, kukovima, kojenima, nesanice,aritmije, lagane depresije, pretilosti i još mnogo drugih problema te ih kroz redovito prakticiranje asana i pranayama rješavaju

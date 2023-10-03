@@ -6,8 +6,8 @@
 {{ end }}
 <main>
   <section class="overflow-hidden ">
-    <div class="bg-black/25 py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat">
-      <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+    <div class="bg-black/25 h-64 sm:h-80 lg:h-full py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat">
+      <div class="hidden lg:block text-center ltr:sm:text-left rtl:sm:text-right">
         <p class="hidden text-white/90 md:mt-6 md:block md:text-3xl md:leading-relaxed">
           {{/*  {{ T "home_hero_title" }}  */}}
         </p>
@@ -18,6 +18,18 @@
           </a>
           {{ end }}
         </div>
+      </div>
+    </div>
+    <div class="block lg:hidden text-center ltr:sm:text-left rtl:sm:text-right">
+      <p class="hidden text-white/90 md:mt-6 md:block md:text-3xl md:leading-relaxed">
+        {{/*  {{ T "home_hero_title" }}  */}}
+      </p>
+      <div class="mt-4 sm:mt-8">
+        {{ with .Site.GetPage "contact" }}
+        <a href="{{ .RelPermalink }}" class="uppercase inline-block rounded-full bg-ecru px-4 py-3 lg:px-12 lg:py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
+          {{ T "contact"}}
+        </a>
+        {{ end }}
       </div>
     </div>
   </section>
@@ -120,7 +132,7 @@
               Pomlađivanje
             </h2> 
             <p class="mt-4 text-gray-600">
-              Nakon poroda i nakon što sam skinula više od 40kila. Kirurg mi je predložio tretmane na aparatu Lpg Cellu M6 za zatezanje kože i nakon 20 tretmana u trajanju od nekih 2 mjeseca nije se ni vidjelo da sam rađala.
+              Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.
             </p> 
             {{ with .Site.GetPage "rejuvenation" }}
             <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
