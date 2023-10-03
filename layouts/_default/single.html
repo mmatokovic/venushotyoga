@@ -7,7 +7,7 @@
         {{ if $image }}
         <picture class="relative overflow-hidden">
           <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-          <img alt="ebook" src="{{ $image.RelPermalink }}" class="w-full aspect-[21/9]"/>
+          <img alt="ebook" src="{{ $image.RelPermalink }}" class="h-96 w-full lg:h-full aspect-[21/9]"/>
         </picture>
         {{ end }}
         {{ end }}

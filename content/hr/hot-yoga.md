@@ -14,33 +14,33 @@ schedule:
       - service: Hot Yoga
         startTime: 10:00
         endTime: 11:30
-        description: u studiju
+        description: 
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
-        description: u studiju
+        description: 
   - day: Četvrtak
     appointments:
       - service: Restorativan 
         startTime: 09:30
         endTime: 11:00
-        description: u studiju
+        description: 
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
-        description: u studiju
+        description: 
   - day: Petak
     appointments:
       - service: Hot Yoga
         startTime: 10:00
         endTime: 11:30
-        description: u studiju
+        description: 
   - day: Subota
     appointments:
       - service: Hot Yoga
         startTime: 11:00
         endTime: 12:30
-        description: u studiju
+        description: 
 ---
 
 {{< schedule >}}
@@ -83,12 +83,12 @@ Pristup je individualan i instruktorice poznaju mogućnosti i boljke svakog pola
 Za **trudnice** koje do sada nisu vježbale na toplini. 
 Za oboljele od multiple skleroze, karcinoma i vrlo visokog tlaka trebali bi konzultirati **svog liječnika** prije početka vježbanja a preporučamo im yogu bez povišene temperature.
 
-U studiju imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
+ imamo i satove yoge koja nije na povišenoj temperature. To su hatha yoga i restorativna yoga takođe prikladni za sve polaznike te on-line satove za sve one koji nisu u mogućnosti prisustvovati satovima u dvorani
 
 <!-- ## Online Live Yoga
 
-Satovima se mogu priključiti svi osim apsolutnih početnika u yogi. Istima se preporučuje vježbanje uživo u studiju.
-Prakticiranje yoge uvijek je najbolje i najefektnije u studiju s učiteljem. No, ponekad smo lijeni izaći iz svoje zone komfora, pa zašto onda ne pokušati s online satovima? U svakom trenutku možete nam se, nakon nekog vremena, pridružiti u studiju - našoj maloj oazi mira i sreće :)
+Satovima se mogu priključiti svi osim apsolutnih početnika u yogi. Istima se preporučuje vježbanje uživo .
+Prakticiranje yoge uvijek je najbolje i najefektnije  s učiteljem. No, ponekad smo lijeni izaći iz svoje zone komfora, pa zašto onda ne pokušati s online satovima? U svakom trenutku možete nam se, nakon nekog vremena, pridružiti  - našoj maloj oazi mira i sreće :)
 
 Upute za ONLINE prijavu:
 
@@ -97,7 +97,7 @@ Upute za ONLINE prijavu:
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
-{{< aside-conent src="/images/Anantasana-3.jpg"  class="lg:order-last" >}}
+{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last !h-full" >}}
 ## BONTON
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
