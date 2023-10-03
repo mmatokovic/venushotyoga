@@ -1,27 +1,40 @@
 {{ define "main" }}
-<main class="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
-  <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:{utility} text-xl">
-    {{ .Content }}
-  </article>
-  <div class="my-8">
-    <h2 class="max-w-none text-2xl leading-8 font-light">{{ .Params.description }}</h2>
-  </div>
-  <div class="space-y-4 text-xl">
-    {{ range $index, $faq := .Params.faq }}
-      <details class="group" {{ if eq $index 0 }}open{{ end }}>
-        <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
-          <h2 class="font-medium">
-            {{ $faq.question }}
-          </h2>
-          <svg class="h-5 w-5 shrink-0 transition duration-300 {{ if ne $index 0 }}group-open:-rotate-180{{ end }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="mt-4 px-4 leading-relaxed text-gray-700 list-disc list-inside">
-          {{ $faq.answer | markdownify  }}
-        </div>
-      </details>
-    {{ end }}
-  </div>
+<main>
+  <section class="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
+    <div class="relative block group mb-4">
+        {{ with resources.Get .Params.image }}
+        {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
+        {{ if $image }}
+        <picture class="relative overflow-hidden">
+          <source srcset="{{ $image.RelPermalink }}" type="image/webp">
+          <img alt="ebook" src="{{ $image.RelPermalink }}" class="w-full aspect-[21/9]"/>
+        </picture>
+        {{ end }}
+        {{ end }}
+    </div>
+    <article class="prose max-w-none prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:{utility} text-xl">
+      {{ .Content }}
+    </article>
+    <div class="my-8">
+      <h2 class="max-w-none text-2xl leading-8 font-light">{{ .Params.description }}</h2>
+    </div>
+    <div class="space-y-4 text-xl">
+      {{ range $index, $faq := .Params.faq }}
+        <details class="group" {{ if eq $index 0 }}open{{ end }}>
+          <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
+            <h2 class="font-medium">
+              {{ $faq.question }}
+            </h2>
+            <svg class="h-5 w-5 shrink-0 transition duration-300 {{ if ne $index 0 }}group-open:-rotate-180{{ end }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="mt-4 px-4 leading-relaxed text-gray-700 list-disc list-inside">
+            {{ $faq.answer | markdownify  }}
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </section>
 </main>
 {{ end }}

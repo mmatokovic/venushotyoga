@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <section class="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 ">
+  <section class="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
     <div class="relative block group mb-4">
         {{ with resources.Get .Params.image }}
         {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}

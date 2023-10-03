@@ -5,8 +5,8 @@
 {{ end }}
 {{ end }}
 <main>
-  <section class="overflow-hidden bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat ">
-    <div class="bg-black/25 py-14 px-20 md:p-12 sm:py-32 lg:px-16 lg:py-72">
+  <section class="overflow-hidden ">
+    <div class="bg-black/25 py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat">
       <div class="text-center ltr:sm:text-left rtl:sm:text-right">
         <p class="hidden text-white/90 md:mt-6 md:block md:text-3xl md:leading-relaxed">
           {{/*  {{ T "home_hero_title" }}  */}}
@@ -32,7 +32,7 @@
       </div>
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {{ with .Site.GetPage "about" }}
-        <a class="bg-tuscan block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
+        <a class="bg-french-beige block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
           <h2 class="text-xl font-bold">O nama</h2>
           <p class="mt-1 text-base">
             Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
@@ -48,7 +48,7 @@
         </a>
         {{ end }}
         {{ with .Site.GetPage "pricing" }}
-        <a class="bg-french-beige block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
+        <a class="bg-tuscan block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
           <h2 class="text-xl font-bold">Cijenik</h2>
           <p class="mt-1 text-base">
             pogledajte našu ponudu
@@ -120,9 +120,7 @@
               Pomlađivanje
             </h2> 
             <p class="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-              atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-              veniam tempora deserunt? Molestiae eius quidem quam repellat.
+              Nakon poroda i nakon što sam skinula više od 40kila. Kirurg mi je predložio tretmane na aparatu Lpg Cellu M6 za zatezanje kože i nakon 20 tretmana u trajanju od nekih 2 mjeseca nije se ni vidjelo da sam rađala.
             </p> 
             {{ with .Site.GetPage "rejuvenation" }}
             <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">

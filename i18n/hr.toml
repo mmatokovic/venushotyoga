@@ -106,6 +106,9 @@
 [latest_ebooks]
   other = 'Najnovije E-Knjige'
 
+[ebooks]
+  other = 'E-Knjige'
+
 [order_ebooks]
   other = 'Naručite E-Knjigu'
 
