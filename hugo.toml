@@ -6,8 +6,7 @@ defaultContentLanguage = 'hr'
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
-# disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
+# googleAnalytics = ''
 
 [languages]
   [languages.en]
@@ -60,7 +59,7 @@ enableEmoji = true
 
 [build]
   writeStats = true
-  [[build.cachebusters]]
+  [[build.cacheBusters]]
     source = "assets/watching/hugo_stats\\.json"
     target = "styles\\.css"
   [[build.cachebusters]]

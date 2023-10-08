@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Readme shortcode
-const detailsElements = document.querySelectorAll('#read_more_details');
+const detailsElements = document.querySelectorAll<HTMLDetailsElement>('#read_more_details');
 
-detailsElements.forEach(detailsElement => {
-    const previousElement = detailsElement.previousElementSibling;
+detailsElements.forEach((detailsElement: HTMLDetailsElement) => {
+    const previousElement = detailsElement.previousElementSibling as HTMLElement;
 
     if (previousElement && !previousElement.classList.contains('inline')) {
         previousElement.classList.add('inline');
@@ -57,14 +57,15 @@ detailsElements.forEach(detailsElement => {
             readMore.style.display = 'inline';
         }
     })
-})
+});
+
 
 function hideLoading(): void {
-// Hide the loading indicator once the iframe has loaded
-const loadingIndicator: HTMLElement | null = document.getElementById('loadingIndicator');
-if (loadingIndicator) {
-    loadingIndicator.style.display = 'none';
-}
+    const loadingIndicator: HTMLElement | null = document.getElementById('loadingIndicator');
+
+    if (loadingIndicator) {
+        loadingIndicator.style.display = 'none';
+    }
 }
 
 const handleSubmit = (event: Event) => {

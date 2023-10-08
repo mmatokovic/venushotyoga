@@ -1,13 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
-  <body class="font-sans">
+  <body>
     {{ partial "header.html" . }}
     {{ block "main" . }}{{ end }}
-    {{ partial "footer.html" . }}
-    {{ $scripts := resources.Get "scripts/main.ts" }}
-    {{ $options := dict "minify" true }}
-    {{ $js := $scripts | js.Build $options }}
+    {{- partial "footer.html" . }}
+    {{- $js := resources.Get "scripts/main.ts" | js.Build (dict "minify" true) | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
     <script>
       if (window.netlifyIdentity) {
