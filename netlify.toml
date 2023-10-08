@@ -8,6 +8,7 @@
   [plugins.inputs]
     cloudName = "daiuuqu0m"
     deliveryType = "upload"
+    imagesPath = "/public/images/"
 
 [context.production.environment]
   HUGO_VERSION = "0.119.0"
