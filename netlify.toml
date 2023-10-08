@@ -2,8 +2,12 @@
   publish = "public"
   command = "hugo --gc --minify -d public;"
 
-[build.processing.images]
-  compress = true
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  [plugins.inputs]
+  cloudName = "daiuuqu0m"
+  deliveryType = "upload"
 
 [context.production.environment]
   HUGO_VERSION = "0.119.0"

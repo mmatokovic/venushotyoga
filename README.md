@@ -2,7 +2,7 @@
 
 The Venus Hot Yoga website is constructed using [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/) using [DecapCMS](https://decapcms.org/).
 
-A Yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor. Image Procesing [TinyJPG](https://tinyjpg.com/).
+A Yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor. Image Procesing [TinyJPG](https://tinyjpg.com/) I also use a cloudinary.
 
 > It may also include resources such as articles on the history and philosophy of yoga, tips for beginners, and descriptions of different yoga poses. Some yoga websites also offer online classes or tutorials, and may feature a blog or forum for discussion among practitioners.
 
@@ -20,3 +20,11 @@ A Yoga website typically includes information on the different types of yoga pra
 ## Author Information
 
 [Mislav Matoković](https://github.com/mmatokovic)
+
+### Environment Variables
+
+| Name                   | Required | Example  | Description |
+|------------------------|----------|----------|-------------|
+| CLOUDINARY_CLOUD_NAME  | No*      | mycloud  | Cloudinary Cloud Name |
+| CLOUDINARY_API_KEY     | No       | 1234     | Cloudinary API Key |
+| CLOUDINARY_API_SECRET  | No       | abcd1234 | Cloudinary API Secret |
