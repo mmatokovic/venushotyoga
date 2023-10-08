@@ -38,9 +38,6 @@ module.exports = {
 				fadeInLeft : 'fadeInLeft 1s',
 				fadeInRight : 'fadeInRight 1s',
 			},
-			listStyleImage: {
-				lotus: 'url("/images/svg/lotus-svgrepo-com.svg")',
-			},
 			keyframes: {
 				fadeInDown : {
 				  'from': { opacity: 0, transform: 'translateY(-20px)' },
