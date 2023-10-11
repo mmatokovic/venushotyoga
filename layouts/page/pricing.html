@@ -83,5 +83,5 @@
 {{ $scripts := resources.Get "scripts/slider.ts" }}
 {{ $options := dict "minify" true }}
 {{ $js := $scripts | js.Build $options }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" ></script>
 {{ end }}

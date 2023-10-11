@@ -62,7 +62,7 @@ Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi
 
 {{< aside-conent src="/images/Danijel.jpg" >}}
 
-## Danijel Deni Jeremić
+## Danijel Jeremić
 
 Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
 {{< /aside-conent >}}
@@ -73,3 +73,8 @@ Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao 
 
 Ana prakticira yogu više od 20 godina. Temelje yoge upoznala je u sustavu Joge u svakodnevnom životu, a zatim je nakon nekog vremena pohađala radionice i seminare Iyengar yoge te one u tradiciji T. Krishnamacharye. Učila je i od Vjerne Nevistić, čije satove i seminare i danas rado pohađa. Profesionalno se bavi grafičkim dizajnom, pogotovo u području nakladništva, te uređuje knjige iz područja duhovnosti i osobnog razvoja.
 {{< /aside-conent >}}
+
+## Nikolina
+
+Nikolina se bavi yogom vise od 20 godina. Prvu poduku stjece kod yoga uciteljice Vjerne Nevistic 2006. godine te postaje dio tima Venus Hot Yoga studia od samog osnutka 2007. godine. 2013. godine pohada edukaciju yoge TT300 u Pink Elephant Yoga Institutu. Nadalje pohadja radionice i seminare u sklopu profesionalnog usavrsavanja. Osim sa razlicitim stilovima yoge koketira i sa razlicitim pravcima yoge pa se tako 2015. godine susrece sa Bhakti yogom u kojoj nalazi veliku inspiraciju te pocinje proucavati vedske spise.
+Uz veliku ljubav prema duhovnosti i ljudima, Nikolina uklapa interes za psihologiju i osobni razvoj sto se odrazava u na njenim satovima. U slobodno vrijeme bavi se pisanjem i slikanjem.
