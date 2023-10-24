@@ -42,11 +42,9 @@ rejuvenation:
         price: "350 €"
   - category: "Rucne"
     prices:
-      - service: "Anticelulitna ručna masaža (30min)"
+      - service: "Anticelulitna ručna masaža (30 min)"
         price: "34 €"
-      - service: "Refleksologija ručna masaža"
-        price: "46 €"
-      - service: "Masaža Stopala"
+      - service: "Refleksologija i masaža stopala (30 min)"
         price: "25 €"
       - service: "Ručna masaža (50 min)"
         price: "46 €"
