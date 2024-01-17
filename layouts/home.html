@@ -4,7 +4,7 @@
   {{ partial "sections/popup.html" . }}
 {{ end }}
 {{ end }}
-<main>
+<main class="">
   <section class="overflow-hidden ">
     <div class="bg-black/25 h-64 sm:h-80 lg:h-full py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8 bg-[url('/images/homepage.webp')] bg-cover bg-[center] bg-no-repeat">
       <div class="hidden lg:block text-center ltr:sm:text-left rtl:sm:text-right">
@@ -71,7 +71,7 @@
     </div>
   </section>
   {{/*  {{ partial "sections/how_to.html" . }}  */}}
-  <section class="text-black text-xl">
+  <section class="text-black text-xl bg-[url('/images/svg/mandala-svgrepo-com.svg')] bg-right-top bg-no-repeat ">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -93,18 +93,18 @@
                   Hot Yoga
                 </h2>
               </div>
-              <p class="mt-4 text-gray-600">
+              <p class="mt-4 text-gray-600 font-bold">
                 Hot yoga je hatha yoga koja se izvodi na 30 stupnjeva C i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.
               </p>
               {{ with .Site.GetPage "hot-yoga" }}
               <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-                <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
                 <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
               {{ with .Site.GetPage "pricing" }}
               <a href="{{ .RelPermalink }}#hot-yoga" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-                <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
                 <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
@@ -131,19 +131,19 @@
             <h2 class="text-3xl font-bold sm:text-4xl text-camel">
               Pomlađivanje
             </h2> 
-            <p class="mt-4 text-gray-600">
+            <p class="mt-4 text-gray-600 font-bold">
               Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.
             </p> 
             {{ with .Site.GetPage "rejuvenation" }}
             <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-              <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
               <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>
             {{ end }}
             {{ with .Site.GetPage "pricing" }}
             <a href="{{ .RelPermalink }}#rejuvenation" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-              <span class="absolute inset-y-0 left-0 w-[2px] bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
               <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>
