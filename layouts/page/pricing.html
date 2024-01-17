@@ -65,7 +65,7 @@
         <div class="w-full md:w-1/2">
           <table class="min-w-full bg-white">
             <caption class="py-3 px-4 font-bold">Ručne Masaže</caption>
-            <tbody>
+            <tbody class="prose">
               {{ range $i, $p := (index $rejuvenation 2).prices }}
               <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                 <td class="py-3 px-4 ">{{ $p.service }}</td>
