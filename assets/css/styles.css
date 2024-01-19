@@ -5,6 +5,7 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    font-family: "Lusitana", serif;
   }
   /* Improve Page speed */
   /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
@@ -40,18 +41,10 @@
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Lusitana';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  src: url('/fonts/Lusitana-Regular.ttf') format('truetype');
   font-display: swap;
 }
 

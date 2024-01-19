@@ -15,10 +15,10 @@ weight: 1
 Venus hot yoga studio otvoren je 2010 g. Nalazimo se u centru Zagreba u povijesnoj zgradi bana Jelačića koja je uspješno i neozlijeđeno preživjela tri velika potresa koliko je fleksibilna.
 Kod nas su svi dobrodošli i na satove yoge i na tretmane [pomlađivanja](/pomlađivanje "pomlađivanja") prirodnim i neinvanzivnim načinom. Uvijek možete kombinirati yogu sa nekim od tretmana ili ručnom masažom.
 
+{{< aside-content-slider 1="/images/studio-7.jpg" 2="/images/studio-12.jpg" class="lg:order-last">}}
+
 Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji.
 Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
-
-{{< aside-content-slider 1="/images/studio-7.jpg" 2="/images/studio-12.jpg" class="lg:order-last">}}
 
 Satovi se održavaju na hrvatskom i engleskom jeziku.
 
@@ -31,13 +31,14 @@ Venus hot yoga je i mjesto gdje se sklapaju prijateljstva uz čaj nakon sata, te
 Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem osnove kineziološke transformacije (promjene putem pokreta), te upisuje doktorat s temom yoge na Kineziološkom fakuletetu. Yogu je počela vježbati sa 14. godina kao dodatak plesnim treninzima koje je pohađala u Školi za ritmiku i ples Ane Maletić (završila je školu sa zvanjem plesnog pedagoga). Davne 1992 na Kineziološkom fakuletu se i formalno predavala yoga. Vjerna takođe već niz godina predaje osnove yoge studentima na Kineziološkom fakultetu u Zagrebu.
 
 {{< aside-conent src="/images/Akarna-Dhanurasana.jpg"  class="!h-full">}}
-1996 godine seli se u SAD gdje živi i radi kao fitness i yoga instruktor te osobni trener slijedećih sedam godina (Chicago, Dallas, Phoenix). Dalje se obrazuje i istražuje yoga pravce i škole. Tamo su se rodila njezina prva dva sina koji od malena vježbaju gimnastiku, borilačke sportove i yogu.
 
-2003 godine s obitelji dolazi u Prag gdje osniva svoj prvi hot yoga centar (i tada prvi u Češkoj). Završava stručni magisterij MBA na američko- švicarskom sveučilištu UNYP- Kurt Bosch Universitaire.
+* **1996** godine seli se u SAD gdje živi i radi kao fitness i yoga instruktor te osobni trener slijedećih sedam godina (Chicago, Dallas, Phoenix). Dalje se obrazuje i istražuje yoga pravce i škole. Tamo su se rodila njezina prva dva sina koji od malena vježbaju gimnastiku, borilačke sportove i yogu.
 
-2007 godine vraća se u Hrvatsku te otvara Venus hot yoga studio u Zagrebu, Radićeva 3. U Zagrebu je rodila i trećeg sina koji se takođe intenzivno trenira košarku i yogu.
+* **2003** godine s obitelji dolazi u Prag gdje osniva svoj prvi hot yoga centar (i tada prvi u Češkoj). Završava stručni magisterij MBA na američko- švicarskom sveučilištu UNYP- Kurt Bosch Universitaire.
 
-2021 osnovala je Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
+* **2007** godine vraća se u Hrvatsku te otvara Venus hot yoga studio u Zagrebu, Radićeva 3. U Zagrebu je rodila i trećeg sina koji se takođe intenzivno trenira košarku i yogu.
+
+* **2021** osnovala je Kineziološko učilište Equilibrium s programima za osposobljavanje instruktora Yoge i pilatesa certificiranim od Ministarstva obrazovanja koji vrijede u cijeloj Europskoj uniji.
 {{< /aside-conent >}}
 
 Redoviti putevi u Indiju su joj strast i profesija. Član je upravnog odbora literarno-socijalne nagrade TagorePrize koja se svake godine održava u New Delhiju u Indiji [Tagore Prize](https://www.tagoreprize.com "Tagore Prize"). Posjećuje hramove na Himalajama i različite yoga centre. Najdraži su joj je Morarji Desai National Institute of Yoga u New Delhiju čija je krilatica: ''Zdravlje, harmonija i sreća za sve kroz yogu'', a tamo uče i vježbaju yogu svi od običnih ljudi, terapeuta, vojnika u sklopu svoje obuke, te Haidakan Babaji Ashram skriven u Himalayama mističan, autentičan i malo poznat javnosti.

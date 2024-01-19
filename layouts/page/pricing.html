@@ -69,9 +69,15 @@
               {{ range $i, $p := (index $rejuvenation 2).prices }}
               <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-cosmic-latte text-left{{ end }} font-bold">
                 <td class="py-3 px-4 ">{{ $p.service }}</td>
-                <td class="py-3 px-4 text-amber-500 whitespace-nowrap">{{ $p.price }}</td>
+                <td class="py-3 px-4 text-amber-500 whitespace-nowrap">
+                  {{ if $p.popust }}
+                    <del>{{ $p.price }}</del> {{ $p.popust }}
+                  {{ else }}
+                    {{ $p.price }}
+                  {{ end }}
+                </td>
               </tr>
-              {{ end }}
+            {{ end }}
             </tbody>
           </table>
         </div>

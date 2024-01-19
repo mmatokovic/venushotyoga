@@ -1,12 +1,15 @@
-const typography = require('@tailwindcss/typography');
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
 	content: ['./hugo_stats.json'],
-	plugins: [typography],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/aspect-ratio'),
+	],
 	theme: {
 		fontFamily: {
-			'quicksand': ['Quicksand', 'sans-serif'],
-			'nunito': ['Nunito', 'sans-serif']
+			'lusitana': ['Lusitana', 'serif'],
 		},
 		extend: {
 			colors: {

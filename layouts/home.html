@@ -36,11 +36,10 @@
   <section class="text-white text-xl">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto text-center text-black">
-          <h2 class="text-3xl font-bold sm:text-4xl">
-          </h2>
-          <p class="mt-4">
-            {{ T "home_hero_title" }}    
-          </p>
+          <span class="relative flex justify-center">
+            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+            <span class="relative z-10 bg-white px-6">{{ T "home_hero_title" }}</span>
+          </span>
       </div>
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {{ with .Site.GetPage "about" }}
@@ -75,7 +74,7 @@
     </div>
   </section>
   {{/*  {{ partial "sections/how_to.html" . }}  */}}
-  <section class="text-black text-xl" style="background-image: url('/images/svg/mandala-svgrepo-com.svg'); background-repeat: no-repeat; background-position: top right;">
+  <section class="text-black text-xl relative">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -97,6 +96,7 @@
                   Hot Yoga
                 </h2>
               </div>
+
               <p class="mt-4 text-gray-600 font-bold">
                 Hot yoga je hatha yoga koja se izvodi na 30 stupnjeva C i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.
               </p>

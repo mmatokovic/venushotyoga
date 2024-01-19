@@ -51,7 +51,8 @@ rejuvenation:
       - service: "Ručna masaža (30 min)"
         price: "25 €"
       - service: "Hot Stone masaža (50 min)"
-        price: "39 €" #46€
+        price: "46€"
+        popust: "39 €"
 ---
 
 ## Pogodnosti

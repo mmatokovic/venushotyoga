@@ -34,6 +34,7 @@ Aparatom Lpg Cellu M6 Integral S uspješno se rješava problem celulita, otečen
 {{< aside-conent src="/images/cellu_m6.webp" class="!h-full" >}}
 Tretman je bezbolan i izrazito ugodan i opuštajući te nema nuspojava, jer aparat radi na principu masaže i drenaže tkiva te ima snagu kao 10x ljudske ruke i metoda je sasvim neinvanzivna. Za najbolje rezultate potrebno je dolaziti 2 do 3 x tjedno, a nakon serije tretmana kada postignemo željeni rezultat preporučuje se održavanje 1-2 mjesečno, da bi rezultati bili što trajniji. Često je pitanje koliko tretmana je potrebno uzeti ? To je vrlo individualno te ovisi o vrsti i stadiju celulita, ima li osoba viška kilograma, je li problem nakupljanja vode, veliki gubitak težine nakon dijete ili poroda kada je koža obješena, odnosno specifični problem koji neka osoba ima. Kod osoba koje npr. zadržavaju tekućinu u tijelu već nakon prvog tretmana vidljivo je smanjenje obujma, dok je kod osoba koje su tvrđe građe potrebno više tretmana za gubitak centimetara. Zato se programi kreiraju individualno i rezultati su zagarantirani.
 {{< /aside-conent >}}
+
 ## Pomlađivanje lica
 
 Iz renomirane francuske kompanije zdravstvenih i estetskih uređaja LPG stigao nam je Mobilift M6 za pomlađivanje lica. Metoda rada koja se zove Endermologija ispitana na 128 znanstvenih studija bazira se na mehaničkoj stimulaciji stanica čime se ponovo aktivira njihova uspavana aktivnost te time potiče samopomlađivanje.
@@ -53,7 +54,7 @@ Puni tretman lica traje 30 minuta, a isto tako je moguće odabrati kratki tretma
 
 Princip tretmana na aparatima LPG je svojevrstan ”lifestyle” kao što redovito vježbamo tako su i tretmani za lice vježba koja održava lice mladim i svježim. Za najbolje i trajnije rezultate potrebno je 10-30 tretmana na početku ovisno o godinama i problemu. Između paketa nije potrebno raditi pauzu, mogu se provoditi češće (2-3x tjedno) ili rijeđe (2-4x mjesečno) ovisno o tome kako želite. Općenito se češće dolazi dok ne postignemo željeni rezultat, te ga zatim održavamo rijeđim dolascima, te ukoliko želimo još bolji rezultat ponovo dolazimo u ritmu 2-3x tjedno.
 
-## Hot stone masaža vrućim kamenjem
+## Hot stone - masaža vrućim kamenjem
 
 Masaža vrućim kamenjem koristi se za pomoć pri opuštanju i ublažavanju napetih mišića i mekih tkiva u cijelom tijelu.
 

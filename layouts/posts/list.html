@@ -87,13 +87,14 @@
         {{- range where .Site.Pages "Params.category" "blog" -}}
         {{- $number = add $number 1 -}}
         <div id="post" class="p-4 md:w-1/3" data-tags="{{.Params.Tags}}" {{ if gt $number .Site.Params.indexarticles }}class=""{{ end }}>
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg group ">
+            <a href="{{ .RelPermalink }}">
             {{ with resources.Get .Params.featured_image }}
             {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
             {{ if $image }}
             <picture>
               <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $image.RelPermalink }}">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ $image.RelPermalink }}">
             </picture>
             {{ end }}
             {{ end }}
@@ -102,14 +103,13 @@
                 {{ .Date.Format "02. 01. 2006." }}
               </time>
               <p class="tracking-widest text-xs capitalize title-font font-medium text-gray-400 mb-1">{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
-              <a href="{{ .RelPermalink }}">
                 <h3 class="mt-0.5 text-lg text-gray-900">
                   {{ .Title }}
                 </h3>
+                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                  {{ .Summary }}
+                </p>
               </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                {{ .Summary }}
-              </p>
             </div>
           </article>
         </div>
@@ -129,13 +129,14 @@
         {{- range where .Site.Pages "Params.category" "ebook" -}}
         {{- $number = add $number 1 -}}
         <div id="post" class="p-4 md:w-1/3" data-tags="{{.Params.Tags}}" {{ if gt $number .Site.Params.indexarticles }}class=""{{ end }}>
-          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg group">
+            <a href="{{ .RelPermalink }}">
             {{ with resources.Get .Params.featured_image }}
             {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
             {{ if $image }}
             <picture>
               <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{ $image.RelPermalink }}">
+              <img class="w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ $image.RelPermalink }}">
             </picture>
             {{ end }}
             {{ end }}
@@ -144,14 +145,13 @@
                 {{ .Date.Format "02. 01. 2006." }}
               </time>
               <p class="tracking-widest text-xs capitalize title-font font-medium text-gray-400 mb-1">{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
-              <a href="{{ .RelPermalink }}">
                 <h3 class="mt-0.5 text-lg text-gray-900">
                   {{ .Title }}
                 </h3>
-              </a>
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                 {{ .Summary }}
               </p>
+              </a>
             </div>
           </article>
         </div>
