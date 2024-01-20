@@ -93,7 +93,10 @@
                 {{ end }}
             {{ end }}
           </div>
-          <div class="lg:py-16">
+          <div class="lg:py-16 relative">
+            {{ with resources.Get "/images/svg/mandala-svgrepo-com.svg" }}
+            <div class="absolute inset-0 bg-fill bg-no-repeat bg-right-top -z-20" style="background-image: url('{{ .RelPermalink }}');"></div>
+            {{ end }}
             <article class="space-y-4">
               <div class="max-w-3xl">
                 <label class="uppercase font-bold text-sm text-ecru">Focused on you</label>
@@ -104,11 +107,6 @@
               <p class="mt-4 text-gray-600 font-bold">
                 Hot yoga je hatha yoga koja se izvodi na 30 stupnjeva C i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.
               </p>
-              {{ with resources.Get "/images/svg/mandala-svgrepo-com.svg" }}
-              <div class="flex-1">
-                  <img src="{{ .RelPermalink }}" alt="Image Description" class="w-full h-auto">
-              </div>
-              {{ end }}
               {{ with .Site.GetPage "hot-yoga" }}
               <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
                 <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>

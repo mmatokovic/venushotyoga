@@ -1,22 +1,17 @@
-# when using the default proxy server port
+# when using the default proxy server port: npx decap-server
 local_backend: true
-
+site_url: https://venushotyoga.netlify.app
+media_folder: "/static/images" # Folder where user uploaded files should go
+public_folder: "/images"
 backend:
   name: git-gateway
   branch: main
-
-site_url: https://venushotyoga.netlify.app
-
-media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "/images"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, e.g., /admin/collections/post
     label: "Posts" # Used in the UI
     label_singular: 'Blog' # Used in the UI, ie: "New Post"
-    description: >
-      Kreiraj novi blog.
-    folder: "content/posts" # The path to the folder where the documents are stored
+    folder: "content/hr/posts" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
     summary: '{{title}} -- {{day}}/{{month}}/{{year}}'
     create: true # Allow users to create new documents in this collection
@@ -27,143 +22,75 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Featured Image", name: "image", widget: "image", media_folder: "/static/images"}
       - { label: "Body", name: "body", widget: "markdown" }
-  
-
-
   - name: "pages"
     label: "Pages"
     files:
-      - file: 'content/faq.md' # Used in routes, e.g., /admin/collections/:slug/edit
-        label: 'FAQ Page' # Used in the UI
-        name: 'faq' # The path to the folder where the documents are stored
+      - file: 'content/hr/faq.md'
+        label: 'FAQ Page'
+        name: 'faq'
         fields:
-          - label: 'Frequently Asked Questions'
-            name: 'faq'
-            widget: 'list'
-            collapsed: true
-            fields:
-              - label: 'Question'
-                name: 'question'
-                widget: 'string'
-              - label: 'Answer'
-                name: 'answer'
-                widget: 'markdown'
-
-      - file: "content/_index.md"
+          - { label: 'Frequently Asked Questions',  name: 'faq', widget: 'list', collapsed: true,
+                fields:
+                  [ 
+                    { label: 'Question', name: 'question', widget: 'string' },
+                    { label: 'Answer', name: 'answer', widget: 'markdown' }
+                  ]
+            }
+      - file: "content/hr/_index.md"
         label: "Home Page"
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "markdown" }
-          - {
-              label: "Section",
-              name: "section",
-              widget: "object",
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "markdown" },
-                ],
+          - { label: "Section", name: "section", widget: "object",
+              fields: [
+                { label: "Heading", name: "heading", widget: string },
+                { label: "Text", name: "text", widget: "markdown" },
+              ],
             }
-      
-      - file: "content/about.md"
-        label: "About Page"
-        name: "about"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-
-      - file: "content/contact.md"
-        label: "Contact Page"
-        name: "contact"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - { label: 'Map', name: 'map', widget: 'map' }
-      
   - name: "Prices & Schedule"
     label: "Prices & Schedule"
     files:
-      - file: "content/rejuvenation.md"
-        label: "Change Price for LPG"
+      - file: "content/hr/pricing.md"
+        label: "Change Pricing"
         name: Services
         fields:
-          - label: Services
-            name: services
-            collapsed: true
-            widget: list
-            fields:
-            - label: Category
-              name: category
-              collapsed: true
-              widget: list
-            - label: Prices
-              name: prices
-              collapsed: true
-              widget: list
-              fields: 
-                - label: Service
-                  name: service
-                  widget: string
-                - label: Price
-                  name: price
-                  widget: string
-
-      - file: "content/hot-yoga.md"
-        label: "Change Price & Schedule for Yoga"
+          - { label: Hotyoga, name: hotyoga, collapsed: true, widget: list,
+              fields: [
+                { label: Category, name: category, collapsed: true, widget: list },
+                { label: Prices, name: prices, collapsed: true, widget: list,
+                  fields: [
+                    { label: Service, name: service, widget: string },
+                    { label: Price, name: price, widget: string }
+                  ]
+                }
+              ]
+            }
+          - { label: Rejuvenation, name: rejuvenation, collapsed: true, widget: list,
+              fields: [
+                { label: Category, name: category, collapsed: true, widget: list },
+                { label: Prices, name: prices, collapsed: true, widget: list,
+                  fields: [
+                    { label: Service, name: service, widget: string },
+                    { label: Price, name: price, widget: string }
+                  ]
+                }
+              ]
+            }
+      - file: "content/hr/hot-yoga.md"
+        label: "Change Schedule"
         name: yoga
         fields:
-          - label: Prices
-            name: prices
-            collapsed: true
-            widget: list
-            fields: 
-              - label: Service
-                name: service
-                widget: string
-              - label: Price
-                name: price
-                widget: string
-
-          - label: Raspored
-            name: raspored
-            collapsed: true
-            widget: list
-            fields:
-            - label: Start Time
-              name: startTime
-              widget: string
-            - label: Termin
-              name: termin
-              collapsed: true
-              widget: list
-              fields:
-              - label: Dan
-                name: dan
-                widget: select
-                options:
-                - label: Ponedeljak
-                  value: Ponedeljak
-                - label: Utorak
-                  value: Utorak
-                - label: Srijeda
-                  value: Srijeda
-                - label: Četvrtak
-                  value: Četvrtak
-                - label: Petak
-                  value: Petak
-                - label: Subota
-                  value: Subota
-              - label: Usluga
-                name: usluga
-                widget: string
-              - label: Start Time
-                name: startTime
-                widget: string
-                hint: "The start time of the previous entry: (Start Time) must be the same"
-              - label: EndTime
-                name: endTime
-                widget: string
-              - label: Opis
-                name: opis
-                widget: string
+          - { label: Schedule, name: schedule, collapsed: true, widget: list,
+              fields: [
+                { label: Day, name: day, collapsed: true, widget: list },
+                { label: Appointments, name: appointments, collapsed: true, widget: list,
+                  fields: [
+                    { label: service, name: service, collapsed: true, widget: string },
+                    { label: startTime, name: startTime, collapsed: true, widget: string },
+                    { label: endTime, name: endTime, collapsed: true, widget: string },
+                    { label: description, name: description, collapsed: true, widget: string },
+                  ]
+                },
+              ]
+            }
