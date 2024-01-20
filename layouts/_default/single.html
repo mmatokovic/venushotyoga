@@ -20,14 +20,14 @@
         <p class="text-center font-medium sm:text-left">
           {{ T "see_the_prices" }}
         </p>
-        <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}#rejuvenation">View Prices</a>
+        <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}#rejuvenation">{{ T "prices" }}</a>
       {{ end }}
     {{ else if eq .File.BaseFileName "hot-yoga"}}
       {{ with .Site.GetPage "pricing" }}
       <p class="text-center font-medium sm:text-left">
         {{ T "see_the_prices" }}
       </p>
-      <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">View Prices</a>
+      <a class="ml-3 mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring sm:mt-0" href="{{ .Permalink }}">{{ T "prices" }}</a>
       {{ end }}
     {{ else }}
     {{ with .Site.GetPage "faq" }}

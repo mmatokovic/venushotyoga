@@ -118,6 +118,9 @@
 [see_the_prices]
   other = 'To see the prices'
 
+[prices]
+  other = 'Cijenik'
+
 [questions]
   other = 'If you have any questions'
 
