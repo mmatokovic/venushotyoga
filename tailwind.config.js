@@ -31,11 +31,7 @@ module.exports = {
 				'tuscan': '#fad6a5',
 			},
 			backgroundImage: {
-				'blob': "url('/images/svg/blob-scene-haikei.svg')",
 				'mandala': "url('/images/svg/mandala-svgrepo-com.svg')",
-				'home-featured': "url('/images/image6.jpeg')",
-				'mobilift': "url('/images/mobilift.jpg')",
-				'product-integral': "url('/images/product-integral.jpg')",
 			},
 			animation: {
 				fadeInDown : 'fadeInDown 1s',
