@@ -2,7 +2,7 @@
 title: Hot Yoga
 slug: hot-yoga
 date: 2022-07-06T00:36:24-08:00
-description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima.
+description: HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 33 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima.
 menu:
 - main
 - footer
@@ -47,7 +47,7 @@ schedule:
 
 HOT YOGA je intenzivan trening u trajanju 75 ili 90 minuta, na kojem ćete povećati snagu, izdržljivost, fleksibilnost, ravnotežu, koordinaciju i uz to se dobro zabaviti.
 
-HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 30 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima{{< read-more >}}
+HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 33 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima{{< read-more >}}
 
 * Hatha yoga je statičan sustav vježbanja asana (yoga pozicija) kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice
 
