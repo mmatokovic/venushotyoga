@@ -6,7 +6,10 @@ defaultContentLanguage = 'hr'
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
-googleAnalytics = 'G-WV6G3SGDB2'
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-WV6G3SGDB2'
 
 [languages]
   [languages.en]
