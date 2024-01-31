@@ -6,7 +6,7 @@ defaultContentLanguage = 'hr'
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
-# googleAnalytics = ''
+googleAnalytics = 'G-WV6G3SGDB2'
 
 [languages]
   [languages.en]
