@@ -25,7 +25,7 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
   <meta name="author" content="{{ $author }}"/>
   <meta name="theme-color" content="#ffffff"/>
-  {{ if isset .Params "tags" }}
+  {{ if isset .Params "keywords" }}
     <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ end }}" />
   {{ end -}}
   {{- template "_internal/twitter_cards.html" . }}
@@ -36,6 +36,7 @@
   {{- end -}}
   <link rel="preconnect" href="https://www.google-analytics.com"/>
   <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+  <link rel="icon" href="/favicon.png">
   <link rel="icon" type="image/x-icon" href="/favicon.png"/>
   <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.png"/>
   <link rel="apple-touch-icon" href="/favicon.png"/>

@@ -28,8 +28,8 @@ enableEmoji = true
       LanguageEmoji = '/images/svg/flag-for-croatia.svg'
 
 
-[Params]
-  description = "I am description of website structure data"
+[params]
+  Description = "Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 3 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni lagani i poletni"
   logo = "favicon.png"
   copyright = "Apache-2.0"
   dateFormat = "02. 01. 2006."
