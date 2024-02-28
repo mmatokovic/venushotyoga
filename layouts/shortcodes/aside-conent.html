@@ -4,10 +4,9 @@
       {{ if .IsNamedParams }}
       <div class="{{ if .Get "class" }}{{ .Get "class" }} relative not-prose !h-96 overflow-hidden rounded-lg sm:h-full{{else}}relative not-prose !h-96 overflow-hidden rounded-lg sm:h-full{{ end }}">
         {{ $image := .Get "src" | resources.Get }}
-        {{ $webpImage := $image.Resize (printf "%dx%d webp q100"  $image.Width $image.Height ) }}
         <picture>
-          <source srcset="{{ $webpImage.RelPermalink }}" type="image/webp">
-          <img alt="Lava" src="{{ $webpImage.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
+          <source srcset="{{ $image.RelPermalink }}" type="image/webp">
+          <img alt="Lava" src="{{ $image.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
         </picture>
       </div>
       {{ end }}

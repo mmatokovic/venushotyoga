@@ -90,13 +90,10 @@
           <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg group ">
             <a href="{{ .RelPermalink }}">
             {{ with resources.Get .Params.featured_image }}
-            {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
-            {{ if $image }}
             <picture>
-              <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ $image.RelPermalink }}">
+              <source srcset="{{ .RelPermalink }}" type="image/webp">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ .RelPermalink }}">
             </picture>
-            {{ end }}
             {{ end }}
             <div class="bg-white p-4 sm:p-6">
               <time datetime="2022-10-10" class="block text-xs text-gray-500">
@@ -132,13 +129,10 @@
           <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg group">
             <a href="{{ .RelPermalink }}">
             {{ with resources.Get .Params.featured_image }}
-            {{ $image := .Resize (printf "%dx%d webp" .Width .Height) }}
-            {{ if $image }}
             <picture>
-              <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-              <img class="w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ $image.RelPermalink }}">
+              <source srcset="{{ .RelPermalink }}" type="image/webp">
+              <img class="w-full object-cover object-center transition duration-500 group-hover:scale-105" src="{{ .RelPermalink }}">
             </picture>
-            {{ end }}
             {{ end }}
             <div class="bg-white p-4 sm:p-6">
               <time datetime="2022-10-10" class="block text-xs text-gray-500">

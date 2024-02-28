@@ -9,7 +9,7 @@ module.exports = {
 	],
 	theme: {
 		fontFamily: {
-			'lusitana': ['Lusitana', 'serif'],
+			'quicksand': ['Quicksand', 'serif'],
 		},
 		extend: {
 			colors: {

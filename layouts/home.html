@@ -85,12 +85,10 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
             {{ with resources.Get "/images/dvorana.jpg" }}
-                {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
                 <picture>
                   <source srcset="{{ .RelPermalink }}" type="image/webp">
                   <img alt="Lava" src="{{ .RelPermalink }}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"/>
                 </picture>
-                {{ end }}
             {{ end }}
           </div>
           <div class="lg:py-16 relative">
@@ -126,12 +124,10 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             {{ with $image := resources.Get "/images/slika_stroja.jpg"}}
-              {{ if $image | images.Filter (images.Opacity 0.5) (images.Process "webp") }}
                 <picture>
                   <source srcset="{{ .RelPermalink }}" type="image/webp">
                   <img alt="Lava" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"/>
                 </picture>
-              {{ end }}
             {{ end }}
           </div>
           <div class="lg:py-16">

@@ -5,7 +5,7 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
-    font-family: "Lusitana", serif;
+    font-family: "Quicksand", serif;
   }
   /* Improve Page speed */
   /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
@@ -41,10 +41,10 @@
 }
 
 @font-face {
-  font-family: 'Lusitana';
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Lusitana-Regular.ttf') format('truetype');
+  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
