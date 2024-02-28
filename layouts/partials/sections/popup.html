@@ -7,8 +7,12 @@
 			</svg>
 		</button>
 		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-			<img alt="Laptop" src="/images/knjiga.jpeg" class="h-full w-full rounded-xl object-cover"/>
-			<div>
+			{{ with .Site.GetPage "events" }}
+			<a href="{{ .RelPermalink }}">
+				<img alt="Laptop" src="/images/knjiga.jpeg" class="h-full w-full rounded-xl object-contain"/>
+			</a>
+			{{ end }}
+			<div class="hidden md:block">
 				<h2 class="text-lg font-medium">
 					Pozivamo Vas na predstavljanje knjige
 				</h2>
@@ -26,7 +30,7 @@
 				<div class="mt-6 sm:text-right">
 					{{ with .Site.GetPage "events" }}
 					<a href="{{ .RelPermalink }}"	class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white">
-						Find out more
+						Više
 					</a>
 					{{ end }}
 				</div>
