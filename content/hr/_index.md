@@ -17,7 +17,7 @@ section:
   text: Zablistajte! Hot yoga je idealan način vježbanja za postizanje idealne
     tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili
     iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno
-    o tome koliko se trudite). Temperatura od 37 stupnjeva C približna je
+    o tome koliko se trudite). Temperatura od 33 stupnjeva C približna je
     fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu  izvesti
     asane, a  mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete
     se puni energije, opušteni lagani i poletni. Znojenje pomaže kod

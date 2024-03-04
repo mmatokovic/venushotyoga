@@ -56,7 +56,7 @@ U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 
 Od malena se aktivno bavila i borilačkim sportom Budokai kod svog ujaka dr. Emina Topića te se natjecala u katama (3. mjesto na svjetskom prvenstvu u katama u Veneciji 1989.g)
 
-Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi upravo nosi i sličan naslov: Yoga- disciplinom do slobode. U njoj predstavlja klasifikaciju 196 asana podjeljenih u 18 grupa u odnosu na položaj gornjeg i donjeg dijela tijela na podlogu što omogućava voditeljima lakše slaganje sata a polaznicima jasnije i pravilnije izvođenje... (više o knjizi link)
+Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi upravo nosi i sličan naslov: Yoga- disciplinom do slobode. U njoj predstavlja klasifikaciju 196 asana podjeljenih u 18 grupa u odnosu na položaj gornjeg i donjeg dijela tijela na podlogu što omogućava voditeljima lakše slaganje sata a polaznicima jasnije i pravilnije izvođenje...
 
 ## **Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
 
@@ -91,4 +91,3 @@ Igor obožava život!
 
 Nikolina se bavi yogom vise od 20 godina. Prvu poduku stjece kod yoga uciteljice Vjerne Nevistic 2006. godine te postaje dio tima Venus Hot Yoga studia od samog osnutka 2007. godine. 2013. godine pohada edukaciju yoge TT300 u Pink Elephant Yoga Institutu. Nadalje pohadja radionice i seminare u sklopu profesionalnog usavrsavanja. Osim sa razlicitim stilovima yoge koketira i sa razlicitim pravcima yoge pa se tako 2015. godine susrece sa Bhakti yogom u kojoj nalazi veliku inspiraciju te pocinje proucavati vedske spise.
 Uz veliku ljubav prema duhovnosti i ljudima, Nikolina uklapa interes za psihologiju i osobni razvoj sto se odrazava u na njenim satovima. U slobodno vrijeme bavi se pisanjem i slikanjem.
-
