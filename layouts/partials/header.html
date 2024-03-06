@@ -44,13 +44,9 @@
   </nav>
   <aside id="mobile-menu" class="fixed inset-0 z-10 h-screen w-full bg-white px-4 sm:px-6 lg:px-8" hidden>
     <div class="flex h-16 items-center w-full justify-between gap-4 overflow-hidden">
-      <div class="flex-1 md:flex md:items-center">
-        <a class="text-camel font-bold text-3xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
-          {{ .Site.Title }}
-        </a>
-      </div>
+      <div></div>
       <div class="flex items-center gap-4">
-        <button id="close-btn" class="rounded p-2 m">
+        <button id="close-btn" class="rounded p-2 ">
           <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.41431" width="26" height="2" rx="1" transform="rotate(45 1.41431 0)" fill="black"></rect> <rect x="0.100586" y="18.4853" width="26" height="2" rx="1" transform="rotate(-45 0.100586 18.4853)" fill="black"></rect></svg>
         </button>
       </div>
@@ -58,12 +54,12 @@
     <div class="flex flex-col justify-center">
       <nav class="text-ecru text-3xl font-extrabold divide-y">
         {{ with .Site.GetPage "hot-yoga" }}
-          <a class="block relative p-6" href="{{ .Permalink }}#schedule">
-            <span>{{ i18n "schedule"}}</span>
+          <a class="block relative p-4" href="{{ .Permalink }}#schedule">
+            {{ i18n "schedule"}}
           </a>
         {{end}}
         {{- range .Site.Menus.main}}
-          <a class="block relative p-6 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline underline-offset-4{{ end }}" href="{{ .URL }}">
+          <a class="block relative p-4 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline underline-offset-4{{ end }}" href="{{ .URL }}">
             {{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}
           </a>
         {{- end}}
