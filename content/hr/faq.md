@@ -3,7 +3,7 @@ draft: false
 layout: faq
 slug: faq
 date: 2022-07-06T00:30:07-08:00
-image: /images/faq.jpg
+image: /images/faq.JPG
 faq:
   - question: Što ako sam novi u Yogi?
     answer: Naši satovi vruće yoge prikladni su za sve, grupe su male a detaljne i jasne upute naših instruktora pruzaju sigurnost i podršku.
