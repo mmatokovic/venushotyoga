@@ -20,11 +20,3 @@ A Yoga website typically includes information on the different types of yoga pra
 ## Author Information
 
 [Mislav Matoković](https://github.com/mmatokovic)
-
-### Environment Variables
-
-| Name                   | Required | Example  | Description |
-|------------------------|----------|----------|-------------|
-| CLOUDINARY_CLOUD_NAME  | No*      | mycloud  | Cloudinary Cloud Name |
-| CLOUDINARY_API_KEY     | No       | 1234     | Cloudinary API Key |
-| CLOUDINARY_API_SECRET  | No       | abcd1234 | Cloudinary API Secret |
