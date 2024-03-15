@@ -32,7 +32,7 @@ Venus hot yoga is also a place where friendships are made over tea after class, 
 
 ![studio-13](/images/studio-13.jpg "studio-13")
 
-### Zašto hot yoga?
+### Why Hot Yoga?
 
 Vjerna was born on March 2, 1972 in Zagreb. She is a Master of Kinesiology with a focus on the basics of kinesiological transformation (change through movement), and is currently enrolled in a doctoral program with a topic of yoga at the Faculty of Kinesiology. She started practicing yoga at the age of 14 as a supplement to her dance training, which she attended at the School of Rhythm and Dance Ana Maletić (graduated with the title of dance pedagogue). In 1992, yoga was also formally taught at the Faculty of Kinesiology. Vjerna has also been teaching the basics of yoga to students at the Faculty of Kinesiology in Zagreb for many years.
 

@@ -69,8 +69,8 @@
           </li>
         </ul>
         <div class="mt-8 space-y-4 lg:mt-0">
-          <p class="mt-8">Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.</p>
-          <p>Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.</p>
+          <p class="mt-8">{{ T "sign_up_text_1"}}</p>
+          <p>{{ T "sign_up_text_2"}}</p>
             <form class="mt-6 w-full" name="newsletter" id="newsletter" data-netlify="true" netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="newsletter" />
               <p class="hidden">
@@ -80,7 +80,7 @@
                 <label for="subscriber" class="sr-only"> Email </label>
                 <input name="subscriber" type="email" id="subscriber" placeholder="pero.peric@email.com" required="required" class="bg-transparent w-full h-full focus:outline-none focus:ring focus:ring-ecru sm:text-sm"/>
                 <button type="submit" class="mt-1 w-full rounded bg-ecru px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-khaki sm:mt-0 sm:w-auto sm:shrink-0">
-                  Sign Up
+                  {{ T "sign_up"}}
                 </button>
               </div>
             </form>

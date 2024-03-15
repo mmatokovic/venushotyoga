@@ -13,11 +13,29 @@
 [prices]
   other = 'Cijenik'
 
+[offer_see]
+  other = 'pogledajte našu ponudu'
+
+[offer]
+  other = 'Popust'
+
+[offer_text]
+  other = 'do 15.2. Hot Stone masaža za 39 €'
+
 [questions]
   other = 'Ako imate ikakvih pitanja'
 
+[hot_yoga]
+  other = 'Hot Yoga'
+
+[hot_yoga_text]
+  other = 'Hot yoga je hatha yoga koja se izvodi na 33 stupnjeva i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.'
+
 [rejuvenation]
   other = 'Pomlađivanje'
+
+[rejuvenation_text]
+  other = 'Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.'
 
 [training]
   other = 'Trening'
@@ -91,6 +109,9 @@
 [about]
   other = 'O nama'
 
+[about_us_text]
+  other = 'Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo'
+
 [testimonials]
   other = 'Pročitajte komentare naših polaznika'
 
@@ -121,6 +142,9 @@
 [schedule]
   other = 'Raspored'
 
+[schedule_text]
+  other = 'Najavite nam svoj dolazak, na broj: 095 576 3818'
+
 [time]
   other = 'Vrijeme'
 
@@ -144,6 +168,15 @@
 
 [read_more]
   other = '...Saznaj više'
+
+[sign_up]
+  other = 'Prijavite se'
+
+[sign_up_text_1]
+  other = 'Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.'
+
+[sign_up_text_2]        
+  other = 'Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.'
 
 [404_ohno]
   other= 'O Ne!'

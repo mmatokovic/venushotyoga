@@ -44,9 +44,9 @@
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {{ with .Site.GetPage "about" }}
         <a class="bg-french-beige block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
-          <h2 class="text-xl font-bold">O nama</h2>
+          <h2 class="text-xl font-bold">{{ T "about"}}</h2>
           <p class="mt-1 text-base">
-            Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
+            {{ T "about_us_text"}}
           </p>
         </a>
         {{ end }}
@@ -56,22 +56,22 @@
           <div class="absolute inset-0 bg-fill bg-no-repeat bg-center" style="background-image: url('{{ .RelPermalink }}');"></div>
           {{ end }}
           <div class="relative z-10">
-              <h2 class="text-xl font-bold">Yoga Raspored</h2>
+              <h2 class="text-xl font-bold">{{ T "schedule"}}</h2>
               <p class="mt-1 text-base">
-                  Najavite nam svoj dolazak, na broj: 095 576 3818
+                {{ T "schedule_text"}}
               </p>
           </div>
         </a>
         {{ end }}
         {{ with .Site.GetPage "pricing" }}
         <a class="bg-tuscan block rounded-xl p-5 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="{{ .Permalink }}">
-          <h2 class="text-xl font-bold">Cijenik</h2>
+          <h2 class="text-xl font-bold">{{ T "prices"}}</h2>
           <p class="mt-1 text-base">
-            pogledajte našu ponudu
+            {{ T "offer_see"}}
           </p>
           <br>
           <p class="p-2 border-spacing-1 rounded bg-cosmic-latte  text-black border-solid border-2 border-yellow-100">
-            <b>Popust</b> do 15.2. Hot Stone masaža za 39 €
+            <b>{{ T "prices"}}</b> {{ T "offer_text"}}
           </p>
         </a>
         {{ end }}
@@ -96,11 +96,11 @@
               <div class="max-w-3xl">
                 <label class="uppercase font-bold text-sm text-ecru">Focused on you</label>
                 <h2 class="text-3xl font-bold sm:text-4xl text-camel">
-                  Hot Yoga
+                  {{ T "hot_yoga"}}  
                 </h2>
               </div>
               <p class="mt-4 text-gray-600 font-bold">
-                Hot yoga je hatha yoga koja se izvodi na 33 stupnjeva i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.
+                {{ T "hot_yoga_text"}}   
               </p>
               {{ with .Site.GetPage "hot-yoga" }}
               <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 mr-3 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
@@ -133,11 +133,10 @@
           <div class="lg:py-16">
             <label class="uppercase font-bold text-sm text-ecru">For you</label>
             <h2 class="text-3xl font-bold sm:text-4xl text-camel">
-              Pomlađivanje
+              {{ T "rejuvenation"}}
             </h2> 
             <p class="mt-4 text-gray-600 font-bold">
-              Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.
-            </p> 
+              {{ T "rejuvenation_text"}}            </p> 
             {{ with .Site.GetPage "rejuvenation" }}
             <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3  mr-3  text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
               <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>

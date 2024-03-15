@@ -1,57 +1,62 @@
 ---
-title: Cijenik
-slug: cijenik
+title: Pricing
+slug: pricing
 date: 2022-09-06T00:36:24-08:00
-description: cijena
+description: pricing
 menu:
 - main
 - footer
 weight: 4
 layout: pricing
 hotyoga:
-  - category: "Trening"
+  - category: "Training"
     prices:
       - service: 1 trening / Drop in
         price: 16 €
-      - service: 4 treninga vrijedi 1 mjesec
+      - service: 4 training is valid for 1 month
         price: 56 €
-      - service: 6 treninga vrijedi 1 mjeseca
+      - service: 6 training is valid for 1 month
         price: 80 €
-      - service: 8 treninga vrijedi 1 mjeseca
+      - service: 8 training is valid for 1 month
         price: 100 €
-  - category: "Dodatne"
-    prices:
-      - service: Privatni sat (60 min) sa instrukturom
+      - service: Private hour (60 min) with Vjernom
         price: 100 €
-      - service: Najam dvorane/60 min
+      - service: Room rental/60 min
         price: 20 €
-      - service: Najam dvorane/90 min
+      - service: Room rental/90 min
         price: 25 €
-      - service: Najam mata
+      - service: Mat rental
         price: 2 €
 rejuvenation:
-  - category: "Mobilift"
-    prices: 
-      - service: "1 tretman lica (30 min - vrijedi 6mj)"
-        price: "38 €"
-      - service: "10 tretmana lica (30 min - vrijedi 6mj)"
-        price: "345 €"
-      - service: "Ručna masaža (60 min)"
-        price: "44 €"
-      - service: "Ručna masaža (30 min)"
-        price: "25 €"
-  - category: "Cellu"
+  - category: "Body:"
     prices:
-      - service: "1 tretman (45 min)"
-        price: "44 €"
-      - service: "10 tretmana (45 min - vrijedi 6mj)"
-        price: "385 €"
-      - service: "Anticelulitna ručna masaža (30min)"
+      - service: "1 body treatment (45 min)"
+        price: "45 €"
+      - service: "10 body treatment (45 min - worth 6mj)"
+        price: "395 €"
+  - category: "Face:"
+    prices:
+      - service: "1 facial treatment (30 min - worth 6mj)"
+        price: "39 €"
+      - service: "10 facial treatment (30 min - worth 6mj)"
+        price: "350 €"
+  - category: "Hand"
+    prices:
+      - service: "Anti-cellulite hand massage (30 min)"
         price: "34 €"
+      - service: "Reflexology i feet massage (30 min)"
+        price: "25 €"
+      - service: "Hand massage (50 min)"
+        price: "46 €"
+      - service: "Hand massage (30 min)"
+        price: "25 €"
+      - service: "Hot Stone massage (50 min)"
+        price: "46€"
+        popust: "39 €"
 ---
 
-## Pogodnosti 
+## Pogodnosti
 
-* Voda u boci, kokosova voda, Kombucha i ograničeni izbor prostirki za jogu dostupni su za kupnju.
-* Tuševi i svlačionice dostupni su svim studentima
-* Prije kupnje pažljivo razmotrite [Raspored](/hot-yoga). Pakete ne možemo stonirati, obustaviti ili vratiti novac
+* Yoga mat rental..
+* Room rental
+* Please consider carefully before purchasing [Raspored](/hot-yoga).

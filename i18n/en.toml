@@ -98,13 +98,26 @@
 [about]
   other = 'About Us'
 
+[about_us_text]
+  other = 'The mission of Venus hot yoga is to help our participants become healthier, more beautiful and happier. Working on yourself is a path that we can enjoy, and through physical change, which is very possible, comes inner peace and satisfaction'
+
 [about_text]
   other = """
   Tvrtka se od 1990. bavim raznim građevinskim radovima, od tuženja do završnih radova. Imamo tim sa višegodišnjim iskustvom što osigurava sigurnu izradu vaših zahtjeva. Sa sjedištem smo u Zagrebu, trudimo da djelujemo u i ostalim djelovima Hrvatske što iznimno pozitivno utiče na naš napredak kao i uspjeh. Tvrtka se u osnovi bavi gradjevinskim radovima, zidarskim radovima - rohbau, suhom gradjom, kao i završnim radovima, podnim, zidnim oblogama.
   U tvrtki imamo tim stučnjaka, koji se bave građevinskim nadzorom i vođenjem projekta. Koristimo novu, modernu i suvremenu mehanizaciju, tehnologiju. Trudimo se da ispunimo sve vaše zahtjeve, te da na taj načim izmamio zadovoljstvo koje nam je iznimno važno. Uvjerite se samo u našu brzinu, odgovornost i kvalitet, kontaktirajte nas.
   """
+
+[hot_yoga]
+  other = 'Hot Yoga'
+
+[hot_yoga_text]
+  other = 'Hot yoga is hatha yoga that is performed at 33 degrees and 30% humidity. It is suitable for everyone from complete beginners to advanced exercisers and yogis.'
+
 [rejuvenation]
   other = 'Rejuvenation'
+
+[rejuvenation_text]
+  other = 'With the help of the Cellu M6 device for the body and the latest Mobylift M6 for the face, such results are possible in a short time. The treatments are painless, extremely pleasant and relaxing, and above all spectacularly successful. It is a non-invasive rejuvenation solution that turns back time, for anyone who wants to look natural and without changing the personality of their own face and body.'
 
 [training]
   other = 'Training'
@@ -119,7 +132,16 @@
   other = 'To see the prices'
 
 [prices]
-  other = 'Cijenik'
+  other = 'Prices'
+
+[offer_see]
+  other = 'see our offer'
+
+[offer]
+  other = 'Offer'
+
+[offer_text]
+  other = 'until 15.2. Hot Stone massage for €39'
 
 [questions]
   other = 'If you have any questions'
@@ -160,6 +182,9 @@
 [schedule]
   other = 'Schedule'
 
+[schedule_text]
+  other = 'Announce your arrival, call: +385 95 576 3818'
+
 [time]
   other = 'Time'
 
@@ -183,6 +208,15 @@
 
 [read_more]
   other = '...Read More'
+
+[sign_up]
+  other = 'Sign Up'
+
+[sign_up_text_1]
+  other = 'I know it sounds crazy, but somehow email will save us from social media overload.'
+
+[sign_up_text_2]        
+  other = 'Sign up for infrequent emails about featured professional and personal news, new releases and written events, etc.'
 
 [404_ohno]
   other= 'Uh-oh!'
