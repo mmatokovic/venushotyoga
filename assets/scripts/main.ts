@@ -88,6 +88,8 @@ const handleSubmit = (event: Event) => {
         const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
         if (submitButton) {
             submitButton.style.backgroundColor = "green";
+            submitButton.textContent = "Poslano";
+            submitButton.disabled = true;
         }
       })
       .catch((error) => alert(error));

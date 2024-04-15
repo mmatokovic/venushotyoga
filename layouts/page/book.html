@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section>
+  <div class="text-gray-600 body-font relative mx-auto max-w-screen-xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
+    <div class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+      <div>
+          <a href="/vjernanevisticjoga" class="group block">
+              {{ with resources.Get .Params.image }}
+              <img src="{{ .RelPermalink }}" alt="" class="h-[350px] w-full object-contain sm:h-[450px] transition duration-500 group-hover:scale-105"/>
+              {{ end }}
+              <div class="mt-3 flex justify-between text-sm">
+                  <h3 class="text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                      <p>Nakladnik: Centar za kreativno pisanje</p>
+                      <p>277 stranica, tvrdi uvez</p>
+                      <p>ISBN 978-953-8019-39-5</p> 
+                  </h3>
+            
+                  <p class="text-gray-900 font-bold text-lg">44,00 €</p>
+                </div>
+                <form class="mt-4">
+                  <button class="block w-full rounded bg-tuscan p-4 text-lg font-medium transition hover:scale-105">
+                    Kupite
+                  </button>
+                </form>
+                <p>
+                  Također možete je nabaviti u venus hot yoga studiju
+                </p>
+            </a>
+      </div>
+      <div class="lg:py-16 lg:col-span-2">
+        <article class="space-y-4 text-gray-600">
+            <h2 class="text-3xl font-bold sm:text-4xl">
+                Vjerna Nevistić, Joga – disciplinom do slobode
+            </h2>
+            {{ .Content }}
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

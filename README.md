@@ -1,6 +1,6 @@
 # Venus Hot Yoga - Website
 
-The Venus Hot Yoga website is constructed using [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/) using [DecapCMS](https://decapcms.org/).
+The Venus Hot Yoga website is constructed using [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
 
 A Yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor. Image Procesing [TinyJPG](https://tinyjpg.com/) I also use [cloudinary](https://cloudinary.com/) for images.
 

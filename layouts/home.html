@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ with .Site.GetPage "page" "events.md" }}
+{{ with .Site.GetPage "page" "book.md" }}
 {{ if not .Params.draft }}
   {{ partial "sections/popup.html" . }}
 {{ end }}
