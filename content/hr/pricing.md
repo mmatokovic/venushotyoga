@@ -12,13 +12,7 @@ hotyoga:
   - category: "Trening"
     prices:
       - service: 1 trening / Drop in
-        price: 16 €
-      - service: 4 treninga vrijedi 1 mjesec
-        price: 56 €
-      - service: 6 treninga vrijedi 1 mjeseca
-        price: 80 €
-      - service: 8 treninga vrijedi 1 mjeseca
-        price: 100 €
+        price: 20 €
       - service: Privatni sat (60 min) sa Vjernom
         price: 100 €
       - service: Najam dvorane/60 min

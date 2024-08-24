@@ -7,11 +7,13 @@
         </a>
       </div>
       <div class="hidden sm:flex items-center justify-center space-x-6 font-medium">
+      <!--
       {{ with .Site.GetPage "hot-yoga" }}
         <a class="text-gray-700 transition ease-in hover:text-camel" href="{{ .Permalink }}#schedule">
           <span>{{ i18n "schedule"}}</span>
         </a>
       {{end}}
+      !-->
       {{ range .Site.Menus.main }}
         <a class="text-gray-700 transition ease-in hover:text-camel {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}underline decoration-solid underline-offset-4 decoration-2 decoration-buff{{ end }}" href="{{ .URL | absLangURL }}">
           {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}

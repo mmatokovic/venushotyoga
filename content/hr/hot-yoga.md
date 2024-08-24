@@ -43,7 +43,9 @@ schedule:
         description: 
 ---
 
+<!--
 {{< schedule >}}
+!-->
 
 HOT YOGA je intenzivan trening u trajanju 75 ili 90 minuta, na kojem ćete povećati snagu, izdržljivost, fleksibilnost, ravnotežu, koordinaciju i uz to se dobro zabaviti.
 

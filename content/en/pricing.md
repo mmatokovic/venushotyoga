@@ -12,14 +12,8 @@ hotyoga:
   - category: "Training"
     prices:
       - service: 1 trening / Drop in
-        price: 16 €
-      - service: 4 training is valid for 1 month
-        price: 56 €
-      - service: 6 training is valid for 1 month
-        price: 80 €
-      - service: 8 training is valid for 1 month
-        price: 100 €
-      - service: Private hour (60 min) with Vjernom
+        price: 20 €
+      - service: Private hour (60 min) with Vjera
         price: 100 €
       - service: Room rental/60 min
         price: 20 €

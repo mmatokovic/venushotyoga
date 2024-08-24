@@ -42,9 +42,9 @@ schedule:
         endTime: 12:30
         description: 
 ---
-
+<!--
 {{< schedule >}}
-
+!-->
 HOT YOGA is an intense training lasting 75 or 90 minutes, where you will increase strength, endurance, flexibility, balance, coordination, and have a good time.
 
 HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and about 30% humidity, with the room being ventilated, and the body cools through sweating, so the sensation is nowhere near standing in scorching heat. On the contrary, it is very pleasant, especially on colder days.{{< read-more >}}
