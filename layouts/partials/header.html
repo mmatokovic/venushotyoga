@@ -22,7 +22,7 @@
     </div>
     <div class="flex items-center ml-3.5 gap-4">
         <ul class="font-bold text-french-beige">
-        {{ if .Site.IsMultiLingual }}
+        {{ if hugo.IsMultilingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
               <li><a href="#" class="hidden"><img src="{{ .Params.LanguageEmoji }}" width="24" height="24" alt="Icon" /></a></li>
