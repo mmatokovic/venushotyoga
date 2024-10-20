@@ -8,19 +8,19 @@
     cloudName = "daiuuqu0m"
 
 [context.production.environment]
-  HUGO_VERSION = "0.131.0"
+  HUGO_VERSION = "0.135.0"
   NODE_VERSION = "20.12.2"
 
 [context.branch-deploy]
   command = "hugo --minify --gc -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "v0.131.0"
+  HUGO_VERSION = "v0.135.0"
   NODE_VERSION = "20.12.2"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "v0.131.0"
+  HUGO_VERSION = "v0.135.0"
   NODE_VERSION = "20.12.2"

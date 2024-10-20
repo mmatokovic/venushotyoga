@@ -90,10 +90,10 @@
     <div class="mt-12 border-t border-gray-100 pt-6">
       <div class="text-center sm:flex sm:justify-between sm:text-left">
         <p class="text-sm text-gray-500">
-          <span class="block sm:inline">All rights reserved.</span>
+          {{ "Made with :heart: by mmatokovic." | .RenderString }}
         </p>
         <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-          &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+          <span class="block sm:inline">&copy; {{ now.Format "2006" }} {{ .Site.Title }} All rights reserved.</span>
         </p>
       </div>
     </div>
