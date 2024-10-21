@@ -9,16 +9,6 @@ menu:
 image: /images/molitva.jpeg
 weight: 2
 schedule:
-  - day: Srijeda
-    appointments:
-      - service: Hot Yoga
-        startTime: 10:00
-        endTime: 11:30
-        description: 
-      - service: Hot Yoga
-        startTime: 18:30
-        endTime: 20:00
-        description: 
   - day: Četvrtak
     appointments:
       - service: Restorativan 
@@ -43,9 +33,9 @@ schedule:
         description: 
 ---
 
-<!--
 {{< schedule >}}
-!-->
+
+Najavite nam svoj dolazak, na broj: [095 576 3818](tel:0955763818)
 
 HOT YOGA je intenzivan trening u trajanju 75 ili 90 minuta, na kojem ćete povećati snagu, izdržljivost, fleksibilnost, ravnotežu, koordinaciju i uz to se dobro zabaviti.
 

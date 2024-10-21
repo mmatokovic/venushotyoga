@@ -140,8 +140,11 @@
 [offer]
   other = 'Offer'
 
+[enroll_text]
+  other = 'Enrollments for 11 months'
+
 [offer_text]
-  other = 'HOT Yoga drop in! Announcement required, Friday at 10:00 and Saturday at 11:00!'
+  other = 'HOT Yoga is an experience and benefit for the whole body! Treat yourself to one visit a week and feel a big change'
 
 [questions]
   other = 'If you have any questions'

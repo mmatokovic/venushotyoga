@@ -19,8 +19,11 @@
 [offer]
   other = 'Popust'
 
+[enroll_text]
+  other = 'Upisi za 11 mjesec'
+
 [offer_text]
-  other = 'HOT Yoga drop in! Najava potrebna, petak u 10:00 i subota u 11:00!'
+  other = 'HOT Yoga je iskustvo i dobrobit za cijelo tijelo! Priuštite si jedan dolazak tjedno i osjetite veliku promjenu'
 
 [questions]
   other = 'Ako imate ikakvih pitanja'

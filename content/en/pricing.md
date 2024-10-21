@@ -13,6 +13,8 @@ hotyoga:
     prices:
       - service: 1 trening / Drop in
         price: 20 €
+      - service: 4 trenings / Drop in
+        price: 70 €
       - service: Private hour (60 min) with Vjera
         price: 100 €
       - service: Room rental/60 min

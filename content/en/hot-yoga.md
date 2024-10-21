@@ -9,16 +9,6 @@ menu:
 - footer
 weight: 2
 schedule:
-  - day: Srijeda
-    appointments:
-      - service: Hot Yoga
-        startTime: 10:00
-        endTime: 11:30
-        description: 
-      - service: Hot Yoga
-        startTime: 18:30
-        endTime: 20:00
-        description: 
   - day: Četvrtak
     appointments:
       - service: Restorativan 
@@ -42,9 +32,10 @@ schedule:
         endTime: 12:30
         description: 
 ---
-<!--
 {{< schedule >}}
-!-->
+
+Announce your arrival, call: [095 576 3818](tel:0955763818)
+
 HOT YOGA is an intense training lasting 75 or 90 minutes, where you will increase strength, endurance, flexibility, balance, coordination, and have a good time.
 
 HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and about 30% humidity, with the room being ventilated, and the body cools through sweating, so the sensation is nowhere near standing in scorching heat. On the contrary, it is very pleasant, especially on colder days.{{< read-more >}}
