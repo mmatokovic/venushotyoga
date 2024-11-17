@@ -18,9 +18,9 @@ hotyoga:
       - service: Private hour (60 min) with Vjera
         price: 100 €
       - service: Room rental/60 min
-        price: 20 €
+        price: 45 €
       - service: Room rental/90 min
-        price: 25 €
+        price: 55 €
       - service: Mat rental
         price: 2 €
 rejuvenation:

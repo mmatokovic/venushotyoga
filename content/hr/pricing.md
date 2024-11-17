@@ -18,9 +18,9 @@ hotyoga:
       - service: Privatni sat (60 min) sa Vjernom
         price: 100 €
       - service: Najam dvorane/60 min
-        price: 20 €
+        price: 45 €
       - service: Najam dvorane/90 min
-        price: 25 €
+        price: 55 €
       - service: Najam mata
         price: 2 €
 rejuvenation:
