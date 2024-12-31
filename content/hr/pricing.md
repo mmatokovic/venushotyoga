@@ -16,7 +16,7 @@ hotyoga:
       - service: 4 trenina / Drop in
         price: 70 € 
       - service: Privatni sat (60 min) sa Vjernom
-        price: 100 €
+        price: 130 €
       - service: Najam dvorane/60 min
         price: 45 €
       - service: Najam dvorane/90 min
