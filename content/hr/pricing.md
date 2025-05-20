@@ -27,15 +27,15 @@ rejuvenation:
   - category: "Tijelo:"
     prices:
       - service: "1 tretman tijela (45 min)"
-        price: "45 €"
+        price: "50 €"
       - service: "10 tretmana tijela (45 min - vrijedi 6mj)"
-        price: "395 €"
+        price: "450 €"
   - category: "Lice:"
     prices:
       - service: "1 tretman lica (30 min - vrijedi 6mj)"
-        price: "39 €"
+        price: "45 €"
       - service: "10 tretmana lica (30 min - vrijedi 6mj)"
-        price: "350 €"
+        price: "390 €"
   - category: "Rucne"
     prices:
       - service: "Anticelulitna ručna masaža (30 min)"
