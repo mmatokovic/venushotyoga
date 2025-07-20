@@ -27,15 +27,15 @@ rejuvenation:
   - category: "Body:"
     prices:
       - service: "1 body treatment (45 min)"
-        price: "45 €"
+        price: "50 €"
       - service: "10 body treatment (45 min - worth 6mj)"
-        price: "395 €"
+        price: "460 €"
   - category: "Face:"
     prices:
       - service: "1 facial treatment (30 min - worth 6mj)"
-        price: "39 €"
+        price: "45 €"
       - service: "10 facial treatment (30 min - worth 6mj)"
-        price: "350 €"
+        price: "390 €"
   - category: "Hand"
     prices:
       - service: "Anti-cellulite hand massage (30 min)"
