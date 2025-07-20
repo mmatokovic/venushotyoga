@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8c678ac-8e60-448c-9446-e4fe3ed8294c/deploy-status)](https://app.netlify.com/projects/venushotyoga/deploys)
 # Venus Hot Yoga - Website
 
 The Venus Hot Yoga website is constructed using [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
