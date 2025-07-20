@@ -29,7 +29,7 @@ rejuvenation:
       - service: "1 tretman tijela (45 min)"
         price: "50 €"
       - service: "10 tretmana tijela (45 min - vrijedi 6mj)"
-        price: "450 €"
+        price: "460 €"
   - category: "Lice:"
     prices:
       - service: "1 tretman lica (30 min - vrijedi 6mj)"
