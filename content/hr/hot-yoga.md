@@ -9,6 +9,24 @@ menu:
 image: /images/molitva.jpeg
 weight: 2
 schedule:
+  - day: Ponedeljak
+    appointments:
+      - service: Hot Yoga
+        startTime: 18:30
+        endTime: 20:00
+        description: 
+  - day: Utorak
+    appointments:
+      - service: Hot Yoga
+        startTime: 18:30
+        endTime: 20:00
+        description: 
+  - day: Srijeda
+    appointments:
+      - service: Hot Yoga
+        startTime: 18:30
+        endTime: 20:00
+        description: 
   - day: Četvrtak
     appointments:
       - service: Restorativan 
@@ -24,12 +42,6 @@ schedule:
       - service: Hot Yoga
         startTime: 10:00
         endTime: 11:30
-        description: 
-  - day: Subota
-    appointments:
-      - service: Hot Yoga
-        startTime: 11:00
-        endTime: 12:30
         description: 
 ---
 

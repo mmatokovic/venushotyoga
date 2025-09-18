@@ -11,10 +11,14 @@ layout: pricing
 hotyoga:
   - category: "Trening"
     prices:
-      - service: 1 trening / Drop in
-        price: 20 €
-      - service: 4 trenina / Drop in
-        price: 70 € 
+      - service: 1 trening (Drop in)
+        price: 26 €
+      - service: 4 trening mj. (Drop in)
+        price: 85 €
+      - service: 8 trening mj. (Drop in)
+        price: 155 €
+      - service: 10 trening u 2mj. (Drop in)
+        price: 230 €
       - service: Privatni sat (60 min) sa Vjernom
         price: 130 €
       - service: Najam dvorane/60 min

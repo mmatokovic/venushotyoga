@@ -140,9 +140,6 @@
 [offer]
   other = 'Offer'
 
-[enroll_text]
-  other = 'Enrollments for 11 months'
-
 [offer_text]
   other = 'HOT Yoga is an experience and benefit for the whole body! Treat yourself to one visit a week and feel a big change'
 
@@ -184,6 +181,9 @@
 
 [schedule]
   other = 'Schedule'
+
+[enroll_text]
+  other = 'Classes start on October 6.'
 
 [schedule_text]
   other = 'Announce your arrival, call: +385 95 576 3818'
