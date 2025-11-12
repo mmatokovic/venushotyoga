@@ -4,4 +4,4 @@
 {{- end }}
 
 {{- $js := resources.Get "js/main.ts" | js.Build $opts | fingerprint }}
-<script src="{{ $js.RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="{{ $js.RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
