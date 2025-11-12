@@ -1,18 +1,28 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e8c678ac-8e60-448c-9446-e4fe3ed8294c/deploy-status)](https://app.netlify.com/projects/venushotyoga/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6d693c97-23d2-4f7a-8096-8f92e1099b7e/deploy-status)](https://app.netlify.com/projects/venushotyoga/deploys)
+
 # Venus Hot Yoga - Website
 
 The Venus Hot Yoga website is constructed using [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
 
-A Yoga website typically includes information on the different types of yoga practices, the benefits of yoga, class schedules, pricing and membership options, and contact information for the studio or instructor. Image Procesing [TinyJPG](https://tinyjpg.com/) I also use [cloudinary](https://cloudinary.com/) for images.
+## Installation
 
-> It may also include resources such as articles on the history and philosophy of yoga, tips for beginners, and descriptions of different yoga poses. Some yoga websites also offer online classes or tutorials, and may feature a blog or forum for discussion among practitioners.
+Install all required dependencies.
+
+```bash
+npm i
+```
+
+Start web server
+
+```bash
+hugo server  -F -N -D --disableFastRender
+```
 
 ## Branches
 
 * The `main` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
-* The `stage` branch is where we store changes that are related to the next release.
-* The `dev` branch is where we store changes that are related to the next release.
-* The `feature/` branch used for work on new feature.
+* The `develop` branch is where we store changes that are related to the next release.
+* The `feat/` branch used for work on new feature.
 
 ## License
 

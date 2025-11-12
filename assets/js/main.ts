@@ -1,5 +1,7 @@
-import "instant.page"
-import "autotrack"
+/**
+ * @file
+ * A TypeScript file. Runs first, before other things have loaded.
+ */
 
 const hamburger = document.getElementById("hamburger-btn");
 const close = document.getElementById("close-btn");
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (popup) {
         setTimeout(() => {
             popup.classList.remove('hidden');
-        }, 3000);
+        }, 4000);
 
         if (closeButton) {
             closeButton.addEventListener('click', () => {
@@ -88,8 +90,6 @@ const handleSubmit = (event: Event) => {
         const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
         if (submitButton) {
             submitButton.style.backgroundColor = "green";
-            submitButton.textContent = "Poslano";
-            submitButton.disabled = true;
         }
       })
       .catch((error) => alert(error));

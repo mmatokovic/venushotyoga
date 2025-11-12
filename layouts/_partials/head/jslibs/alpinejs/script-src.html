@@ -1,0 +1,11 @@
+{{- $opts := dict "minify" true }}
+{{- if eq hugo.Environment "development" }}
+  {{- $opts = merge $opts (dict "minify" false) }}
+{{- end }}
+
+{{- if site.Params.alpine }}
+{{- $alpine := resources.Get "js/libs/alpinejs/cdn.min.js" }}
+{{- $jsTurbolinksAdapter := resources.Get "js/libs/alpinejs-turbolinks/alpine-turbo-drive-adapter.js" }}
+{{- $js := slice $jsTurbolinksAdapter $alpine | resources.Concat "js/libs/alpinejs/alpine.js" | js.Build $opts | fingerprint }}
+<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- end }}

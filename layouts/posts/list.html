@@ -154,7 +154,7 @@
     </div>
   </section>
 </main>
-{{ $scripts := resources.Get "scripts/search.ts" }}
+{{ $scripts := resources.Get "js/search.ts" }}
 {{ $options := dict "minify" true }}
 {{ $js := $scripts | js.Build $options }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

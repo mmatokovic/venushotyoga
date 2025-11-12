@@ -1,11 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@source "hugo_stats.json";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
-    font-family: "Quicksand", serif;
+    font-family: "Lusitana", serif;
   }
   /* Improve Page speed */
   /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
@@ -41,10 +42,10 @@
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Lusitana';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
+  src: url('/fonts/Lusitana-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
@@ -79,3 +80,46 @@
   }
 }
 
+
+@theme {
+  --font-lusitana: "Lusitana", serif;
+
+  /* Colors */
+  --color-bright-yellow: #F4EBDF;
+  --color-beige: #f5f5dc;
+  --color-wheat: #F3D9A9;
+  --color-almond: #eed9c4;
+  --color-bisque: #ffe4c4;
+  --color-buff: #daa06d;
+  --color-camel: #c19a6b;
+  --color-cosmic-latte: #fffde7;
+  --color-daesert-sand: #edc9af;
+  --color-hazelnut: #cfb095;
+  --color-ecru: #c2b280;
+  --color-french-beige: #a67b5b;
+  --color-khaki: #c3b091;
+  --color-tuscan: #fad6a5;
+
+  /* Background images */
+  --background-image-mandala: url('/images/svg/mandala-svgrepo-com.svg');
+
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  --animate-fadeInDown: fadeInDown 1s;
+  --animate-fadeInLeft: fadeInLeft 1s;
+  --animate-fadeInRight: fadeInRight 1s;
+}

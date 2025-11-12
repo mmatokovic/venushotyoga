@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ with .Site.GetPage "page" "book.md" }}
 {{ if not .Params.draft }}
-  {{ partial "sections/popup.html" . }}
+  {{ partial "sections/popup" . }}
 {{ end }}
 {{ end }}
 <main class="">
@@ -11,7 +11,7 @@
         <p class="hidden text-white/90 md:mt-6 md:block md:text-3xl md:leading-relaxed">
           {{/*  {{ T "home_hero_title" }}  */}}
         </p>
-        <div class="mt-4 sm:mt-8">
+        <div class="mt-4 sm:mt-8 flex justify-center">
           {{ with .Site.GetPage "contact" }}
           <a href="{{ .RelPermalink }}" class="uppercase inline-block rounded-full bg-ecru px-4 py-3 lg:px-12 lg:py-3 text-sm font-medium text-white transition hover:bg-khaki focus:outline-none focus:ring focus:ring-yellow-400">
             {{ T "contact"}}
@@ -162,6 +162,6 @@
       </div>
     </div>
   </section>
-  {{/*  {{ partial "sections/blogs.html" . }}  */}}
+  {{/*  {{ partial "sections/blogs" . }}  */}}
 </main>
 {{ end }} 

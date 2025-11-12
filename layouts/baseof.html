@@ -1,22 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "head.html" . }}
+  {{ partial "head" . }}
   <body>
-    {{ partial "header.html" . }}
+    {{ partial "header" . }}
     {{ block "main" . }}{{ end }}
-    {{- partial "footer.html" . }}
-    {{- $js := resources.Get "scripts/main.ts" | js.Build (dict "minify" true) | fingerprint }}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
+    {{- partial "footer" . }}
   </body>
 </html>

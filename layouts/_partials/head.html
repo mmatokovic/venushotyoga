@@ -1,44 +1,22 @@
-{{- $options := dict "inlineImports" true -}}
-{{- $styles := resources.Get "css/styles.css" -}}
-{{- $styles := $styles | css.PostCSS $options -}}
-{{- if hugo.IsProduction }}
-  {{ $styles = $styles | minify | fingerprint "md5" | resources.PostProcess }}
-{{ end -}}
-
-{{- $sourceMap := cond hugo.IsProduction "" "inline" -}}
-{{- $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2016" -}}
-{{- $js := resources.Get "scripts/turbo.ts" | js.Build $opts -}}
-{{- if hugo.IsProduction }}
-  {{ $js = $js | fingerprint }}
-{{ end -}}
-
-{{- $author :=  or (.Params.author) (.Site.Author.name) -}}
-<head>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="{{ $js.RelPermalink }}" {{- if hugo.IsProduction }} integrity="{{ $js.Data.Integrity }}" {{ end -}}></script>
-  {{ partial "sections/site_schema.html" . -}}
-  <title>{{- if not .IsHome }}{{ .Title }} | {{ end -}}{{ .Site.Title }}</title>
-  {{ hugo.Generator -}}
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
-  <meta name="author" content="{{ $author }}"/>
-  <meta name="theme-color" content="#ffffff"/>
-  {{ if isset .Params "keywords" }}
-    <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ end }}" />
-  {{ end -}}
-  {{- template "_internal/twitter_cards.html" . }}
-  {{- template "_internal/opengraph.html" . }}
-  {{- template "_internal/schema.html" . }}
-  {{- if ne .Site.Params.googleAnalytics "" -}}
-    {{ template "_internal/google_analytics.html" . }}
-  {{- end -}}
-  <link rel="preconnect" href="https://www.google-analytics.com"/>
-  <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
-  <link rel="icon" href="/favicon.png">
-  <link rel="icon" type="image/x-icon" href="/favicon.png"/>
-  <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.png"/>
-  <link rel="apple-touch-icon" href="/favicon.png"/>
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
-</head>
+{{ hugo.Generator }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author.name }} <{{ .Site.Params.author.email }}>{{ end }}">
+{{ with .Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}" />
+{{ end }}
+  {{ partial "schema" . }}
+  {{ partial "twitter_cards" . }}
+  {{ partial "opengraph" . }}
+{{ with .Site.Params.googleAnalytics }}
+  {{ partial "google_analytics" . }}
+{{ end }}
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  {{ partial "head/site_schema" . }}
+  {{ partialCached "head/css" . }}
+  {{ partialCached "head/jslibs/alpinejs/script-src" "-" }}
+  {{ partial "head/js" . }}
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
+{{ end }}
