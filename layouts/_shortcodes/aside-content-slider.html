@@ -3,10 +3,10 @@
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 			<div class="{{ if .Get "class" }}{{ .Get "class" }} relative !h-full overflow-hidden rounded-lg sm:h-full{{else}}relative !h-full overflow-hidden rounded-lg sm:h-full{{ end }}">
 			<div id="image-keen-slider" class="keen-slider">
-					<button id="keen-slider-previous" class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+					<button id="keen-slider-previous" class="cursor-pointer absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
 						<
 					</button>
-					<button id="keen-slider-next" class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
+					<button id="keen-slider-next" class="cursor-pointer absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
 						>
 					</button>
 					{{ if .IsNamedParams }}
@@ -35,7 +35,7 @@
     </div>
 	</div>
 </section>
-{{ $scripts := resources.Get "scripts/imageSlider.ts" }}
+{{ $scripts := resources.Get "js/imageSlider.ts" }}
 {{ $options := dict "minify" true }}
 {{ $js := $scripts | js.Build $options }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" ></script>

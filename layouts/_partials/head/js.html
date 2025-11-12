@@ -1,0 +1,7 @@
+{{- $opts := dict "minify" true }}
+{{- if eq hugo.Environment "development" }}
+  {{- $opts = merge $opts (dict "minify" false) }}
+{{- end }}
+
+{{- $js := resources.Get "js/main.ts" | js.Build $opts | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
