@@ -43,9 +43,9 @@ enableEmoji = true
   lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [sitemap]
-  changefreq = "monthly"
+  disable = false
+  changefreq = "weekly"
   filename = "sitemap.xml"
-  priority = 0.5
 
 [build]
   [build.buildStats]
