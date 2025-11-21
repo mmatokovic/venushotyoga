@@ -2,10 +2,10 @@
   publish = "public"
   command = "hugo --gc --minify -d public;"
 
-[[plugins]]
-  package = "netlify-plugin-cloudinary"
-  [plugins.inputs]
-    cloudName = "daiuuqu0m"
+#[[plugins]]
+#  package = "netlify-plugin-cloudinary"
+#  [plugins.inputs]
+#    cloudName = "daiuuqu0m"
 
 [context.production.environment]
   HUGO_VERSION = "0.152.2"
