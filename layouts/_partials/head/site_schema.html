@@ -1,18 +1,38 @@
+{{ $org_name := .Site.Params.orgName -}}
 {{ if .IsHome -}}
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "name": "{{ .Site.Title }}",
+        "name": "{{ .Title | safeJS }}",
         "url": "{{ .Site.BaseURL }}",
         "description": "{{ .Site.Params.description }}",
         "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-        "license": "{{ .Site.Params.Copyright }}"
+        "license": "{{ .Site.Params.Copyright }}",
+        {{- with site.Data.links.tel }}
+        "telephone": "{{ . }}",
+        {{- end }}
+        {{- with site.Data.openingHours }}
+        "openingHoursSpecification": [
+            {{- range $index, $ohs := . }}
+            {{- if $index }},{{ end }}
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    {{- range $i, $day := $ohs.days }}
+                    {{- if $i }},{{ end }}"{{ $day }}"
+                    {{- end }}
+                ],
+                "opens": "{{ $ohs.opens }}",
+                "closes": "{{ $ohs.closes }}"
+            }
+            {{- end }}
+        ]
+        {{- end }}
     }
 </script>
 {{ else if .IsPage -}}
 {{ $author :=  or (.Params.author) (.Site.Author.name) -}}
-{{ $org_name :=  .Site.Title -}}
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",

@@ -12,6 +12,36 @@
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2">
         <ul class="mt-8 space-y-4 text-sm">
+          {{ with site.Data.openingHours }}
+          <li class="flex items-start justify-start gap-1.5">
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y-2 divide-gray-200">
+                    <caption class="text-gray-700 text-left mb-2">{{ i18n "Opening_Hours" }}</caption>
+                <tbody class="divide-y divide-gray-200">
+                    {{ range . }}
+                      {{ if ne .opens "00:00" }}
+                        <tr class="text-gray-900 first:font-medium">
+                          <td class="px-3 py-2 whitespace-nowrap">
+                            {{- if eq (len .days) 5 }}
+                              {{ i18n "Monday" }} - {{ i18n "Friday" }}
+                            {{- else if eq (len .days) 1 }}
+                              {{ i18n (index .days 0) }}
+                            {{- else }}
+                              {{- range $i, $day := .days }}
+                                {{ if $i }}, {{ end }}{{ i18n $day }}
+                              {{- end }}
+                            {{- end }}
+                          </td>
+                          <td class="px-3 py-2 whitespace-nowrap">{{ .opens }}</td>
+                          <td class="px-3 py-2 whitespace-nowrap">{{ .closes }}</td>
+                        </tr>
+                      {{ end }}
+                    {{ end }}
+                </tbody>
+              </table>
+            </div>
+          </li>
+          {{ end }}
           <li>
             <a class="flex items-center justify-center gap-1.5 ltr:sm:justify-start" href="mailto:{{ site.Data.links.mail }}">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
