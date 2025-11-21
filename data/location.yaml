@@ -1,0 +1,10 @@
+address:
+  type: PostalAddress
+  streetAddress: "Ul. Pavla Radića 3"
+  addressLocality: "Zagreb"
+  postalCode: "10000"
+  addressCountry: "HR"
+geo:
+  type: GeoCoordinates
+  latitude: 45.815
+  longitude: 15.978
