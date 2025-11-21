@@ -44,8 +44,6 @@ enableEmoji = true
 
 [sitemap]
   disable = false
-  changefreq = "weekly"
-  filename = "sitemap.xml"
 
 [build]
   [build.buildStats]
