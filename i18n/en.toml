@@ -218,7 +218,7 @@
 [sign_up_text_1]
   other = 'I know it sounds crazy, but somehow email will save us from social media overload.'
 
-[sign_up_text_2]        
+[sign_up_text_2]
   other = 'Sign up for infrequent emails about featured professional and personal news, new releases and written events, etc.'
 
 [404_ohno]
@@ -229,3 +229,27 @@
 
 [404_home]
   other = 'Go Back Home'
+
+[Monday]
+  other = "Monday"
+
+[Tuesday]
+  other = "Tuesday"
+
+[Wednesday]
+  other = "Wednesday"
+
+[Thursday]
+  other = "Thursday"
+
+[Friday]
+  other = "Friday"
+
+[Saturday]
+  other = "Saturday"
+
+[Sunday]
+  other = "Sunday"
+
+[Opening_Hours]
+  other = "Opening Hours"

@@ -178,7 +178,7 @@
 [sign_up_text_1]
   other = 'Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.'
 
-[sign_up_text_2]        
+[sign_up_text_2]
   other = 'Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.'
 
 [404_ohno]
@@ -189,3 +189,27 @@
 
 [404_home]
   other = 'Natrag na Početnu'
+
+[Monday]
+  other = "Ponedjeljak"
+
+[Tuesday]
+  other = "Utorak"
+
+[Wednesday]
+  other = "Srijeda"
+
+[Thursday]
+  other = "Četvrtak"
+
+[Friday]
+  other = "Petak"
+
+[Saturday]
+  other = "Subota"
+
+[Sunday]
+  other = "Nedjelja"
+
+[Opening_Hours]
+  other = "Radno Vrijeme"

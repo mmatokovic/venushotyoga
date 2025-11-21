@@ -1,6 +1,6 @@
 baseURL = 'https://venushotyoga.hr'
 languageCode = 'hr'
-title = 'Venus Hot Yoga'
+title = 'Najbolja yoga Zagreb - ako tražite yoga usluge ili pomlađivanje - Venus hot yoga je mjesto za tebe'
 defaultContentLanguage = 'hr'
 
 enableRobotsTXT = true
@@ -29,6 +29,7 @@ enableEmoji = true
 
 
 [params]
+  orgName = "Venus Hot Yoga"
   Description = "Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 3 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni lagani i poletni"
   logo = "favicon.png"
   copyright = "Apache-2.0"
