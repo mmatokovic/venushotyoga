@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl px-5 py-5 mx-auto flex items-center space-y-0">
       <div class="flex-grow flex justify-start">
         <a href="{{ .Site.BaseURL | relLangURL }}" class="flex items-center font-bold text-ecru mr-4">
-          <img src="images/svg/logo-crop.png" alt="logo" class="h-20 md:h-32 z-50 absolute top-1 rounded-full">
+          <img src="{{ "images/svg/logo-crop.png" | absURL }}" alt="logo" class="h-20 md:h-32 z-50 absolute top-1 rounded-full">
         </a>
       </div>
       <div class="hidden sm:flex items-center justify-center space-x-6 font-medium">
@@ -23,10 +23,10 @@
         {{ if hugo.IsMultilingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
-              <li><a href="#" class="hidden"><img src="{{ .Params.LanguageEmoji }}" width="24" height="24" alt="Icon" /></a></li>
+              <li><a href="#" class="hidden"><img src="{{ .Params.LanguageEmoji | absURL }}" width="24" height="24" alt="Icon" /></a></li>
             {{ else }}
               {{ range $.Translations }}
-              <li><a href="{{ .Permalink }}" class=""><img src="{{ .Language.Params.LanguageEmoji }}" width="24" height="24" alt="Icon" /></a></li>
+              <li><a href="{{ .Permalink }}" class=""><img src="{{ .Language.Params.LanguageEmoji | absURL }}" width="24" height="24" alt="Icon" /></a></li>
               {{ end }}
             {{ end }}
           {{ end }}

@@ -20,10 +20,10 @@
 {{ with .OutputFormats.Get "rss" }}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
 {{ end }}
-  <link rel="preload" as="image" href="/images/homepage.webp">
+  <link rel="preload" as="image" href="{{ "images/homepage.webp" | absURL }}">
   <link rel="preconnect" href="https://www.google-analytics.com"/>
   <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
-  <link rel="icon" href="/favicon.png">
-  <link rel="icon" type="image/x-icon" href="/favicon.png"/>
-  <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.png"/>
-  <link rel="apple-touch-icon" href="/favicon.png"/>
+  <link rel="icon" href="{{ "favicon.png" | absURL }}">
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.png" | absURL }}"/>
+  <link rel="icon" type="image/x-icon" sizes="192x192" href="{{ "favicon.png" | absURL }}"/>
+  <link rel="apple-touch-icon" href="{{ "favicon.png" | absURL }}"/>

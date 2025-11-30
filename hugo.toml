@@ -18,14 +18,14 @@ enableEmoji = true
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
-      LanguageEmoji = '/images/svg/flag-for-united-states.svg'
+      LanguageEmoji = 'images/svg/flag-for-united-states.svg'
   [languages.hr]
     languageName = '🇭🇷'
     languageCode = 'hr'
     contentDir = 'content/hr'
     weight = 1
     [languages.hr.params]
-      LanguageEmoji = '/images/svg/flag-for-croatia.svg'
+      LanguageEmoji = 'images/svg/flag-for-croatia.svg'
 
 
 [params]
@@ -44,10 +44,6 @@ enableEmoji = true
 
 [sitemap]
   disable = false
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
 
 [build]
   [build.buildStats]
