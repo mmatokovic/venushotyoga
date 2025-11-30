@@ -45,6 +45,10 @@ enableEmoji = true
 [sitemap]
   disable = false
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [build]
   [build.buildStats]
     enable = true

@@ -253,3 +253,10 @@
 
 [Opening_Hours]
   other = "Opening Hours"
+
+[form_success]
+  other = "Thank you! You have successfully subscribed."
+
+[form_error]
+  other = "Oops! Something went wrong. Please try again."
+  

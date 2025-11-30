@@ -71,30 +71,50 @@ function hideLoading(): void {
 }
 
 const handleSubmit = (event: Event) => {
-    event.preventDefault();
-  
-    const form = event.target as HTMLFormElement;
-    const formData = new FormData(form);
-    const formDataString = new URLSearchParams(formData as any).toString();
-  
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formDataString,
+  event.preventDefault();
+
+  const form = event.target as HTMLFormElement;
+  const formData = new FormData(form);
+  const formDataString = new URLSearchParams(formData as any).toString();
+
+  const successMessage = document.getElementById("form-success") as HTMLParagraphElement;
+  const errorMessage = document.getElementById("form-error") as HTMLParagraphElement;
+
+  const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.style.opacity = "0.6";
+  }
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: formDataString,
+  })
+    .then(() => {
+      console.log("Form successfully submitted");
+
+      if (successMessage) successMessage.classList.remove("hidden");
+      if (errorMessage) errorMessage.classList.add("hidden");
+
+      form.reset();
+
+      if (submitButton) submitButton.style.backgroundColor = "green";
     })
-      .then(() => {
-        // Form successfully submitted
-        console.log("Form successfully submitted");
-        
-        // Show the "send" div
-        const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-        if (submitButton) {
-            submitButton.style.backgroundColor = "green";
-        }
-      })
-      .catch((error) => alert(error));
-  };
-  
-  document
-    .querySelector("form")
-    ?.addEventListener("submit", handleSubmit);
+    .catch((error) => {
+      console.error(error);
+
+      if (errorMessage) errorMessage.classList.remove("hidden");
+      if (successMessage) successMessage.classList.add("hidden");
+
+      if (submitButton) submitButton.style.backgroundColor = "";
+    })
+    .finally(() => {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.style.opacity = "1";
+      }
+    });
+};
+
+document.querySelector("form")?.addEventListener("submit", handleSubmit);
