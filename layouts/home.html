@@ -6,7 +6,7 @@
 {{ end }}
 <main>
   <section class="rounded-lg relative overflow-hidden h-64 sm:h-80 lg:h-full py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-7xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
-    <img src="{{ "images/homepage.webp" | absURL }}" alt="Homepage hero" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" fetchpriority="high">
+    <img src="{{ (resources.Get "images/homepage.webp").RelPermalink }}" alt="Homepage hero" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" fetchpriority="high">
     <div class="flex flex-col justify-center relative z-1 h-full text-center ltr:sm:text-left rtl:sm:text-right py-14 md:p-12 sm:py-32 lg:py-0">
       <p class="hidden md:block text-white/90 md:text-3xl md:leading-relaxed">
         {{/* {{ T "home_hero_title" }} */}}
