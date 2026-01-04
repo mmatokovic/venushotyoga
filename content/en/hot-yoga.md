@@ -9,40 +9,34 @@ menu:
 - footer
 weight: 2
 schedule:
-  - day: Ponedeljak
-    appointments:
-      - service: Hot Yoga
-        startTime: 18:30
-        endTime: 20:00
-        description: 
   - day: Utorak
     appointments:
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
-        description: 
+        description:
   - day: Srijeda
     appointments:
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
-        description: 
+        description:
   - day: Četvrtak
     appointments:
-      - service: Restorativan 
+      - service: Restorativan
         startTime: 09:30
         endTime: 11:00
-        description: 
+        description:
       - service: Hot Yoga
         startTime: 18:30
         endTime: 20:00
-        description: 
+        description:
   - day: Petak
     appointments:
       - service: Hot Yoga
         startTime: 10:00
         endTime: 11:30
-        description: 
+        description:
 ---
 {{< schedule >}}
 
