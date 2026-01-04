@@ -3,7 +3,7 @@ draft: false
 layout: faq
 slug: faq
 date: 2022-07-06T00:30:07-08:00
-image: /images/faq.JPG
+image: /images/FAQ.webp
 faq:
   - question: What if I'm new to Yoga?
     answer: Our hot yoga classes are suitable for everyone, with small groups and detailed, clear instructions from our instructors providing safety and support.

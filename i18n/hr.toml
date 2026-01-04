@@ -213,3 +213,9 @@
 
 [Opening_Hours]
   other = "Radno Vrijeme"
+
+[form_success]
+  other = "Hvala! Uspješno ste se pretplatili."
+
+[form_error]
+  other = "Ups! Došlo je do pogreške. Pokušajte ponovno."

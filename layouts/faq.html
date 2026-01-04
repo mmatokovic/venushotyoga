@@ -5,7 +5,7 @@
       {{ with resources.Get .Params.image }}
           <picture class="relative overflow-hidden">
             <source srcset="{{ .RelPermalink }}" type="image/webp">
-            <img alt="ebook" src="{{ .RelPermalink }}" class="w-full h-auto lg:h-auto max-w-full aspect-[21/9]"/>
+            <img alt="ebook" src="{{ .RelPermalink }}"  loading="eager" class="w-full h-auto lg:h-auto max-w-full aspect-[21/9]"/>
           </picture>
       {{ end }}
     </div>

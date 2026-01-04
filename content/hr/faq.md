@@ -3,7 +3,7 @@ draft: false
 layout: faq
 slug: faq
 date: 2022-07-06T00:30:07-08:00
-image: /images/faq.JPG
+image: /images/FAQ.webp
 faq:
   - question: Što ako sam novi u Yogi?
     answer: Naši satovi vruće Yoge prikladni su za sve razine iskustva, dobi i
