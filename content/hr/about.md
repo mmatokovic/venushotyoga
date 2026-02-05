@@ -58,12 +58,10 @@ Vjernina najdraža je ''Nema slobode bez discipline'' a njena nova knjiga o yogi
 
 ## **Za individualni sat s Vjernom** možete se prijaviti na broj: [095 576 3818](tel:0955763818)
 
-{{< aside-conent src="/images/Danijel.jpg" >}}
+## Nikolina
 
-## Danijel Jeremić
-
-Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao se za sportsku, klasičnu i aroma masažu, te refleksologiju. Također je i terapeut na aparatu LPG Cellu M6 s dugogodišnjim iskustvom.
-{{< /aside-conent >}}
+Nikolina se bavi yogom vise od 20 godina. Prvu poduku stjece kod yoga uciteljice Vjerne Nevistic 2006. godine te postaje dio tima Venus Hot Yoga studia od samog osnutka 2007. godine. 2013. godine pohada edukaciju yoge TT300 u Pink Elephant Yoga Institutu. Nadalje pohadja radionice i seminare u sklopu profesionalnog usavrsavanja. Osim sa razlicitim stilovima yoge koketira i sa razlicitim pravcima yoge pa se tako 2015. godine susrece sa Bhakti yogom u kojoj nalazi veliku inspiraciju te pocinje proucavati vedske spise.
+Uz veliku ljubav prema duhovnosti i ljudima, Nikolina uklapa interes za psihologiju i osobni razvoj sto se odrazava u na njenim satovima. U slobodno vrijeme bavi se pisanjem i slikanjem.
 
 {{< aside-conent src="/images/Ana_Pojatina.png" class="lg:order-last" >}}
 
@@ -72,20 +70,3 @@ Danijel je profesionalni maser koji je od malena to želio biti. Specijalizirao 
 Ana prakticira yogu više od 20 godina. Temelje yoge upoznala je u sustavu Joge u svakodnevnom životu, a zatim je nakon nekog vremena pohađala radionice i seminare Iyengar yoge te one u tradiciji T. Krishnamacharye. Učila je i od Vjerne Nevistić, čije satove i seminare i danas rado pohađa. Profesionalno se bavi grafičkim dizajnom, pogotovo u području nakladništva, te uređuje knjige iz područja duhovnosti i osobnog razvoja.
 {{< /aside-conent >}}
 
-{{< aside-conent src="/images/igor_dabo_2.jpeg" class="lg:order-last !h-full" >}}
-
-## Igor Dabo
-
-Igorov je čitav život obogaćen sportom i sportskim aktivnostima: rukomet, košarka, trčanje, treniranje u teretani, ronjenje, plivanje, biciklizam, Muay thai (tajlandski boks) i mnoge druge sportskw aktivnosti. Igor obožava biti aktivan.
-Ne tako davno osjetio je kako ga osim fizičke aktivnosti počinje zanimati duhovnost. Radi veliki životni preokret. Zbog dotadašnjeg stresnog načina života i rada u korporaciji, unatoč sportu prilično je natukao kile (118 kg). Znatiželjno kreće prakticirati yogu i meditaciju. Uz promjenu prehrane (sirovojedstvo i gluten free) radi tibetanske vježbe, vježbe disanja i trči kilometrima uz vjernu pratnju četveronožnog kompanjona. U godinu dana „topi“ 38 kilograma i osjeća se sjajno! Godina je 2015.
-2016. godine upoznaje Sandru P.P. i kreće redovno dolaziti na satove Dharma yoge. Već slijedeće, 2017. godine upisuje, kao najstariji polaznik TT 200 kojeg polaže iste godine, rekordno prvi u svojem timu. Sudjeluje na radionicama i predavanjima u Dharma centru (ali i drugim centrima) koje u njemu  bude interes te iste godine otvara Hamsa Yoga studio. 
-Spletom okolnosti zatvara Hamsa Yoga Studio koje mu ostavlja neprocjenjivo znanje i iskustvo učitelja, držanja satova yoge i bliže poimanje značenja povezivanja i dubokog utonuća predaje i povjerenja u život. Sadhana i yogijske tehnike postaju integralni dio Igorove svakodnevice.
-Iste godine (2017.) također završava školu za primjenu zvučne masaže i zvukoterapije na Akademiji Peter Hess te Tehniku psihološkog i duhovnog razvoja, Duboki Peat od Ž. M. Slavinskog. Obje se metode vješto nadopunjuju s yogom i izuzetno ga ispunjavaju.
-2020 godine nadopunjuje svoje yoga znanje i praksu kod učitelja Andrije Bosanac Schroetter i završava za učitelja Yin yoge.
-Igor obožava život!
-{{< /aside-conent >}}
-
-## Nikolina
-
-Nikolina se bavi yogom vise od 20 godina. Prvu poduku stjece kod yoga uciteljice Vjerne Nevistic 2006. godine te postaje dio tima Venus Hot Yoga studia od samog osnutka 2007. godine. 2013. godine pohada edukaciju yoge TT300 u Pink Elephant Yoga Institutu. Nadalje pohadja radionice i seminare u sklopu profesionalnog usavrsavanja. Osim sa razlicitim stilovima yoge koketira i sa razlicitim pravcima yoge pa se tako 2015. godine susrece sa Bhakti yogom u kojoj nalazi veliku inspiraciju te pocinje proucavati vedske spise.
-Uz veliku ljubav prema duhovnosti i ljudima, Nikolina uklapa interes za psihologiju i osobni razvoj sto se odrazava u na njenim satovima. U slobodno vrijeme bavi se pisanjem i slikanjem.

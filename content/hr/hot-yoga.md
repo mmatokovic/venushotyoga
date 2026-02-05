@@ -33,6 +33,12 @@ schedule:
         startTime: 10:00
         endTime: 11:30
         description:
+  - day: Nedelja
+    appointments:
+      - service: Hot Yoga
+        startTime: 11:00
+        endTime: 20:00
+        description: "Uz najavu!"
 ---
 
 {{< schedule >}}

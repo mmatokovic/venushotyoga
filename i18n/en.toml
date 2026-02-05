@@ -137,6 +137,9 @@
 [hand_massage]
   other = 'Hand Massage'
 
+[sunday]
+  other = 'Sunday'
+
 [offer_see]
   other = 'see our offer'
 
