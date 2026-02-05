@@ -1,6 +1,6 @@
 # when using the default proxy server port: npx decap-server
 local_backend: true
-site_url: https://venushotyoga.netlify.app
+site_url: https://venushotyoga.hr
 media_folder: /assets/images # Folder where user uploaded files should go
 public_folder: /images
 backend:
@@ -27,18 +27,9 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Featured Image", name: "image", widget: "image", media_folder: "/static/images"}
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "pages"
-    label: "Pages"
-    i18n: true
+  - name: Miscellaneous
+    label: Miscellaneous
     files:
-      - name: 'about'
-        file: '/content/about.md'
-        label: 'About Page'
-        i18n: true
-        fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
-          - { label: "Body", name: "body", widget: "markdown", i18n: true }
-
       - file: 'content/hr/faq.md'
         label: 'FAQ Page'
         name: 'faq'
@@ -62,12 +53,15 @@ collections: # A list of collections the CMS should be able to edit
                 { label: "Text", name: "text", widget: "markdown" },
               ],
             }
-  - name: "Prices & Schedule"
-    label: "Prices & Schedule"
+
+  - name: Prices & Schedule
+    label: Prices & Schedule
     files:
-      - file: "content/hr/pricing.md"
-        label: "Change Pricing"
+      - file: content/hr/pricing.md
+        label: Change Hot Yoga Pricing
         name: Services
+        editor:
+          preview: false
         fields:
           - { label: Hotyoga, name: hotyoga, collapsed: true, widget: list,
               fields: [
@@ -91,9 +85,11 @@ collections: # A list of collections the CMS should be able to edit
                 }
               ]
             }
-      - file: "content/hr/hot-yoga.md"
-        label: "Change Schedule"
-        name: yoga
+      - file: content/hr/hot-yoga.md
+        label: Change Schedule
+        name: schedule
+        editor:
+          preview: false
         fields:
           - { label: Schedule, name: schedule, collapsed: true, widget: list,
               fields: [
