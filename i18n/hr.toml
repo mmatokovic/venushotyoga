@@ -13,6 +13,9 @@
 [prices]
   other = 'Cijenik'
 
+[hand_massage]
+  other = 'Ručne Masaže'
+
 [offer_see]
   other = 'Pogledajte našu ponudu'
 

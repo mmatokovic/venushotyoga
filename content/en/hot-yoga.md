@@ -1,13 +1,9 @@
 ---
+draft: false
 title: Hot Yoga
-slug: hot-yoga
 date: 2022-07-06T00:36:24-08:00
 description: HOT YOGA is Hatha yoga that is performed in a room heated to 33 degrees Celsius and about 30% humidity, where the room is ventilated, and the body cools down by sweating so that the feeling is not even close to what it is like when we stand on the whistle and fry on to the sun. On the contrary, it is very pleasant, especially on colder days.
 image: /images/molitva.jpeg
-menu:
-- main
-- footer
-weight: 2
 schedule:
   - day: Utorak
     appointments:

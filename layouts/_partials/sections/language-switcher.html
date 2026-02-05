@@ -1,0 +1,19 @@
+<nav aria-label="Language switcher" class="mr-4 md:mr-0">
+  {{- if hugo.IsMultilingual }}
+    {{- range .Site.Languages }}
+      {{- if eq . $.Site.Language }}
+      <a href="#" class="hidden capitalize text-gray-700 transition hover:text-gray-700/75">
+        {{ .LanguageName  }}
+      </a>
+      {{- else }}
+      {{- range $.Translations }}
+        <a href="{{ .RelPermalink }}" class="py-2.5 text-sm capitalize underline text-gray-700 transition hover:text-gray-700/75" title="{{ .Language.LanguageName }}" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">
+          {{ with .Language.Params.LanguageEmoji }}
+          <img src="{{(( resources.Get . )).RelPermalink}}" width="24" height="24" alt="Icon" />
+          {{ end }} 
+        </a>
+      {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+</nav>

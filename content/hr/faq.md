@@ -1,9 +1,10 @@
 ---
 draft: false
-layout: faq
-slug: faq
+title: FAQ
 date: 2022-07-06T00:30:07-08:00
+description: Frequently Asked Questions About Hot Yoga
 image: /images/FAQ.webp
+layout: faq
 faq:
   - question: Što ako sam novi u Yogi?
     answer: Naši satovi vruće Yoge prikladni su za sve razine iskustva, dobi i
@@ -43,12 +44,6 @@ faq:
 
 
       Naši instruktori joge prakticiraju jogu dugi niz godina i iz prve su ruke iskusili pozitivne promjene zdravlja i svjesnosti koje proizlaze iz prakticiranja vruće joge.
-title: FAQ
-weight: 7
-description: Frequently Asked Questions About Hot Yoga
-menu:
-- main
-- footer
 ---
 
 ## Frequently Asked Questions

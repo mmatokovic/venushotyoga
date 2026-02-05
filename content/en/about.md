@@ -1,13 +1,10 @@
 ---
-title: About Us
-slug: about
-date: 2022-07-06T00:30:07-08:00
 draft: false
+title: About Us
+date: 2022-07-06T00:30:07-08:00
 description: The mission of Venus hot yoga is to help our students become healthier, more beautiful and happier. Working on yourself is a journey that we can enjoy, and through physical change that is definitely possible comes inner peace and satisfaction.
 image: /images/studio-16.jpg
 keywords: [Lifestyle, Strength, Philosophy]
-menu: main
-weight: 1
 ---
 
 ## Studio

@@ -1,13 +1,11 @@
 ---
-title: O Nama
-slug: o-nama
-date: 2022-07-06T00:30:07-08:00
 draft: false
+title: O Nama
+date: 2022-07-06T00:30:07-08:00
 description: Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo.
+slug: o-nama
 image: /images/studio-16.jpg
-menu: main
 keywords: [Lifestyle, Strength, Philosophy]
-weight: 1
 ---
 
 ## O Studiju

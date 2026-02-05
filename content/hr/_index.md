@@ -1,7 +1,7 @@
 ---
+draft: false
 title: Početna
 date: 2022-07-06T00:30:07-08:00
-draft: false
 keywords: [Yoga, Hot yoga, Hot, Venus, Venus hot yoga]
 header: Zamislite potpuni mir i stabilnost. Uz to zamislite i pomlađivanje
   tijela i lica. Zamislite da vas ne bole leđa, da ste gipki, uravnoteženi,

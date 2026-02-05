@@ -134,6 +134,9 @@
 [prices]
   other = 'Prices'
 
+[hand_massage]
+  other = 'Hand Massage'
+
 [offer_see]
   other = 'see our offer'
 

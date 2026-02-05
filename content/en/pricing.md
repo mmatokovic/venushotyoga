@@ -1,12 +1,8 @@
 ---
+draft: false
 title: Pricing
-slug: pricing
 date: 2022-09-06T00:36:24-08:00
 description: pricing
-menu:
-- main
-- footer
-weight: 4
 layout: pricing
 hotyoga:
   - category: "Training"

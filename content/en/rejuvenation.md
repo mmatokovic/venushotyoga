@@ -1,14 +1,10 @@
 ---
 title: Rejuvenation
-slug: rejuvenation
 date: 2022-07-06T00:36:24-08:00
 description: Rejuvenation
-menu:
-- main
-- footer
+draft: false
 image: /images/studio-2.jpg
 keywords: [Lifestyle, Strength, Philosophy]
-weight: 3
 ---
 
 ## Body and Face Rejuvenation? Sounds Like Science Fiction!

@@ -1,41 +1,55 @@
 # when using the default proxy server port: npx decap-server
 local_backend: true
 site_url: https://venushotyoga.netlify.app
-media_folder: "/static/images" # Folder where user uploaded files should go
-public_folder: "/images"
+media_folder: /assets/images # Folder where user uploaded files should go
+public_folder: /images
 backend:
   name: git-gateway
   branch: main
+i18n:
+  structure: single_file
+  locales: [hr, en]
+  default_locale: hr
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "posts" # Used in routes, e.g., /admin/collections/post
-    label: "Posts" # Used in the UI
-    label_singular: 'Blog' # Used in the UI, ie: "New Post"
-    folder: "content/hr/posts" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
-    summary: '{{title}} -- {{day}}/{{month}}/{{year}}'
+  - name: posts # Used in routes, e.g., /admin/collections/post
+    label: "Posts"
+    label_singular: blog # Used in the UI, ie: "New Post"
+    folder: "content/hr/posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    path: "{{slug}}/index"
+    summary: '{{title}} -- {{day}}.{{month}}.{{year}}'
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: 'Tags', name: 'tags', widget: 'select', options: ['Beginners', 'Lifestyle', 'Strength', 'Meditation', 'Philosophy', 'Flexibility', 'Stress Relief'], multiple: true}
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Featured Image", name: "image", widget: "image", media_folder: "/static/images"}
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages"
     label: "Pages"
+    i18n: true
     files:
+      - name: 'about'
+        file: '/content/about.md'
+        label: 'About Page'
+        i18n: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Body", name: "body", widget: "markdown", i18n: true }
+
       - file: 'content/hr/faq.md'
         label: 'FAQ Page'
         name: 'faq'
         fields:
           - { label: 'Frequently Asked Questions',  name: 'faq', widget: 'list', collapsed: true,
-                fields:
-                  [ 
-                    { label: 'Question', name: 'question', widget: 'string' },
-                    { label: 'Answer', name: 'answer', widget: 'markdown' }
-                  ]
-            }
+              fields:
+                [
+                  { label: 'Question', name: 'question', widget: 'string' },
+                  { label: 'Answer', name: 'answer', widget: 'markdown' }
+                ]
+          }
       - file: "content/hr/_index.md"
         label: "Home Page"
         name: "home"
