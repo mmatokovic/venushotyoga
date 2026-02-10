@@ -1,15 +1,11 @@
 ---
+draft: true
 title: Knjiga
-slug: knjiga
 date: 2022-07-06T00:30:07-08:00
 description: Knjiga
-draft: true
+slug: knjiga
 layout: book
 image: /images/Joga-3D.webp
-menu:
-- main
-- footer
-weight: 5
 ---
 
 Joga je, kao rekreativna aktivnost, prisutna u kineziologiji odavno, ali u prikrivenom obliku. Jer, što su vježbe istezanja nego dijelovi asana?

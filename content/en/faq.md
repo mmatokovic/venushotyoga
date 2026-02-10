@@ -1,9 +1,10 @@
 ---
 draft: false
-layout: faq
-slug: faq
+title: FAQ
 date: 2022-07-06T00:30:07-08:00
+description:
 image: /images/FAQ.webp
+layout: faq
 faq:
   - question: What if I'm new to Yoga?
     answer: Our hot yoga classes are suitable for everyone, with small groups and detailed, clear instructions from our instructors providing safety and support.
@@ -21,12 +22,6 @@ faq:
     answer: Yes! The studio is equipped with female and male changing rooms, each with its own showers and complimentary shower soaps and hygiene products.
   - question: Can children practice hot yoga?
     answer: Depending on the maturity of the child and their interests, a child around 12 years old and older can join adult classes.
-title: FAQ
-weight: 7
-description: 
-menu:
-- main
-- footer
 ---
 
 ## Frequently Asked Questions

@@ -13,6 +13,7 @@
         <th>{{ T "thursday" }}</th>
         <th>{{ T "friday" }}</th>
         <th>{{ T "saturday" }}</th>
+        <th>{{ T "sunday" }}</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200">
@@ -29,14 +30,14 @@
         <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 text-center">
           {{ $time }}
         </td>
-        {{ range $dayName := slice "Ponedeljak" "Utorak" "Srijeda" "Četvrtak" "Petak" "Subota" }}
+        {{ range $dayName := slice "Ponedeljak" "Utorak" "Srijeda" "Četvrtak" "Petak" "Subota" "Nedelja" }}
           <td class="whitespace-nowrap px-4 py-2 text-center">
             {{ with index (where $schedule "day" $dayName) 0 }}
               {{ with index (where .appointments "startTime" $time) 0 }}
               <div class="bg-tuscan">
                 {{ .service }}<br>
                 <span class="text-xs">{{ .startTime }} - {{ .endTime }}</span><br>
-                <span class="capitalize text-xs">{{ .description }}</span>
+                <span class="uppercase text-red-900 text-xs font-bold">{{ .description }}</span>
               </div>
               {{ else }}
                 <!-- No appointment at this time -->

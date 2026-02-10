@@ -6,7 +6,10 @@
 {{ end }}
 <main>
   <section class="rounded-lg relative overflow-hidden h-64 sm:h-80 lg:h-full py-14 md:p-12 sm:py-32 lg:py-72 mx-auto max-w-7xl px-4 pb-8 sm:pb-12 sm:px-6 lg:pb-16 lg:px-8">
-    <img src="{{ (resources.Get "images/homepage.webp").RelPermalink }}" alt="Homepage hero" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" fetchpriority="high">
+  {{ with resources.Get "images/homepage.webp" }}
+    {{ with .Resize "900x lanczos" }}
+    <img src="{{ .RelPermalink }}" alt="Homepage hero" class="absolute inset-0 w-full h-full object-cover object-center" loading="eager" fetchpriority="high">
+    {{ end }}{{ end }}
     <div class="flex flex-col justify-center relative z-1 h-full text-center ltr:sm:text-left rtl:sm:text-right py-14 md:p-12 sm:py-32 lg:py-0">
       <p class="hidden md:block text-white/90 md:text-3xl md:leading-relaxed">
         {{/* {{ T "home_hero_title" }} */}}
@@ -30,10 +33,10 @@
     {{ end }}
   </div>
   <section class="text-white text-xl">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto text-center text-black">
           <span class="relative flex justify-center">
-            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-linear-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
             <span class="relative bg-white px-6">{{ T "home_hero_title" }}</span>
           </span>
       </div>
@@ -82,8 +85,8 @@
   </section>
   {{/* partial "sections/how_to.html" . */}}
   <section class="text-black text-xl relative">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-      <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
+    <div class="mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div class="mx-auto max-w-7xl my-4 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
             {{ with resources.Get "/images/dvorana.jpg" }}
@@ -106,13 +109,13 @@
               </p>
               {{ with .Site.GetPage "hot-yoga" }}
               <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 mr-3 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-                <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="absolute inset-y-0 left-0 w-0.5 rounded bg-hazelnut transition-all group-hover:w-full"></span>
                 <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
               {{ with .Site.GetPage "pricing" }}
               <a href="{{ .RelPermalink }}#hot-yoga" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-                <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
+                <span class="absolute inset-y-0 left-0 w-0.5 rounded bg-hazelnut transition-all group-hover:w-full"></span>
                 <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
                 {{ .Title }}
               </a>
@@ -122,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-auto max-w-screen-xl my-8 sm:py-12 lg:py-4">
+      <div class="mx-auto max-w-7xl my-8 sm:py-12 lg:py-4">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             {{ with $image := resources.Get "/images/slika_stroja.jpg"}}
@@ -141,14 +144,14 @@
               {{ T "rejuvenation_text"}}            </p> 
             {{ with .Site.GetPage "rejuvenation" }}
             <a href="{{ .RelPermalink }}" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3  mr-3  text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-              <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="absolute inset-y-0 left-0 w-0.5 rounded bg-hazelnut transition-all group-hover:w-full"></span>
               <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>
             {{ end }}
             {{ with .Site.GetPage "pricing" }}
             <a href="{{ .RelPermalink }}#rejuvenation" class="group bg-tuscan relative mt-8 inline-block rounded px-12 py-3 text-sm font-bold border border-tuscan text-white focus:outline-none focus:ring focus:ring-yellow-400">
-              <span class="absolute inset-y-0 left-0 w-[2px] rounded bg-hazelnut transition-all group-hover:w-full"></span>
+              <span class="absolute inset-y-0 left-0 w-0.5 rounded bg-hazelnut transition-all group-hover:w-full"></span>
               <span class="relative text-sm font-bold text-white transition-colors group-hover:text-white">
               {{ .Title }}
             </a>

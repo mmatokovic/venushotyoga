@@ -1,0 +1,45 @@
+[[main]]
+  name = 'About Us'
+  pageRef = '/about'
+  weight = 10
+[[main]]
+  name = 'Hot Yoga'
+  pageRef = '/hot-yoga'
+  weight = 20
+[[main]]
+  name = 'Rejuvenation'
+  pageRef = '/rejuvenation'
+  weight = 30
+[[main]]
+  name = 'Pricing'
+  pageRef = '/pricing'
+  weight = 40
+[[main]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 50
+[[main]]
+  name = 'FAQ'
+  pageRef = '/faq'
+  weight = 60
+
+[[footer]]
+  name = 'Hot Yoga'
+  pageRef = '/hot-yoga'
+  weight = 10
+[[footer]]
+  name = 'Rejuvenation'
+  pageRef = '/rejuvenation'
+  weight = 20
+[[footer]]
+  name = 'Pricing'
+  pageRef = '/pricing'
+  weight = 30
+[[footer]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 40
+[[footer]]
+  name = 'FAQ'
+  pageRef = '/faq'
+  weight = 50

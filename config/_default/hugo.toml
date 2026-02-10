@@ -12,35 +12,26 @@ enableEmoji = true
     ID = 'G-WV6G3SGDB2'
 
 [languages]
-  [languages.en]
-    languageName = '🇬🇧'
-    languageCode = 'en'
-    contentDir = 'content/en'
-    weight = 2
-    [languages.en.params]
-      LanguageEmoji = 'images/svg/flag-for-united-states.svg'
   [languages.hr]
-    languageName = '🇭🇷'
+    languageName = 'HR'
     languageCode = 'hr'
     contentDir = 'content/hr'
     weight = 1
     [languages.hr.params]
-      LanguageEmoji = 'images/svg/flag-for-croatia.svg'
-
-
-[params]
-  orgName = "Venus Hot Yoga"
-  Description = "Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 3 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni lagani i poletni"
-  logo = "favicon.png"
-  copyright = "Apache-2.0"
-  dateFormat = "02.01.2006."
-  [params.author]
-    name = "Vjerna Nevistić"
-
+      LanguageEmoji = "images/svg/flag-for-croatia.svg"
+  [languages.en]
+    languageName = 'EN'
+    languageCode = 'en'
+    contentDir = 'content/en'
+    weight = 2
+    [languages.en.params]
+      LanguageEmoji = "images/svg/flag-for-united-states.svg"
 
 [frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":git", "date", "publishDate"]
+  date = ['date', 'publishDate', 'pubdate', 'lastmod', 'modified']
+  expiryDate = ['expiryDate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishDate', 'pubdate']
+  publishDate = ['publishDate', 'pubdate', 'date']
 
 [sitemap]
   disable = false
@@ -74,3 +65,13 @@ enableEmoji = true
   [[module.mounts]]
     source = "node_modules/alpinejs/dist"
     target = "assets/js/libs/alpinejs"
+
+# Set markup.goldmark.parser.wrapStandAloneImageWithinParagraph = false so standalone images will not be wrapped in <p>>/p> tags. Also set block = true to support attributes on block elements:
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Allow HTML in md files
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true

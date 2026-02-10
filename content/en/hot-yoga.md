@@ -1,13 +1,9 @@
 ---
+draft: false
 title: Hot Yoga
-slug: hot-yoga
 date: 2022-07-06T00:36:24-08:00
 description: HOT YOGA is Hatha yoga that is performed in a room heated to 33 degrees Celsius and about 30% humidity, where the room is ventilated, and the body cools down by sweating so that the feeling is not even close to what it is like when we stand on the whistle and fry on to the sun. On the contrary, it is very pleasant, especially on colder days.
 image: /images/molitva.jpeg
-menu:
-- main
-- footer
-weight: 2
 schedule:
   - day: Utorak
     appointments:
@@ -37,10 +33,20 @@ schedule:
         startTime: 10:00
         endTime: 11:30
         description:
+  - day: Nedelja
+    appointments:
+      - service: Hot Yoga
+        startTime: 11:00
+        endTime: 20:00
+        description: with notice!
 ---
 {{< schedule >}}
 
 Announce your arrival, call: [095 576 3818](tel:0955763818)
+
+[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
+
+## Hot Yoga
 
 HOT YOGA is an intense training lasting 75 or 90 minutes, where you will increase strength, endurance, flexibility, balance, coordination, and have a good time.
 
@@ -53,7 +59,6 @@ HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and abou
 * If you think practicing in warmth isn't for you, give it 3 to 5 hours, and you'll get used to it. Long-time practitioners even seek additional heaters. During practice, you can lie down and rest anytime, allowing the warmth to relax your body and mind as in a sauna.
 {{< /read-more >}}
 
-[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
 ![Image alt](images/leti.jpeg)
 

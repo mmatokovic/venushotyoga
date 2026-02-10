@@ -1,14 +1,10 @@
 ---
 title: Rejuvenation
-slug: rejuvenation
 date: 2022-07-06T00:36:24-08:00
 description: Rejuvenation
-menu:
-- main
-- footer
+draft: false
 image: /images/studio-2.jpg
 keywords: [Lifestyle, Strength, Philosophy]
-weight: 3
 ---
 
 ## Body and Face Rejuvenation? Sounds Like Science Fiction!
@@ -28,6 +24,22 @@ In 2007, I returned to Zagreb and opened the Venus Hot Yoga Center. In 2007, my 
 At that time, I was almost 36 years old, and I was excited about the experiment of losing all those kilos and looking like before pregnancy. I didn't particularly watch what I ate because I was breastfeeding, I practiced yoga lightly, and three times a week I came for treatments on the device. We worked on modeling, fat removal, and skin tightening. It took me about 40 treatments to completely return to my pre-pregnancy state.
 
 And even today, I regularly maintain my body with treatments on the device, firstly because they are extremely pleasant, deeply massage the body, and I also have a complete aesthetic effect. From the age of 35, I started doing face treatments on LPG because they excellently maintain facial tone, solve wrinkles, and irregularities caused by aging and facial expressions, making me look like me just a few years younger.
+
+## Thai Yoga Treatment
+
+Thai Yoga is a treatment that combines methods of traditional Thai massage, assisted yoga postures, and acupressure.
+
+- The therapist guides the client’s body through a series of stretches, pressure techniques, and gentle rocking movements, while the client remains passive  
+- It is performed on a mat on the floor, in a pleasantly warm room, over clothing  
+- The treatment is extremely pleasant and relaxing, and suitable for everyone  
+
+### Benefits
+
+- Relieves muscle tension and provides deep relaxation  
+- Has a beneficial effect on all body systems: skeletal, muscular, nervous, and circulatory  
+- Improves mobility and increases range of motion — stretching enhances muscle elasticity and joint flexibility  
+- Stimulates the flow of energy through the body (along the so-called *sen* lines) and promotes mental clarity  
+- Encourages blood and lymph circulation, supporting the elimination of toxins from the body
 
 ## Anti-cellulite Treatments for Weight Loss
 

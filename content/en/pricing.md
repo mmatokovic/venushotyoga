@@ -1,12 +1,8 @@
 ---
+draft: false
 title: Pricing
-slug: pricing
 date: 2022-09-06T00:36:24-08:00
 description: pricing
-menu:
-- main
-- footer
-weight: 4
 layout: pricing
 hotyoga:
   - category: "Training"
@@ -30,9 +26,9 @@ hotyoga:
 rejuvenation:
   - category: "Body:"
     prices:
-      - service: "1 body treatment (45 min)"
+      - service: "1 body treatment (40 min)"
         price: "50 €"
-      - service: "10 body treatment (45 min - worth 6mj)"
+      - service: "10 body treatment (40 min - worth 6mj)"
         price: "460 €"
   - category: "Face:"
     prices:
@@ -53,6 +49,11 @@ rejuvenation:
       - service: "Hot Stone massage (50 min)"
         price: "46€"
         popust: "39 €"
+      - service: "Thai Yoga Tretman (60 min)"
+        price: "50€"
+        popust: "40"
+      - service: "Thai Yoga Tretman (90 min)"
+        price: "90€"
 ---
 
 ## Pogodnosti

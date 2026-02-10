@@ -20,7 +20,6 @@
 {{ with .OutputFormats.Get "rss" }}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
 {{ end }}
-  <link rel="preload" as="image" href="{{ "images/homepage.webp" | absURL }}">
   <link rel="preconnect" href="https://www.google-analytics.com"/>
   <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
   <link rel="icon" href="{{ "favicon.png" | absURL }}">

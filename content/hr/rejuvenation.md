@@ -1,14 +1,11 @@
 ---
+draft: false
 title: Pomlađivanje
-slug: pomlađivanje
 date: 2022-07-06T00:36:24-08:00
 description: Pomlađivanje
-menu:
-- main
-- footer
+slug: pomladivanje
 image: /images/studio-2.jpg
 keywords: [Lifestyle, Strength, Philosophy]
-weight: 3
 ---
 ## ​Pomlađivanje tijela i lica? Zvuči kao znanstvena fantastika!
 
@@ -26,6 +23,21 @@ Nakon 7 godina Amerike, 2003, preselila sam se u Prag gdje sam otvorila yoga stu
 Tada sam imala skoro 36 godina i mogu reći da sam se veselila eksperimentu kako izbubiti sve te kile i izgledati kao prije trudnoće. Nisam osobito pazila što jedem jer sam dojila, lagano sam vježbala yogu i 3x tjedno dolazila sam na tretmane na aparatu. Radili smo modeliranje, skidanje masnih naslaga i zatezanje kože. Trebalo mi je oko 40 tretmana da se potpuno vratim u stanje prije trudnoće.
 
 I danas redovito održavam tijelo tretmanima na aparatu, kao prvo jer su silno ugodni, dubinski masiraju tijelo, a uz to imam i potpuni estetski efekt. Od 35 godine počela sam raditi i tretmane lica na Lpgu jer izvanredno održavaju tonus lica, rješavaju bore i nepravilnosti koje dobivamo starenjem i mimikom lica, s njima izgledam kao ja samo koju godinu mlađe.
+
+
+## Thai Yoga Tretman 
+
+Thai Yoga je tretman koji kombinira metode tradicionalne tajlandske masaže, asistirane joga položaje i akupresuru.
+* Terapeut vodi tijelo klijenta kroz niz istezanja, pritisaka, i ljuljuškanja, a klijent ostaje pasivan
+* Izvodi se na prostirci na podu, u ugodno toploj dvorani, preko odjeće 
+* ⁠tretman je izuzetno ugodan i opuštajući, te prikladan za svakoga
+
+**Prednosti**:
+* Otklanja mišićnu napetost i dubinski opušta
+* Blagotvorno djeluje na sve tjelesne sustave: koštani, mišićni, živčani, i krvožilni
+* Poboljšava pokretljivost i povećava opseg pokreta - istezanje poboljšava elastičnost mišića i pokretljivost zglobova
+* Potiče protok energije kroz tijelo (duž tzv. sen linija), te donosi mentalnu jasnoću
+* Potiče protok krvi i limfe, što utječe na izbacivanje toksina iz tijela
 
 ## Anticelulitni tretmani za mršavljenje
 

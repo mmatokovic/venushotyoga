@@ -134,6 +134,12 @@
 [prices]
   other = 'Prices'
 
+[hand_massage]
+  other = 'Hand Massage'
+
+[sunday]
+  other = 'Sunday'
+
 [offer_see]
   other = 'see our offer'
 
@@ -141,7 +147,7 @@
   other = 'Offer'
 
 [offer_text]
-  other = 'HOT Yoga is an experience and benefit for the whole body! Treat yourself to one visit a week and feel a big change'
+  other = 'Thai Yoga Treatment – 60 minutes for €40, available until 22/2!'
 
 [questions]
   other = 'If you have any questions'

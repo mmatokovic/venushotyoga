@@ -1,0 +1,49 @@
+[[main]]
+  name = 'O Nama'
+  pageRef = '/about'
+  weight = 10
+[[main]]
+  name = 'Hot Yoga'
+  pageRef = '/hot-yoga'
+  weight = 20
+[[main]]
+  name = 'Pomlađivanje'
+  pageRef = '/rejuvenation'
+  weight = 30
+[[main]]
+  name = 'Blog'
+  pageRef = '/posts'
+  weight = 40
+[[main]]
+  name = 'Cijenik'
+  pageRef = '/pricing'
+  weight = 50
+[[main]]
+  name = 'Kontakt'
+  pageRef = '/contact'
+  weight = 60
+[[main]]
+  name = 'FAQ'
+  pageRef = '/faq'
+  weight = 70
+
+[[footer]]
+  name = 'Hot Yoga'
+  pageRef = '/hot-yoga'
+  weight = 10
+[[footer]]
+  name = 'Pomlađivanje'
+  pageRef = '/rejuvenation'
+  weight = 20
+[[footer]]
+  name = 'Cijenik'
+  pageRef = '/pricing'
+  weight = 30
+[[footer]]
+  name = 'Kontakt'
+  pageRef = '/contact'
+  weight = 40
+[[footer]]
+  name = 'FAQ'
+  pageRef = '/faq'
+  weight = 50

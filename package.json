@@ -6,12 +6,12 @@
   "repository": "github:mmatokovic/venushotyoga",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
     "alpine-turbo-drive-adapter": "^2.2.0",
-    "alpinejs": "^3.15.1",
+    "alpinejs": "^3.15.8",
     "keen-slider": "^6.8.6",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.18"
   }
 }
