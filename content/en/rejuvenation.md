@@ -25,6 +25,22 @@ At that time, I was almost 36 years old, and I was excited about the experiment 
 
 And even today, I regularly maintain my body with treatments on the device, firstly because they are extremely pleasant, deeply massage the body, and I also have a complete aesthetic effect. From the age of 35, I started doing face treatments on LPG because they excellently maintain facial tone, solve wrinkles, and irregularities caused by aging and facial expressions, making me look like me just a few years younger.
 
+## Thai Yoga Treatment
+
+Thai Yoga is a treatment that combines methods of traditional Thai massage, assisted yoga postures, and acupressure.
+
+- The therapist guides the client’s body through a series of stretches, pressure techniques, and gentle rocking movements, while the client remains passive  
+- It is performed on a mat on the floor, in a pleasantly warm room, over clothing  
+- The treatment is extremely pleasant and relaxing, and suitable for everyone  
+
+### Benefits
+
+- Relieves muscle tension and provides deep relaxation  
+- Has a beneficial effect on all body systems: skeletal, muscular, nervous, and circulatory  
+- Improves mobility and increases range of motion — stretching enhances muscle elasticity and joint flexibility  
+- Stimulates the flow of energy through the body (along the so-called *sen* lines) and promotes mental clarity  
+- Encourages blood and lymph circulation, supporting the elimination of toxins from the body
+
 ## Anti-cellulite Treatments for Weight Loss
 
 The Cellu M6 Integral S device successfully solves the problem of cellulite, swelling, loose skin after dieting or childbirth, and it is possible to reduce fat deposits in critical parts of the body such as the waist, thighs, hip pads, knees, or the inner side of the leg. The whole body is reshaped, and we solve problems that we cannot reach with exercise or diet. The treatment lasts for 45 minutes, and the entire body is treated because cellulite can only be solved if the lymphatic system, circulation, and digestion are activated. Special emphasis is placed on critical parts of the body where, for example, in 10 treatments, it is possible to lose up to 10 cm in the waist, 5 cm in the thighs, 8-10 cm in the buttocks, 3 to 5 cm in the knees, and up to 3 cm in the upper arms - these results are achieved in 95% of treated clients. The treatments are also suitable for men who mostly opt for waist size reduction.

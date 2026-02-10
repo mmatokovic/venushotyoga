@@ -27,9 +27,9 @@ hotyoga:
 rejuvenation:
   - category: "Tijelo:"
     prices:
-      - service: "1 tretman tijela (45 min)"
+      - service: "1 tretman tijela (40 min)"
         price: "50 €"
-      - service: "10 tretmana tijela (45 min - vrijedi 6mj)"
+      - service: "10 tretmana tijela (40 min - vrijedi 6mj)"
         price: "460 €"
   - category: "Lice:"
     prices:
@@ -50,6 +50,11 @@ rejuvenation:
       - service: "Hot Stone masaža (50 min)"
         price: "46€"
         popust: "39 €"
+      - service: "Thai Yoga Tretman (60 min)"
+        price: "50€"
+        popust: "40"
+      - service: "Thai Yoga Tretman (90 min)"
+        price: "90€"
 ---
 
 ## Pogodnosti

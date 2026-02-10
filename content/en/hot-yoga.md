@@ -44,6 +44,10 @@ schedule:
 
 Announce your arrival, call: [095 576 3818](tel:0955763818)
 
+[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
+
+## Hot Yoga
+
 HOT YOGA is an intense training lasting 75 or 90 minutes, where you will increase strength, endurance, flexibility, balance, coordination, and have a good time.
 
 HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and about 30% humidity, with the room being ventilated, and the body cools through sweating, so the sensation is nowhere near standing in scorching heat. On the contrary, it is very pleasant, especially on colder days.{{< read-more >}}
@@ -55,7 +59,6 @@ HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and abou
 * If you think practicing in warmth isn't for you, give it 3 to 5 hours, and you'll get used to it. Long-time practitioners even seek additional heaters. During practice, you can lie down and rest anytime, allowing the warmth to relax your body and mind as in a sauna.
 {{< /read-more >}}
 
-[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
 ![Image alt](images/leti.jpeg)
 

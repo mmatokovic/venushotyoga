@@ -24,6 +24,21 @@ Tada sam imala skoro 36 godina i mogu reći da sam se veselila eksperimentu kako
 
 I danas redovito održavam tijelo tretmanima na aparatu, kao prvo jer su silno ugodni, dubinski masiraju tijelo, a uz to imam i potpuni estetski efekt. Od 35 godine počela sam raditi i tretmane lica na Lpgu jer izvanredno održavaju tonus lica, rješavaju bore i nepravilnosti koje dobivamo starenjem i mimikom lica, s njima izgledam kao ja samo koju godinu mlađe.
 
+
+## Thai Yoga Tretman 
+
+Thai Yoga je tretman koji kombinira metode tradicionalne tajlandske masaže, asistirane joga položaje i akupresuru.
+* Terapeut vodi tijelo klijenta kroz niz istezanja, pritisaka, i ljuljuškanja, a klijent ostaje pasivan
+* Izvodi se na prostirci na podu, u ugodno toploj dvorani, preko odjeće 
+* ⁠tretman je izuzetno ugodan i opuštajući, te prikladan za svakoga
+
+**Prednosti**:
+* Otklanja mišićnu napetost i dubinski opušta
+* Blagotvorno djeluje na sve tjelesne sustave: koštani, mišićni, živčani, i krvožilni
+* Poboljšava pokretljivost i povećava opseg pokreta - istezanje poboljšava elastičnost mišića i pokretljivost zglobova
+* Potiče protok energije kroz tijelo (duž tzv. sen linija), te donosi mentalnu jasnoću
+* Potiče protok krvi i limfe, što utječe na izbacivanje toksina iz tijela
+
 ## Anticelulitni tretmani za mršavljenje
 
 Aparatom Lpg Cellu M6 Integral S uspješno se rješava problem celulita, otečenosti, opuštene kože nakon dijete ili poroda te je moguće smanjiti masne naslage na kritičnim dijelovima tijela kao struk, bedra, bokovi jastučići na koljenima ili unutarnjoj strani noge. Cijelo tijelo se preoblikuje i rješavamo probleme koje ni vježbanjem niti dijetom ne možemo dohvatiti.Tretman traje 45 minuta, a tretira se cijelo tijelo, jer je celulit rješiv jedino ako se pokrene limfni sustav, cirkulacija i probava. Poseban naglasak daje se na kritične dijelove tijela u kojima je za npr 10 tretmana moguće izgubiti; u struku do 10 cm, u bedrima 5 cm, stražnjici 8- 10cm, koljena 3 do 5 cm, nadlaktice do 3 cm – rezultati su takvi u 95% tretiranih klijentica I klijenata. Tretmani su pogodni i za muškarce koji se najčešće odlučuju na smanjenje obujma struka .
