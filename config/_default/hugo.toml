@@ -9,7 +9,7 @@ enableEmoji = true
 
 [services]
   [services.googleAnalytics]
-    ID = 'G-WV6G3SGDB2'
+    id = 'G-WV6G3SGDB2'
 
 [languages]
   [languages.hr]
