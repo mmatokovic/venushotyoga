@@ -9,9 +9,7 @@
   {{ partial "schema" . }}
   {{ partial "twitter_cards" . }}
   {{ partial "opengraph" . }}
-{{ with .Site.Params.googleAnalytics }}
   {{ partial "google_analytics" . }}
-{{ end }}
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   {{ partial "head/site_schema" . }}
   {{ partialCached "head/css" . }}
