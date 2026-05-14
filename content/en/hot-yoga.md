@@ -11,12 +11,6 @@ schedule:
         startTime: 18:30
         endTime: 20:00
         description:
-  - day: Srijeda
-    appointments:
-      - service: Hot Yoga
-        startTime: 18:30
-        endTime: 20:00
-        description:
   - day: Četvrtak
     appointments:
       - service: Restorativan
