@@ -33,3 +33,6 @@ jobs:
 
       - name: Build (fails on any warning, e.g. a broken internal link)
         run: hugo --gc --minify --panicOnWarning
+
+      - name: Check the Decap CMS config is valid YAML
+        run: pnpm dlx yaml@2 valid < static/admin/config.yml
