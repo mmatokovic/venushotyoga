@@ -7,7 +7,7 @@
         {{- range slice "1" "2" "3" "4" }}
           {{- with $.Get . }}
         <div class="keen-slider__slide flex items-center justify-center">
-          {{ partial "image" (dict "src" . "page" $.Page "width" 1000 "alt" "" "class" "h-full w-full object-cover") }}
+          {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" . "page" $.Page "width" 1000 "alt" "" "class" "h-full w-full object-cover") }}
         </div>
           {{- end }}
         {{- end }}

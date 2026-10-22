@@ -15,7 +15,7 @@
           <a href="{{ .RelPermalink }}" class="block">
             {{- with partial "utils/page-image" . }}
             <div class="overflow-hidden">
-              {{ partial "image" (dict "resource" . "width" 600 "ratio" $section.ratio "alt" "" "class" "w-full object-cover object-center transition duration-500 group-hover:scale-105") }}
+              {{ partial "image" (dict "sizes" "(min-width: 768px) 33vw, 100vw" "resource" . "width" 600 "ratio" $section.ratio "alt" "" "class" "w-full object-cover object-center transition duration-500 group-hover:scale-105") }}
             </div>
             {{- end }}
             <div class="bg-white p-4 sm:p-6">

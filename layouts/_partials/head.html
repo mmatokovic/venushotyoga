@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="{{ if $shareImage }}summary_large_image{{ else }}summary{{ end }}">
 <meta name="twitter:title" content="{{ .Title | default site.Title }}">
 <meta name="twitter:description" content="{{ or $description site.Params.description }}">
-{{ partial "opengraph.html" . }}
+{{ partial "opengraph.html" (dict "page" . "description" (or $description site.Params.description)) }}
 {{- with $shareImage }}
 <meta property="og:image" content="{{ .Permalink }}">
 <meta property="og:image:width" content="{{ .Width }}">

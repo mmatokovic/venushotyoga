@@ -25,6 +25,9 @@
         "width" $largest.Width
         "height" $largest.Height
       ) }}
+      {{- $tiny := $img.Resize "20x webp q50" }}
+      {{- $lqip := printf "data:%s;base64,%s" $tiny.MediaType.Type ($tiny.Content | base64Encode) }}
+      {{- $attrs = merge $attrs (dict "style" (printf "background: %s url(%s) center / cover no-repeat" (index $tiny.Colors 0) $lqip)) }}
     {{- else }}
       {{- $src = .RelPermalink }}
     {{- end }}

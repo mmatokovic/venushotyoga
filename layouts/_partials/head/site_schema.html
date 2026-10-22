@@ -1,6 +1,6 @@
 {{- $home := site.Home.Permalink }}
 {{- $logo := "" }}
-{{- with site.Params.logo }}{{ with resources.Get . }}{{ $logo = .Permalink }}{{ end }}{{ end }}
+{{- with site.Params.logo }}{{ with resources.Get . }}{{ $logo = (.Process "resize 512x png").Permalink }}{{ end }}{{ end }}
 {{- $links := hugo.Data.links }}
 {{- $sameAs := slice }}
 {{- range slice "facebook" "instagram" "youtube" }}{{ with index $links . }}{{ $sameAs = $sameAs | append . }}{{ end }}{{ end }}

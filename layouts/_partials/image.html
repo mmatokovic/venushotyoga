@@ -8,14 +8,24 @@
   {{- $attrs := dict "alt" ($.alt | default "") "class" ($.class | default "") "loading" ($.loading | default "lazy") "decoding" "async" }}
   {{- with $.fetchpriority }}{{ $attrs = merge $attrs (dict "fetchpriority" .) }}{{ end }}
   {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
-    {{- $width := math.Min .Width ($.width | default 1200) | int }}
+    {{- $max := math.Min .Width ($.width | default 1200) | int }}
+    {{- $widths := slice }}
+    {{- range slice 480 800 1200 1600 }}{{ if lt . $max }}{{ $widths = $widths | append . }}{{ end }}{{ end }}
+    {{- $widths = $widths | append $max }}
+    {{- $srcset := slice }}
     {{- $out := "" }}
-    {{- if $.ratio }}
-      {{- $out = .Process (printf "fill %dx%d webp" $width (int (math.Round (div (float $width) $.ratio)))) }}
-    {{- else }}
-      {{- $out = .Process (printf "resize %dx webp" $width) }}
+    {{- range $widths }}
+      {{- if $.ratio }}
+        {{- $out = $img.Process (printf "fill %dx%d webp" . (int (math.Round (div (float .) $.ratio)))) }}
+      {{- else }}
+        {{- $out = $img.Process (printf "resize %dx webp" .) }}
+      {{- end }}
+      {{- $srcset = $srcset | append (printf "%s %dw" $out.RelPermalink .) }}
     {{- end }}
     {{- $attrs = merge $attrs (dict "src" $out.RelPermalink "width" $out.Width "height" $out.Height) }}
+    {{- if gt (len $srcset) 1 }}
+      {{- $attrs = merge $attrs (dict "srcset" (delimit $srcset ", ") "sizes" ($.sizes | default (printf "(min-width: %dpx) %dpx, 100vw" $max $max))) }}
+    {{- end }}
   {{- else }}
     {{- $attrs = merge $attrs (dict "src" .RelPermalink) }}
   {{- end }}

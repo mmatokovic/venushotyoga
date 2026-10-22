@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 gap-8 rounded-lg bg-bright-yellow lg:grid-cols-2 lg:gap-16">
     {{- with .Get "src" }}
     <div class="relative h-96! overflow-hidden rounded-lg sm:h-full {{ $.Get "class" }}">
-      {{ partial "image" (dict "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "inset-0 h-full w-full object-cover") }}
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "inset-0 h-full w-full object-cover") }}
     </div>
     {{- end }}
     <div class="p-5 lg:py-4">

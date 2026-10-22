@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-col md:flex-row">
       <div class="mb-4 w-full md:w-1/2 lg:border-e-2 lg:border-buff">
-        {{ partial "image" (dict "src" "images/plato_1_b_ISPRVAK_Facebook.jpg" "width" 800 "alt" "" "class" "h-auto w-full rounded-s-lg") }}
+        {{ partial "image" (dict "sizes" "(min-width: 768px) 50vw, 100vw" "src" "images/plato_1_b_ISPRVAK_Facebook.jpg" "width" 800 "alt" "" "class" "h-auto w-full rounded-s-lg") }}
       </div>
       <div class="w-full md:w-1/2">
         {{- with index .Params.hotyoga 0 }}
