@@ -245,3 +245,15 @@
 
 [tags]
   other = 'Oznake'
+
+[image_viewer]
+  other = 'Preglednik slika'
+
+[open_image]
+  other = 'Otvori sliku'
+
+[previous_image]
+  other = 'Prethodna slika'
+
+[next_image]
+  other = 'Sljedeća slika'

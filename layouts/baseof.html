@@ -10,6 +10,7 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer" . }}
+  {{ if .Store.Get "lightbox" }}{{ partial "lightbox" . }}{{ end }}
   {{ partial "consent-banner" . }}
 </body>
 </html>

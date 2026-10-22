@@ -1,7 +1,17 @@
 <section class="not-prose my-10 overflow-hidden rounded-2xl bg-bright-yellow">
   {{- with .Get "src" }}
+    {{- $path := strings.TrimPrefix "/" . }}
+    {{- $res := or ($.Page.Resources.Get $path) (resources.Get $path) }}
   <div class="flex justify-center">
+    {{- if and $res (in (slice "image/jpeg" "image/png" "image/webp") $res.MediaType.Type) }}
+      {{- $zoom := $res.Resize (printf "%dx webp" (math.Min $res.Width 2400 | int)) }}
+      {{- $.Page.Store.Set "lightbox" true }}
+    <a href="{{ $zoom.RelPermalink }}" class="block cursor-zoom-in" data-lightbox data-turbo="false" data-width="{{ $zoom.Width }}" data-height="{{ $zoom.Height }}" aria-label="{{ T "open_image" }}">
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "resource" $res "width" 1200 "alt" ($.Get "alt" | default "") "class" "h-auto max-h-144 w-auto max-w-full") }}
+    </a>
+    {{- else }}
     {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "src" . "page" $.Page "width" 1200 "alt" ($.Get "alt" | default "") "class" "h-auto max-h-144 w-auto max-w-full") }}
+    {{- end }}
   </div>
   {{- end }}
   <div class="p-6 sm:p-8">

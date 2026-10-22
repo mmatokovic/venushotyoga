@@ -244,3 +244,15 @@
 
 [tags]
   other = 'Tags'
+
+[image_viewer]
+  other = 'Image viewer'
+
+[open_image]
+  other = 'Open image'
+
+[previous_image]
+  other = 'Previous image'
+
+[next_image]
+  other = 'Next image'

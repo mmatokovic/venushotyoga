@@ -1,5 +1,6 @@
 {{- $src := .Destination }}
 {{- $attrs := dict "alt" .PlainText "loading" "lazy" "decoding" "async" }}
+{{- $zoom := "" }}
 {{- $u := urls.Parse .Destination }}
 {{- if not $u.IsAbs }}
   {{- $path := strings.TrimPrefix "./" $u.Path }}
@@ -25,6 +26,7 @@
         "width" $largest.Width
         "height" $largest.Height
       ) }}
+      {{- $zoom = $img.Resize (printf "%dx webp" (math.Min $img.Width 2400 | int)) }}
       {{- $tiny := $img.Resize "20x webp q50" }}
       {{- $lqip := printf "data:%s;base64,%s" $tiny.MediaType.Type ($tiny.Content | base64Encode) }}
       {{- $attrs = merge $attrs (dict "style" (printf "background: %s url(%s) center / cover no-repeat" (index $tiny.Colors 0) $lqip)) }}
@@ -45,7 +47,14 @@
 {{- end }}
 {{- if .IsBlock }}
 <figure>
+  {{- with $zoom }}
+  {{- $.Page.Store.Set "lightbox" true }}
+  <a href="{{ .RelPermalink }}" class="mx-auto block w-fit cursor-zoom-in" data-lightbox data-turbo="false" data-width="{{ .Width }}" data-height="{{ .Height }}" aria-label="{{ T "open_image" }}{{ with $.PlainText }}: {{ . }}{{ end }}">
+    <img class="mx-auto h-auto max-h-[70svh] w-auto max-w-full rounded-2xl"{{ $attrString | safeHTMLAttr }}>
+  </a>
+  {{- else }}
   <img class="mx-auto h-auto max-h-[70svh] w-auto max-w-full rounded-2xl"{{ $attrString | safeHTMLAttr }}>
+  {{- end }}
   {{- with .Title }}
   <figcaption>{{ . }}</figcaption>
   {{- end }}

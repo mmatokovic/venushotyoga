@@ -37,6 +37,7 @@ Releases are tagged `vX.Y.Z` on `main` with the same version in `package.json`.
 
 The site uses the Hugo 0.146+ template system: `layouts/baseof.html`, `home.html`, `single.html`, page-specific layouts (`pricing.html`, `faq.html`, `contact.html`, `book.html`) selected with `layout:` in front matter, `_partials/` and `_shortcodes/`.
 
+- Standalone Markdown images and image-card photos open in a lightbox (ported from sleeve: `modules/lightbox.ts`, `_partials/lightbox.html`); the dialog is only added to pages that have one, via `.Page.Store.Set "lightbox" true`.
 - Images live in `assets/images` and are always processed: use the `image` partial (`dict "src" … "width" … "alt" …`), which outputs WebP with `width` and `height`. Markdown images go through `_markup/render-image.html`.
 - Internal Markdown links are resolved by `_markup/render-link.html`; a link to a missing page, or one that isn't in `static/` or `static/_redirects`, logs a warning and fails the build.
 - The `schedule` shortcode accepts Croatian or English day names and shows them translated.

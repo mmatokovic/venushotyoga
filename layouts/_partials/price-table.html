@@ -1,5 +1,5 @@
 <div class="overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-xs">
-  <table class="min-w-full divide-y divide-stone-200 text-base">
+  <table class="min-w-full divide-y divide-stone-200 text-base lining-nums">
     <caption class="border-b border-stone-200 bg-cosmic-latte/60 px-4 py-3 text-start text-lg font-semibold text-ink">{{ .caption }}</caption>
     {{- range .groups }}
     <tbody class="divide-y divide-stone-100">
@@ -9,10 +9,21 @@
       </tr>
       {{- end }}
       {{- range $p := .prices }}
+        {{- $name := $p.service }}
+        {{- $detail := "" }}
+        {{- with findRESubmatch `^(.*?)\s*\(([^)]*)\)\s*$` $p.service 1 }}
+          {{- $name = index (index . 0) 1 }}
+          {{- $detail = index (index . 0) 2 }}
+        {{- end }}
       <tr class="transition hover:bg-cosmic-latte/50">
-        <th scope="row" class="px-4 py-3 text-start font-medium text-ink">{{ $p.service }}</th>
-        <td class="px-4 py-3 text-end font-semibold whitespace-nowrap text-camel-dark tabular-nums lining-nums">
-          {{- with $p.popust }}<del class="me-2 font-normal text-stone-500">{{ $p.price }}</del>{{ . }}{{ else }}{{ $p.price }}{{ end -}}
+        <th scope="row" class="py-3 ps-4 pe-2 text-start font-medium text-ink">
+          {{- $name -}}
+          {{- with $detail }}<span class="mt-0.5 block text-sm font-normal text-stone-500">{{ . }}</span>{{ end -}}
+        </th>
+        <td class="py-3 ps-2 pe-4 text-end align-middle font-semibold whitespace-nowrap text-camel-dark tabular-nums">
+          {{- with $p.popust }}
+          <del class="block text-sm font-normal text-stone-500 sm:me-2 sm:inline">{{ $p.price }}</del>{{ . }}
+          {{- else }}{{ $p.price }}{{ end -}}
         </td>
       </tr>
       {{- end }}
