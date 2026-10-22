@@ -22,9 +22,7 @@ See [CLAUDE.md](CLAUDE.md) for how the site is put together.
 
 ## Branches
 
-- `main` is deployed to production. It is protected: changes arrive through pull requests that pass the `build` check.
-- `develop` collects work for the next release; with Netlify branch deploys enabled it is built with `HUGO_ENVIRONMENT=preview`.
-- Feature branches are opened as pull requests and get a Netlify deploy preview.
+`main` is the only long-lived branch and is deployed to production. It is protected: changes arrive through short-lived branches opened as pull requests, which get a Netlify deploy preview and must pass the `build` check. Pull requests are squash-merged and their branches deleted.
 
 ## License
 
