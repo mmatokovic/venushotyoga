@@ -12,20 +12,20 @@
       <ul class="mt-8 space-y-4 text-sm">
         {{- with hugo.Data.openingHours }}
         <li class="overflow-x-auto">
-          <table class="min-w-full divide-y-2 divide-gray-200">
-            <caption class="mb-2 text-start text-gray-700">{{ T "opening_hours" }}</caption>
+          <table class="w-full max-w-sm border-y border-gray-200">
+            <caption class="mb-2 text-start font-medium text-gray-700">{{ T "opening_hours" }}</caption>
             <tbody class="divide-y divide-gray-200">
               {{- range . }}
                 {{- if ne .opens .closes }}
-              <tr class="text-gray-900 first:font-medium">
-                <th scope="row" class="px-3 py-2 text-start font-[inherit] whitespace-nowrap">
+              <tr class="text-gray-900">
+                <th scope="row" class="py-2 pe-6 text-start font-normal whitespace-nowrap">
                   {{- if eq (len .days) 5 }}
-                    {{- T "monday" }} â {{ T "friday" }}
+                    {{- T "monday" }} &ndash; {{ T "friday" }}
                   {{- else }}
                     {{- range $i, $day := .days }}{{ if $i }}, {{ end }}{{ T (lower $day) }}{{ end }}
                   {{- end -}}
                 </th>
-                <td class="px-3 py-2 whitespace-nowrap"><time>{{ .opens }}</time> â <time>{{ .closes }}</time></td>
+                <td class="py-2 text-end whitespace-nowrap tabular-nums"><time>{{ .opens }}</time>&ndash;<time>{{ .closes }}</time></td>
               </tr>
                 {{- end }}
               {{- end }}
