@@ -31,7 +31,7 @@ I danas redovito održavam tijelo tretmanima na aparatu, kao prvo jer su silno u
 Thai Yoga je tretman koji kombinira metode tradicionalne tajlandske masaže, asistirane joga položaje i akupresuru.
 * Terapeut vodi tijelo klijenta kroz niz istezanja, pritisaka, i ljuljuškanja, a klijent ostaje pasivan
 * Izvodi se na prostirci na podu, u ugodno toploj dvorani, preko odjeće 
-* ⁠tretman je izuzetno ugodan i opuštajući, te prikladan za svakoga
+* tretman je izuzetno ugodan i opuštajući, te prikladan za svakoga
 
 **Prednosti**:
 * Otklanja mišićnu napetost i dubinski opušta

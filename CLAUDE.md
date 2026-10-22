@@ -54,6 +54,7 @@ Hook into markup with `data-*` attributes rather than ids, because shortcodes ca
 - Tailwind classes toggled only from JS are not in `hugo_stats.json`; add them with `@source inline(...)` in `assets/css/main.css`, or toggle the `hidden` attribute instead.
 - Tailwind v4 syntax: `size-*`, `rounded-sm`/`shadow-xs`, `focus:ring-3`, `outline-hidden`, logical `ms-`/`me-`/`start-`/`end-`, important as a suffix (`h-full!`).
 - Text on the light brand colours (ecru, tuscan, hazelnut, khaki, buff, french-beige) is `text-gray-900`; brand-coloured text and icons use `text-camel-dark`. Both pass WCAG AA; the lighter brand colours do not, so don't use them for text.
+- The font is Alegreya, self-hosted from Fontsource as variable WOFF2 (weights 400–900, normal and italic) in `static/fonts/`, split into `latin` and `latin-ext` files by `unicode-range`. Any replacement font must include the Croatian letters (č ć š ž đ); Lusitana, the previous font, did not.
 - Edit files containing Croatian characters with an editor or `sed`, not `perl -e` with literal non-ASCII text, which double-encodes them.
 
 ## Checks

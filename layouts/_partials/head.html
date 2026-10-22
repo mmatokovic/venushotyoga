@@ -23,7 +23,10 @@
 <link rel="apple-touch-icon" href="{{ (.Process "resize 180x180 png" | resources.Copy "apple-touch-icon.png").RelPermalink }}">
 {{- end }}
 <meta name="theme-color" content="#ffffff">
-<link rel="preload" href="{{ "fonts/Lusitana-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/alegreya-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- if eq site.Language.Lang "hr" }}
+<link rel="preload" href="{{ "fonts/alegreya-latin-ext-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- end }}
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
 {{- end }}

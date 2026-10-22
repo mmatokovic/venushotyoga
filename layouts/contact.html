@@ -49,7 +49,7 @@
       <h2 class="text-xs font-semibold tracking-widest text-gray-900">{{ T "contact_email" }}</h2>
       <a href="mailto:{{ $links.mail }}" class="leading-relaxed text-camel-dark">{{ $links.mail }}</a>
       <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-900">{{ T "contact_phone" }}</h2>
-      <a class="leading-relaxed" href="tel:{{ partial "utils/phone-intl" $links.tel }}">{{ replace $links.tel "-" "‑" }}</a>
+      <a class="leading-relaxed whitespace-nowrap" href="tel:{{ partial "utils/phone-intl" $links.tel }}">{{ $links.tel }}</a>
     </div>
   </div>
   <div class="prose max-w-none text-xl prose-h2:text-camel-dark prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:inline-block md:prose-td:table-cell">

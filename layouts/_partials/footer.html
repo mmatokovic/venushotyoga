@@ -45,7 +45,7 @@
         <li>
           <a class="flex items-center justify-center gap-1.5 sm:justify-start" href="tel:{{ partial "utils/phone-intl" . }}">
             {{ partial "icons/phone" "size-5 shrink-0 text-gray-900" }}
-            <span class="flex-1 text-gray-700">{{ replace . "-" "‑" }}</span>
+            <span class="flex-1 whitespace-nowrap text-gray-700">{{ . }}</span>
           </a>
         </li>
         {{- end }}
