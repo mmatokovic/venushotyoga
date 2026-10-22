@@ -1,4 +1,5 @@
-import KeenSlider, { type KeenSliderOptions } from 'keen-slider';
+import KeenSlider, { type KeenSliderInstance, type KeenSliderOptions } from 'keen-slider';
+import { onBeforeCache, onPageLoad } from './page';
 
 const options: Record<string, KeenSliderOptions> = {
   testimonials: {
@@ -15,14 +16,27 @@ const options: Record<string, KeenSliderOptions> = {
   },
 };
 
-export function init(): void {
+let sliders: KeenSliderInstance[] = [];
+
+const mount = (): void => {
   document.querySelectorAll<HTMLElement>('[data-slider]').forEach((container) => {
     const track = container.querySelector<HTMLElement>('[data-slider-track]');
     if (!track) {
       return;
     }
     const slider = new KeenSlider(track, options[container.dataset.slider ?? ''] ?? options.images);
+    sliders.push(slider);
     container.querySelector('[data-slider-prev]')?.addEventListener('click', () => slider.prev());
     container.querySelector('[data-slider-next]')?.addEventListener('click', () => slider.next());
   });
+};
+
+const unmount = (): void => {
+  sliders.forEach((slider) => slider.destroy());
+  sliders = [];
+};
+
+export function init(): void {
+  onPageLoad(mount);
+  onBeforeCache(unmount);
 }

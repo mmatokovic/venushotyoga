@@ -14,12 +14,12 @@
     {{- if in (slice "rejuvenation" "hot-yoga") $name }}
       {{- with site.GetPage "/pricing" }}
     <p class="text-center font-medium sm:text-start">{{ T "see_the_prices" }}</p>
-    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-ink transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
+    <a class="btn mt-4 sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
       {{- end }}
     {{- else }}
       {{- with site.GetPage "/faq" }}
     <p class="text-center font-medium sm:text-start">{{ T "questions" }}</p>
-    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-ink transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a class="btn mt-4 sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{- end }}
     {{- end }}
   </div>

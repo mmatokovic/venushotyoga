@@ -80,4 +80,24 @@
   details > summary::-webkit-details-marker {
     display: none;
   }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  p:has(+ details[data-read-more]) {
+    display: inline;
+  }
+}
+
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-ecru px-5 py-3 text-center font-medium text-ink shadow-md ring ring-ecru inset-shadow-sm inset-shadow-white/20 inset-ring inset-ring-white/15 transition hover:bg-ecru/75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-camel-dark disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+@utility btn-secondary {
+  @apply bg-white text-camel-dark ring-camel-dark hover:bg-cosmic-latte;
+}
+
+@utility btn-sm {
+  @apply px-4 py-2 text-sm;
 }

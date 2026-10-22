@@ -1,6 +1,6 @@
 {{- with partial "utils/analytics-id" . }}
 {{- $id := . }}
 {{- with resources.Get "js/analytics.js" | js.Build (dict "minify" true) | fingerprint }}
-<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" data-id="{{ $id }}"></script>
+<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" data-id="{{ $id }}" data-event="{{ if site.Params.turbo }}turbo:load{{ else }}DOMContentLoaded{{ end }}"></script>
 {{- end }}
 {{- end }}

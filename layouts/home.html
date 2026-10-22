@@ -17,13 +17,13 @@
   {{ partial "image" (dict "src" "images/homepage.webp" "width" 1600 "alt" "" "loading" "eager" "fetchpriority" "high" "class" "absolute inset-0 h-full w-full object-cover object-center") }}
   {{- with $contact }}
   <div class="relative z-1 hidden h-full flex-col justify-center lg:flex">
-    <a href="{{ .RelPermalink }}" class="mx-auto inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-ink uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
+    <a href="{{ .RelPermalink }}" class="btn mx-auto">{{ T "contact" }}</a>
   </div>
   {{- end }}
 </section>
 {{- with $contact }}
 <div class="mt-4 flex justify-center sm:mt-8 lg:hidden">
-  <a href="{{ .RelPermalink }}" class="inline-block rounded-full bg-ecru px-4 py-3 text-sm font-medium text-ink uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
+  <a href="{{ .RelPermalink }}" class="btn">{{ T "contact" }}</a>
 </div>
 {{- end }}
 <section class="text-xl">

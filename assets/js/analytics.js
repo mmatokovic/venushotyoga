@@ -4,6 +4,7 @@
 
   const script = document.currentScript;
   const id = script.dataset.id;
+  const navigationEvent = script.dataset.event;
   const key = 'analytics-consent';
   let loaded = false;
 
@@ -69,7 +70,7 @@
     });
   };
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener(navigationEvent, function () {
     if (choice() === 'granted') {
       load();
     }

@@ -1,5 +1,6 @@
 {{- $u := urls.Parse .Destination }}
 {{- $href := .Destination }}
+{{- $noTurbo := false }}
 {{- if and (not $u.IsAbs) $u.Path }}
   {{- $query := "" }}
   {{- with $u.RawQuery }}{{ $query = printf "?%s" . }}{{ end }}
@@ -11,6 +12,7 @@
     {{- with or (.PageInner.Resources.Get $u.Path) (resources.Get $u.Path) }}
       {{- $href = .RelPermalink }}
     {{- else }}
+      {{- $noTurbo = true }}
       {{- if not (or (fileExists (path.Join "static" $u.Path)) (findRE (printf `(?m)^%s\s` (strings.TrimSuffix "/" $u.Path)) (readFile "static/_redirects"))) }}
         {{- warnf "Link %q not found from %q" .Destination .Page.String }}
       {{- end }}
@@ -18,4 +20,4 @@
   {{- end }}
 {{- end }}
 {{- $isHTTP := in (slice "http" "https") $u.Scheme -}}
-<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isHTTP }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text }}{{ if $isHTTP }}<span class="sr-only"> ({{ T "opens_in_new_tab" }})</span>{{ end }}</a>
+<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isHTTP }} target="_blank" rel="noopener noreferrer"{{ end }}{{ if $noTurbo }} data-turbo="false"{{ end }}>{{ .Text }}{{ if $isHTTP }}<span class="sr-only"> ({{ T "opens_in_new_tab" }})</span>{{ end }}</a>

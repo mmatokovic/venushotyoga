@@ -1,3 +1,5 @@
+import { onPageLoad } from './page';
+
 const consentKey = 'analytics-consent';
 
 const consented = (): boolean => {
@@ -22,24 +24,27 @@ const load = (placeholder: HTMLElement, focus: boolean): void => {
   }
 };
 
+const loadAll = (): void => {
+  document.querySelectorAll<HTMLElement>('[data-map]').forEach((placeholder) => load(placeholder, false));
+};
+
 export function init(): void {
-  const placeholders = document.querySelectorAll<HTMLElement>('[data-map]');
-  if (!placeholders.length) {
-    return;
-  }
-
-  if (consented()) {
-    placeholders.forEach((placeholder) => load(placeholder, false));
-    return;
-  }
-
-  placeholders.forEach((placeholder) => {
-    placeholder.querySelector('[data-map-load]')?.addEventListener('click', () => load(placeholder, true));
+  onPageLoad(() => {
+    if (consented()) {
+      loadAll();
+    }
   });
 
   document.addEventListener('click', (event) => {
-    if ((event.target as Element).closest('[data-consent="granted"]')) {
-      document.querySelectorAll<HTMLElement>('[data-map]').forEach((placeholder) => load(placeholder, false));
+    const target = event.target as Element;
+    const button = target.closest('[data-map-load]');
+    if (button) {
+      const placeholder = button.closest<HTMLElement>('[data-map]');
+      if (placeholder) {
+        load(placeholder, true);
+      }
+    } else if (target.closest('[data-consent="granted"]')) {
+      loadAll();
     }
   });
 }

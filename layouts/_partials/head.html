@@ -52,4 +52,6 @@
 {{ with (templates.Defer (dict "key" "global")) }}
   {{ partial "head/css" . }}
 {{ end }}
+{{ partialCached "jslibs/turbo/script-src" "-" }}
+{{ partialCached "jslibs/alpinejs/script-src" "-" }}
 {{ partial "head/js" . }}

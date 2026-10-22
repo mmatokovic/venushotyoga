@@ -8,9 +8,12 @@
   "private": true,
   "packageManager": "pnpm@11.0.8",
   "devDependencies": {
+    "@hotwired/turbo": "^8.0.23",
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.20",
+    "alpine-turbo-drive-adapter": "^2.2.0",
+    "alpinejs": "^3.17.5",
     "keen-slider": "^6.8.6",
     "tailwindcss": "^4.3.3"
   }
