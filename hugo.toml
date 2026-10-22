@@ -27,7 +27,7 @@ disableKinds = ['taxonomy', 'term']
   [params.author]
     name = 'Vjerna Nevistić'
   [params.credit]
-    name = 'Mislav Matoković'
+    name = 'mmatokovic'
     url = 'https://github.com/mmatokovic'
 
 [languages]
