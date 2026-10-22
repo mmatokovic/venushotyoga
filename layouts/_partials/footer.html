@@ -25,7 +25,7 @@
                     {{- range $i, $day := .days }}{{ if $i }}, {{ end }}{{ T (lower $day) }}{{ end }}
                   {{- end -}}
                 </th>
-                <td class="py-2 text-end whitespace-nowrap tabular-nums"><time>{{ .opens }}</time>&ndash;<time>{{ .closes }}</time></td>
+                <td class="py-2 text-end whitespace-nowrap tabular-nums lining-nums"><time>{{ .opens }}</time>&ndash;<time>{{ .closes }}</time></td>
               </tr>
                 {{- end }}
               {{- end }}

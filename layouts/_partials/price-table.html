@@ -11,7 +11,7 @@
       {{- range $p := .prices }}
       <tr class="transition hover:bg-cosmic-latte/50">
         <th scope="row" class="px-4 py-3 text-start font-medium text-ink">{{ $p.service }}</th>
-        <td class="px-4 py-3 text-end font-semibold whitespace-nowrap text-camel-dark tabular-nums">
+        <td class="px-4 py-3 text-end font-semibold whitespace-nowrap text-camel-dark tabular-nums lining-nums">
           {{- with $p.popust }}<del class="me-2 font-normal text-stone-500">{{ $p.price }}</del>{{ . }}{{ else }}{{ $p.price }}{{ end -}}
         </td>
       </tr>
