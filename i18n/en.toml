@@ -1,51 +1,83 @@
+[skip_to_content]
+  other = 'Skip to content'
+
+[main_navigation]
+  other = 'Main navigation'
+
+[footer_navigation]
+  other = 'Footer navigation'
+
+[language]
+  other = 'Language'
+
+[close]
+  other = 'Close'
+
 [menu_name]
   other = 'Menu'
-  
+
 [menu_call_to_action]
-  other = 'Call Us :)'
+  other = 'Call us :)'
 
 [home_hero_title]
   other = 'Experience the benefits of authentic hot yoga that will change your life in a warm and welcoming community.'
 
-[home_how_to]
-  other = 'How to prepare'
+[focused_on_you]
+  other = 'Focused on you'
 
-[home_what_to_wear]
-  other = 'What to Wear'
+[for_you]
+  other = 'For you'
 
-[home_what_to_wear_text]
-  other = 'The room is hot, most people are comfortable in minimal clothing that stretches easily when wet: for men, shorts with a liner, for women, shorts or leggings with a sports bra or tank top. Materials that wick moisture tend to be more comfortable than cotton.'
+[studio_alt]
+  other = 'The hot yoga room at the Venus Hot Yoga studio'
 
-[home_what_you_need]
-  other = "What you’ll need"
+[machine_alt]
+  other = 'Cellu M6 rejuvenation device'
 
-[home_what_you_need_text]
-  other = 'A yoga mat, a large towel and a water bottle for class. These items are also available at the studio for rental or purchase. You may want to bring an extra towel and change of clothes for a shower after class.'
+[see_the_prices]
+  other = 'To see the prices'
 
-[home_when_to_arrive]
-  other = 'When to Arrive'
+[prices]
+  other = 'Prices'
 
-[home_when_to_arrive_text]
-  other = 'The studio opens 30 minutes before class starts. Please allow enough time to get ready for class and have a few minutes to sit or lie quietly in the studio before class begins.'
+[hand_massage]
+  other = 'Hand massage'
 
-[home_what_to_do_in_advance]
-  other = 'What to do in Advance'
+[offer_see]
+  other = 'See our offer'
 
-[home_what_to_do_in_advance_text]
-  other = 'Come to class hydrated and with an empty stomach. If you do need to eat 1-2  hours before class, choose light foods.'
+[enroll_text]
+  other = 'Classes start on October 6.'
 
+[offer_text]
+  other = 'Thai Yoga Treatment – 60 minutes for €40, available until 22/2!'
 
-[about_hero_title]
-  other = 'We Build and create'
+[questions]
+  other = 'If you have any questions'
 
-[trust]
-  other = 'Trusted by companies'
+[hot_yoga]
+  other = 'Hot Yoga'
+
+[hot_yoga_text]
+  other = 'Hot yoga is hatha yoga that is performed at 33 degrees and 30% humidity. It is suitable for everyone from complete beginners to advanced exercisers and yogis.'
+
+[rejuvenation]
+  other = 'Rejuvenation'
+
+[rejuvenation_text]
+  other = 'With the help of the Cellu M6 device for the body and the latest Mobylift M6 for the face, such results are possible in a short time. The treatments are painless, extremely pleasant and relaxing, and above all spectacularly successful. It is a non-invasive rejuvenation solution that turns back time, for anyone who wants to look natural and without changing the personality of their own face and body.'
+
+[training]
+  other = 'Training'
+
+[show_more]
+  other = 'Show more'
 
 [contact]
   other = 'Contact us'
 
 [contact_question]
-  other = 'Do you have any questions about hot Yogi?'
+  other = 'Do you have any questions about hot yoga?'
 
 [contact_information]
   other = "We're here to help you!"
@@ -68,14 +100,29 @@
 [contact_enquiry]
   other = 'Send'
 
+[contact_success]
+  other = "Thank you! Your message has been sent and we'll get back to you soon."
+
 [contact_location]
-  other = '1.st floor in a passage'
+  other = '1st floor, in the passage'
 
-[contact_parking]
-  other = 'Parking info:'
+[map_title]
+  other = 'Map showing the Venus Hot Yoga studio'
 
-[blogs]
-  other = 'Blogs'
+[about]
+  other = 'About us'
+
+[about_us_text]
+  other = 'The mission of Venus hot yoga is to help our participants become healthier, more beautiful and happier. Working on yourself is a path that we can enjoy, and through physical change, which is very possible, comes inner peace and satisfaction.'
+
+[testimonials]
+  other = 'Read the comments of our participants'
+
+[previous_slide]
+  other = 'Previous slide'
+
+[next_slide]
+  other = 'Next slide'
 
 [minutes_of_reading]
   other = 'minutes of reading'
@@ -83,113 +130,20 @@
 [share_article]
   other = 'Share this article'
 
-[latest_blog]
-  other = 'Latest Blog'
+[more_posts]
+  other = 'More posts'
 
-[latest_ebooks]
-  other = 'Latest E-Books'
+[blogs]
+  other = 'Blog'
 
-[order_ebooks]
-  other = 'Order E-Book'
-
-[testimonials]
-  other = 'Read the comments of our participants'
-
-[about]
-  other = 'About Us'
-
-[about_us_text]
-  other = 'The mission of Venus hot yoga is to help our participants become healthier, more beautiful and happier. Working on yourself is a path that we can enjoy, and through physical change, which is very possible, comes inner peace and satisfaction'
-
-[about_text]
-  other = """
-  Tvrtka se od 1990. bavim raznim građevinskim radovima, od tuženja do završnih radova. Imamo tim sa višegodišnjim iskustvom što osigurava sigurnu izradu vaših zahtjeva. Sa sjedištem smo u Zagrebu, trudimo da djelujemo u i ostalim djelovima Hrvatske što iznimno pozitivno utiče na naš napredak kao i uspjeh. Tvrtka se u osnovi bavi gradjevinskim radovima, zidarskim radovima - rohbau, suhom gradjom, kao i završnim radovima, podnim, zidnim oblogama.
-  U tvrtki imamo tim stučnjaka, koji se bave građevinskim nadzorom i vođenjem projekta. Koristimo novu, modernu i suvremenu mehanizaciju, tehnologiju. Trudimo se da ispunimo sve vaše zahtjeve, te da na taj načim izmamio zadovoljstvo koje nam je iznimno važno. Uvjerite se samo u našu brzinu, odgovornost i kvalitet, kontaktirajte nas.
-  """
-
-[hot_yoga]
-  other = 'Hot Yoga'
-
-[hot_yoga_text]
-  other = 'Hot yoga is hatha yoga that is performed at 33 degrees and 30% humidity. It is suitable for everyone from complete beginners to advanced exercisers and yogis.'
-
-[rejuvenation]
-  other = 'Rejuvenation'
-
-[rejuvenation_text]
-  other = 'With the help of the Cellu M6 device for the body and the latest Mobylift M6 for the face, such results are possible in a short time. The treatments are painless, extremely pleasant and relaxing, and above all spectacularly successful. It is a non-invasive rejuvenation solution that turns back time, for anyone who wants to look natural and without changing the personality of their own face and body.'
-
-[training]
-  other = 'Training'
-
-[additional_services]
-  other = 'Additional Services'
-
-[show_more]
-  other = 'Show More'
-
-[see_the_prices]
-  other = 'To see the prices'
-
-[prices]
-  other = 'Prices'
-
-[hand_massage]
-  other = 'Hand Massage'
-
-[sunday]
-  other = 'Sunday'
-
-[offer_see]
-  other = 'see our offer'
-
-[offer]
-  other = 'Offer'
-
-[offer_text]
-  other = 'Thai Yoga Treatment – 60 minutes for €40, available until 22/2!'
-
-[questions]
-  other = 'If you have any questions'
-
-[services]
-  other = 'Services'
-
-[references]
-  other = 'References'
-
-[service_oversight]
-  other = 'nadzorni inženjer'
-
-[service_oversight_text]
-  other = 'Građevinski nadzor pri gradnji, nadzor građevinske konstrukcije, smanjenje troškova gradnje, pregled ugrađenih materijala, nadzor izvođača u gradnji.'
-
-[service_excavation]
-  other = 'iskopi, mini bager'
-
-[service_excavation_text]
-  other = 'Iskop građevinske jame, iskop za kanalizaciju, drenaža, konsolidiranje teren.'
-
-[service_construction]
-  other = 'građevinski radovi'
-
-[service_construction_text]
-  other = 'Renovacija okoliša, novogradnja kuće, podpora za zid, rušenje zida, betonske stepenice, betonski podrum, betonska ploča, hidroizolacija balkona, pouzdani zidarski radovi, izvođač gradnje.'
-
-[service_new_construction]
-  other = 'novogradnja'
-
-[service_new_construction_text]
-  other = 'Nova kuća, nadgradnja, individualna kuća, dvojna kuća, apartmani, povoljna klasična kuća od opeke, izvođač gradnje.'
+[ebooks]
+  other = 'E-books'
 
 [rights]
-  other = 'all rights reserved'
+  other = 'All rights reserved'
 
 [schedule]
   other = 'Schedule'
-
-[enroll_text]
-  other = 'Classes start on October 6.'
 
 [schedule_text]
   other = 'Announce your arrival, call: +385 95 576 3818'
@@ -215,11 +169,17 @@
 [saturday]
   other = 'Saturday'
 
+[sunday]
+  other = 'Sunday'
+
+[opening_hours]
+  other = 'Opening hours'
+
 [read_more]
-  other = '...Read More'
+  other = '...Read more'
 
 [sign_up]
-  other = 'Sign Up'
+  other = 'Sign up'
 
 [sign_up_text_1]
   other = 'I know it sounds crazy, but somehow email will save us from social media overload.'
@@ -227,42 +187,32 @@
 [sign_up_text_2]
   other = 'Sign up for infrequent emails about featured professional and personal news, new releases and written events, etc.'
 
+[form_success]
+  other = 'Thank you! You have successfully subscribed.'
+
+[form_error]
+  other = 'Oops! Something went wrong. Please try again.'
+
 [404_ohno]
-  other= 'Uh-oh!'
+  other = 'Uh-oh!'
 
 [404_cantfind]
   other = "We can't find that page."
 
 [404_home]
-  other = 'Go Back Home'
+  other = 'Go back home'
 
-[Monday]
-  other = "Monday"
+[consent_title]
+  other = 'Cookies'
 
-[Tuesday]
-  other = "Tuesday"
+[consent_text]
+  other = 'With your consent we use Google Analytics cookies to see how the site is used. Without consent no tracking code is loaded.'
 
-[Wednesday]
-  other = "Wednesday"
+[consent_accept]
+  other = 'Accept'
 
-[Thursday]
-  other = "Thursday"
+[consent_decline]
+  other = 'Decline'
 
-[Friday]
-  other = "Friday"
-
-[Saturday]
-  other = "Saturday"
-
-[Sunday]
-  other = "Sunday"
-
-[Opening_Hours]
-  other = "Opening Hours"
-
-[form_success]
-  other = "Thank you! You have successfully subscribed."
-
-[form_error]
-  other = "Oops! Something went wrong. Please try again."
-  
+[consent_settings]
+  other = 'Cookie settings'

@@ -1,76 +1,73 @@
-<section class="overflow-x-auto" id="schedule">
-  <span class="relative flex justify-center">
-    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
-    <span class="relative bg-white px-6">{{ T "schedule" }}</span>
-  </span>
-  <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm hidden md:table">
-    <thead class="ltr:text-left rtl:text-right">
-      <tr class="whitespace-nowrap px-4 py-2 text-center text-gray-900">
-        <th>{{ T "time" }}</th>
-        <th>{{ T "monday" }}</th>
-        <th>{{ T "tuesday" }}</th>
-        <th>{{ T "wednesday" }}</th>
-        <th>{{ T "thursday" }}</th>
-        <th>{{ T "friday" }}</th>
-        <th>{{ T "saturday" }}</th>
-        <th>{{ T "sunday" }}</th>
+{{- $days := slice "monday" "tuesday" "wednesday" "thursday" "friday" "saturday" "sunday" }}
+{{- $aliases := dict
+  "ponedjeljak" "monday" "ponedeljak" "monday" "utorak" "tuesday" "srijeda" "wednesday" "četvrtak" "thursday"
+  "petak" "friday" "subota" "saturday" "nedjelja" "sunday" "nedelja" "sunday"
+}}
+{{- $byDay := dict }}
+{{- $times := slice }}
+{{- range .Page.Params.schedule }}
+  {{- $name := lower .day }}
+  {{- $key := index $aliases $name | default $name }}
+  {{- if not (in $days $key) }}
+    {{- warnf "Unknown schedule day %q in %q" .day $.Page.String }}
+  {{- end }}
+  {{- $byDay = merge $byDay (dict $key .appointments) }}
+  {{- range .appointments }}{{ $times = $times | append (string .startTime) }}{{ end }}
+{{- end }}
+{{- $times = $times | uniq | sort }}
+<section class="overflow-x-auto" id="schedule" aria-labelledby="schedule-heading">
+  <div class="relative flex justify-center">
+    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+    <h2 id="schedule-heading" class="relative bg-white px-6">{{ T "schedule" }}</h2>
+  </div>
+  <table class="hidden min-w-full divide-y-2 divide-gray-200 bg-white text-sm md:table">
+    <thead>
+      <tr class="px-4 py-2 text-center whitespace-nowrap text-gray-900">
+        <th scope="col">{{ T "time" }}</th>
+        {{- range $days }}
+        <th scope="col">{{ T . }}</th>
+        {{- end }}
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200">
-      {{ $schedule := .Page.Params.schedule }}
-      {{ $uniqueTimes := slice }}
-      {{ range $day := $schedule }}
-        {{ range $appointment := $day.appointments }}
-          {{ $uniqueTimes = union $uniqueTimes (slice $appointment.startTime) }}
-        {{ end }}
-      {{ end }}
-      {{ $uniqueTimes := sort $uniqueTimes }}
-      {{ range $i, $time := $uniqueTimes }}
-      <tr class="{{ if not (modBool $i 2) }}bg-white text-left{{ else }}bg-gray-100 text-left{{ end }} font-bold">
-        <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900 text-center">
-          {{ $time }}
+      {{- range $i, $time := $times }}
+      <tr class="{{ if modBool $i 2 }}bg-gray-100{{ else }}bg-white{{ end }} font-bold">
+        <th scope="row" class="px-4 py-2 text-center font-medium whitespace-nowrap text-gray-900">{{ $time }}</th>
+        {{- range $days }}
+        <td class="px-4 py-2 text-center whitespace-nowrap">
+          {{- range where (index $byDay . | default slice) "startTime" $time }}
+          <div class="bg-tuscan">
+            {{ .service }}<br>
+            <span class="text-xs">{{ .startTime }} – {{ .endTime }}</span>
+            {{- with .description }}<br><span class="text-xs font-bold text-red-900 uppercase">{{ . }}</span>{{ end }}
+          </div>
+          {{- end }}
         </td>
-        {{ range $dayName := slice "Ponedeljak" "Utorak" "Srijeda" "Četvrtak" "Petak" "Subota" "Nedelja" }}
-          <td class="whitespace-nowrap px-4 py-2 text-center">
-            {{ with index (where $schedule "day" $dayName) 0 }}
-              {{ with index (where .appointments "startTime" $time) 0 }}
-              <div class="bg-tuscan">
-                {{ .service }}<br>
-                <span class="text-xs">{{ .startTime }} - {{ .endTime }}</span><br>
-                <span class="uppercase text-red-900 text-xs font-bold">{{ .description }}</span>
-              </div>
-              {{ else }}
-                <!-- No appointment at this time -->
-              {{ end }}
-            {{ else }}
-              <!-- No appointments for this day -->
-            {{ end }}
-          </td>
-        {{ end }}
+        {{- end }}
       </tr>
-    {{ end }}
+      {{- end }}
     </tbody>
   </table>
-  <table class="bg-tuscan text-sm border-separate border-spacing-y-2 px-3 lg:hidden">
-    <tbody class="divide-y divide-gray-200">
-      {{ range .Page.Params.schedule }}
-      <tr class="text-gray-900 font-bold text-sm">
-        <td colspan="2" class="whitespace-nowrap px-3 font-bold">
-          {{ .day }}
-        </td>
+  <table class="border-separate border-spacing-y-2 bg-tuscan px-3 text-sm md:hidden">
+    {{- range $day := $days }}
+      {{- with index $byDay $day }}
+    <tbody>
+      <tr class="text-sm font-bold text-gray-900">
+        <th colspan="2" scope="colgroup" class="px-3 text-start whitespace-nowrap">{{ T $day }}</th>
       </tr>
-      {{ range .appointments }}
-      <tr class="text-gray-900 font-bold bg-white my-4">
+      {{- range . }}
+      <tr class="my-4 bg-white font-bold text-gray-900">
         <td class="p-2">
-          <span class="font-bold">{{ .service }}</span><br>
-          <span class="capitalize text-xs">{{ .description }}</span>
+          <span class="font-bold">{{ .service }}</span>
+          {{- with .description }}<br><span class="text-xs capitalize">{{ . }}</span>{{ end }}
         </td>
         <td class="text-center align-middle">
-          <span class="p-2 font-bold bg-hazelnut  text-white">{{ .startTime}}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
-          </td>
-        </tr>
-        {{ end }}
-      {{end}}
+          <span class="bg-hazelnut p-2 font-bold text-white">{{ .startTime }}</span><span class="bg-buff p-2 font-bold text-white">{{ .endTime }}</span>
+        </td>
+      </tr>
+      {{- end }}
     </tbody>
+      {{- end }}
+    {{- end }}
   </table>
 </section>

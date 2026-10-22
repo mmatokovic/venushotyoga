@@ -1,7 +1,8 @@
 User-agent: *
-Disallow: /404
+{{- if hugo.IsProduction }}
 Disallow: /admin/
-{{ range .Pages }}
-allow: {{ .RelPermalink }}
-{{ end }}
-Sitemap: {{ "/sitemap.xml" | absURL }}
+{{- else }}
+Disallow: /
+{{- end }}
+
+Sitemap: {{ "sitemap.xml" | absURL }}

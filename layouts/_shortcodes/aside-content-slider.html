@@ -1,41 +1,22 @@
-<section>
-  <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-			<div class="{{ if .Get "class" }}{{ .Get "class" }} relative !h-full overflow-hidden rounded-lg sm:h-full{{else}}relative !h-full overflow-hidden rounded-lg sm:h-full{{ end }}">
-			<div id="image-keen-slider" class="keen-slider">
-					<button id="keen-slider-previous" class="cursor-pointer absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
-						<
-					</button>
-					<button id="keen-slider-next" class="cursor-pointer absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
-						>
-					</button>
-					{{ if .IsNamedParams }}
-					<div class="keen-slider__slide flex justify-center items-center">
-						{{ $image := .Get "1" | resources.Get }}
-						<picture class="mx-0 my-0">
-								<source srcset="{{ $image.RelPermalink }}" type="image/webp">
-								<img alt="Lava" src="{{ $image.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
-						</picture>
-					</div>
-					<div class="keen-slider__slide flex justify-center items-center">
-						{{ $image := .Get "2" | resources.Get }}
-						<picture class="mx-0 my-0">
-								<source srcset="{{ $image.RelPermalink }}" type="image/webp">
-								<img alt="Lava" src="{{ $image.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
-						</picture>
-					</div>
-      	</div>
-			</div>
-      {{ end }}
-      <div class="lg:py-4">
-        <article class="space-y-4 text-gray-600 prose prose-h2:!mt-0 text-xl">
-          {{ .Inner | markdownify }}
-        </article>
+<section class="not-prose mx-auto my-4 max-w-7xl sm:py-12 lg:py-4">
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+    <div data-slider="images" class="relative h-full overflow-hidden rounded-lg {{ .Get "class" }}">
+      <button type="button" data-slider-prev aria-label="{{ T "previous_slide" }}" class="absolute start-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-gray-100 shadow-md">&lsaquo;</button>
+      <button type="button" data-slider-next aria-label="{{ T "next_slide" }}" class="absolute end-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-gray-100 shadow-md">&rsaquo;</button>
+      <div data-slider-track class="keen-slider h-full">
+        {{- range slice "1" "2" "3" "4" }}
+          {{- with $.Get . }}
+        <div class="keen-slider__slide flex items-center justify-center">
+          {{ partial "image" (dict "src" . "page" $.Page "width" 1000 "alt" "" "class" "h-full w-full object-cover") }}
+        </div>
+          {{- end }}
+        {{- end }}
       </div>
     </div>
-	</div>
+    <div class="lg:py-4">
+      <div class="prose space-y-4 text-xl text-gray-600 prose-h2:mt-0">
+        {{ .Inner | .Page.RenderString (dict "display" "block") }}
+      </div>
+    </div>
+  </div>
 </section>
-{{ $scripts := resources.Get "js/imageSlider.ts" }}
-{{ $options := dict "minify" true }}
-{{ $js := $scripts | js.Build $options }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" ></script>

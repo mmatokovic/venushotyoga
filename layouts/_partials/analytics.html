@@ -1,0 +1,6 @@
+{{- with partial "utils/analytics-id" . }}
+{{- $id := . }}
+{{- with resources.Get "js/analytics.js" | js.Build (dict "minify" true) | fingerprint }}
+<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" data-id="{{ $id }}"></script>
+{{- end }}
+{{- end }}

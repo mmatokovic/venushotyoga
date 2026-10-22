@@ -1,26 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- if not hugo.IsProduction }}
+<meta name="robots" content="noindex">
+{{- end }}
 {{ hugo.Generator }}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
-  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author.name }} <{{ .Site.Params.author.email }}>{{ end }}">
-{{ with .Params.keywords }}
-  <meta name="keywords" content="{{ delimit . ", " }}" />
+<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+{{- $description := .Description }}
+{{- if and (not $description) .IsPage }}
+  {{- $description = .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160 }}
+{{- end }}
+<meta name="description" content="{{ or $description site.Params.description }}">
+<meta name="author" content="{{ or .Params.author site.Params.author.name }}">
+{{- with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- with site.Params.favicon }}
+<link rel="icon" href="{{ . | relURL }}">
+<link rel="apple-touch-icon" href="{{ . | relURL }}">
+{{- end }}
+<meta name="theme-color" content="#ffffff">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+{{- end }}
+{{- with index .AllTranslations 0 }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{- $shareImage := "" }}
+{{- with partial "utils/page-image" . }}
+  {{- $shareImage = .Process "fill 1200x630 jpg" }}
+{{- end }}
+<meta name="twitter:card" content="{{ if $shareImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ .Title | default site.Title }}">
+<meta name="twitter:description" content="{{ or $description site.Params.description }}">
+{{ partial "opengraph.html" . }}
+{{- with $shareImage }}
+<meta property="og:image" content="{{ .Permalink }}">
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+<meta name="twitter:image" content="{{ .Permalink }}">
+{{- end }}
+{{ partial "analytics" . }}
+{{ partial "head/site_schema" . }}
+{{ with (templates.Defer (dict "key" "global")) }}
+  {{ partial "head/css" . }}
 {{ end }}
-  {{ partial "schema" . }}
-  {{ partial "twitter_cards" . }}
-  {{ partial "opengraph" . }}
-  {{ partial "google_analytics" . }}
-  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-  {{ partial "head/site_schema" . }}
-  {{ partialCached "head/css" . }}
-  {{ partialCached "head/jslibs/alpinejs/script-src" "-" }}
-  {{ partial "head/js" . }}
-{{ with .OutputFormats.Get "rss" }}
-  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
-{{ end }}
-  <link rel="preconnect" href="https://www.google-analytics.com"/>
-  <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
-  <link rel="icon" href="{{ "favicon.png" | absURL }}">
-  <link rel="icon" type="image/x-icon" href="{{ "favicon.png" | absURL }}"/>
-  <link rel="icon" type="image/x-icon" sizes="192x192" href="{{ "favicon.png" | absURL }}"/>
-  <link rel="apple-touch-icon" href="{{ "favicon.png" | absURL }}"/>
+{{ partial "head/js" . }}

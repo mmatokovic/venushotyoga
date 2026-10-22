@@ -1,1 +1,21 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- $u := urls.Parse .Destination }}
+{{- $href := .Destination }}
+{{- if and (not $u.IsAbs) $u.Path }}
+  {{- $query := "" }}
+  {{- with $u.RawQuery }}{{ $query = printf "?%s" . }}{{ end }}
+  {{- $fragment := "" }}
+  {{- with $u.Fragment }}{{ $fragment = printf "#%s" . }}{{ end }}
+  {{- with .PageInner.GetPage $u.Path }}
+    {{- $href = printf "%s%s%s" .RelPermalink $query $fragment }}
+  {{- else }}
+    {{- with or (.PageInner.Resources.Get $u.Path) (resources.Get $u.Path) }}
+      {{- $href = .RelPermalink }}
+    {{- else }}
+      {{- if not (or (fileExists (path.Join "static" $u.Path)) (findRE (printf `(?m)^%s\s` (strings.TrimSuffix "/" $u.Path)) (readFile "static/_redirects"))) }}
+        {{- warnf "Link %q not found from %q" .Destination .Page.String }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $isHTTP := in (slice "http" "https") $u.Scheme -}}
+<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isHTTP }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text }}</a>

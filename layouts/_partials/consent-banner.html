@@ -1,0 +1,11 @@
+{{- with partial "utils/analytics-id" . }}
+{{- $button := "cursor-pointer rounded-lg px-4 py-2 text-sm font-medium ring ring-ecru transition" }}
+<section id="consent-banner" hidden aria-labelledby="consent-title" class="fixed inset-x-4 bottom-4 z-50 rounded-lg bg-white p-4 shadow-lg ring ring-gray-900/10 sm:end-auto sm:max-w-md">
+  <h2 id="consent-title" class="font-medium text-gray-900">{{ T "consent_title" }}</h2>
+  <p class="mt-1 text-sm text-gray-700">{{ T "consent_text" }}</p>
+  <div class="mt-3 flex gap-2">
+    <button type="button" data-consent="granted" class="{{ $button }} bg-ecru text-white hover:bg-khaki">{{ T "consent_accept" }}</button>
+    <button type="button" data-consent="denied" class="{{ $button }} bg-white text-gray-900 hover:bg-cosmic-latte">{{ T "consent_decline" }}</button>
+  </div>
+</section>
+{{- end }}

@@ -1,27 +1,52 @@
-{{- $image := resources.Get .Destination -}}
-{{- if $image -}}
-  {{- if gt $image.Width 2400 -}}
-    {{- $image = $image.Resize "2400x" -}}
-  {{- end -}}
-  {{- $webp := $image.Resize "1200x webp q75" -}}
-  {{- $jpg  := $image.Resize "1200x jpg q80" -}}
-  <picture>
-    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-    <source srcset="{{ $jpg.RelPermalink }}" type="image/jpeg">
-    <img
-      src="{{ $jpg.RelPermalink }}"
-      loading="lazy"
-      decoding="async"
-      {{ with .Text }}alt="{{ . }}"{{ else }}alt="{{ .Page.Title }}"{{ end }}
-      {{ with .Title }}title="{{ . }}"{{ end }}
-    />
-  </picture>
+{{- $src := .Destination }}
+{{- $attrs := dict "alt" .PlainText "loading" "lazy" "decoding" "async" }}
+{{- $u := urls.Parse .Destination }}
+{{- if not $u.IsAbs }}
+  {{- $path := strings.TrimPrefix "./" $u.Path }}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) }}
+    {{- $img := . }}
+    {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
+      {{- $srcset := slice }}
+      {{- $largest := "" }}
+      {{- range slice 480 800 1200 1600 }}
+        {{- if le . $img.Width }}
+          {{- $largest = $img.Resize (printf "%dx webp" .) }}
+          {{- $srcset = $srcset | append (printf "%s %dw" $largest.RelPermalink .) }}
+        {{- end }}
+      {{- end }}
+      {{- if not $srcset }}
+        {{- $largest = $img.Resize (printf "%dx webp" $img.Width) }}
+        {{- $srcset = slice (printf "%s %dw" $largest.RelPermalink $img.Width) }}
+      {{- end }}
+      {{- $src = $largest.RelPermalink }}
+      {{- $attrs = merge $attrs (dict
+        "srcset" (delimit $srcset ", ")
+        "sizes" (printf "(min-width: 1280px) 1200px, min(%dpx, 100vw)" $largest.Width)
+        "width" $largest.Width
+        "height" $largest.Height
+      ) }}
+    {{- else }}
+      {{- $src = .RelPermalink }}
+    {{- end }}
+  {{- else }}
+    {{- if not (fileExists (path.Join "static" $u.Path)) }}
+      {{- warnf "Image %q not found from %q" .Destination .Page.String }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $attrs = merge $attrs (dict "src" $src) }}
+{{- with .Title }}{{ $attrs = merge $attrs (dict "title" .) }}{{ end }}
+{{- $attrString := "" }}
+{{- range $k, $v := $attrs }}
+  {{- $attrString = printf `%s %s="%s"` $attrString $k (string $v | htmlEscape) }}
+{{- end }}
+{{- if .IsBlock }}
+<figure>
+  <img{{ $attrString | safeHTMLAttr }}>
+  {{- with .Title }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
 {{- else -}}
-  <img
-    src="{{ .Destination | safeURL }}"
-    loading="lazy"
-    decoding="async"
-    {{ with .Text }}alt="{{ . }}"{{ else }}alt="{{ .Page.Title }}"{{ end }}
-    {{ with .Title }}title="{{ . }}"{{ end }}
-  />
+<img{{ $attrString | safeHTMLAttr }}>
 {{- end -}}

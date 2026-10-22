@@ -1,19 +1,13 @@
-<section>
-  <div class="mx-auto max-w-screen-xl my-4 sm:py-12 lg:py-4">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 bg-bright-yellow rounded-lg">
-      {{ if .IsNamedParams }}
-      <div class="{{ if .Get "class" }}{{ .Get "class" }} relative not-prose !h-96 overflow-hidden rounded-lg sm:h-full{{else}}relative not-prose !h-96 overflow-hidden rounded-lg sm:h-full{{ end }}">
-        {{ $image := .Get "src" | resources.Get }}
-        <picture>
-          <source srcset="{{ $image.RelPermalink }}" type="image/webp">
-          <img alt="Lava" src="{{ $image.RelPermalink }}" loading="lazy" decoding="async" class="inset-0 h-full w-full !object-cover"/>
-        </picture>
-      </div>
-      {{ end }}
-      <div class="lg:py-4 p-5">
-        <article class="space-y-4 text-gray-600 prose prose-h2:!mt-0 text-xl sm:p-1">
-          {{ .Inner | markdownify }}
-        </article>
+<section class="not-prose mx-auto my-4 max-w-7xl sm:py-12 lg:py-4">
+  <div class="grid grid-cols-1 gap-8 rounded-lg bg-bright-yellow lg:grid-cols-2 lg:gap-16">
+    {{- with .Get "src" }}
+    <div class="relative h-96! overflow-hidden rounded-lg sm:h-full {{ $.Get "class" }}">
+      {{ partial "image" (dict "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "inset-0 h-full w-full object-cover") }}
+    </div>
+    {{- end }}
+    <div class="p-5 lg:py-4">
+      <div class="prose space-y-4 text-xl text-gray-600 prose-h2:mt-0 sm:p-1">
+        {{ .Inner | .Page.RenderString (dict "display" "block") }}
       </div>
     </div>
   </div>

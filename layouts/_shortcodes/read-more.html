@@ -1,8 +1,6 @@
-<details id="read_more_details" class="inline open:inline">
-  <summary id="read_more" class="cursor-pointer inline text-ecru">
-    {{ T "read_more" }}
-  </summary>
+<details data-read-more class="inline open:inline">
+  <summary class="inline cursor-pointer text-ecru">{{ T "read_more" }}</summary>
   <div class="bg-bright-yellow p-5 font-thin">
-    {{ .Inner | markdownify }}
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
   </div>
 </details>

@@ -1,0 +1,5 @@
+{{- $id := "" }}
+{{- if hugo.IsProduction }}
+  {{- with site.Config.Services.GoogleAnalytics.ID }}{{ $id = . }}{{ end }}
+{{- end }}
+{{- return $id }}

@@ -1,125 +1,89 @@
 @import "tailwindcss";
-@source "hugo_stats.json";
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
 
-@layer base {
-  html {
-    -webkit-tap-highlight-color: transparent;
-    font-family: "Lusitana", serif;
-  }
-  /* Improve Page speed */
-  /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-  img {
-    content-visibility: auto;
-  }
-  details > summary {
-    list-style: none;
-  }
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-}
+@source "hugo_stats.json";
 
-@layer utilities {
-  .pb-safe {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-
-  .list-interpunct > li:before {
-    content: '・';
-    float: left;
-    margin: 0 0 0 -0.9em;
-    width: 0.9em;
-  }
-
-  @media (min-width: 992px) {
-    .list-interpunct > li:before {
-      margin: 0 0 0 -1.5em;
-      width: 1.5em;
-    }
-  }
+@font-face {
+  font-family: "Lusitana";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Lusitana-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Lusitana';
+  font-family: "Lusitana";
   font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Lusitana-Regular.ttf') format('truetype');
+  font-weight: 700;
   font-display: swap;
+  src: url("/fonts/Lusitana-Bold.ttf") format("truetype");
 }
-
-@layer components{
-  /* ../../node_modules/keen-slider/keen-slider.css */
-  .keen-slider:not([data-keen-slider-disabled]) {
-    align-content: flex-start;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-    width: 100%;
-  }
-  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 100%;
-  }
-  .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
-    flex-direction: row-reverse;
-  }
-  .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
-    flex-wrap: wrap;
-  }
-}
-
 
 @theme {
-  --font-lusitana: "Lusitana", serif;
+  --font-sans: "Lusitana", ui-serif, Georgia, serif;
 
-  /* Colors */
-  --color-bright-yellow: #F4EBDF;
+  --color-bright-yellow: #f4ebdf;
   --color-beige: #f5f5dc;
-  --color-wheat: #F3D9A9;
+  --color-wheat: #f3d9a9;
   --color-almond: #eed9c4;
   --color-bisque: #ffe4c4;
   --color-buff: #daa06d;
   --color-camel: #c19a6b;
   --color-cosmic-latte: #fffde7;
-  --color-daesert-sand: #edc9af;
+  --color-desert-sand: #edc9af;
   --color-hazelnut: #cfb095;
   --color-ecru: #c2b280;
   --color-french-beige: #a67b5b;
   --color-khaki: #c3b091;
   --color-tuscan: #fad6a5;
+}
 
-  /* Background images */
-  --background-image-mandala: url('/images/svg/mandala-svgrepo-com.svg');
-
-  /* Animations */
-  @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-gutter: stable;
   }
 
-  @keyframes fadeInLeft {
-    from { opacity: 0; transform: translateX(-20px); }
-    to { opacity: 1; transform: translateX(0); }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 
-  @keyframes fadeInRight {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
+  details > summary {
+    list-style: none;
   }
 
-  --animate-fadeInDown: fadeInDown 1s;
-  --animate-fadeInLeft: fadeInLeft 1s;
-  --animate-fadeInRight: fadeInRight 1s;
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .keen-slider:not([data-keen-slider-disabled]) {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    align-content: flex-start;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
+    flex-direction: row-reverse;
+  }
+
+  .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
+    flex-wrap: wrap;
+  }
 }

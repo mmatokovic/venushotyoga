@@ -1,0 +1,10 @@
+{{- $img := "" }}
+{{- with or .Params.featured_image .Params.image }}
+  {{- $path := strings.TrimPrefix "/" . }}
+  {{- with or ($.Resources.Get $path) (resources.Get $path) }}
+    {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
+      {{- $img = . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return $img }}

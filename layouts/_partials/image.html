@@ -1,0 +1,29 @@
+{{- $img := .resource }}
+{{- with .src }}
+  {{- $path := strings.TrimPrefix "/" . }}
+  {{- $img = resources.Get $path }}
+  {{- with $.page }}{{ with .Resources.Get $path }}{{ $img = . }}{{ end }}{{ end }}
+{{- end }}
+{{- with $img }}
+  {{- $attrs := dict "alt" ($.alt | default "") "class" ($.class | default "") "loading" ($.loading | default "lazy") "decoding" "async" }}
+  {{- with $.fetchpriority }}{{ $attrs = merge $attrs (dict "fetchpriority" .) }}{{ end }}
+  {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
+    {{- $width := math.Min .Width ($.width | default 1200) | int }}
+    {{- $out := "" }}
+    {{- if $.ratio }}
+      {{- $out = .Process (printf "fill %dx%d webp" $width (int (math.Round (div (float $width) $.ratio)))) }}
+    {{- else }}
+      {{- $out = .Process (printf "resize %dx webp" $width) }}
+    {{- end }}
+    {{- $attrs = merge $attrs (dict "src" $out.RelPermalink "width" $out.Width "height" $out.Height) }}
+  {{- else }}
+    {{- $attrs = merge $attrs (dict "src" .RelPermalink) }}
+  {{- end }}
+  {{- $attrString := "" }}
+  {{- range $k, $v := $attrs }}
+    {{- if $v }}{{ $attrString = printf `%s %s="%s"` $attrString $k (string $v | htmlEscape) }}{{ else if eq $k "alt" }}{{ $attrString = printf `%s alt=""` $attrString }}{{ end }}
+  {{- end }}
+<img{{ $attrString | safeHTMLAttr }}>
+{{- else }}
+  {{- warnf "Image %q not found" $.src }}
+{{- end }}

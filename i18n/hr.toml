@@ -1,11 +1,38 @@
+[skip_to_content]
+  other = 'Preskoči na sadržaj'
+
+[main_navigation]
+  other = 'Glavna navigacija'
+
+[footer_navigation]
+  other = 'Navigacija u podnožju'
+
+[language]
+  other = 'Jezik'
+
+[close]
+  other = 'Zatvori'
+
 [menu_name]
   other = 'Izbornik'
-    
+
 [menu_call_to_action]
   other = 'Javite nam se :)'
 
 [home_hero_title]
   other = 'Upoznajte dobrobiti izvorne vruće joge koje vam mijenjaju život u toploj i gostoljubivoj zajednici.'
+
+[focused_on_you]
+  other = 'Posvećeno vama'
+
+[for_you]
+  other = 'Za vas'
+
+[studio_alt]
+  other = 'Dvorana za hot yogu u studiju Venus Hot Yoga'
+
+[machine_alt]
+  other = 'Aparat za pomlađivanje Cellu M6'
 
 [see_the_prices]
   other = 'Ako želite vidjeti cijene'
@@ -14,13 +41,10 @@
   other = 'Cijenik'
 
 [hand_massage]
-  other = 'Ručne Masaže'
+  other = 'Ručne masaže'
 
 [offer_see]
   other = 'Pogledajte našu ponudu'
-
-[offer]
-  other = 'Popust'
 
 [enroll_text]
   other = 'Satovi počinju 6.10.'
@@ -35,49 +59,19 @@
   other = 'Hot Yoga'
 
 [hot_yoga_text]
-  other = 'Hot yoga je hatha yoga koja se izvodi na 33 stupnjeva i 30% vlage. Prikladna je za sve od potpunih pocetnika do naprednih vjezbaca i yogija.'
+  other = 'Hot yoga je hatha yoga koja se izvodi na 33 stupnjeva i 30% vlage. Prikladna je za sve od potpunih početnika do naprednih vježbača i yogija.'
 
 [rejuvenation]
   other = 'Pomlađivanje'
 
 [rejuvenation_text]
-  other = 'Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaosta mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvanzivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.'
+  other = 'Uz pomoć aparata Cellu M6 za tijelo i najnovijeg Mobylift M6 za lice takvi rezultati su zaista mogući i to u kratkom vremenu. Tretmani su bezbolni, izrazito ugodni i opuštajući, te iznad svega spektakularno uspješni. To je neinvazivna solucija pomlađivanja kojom vraćamo vrijeme unazad, za sve koji žele izgledati prirodno i bez mijenjanja osobnosti vlastitog lica i tijela.'
 
 [training]
   other = 'Trening'
 
-[additional_services]
-  other = 'Dodatne Usluge'
-
 [show_more]
   other = 'Prikaži više'
-
-[home_how_to]
-  other = 'Kako se pripremiti'
-
-[home_what_to_wear]
-  other = 'Što obuči'
-
-[home_what_to_wear_text]
-  other = 'Soba je vruća, ljudi biraju udobnu, rastezljivu odjeću. Muškarci nose kratke hlače s podstavom, žene kratke hlače ili tajice s grudnjacima ili tenkovskim majicama.'
-
-[home_what_you_need]
-  other = 'Što ponjeti'
-
-[home_what_you_need_text]
-  other = 'Prostirač za jogu, veliki ručnik i boca za vodu za klasu. Ovi artikli su također dostupni u studiju za najam ili kupnju. Možda ćete htjeti donijeti dodatni ručnik i zamjenu odjeće za tuš nakon sata.'
-
-[home_when_to_arrive]
-  other = 'Kada doći'
-
-[home_when_to_arrive_text]
-  other = 'Studio se otvara 30 minuta prije početka nastave. Ostavite dovoljno vremena da se pripremite za tečaj i imate nekoliko minuta za mirno sjedenje ili ležanje u studiju prije početka nastave.'
-
-[home_what_to_do_in_advance]
-  other = 'Što učiniti unaprijed'
-
-[home_what_to_do_in_advance_text]
-  other = 'Dođite u razred hidratizirano i s praznim želucem. Ako trebate jesti 1-2 sata prije nastave, odaberite laganu hranu.'
 
 [contact]
   other = 'Kontaktirajte nas'
@@ -105,21 +99,30 @@
 
 [contact_enquiry]
   other = 'Pošalji'
-  
+
+[contact_success]
+  other = 'Hvala! Vaša poruka je poslana, javit ćemo vam se uskoro.'
+
 [contact_location]
   other = '1. kat u prolazu'
 
-[contact_parking]
-  other = 'Mjesto za parkiranje 🙂:'
+[map_title]
+  other = 'Karta s lokacijom studija Venus Hot Yoga'
 
 [about]
   other = 'O nama'
 
 [about_us_text]
-  other = 'Misija ​Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir I zadovoljstvo'
+  other = 'Misija Venus hot yoge je pomoći našim polaznicima da postanu zdraviji, ljepši i sretniji. Rad na sebi je put u kojem možemo uživati, a kroz fizičku promjenu koja je itekako moguća dolazi unutrašnji mir i zadovoljstvo.'
 
 [testimonials]
   other = 'Pročitajte komentare naših polaznika'
+
+[previous_slide]
+  other = 'Prethodni slajd'
+
+[next_slide]
+  other = 'Sljedeći slajd'
 
 [minutes_of_reading]
   other = 'minute čitanja'
@@ -127,20 +130,14 @@
 [share_article]
   other = 'Podijelite ovaj članak'
 
+[more_posts]
+  other = 'Još članaka'
+
 [blogs]
-  other = 'Blogs'
-
-[latest_blog]
-  other = 'Najnoviji blog'
-
-[latest_ebooks]
-  other = 'Najnovije E-Knjige'
+  other = 'Blog'
 
 [ebooks]
-  other = 'E-Knjige'
-
-[order_ebooks]
-  other = 'Naručite E-Knjigu'
+  other = 'E-knjige'
 
 [rights]
   other = 'Sva prava pridržana'
@@ -155,7 +152,7 @@
   other = 'Vrijeme'
 
 [monday]
-  other = 'Ponedeljak'
+  other = 'Ponedjeljak'
 
 [tuesday]
   other = 'Utorak'
@@ -175,6 +172,9 @@
 [sunday]
   other = 'Nedjelja'
 
+[opening_hours]
+  other = 'Radno vrijeme'
+
 [read_more]
   other = '...Saznaj više'
 
@@ -187,41 +187,32 @@
 [sign_up_text_2]
   other = 'Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.'
 
+[form_success]
+  other = 'Hvala! Uspješno ste se pretplatili.'
+
+[form_error]
+  other = 'Ups! Došlo je do pogreške. Pokušajte ponovno.'
+
 [404_ohno]
-  other= 'O Ne!'
+  other = 'O ne!'
 
 [404_cantfind]
   other = 'Ne možemo pronaći tu stranicu.'
 
 [404_home]
-  other = 'Natrag na Početnu'
+  other = 'Natrag na početnu'
 
-[Monday]
-  other = "Ponedjeljak"
+[consent_title]
+  other = 'Kolačići'
 
-[Tuesday]
-  other = "Utorak"
+[consent_text]
+  other = 'Uz vašu privolu koristimo Google Analytics kolačiće kako bismo vidjeli kako se stranica koristi. Bez privole ne učitava se nikakav kod za praćenje.'
 
-[Wednesday]
-  other = "Srijeda"
+[consent_accept]
+  other = 'Prihvati'
 
-[Thursday]
-  other = "Četvrtak"
+[consent_decline]
+  other = 'Odbij'
 
-[Friday]
-  other = "Petak"
-
-[Saturday]
-  other = "Subota"
-
-[Sunday]
-  other = "Nedjelja"
-
-[Opening_Hours]
-  other = "Radno Vrijeme"
-
-[form_success]
-  other = "Hvala! Uspješno ste se pretplatili."
-
-[form_error]
-  other = "Ups! Došlo je do pogreške. Pokušajte ponovno."
+[consent_settings]
+  other = 'Postavke kolačića'
