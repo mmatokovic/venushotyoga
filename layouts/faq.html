@@ -6,13 +6,13 @@
   </div>
   {{- end }}
   <h1 class="sr-only">{{ .Title }}</h1>
-  <div class="prose prose-stone prose-headings:text-ink max-w-none text-xl prose-h2:text-camel-dark prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover">
+  <div class="measure prose prose-lg mt-10 prose-stone max-w-none prose-headings:text-ink prose-h2:font-semibold prose-h2:text-camel-dark prose-h3:font-semibold prose-img:h-96 prose-img:w-full prose-img:object-cover">
     {{ .Content }}
   </div>
   {{- with .Description }}
-  <p class="my-8 text-2xl leading-8 font-light">{{ . }}</p>
+  <p class="mx-auto my-8 max-w-208 text-2xl leading-snug font-light text-stone-700">{{ . }}</p>
   {{- end }}
-  <div class="mx-auto max-w-3xl space-y-3 text-xl">
+  <div class="mx-auto max-w-208 space-y-3 text-xl">
     {{- range $i, $faq := .Params.faq }}
     <details class="group rounded-xl border border-stone-200 bg-white transition open:bg-cosmic-latte/60 open:shadow-sm"{{ if eq $i 0 }} open{{ end }}>
       <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-xl px-5 py-4 text-ink transition hover:bg-stone-50 group-open:hover:bg-transparent">
