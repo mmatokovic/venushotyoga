@@ -36,3 +36,6 @@ jobs:
 
       - name: Check the Decap CMS config is valid YAML
         run: pnpm dlx yaml@2 valid < static/admin/config.yml
+
+      - name: Check no template value was blocked as unsafe (ZgotmplZ)
+        run: "! grep -rl ZgotmplZ public"
