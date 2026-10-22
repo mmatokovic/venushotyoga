@@ -13,7 +13,9 @@ Versions are pinned in one place each: Hugo in `netlify.toml` (`HUGO_VERSION`), 
 
 Croatian is the default language and lives at the site root (`content/hr`); English is under `/en/` (`content/en`).
 Blog posts exist only in Croatian, as page bundles under `content/hr/posts/`; start one with `hugo new content content/hr/posts/<slug>/index.md`.
+All site configuration, including menus and per-language params, is in the root `hugo.toml`.
 Shared data (links, address, opening hours, testimonials) is in `data/`, UI strings in `i18n/`.
+Time-limited home page texts (the enrolment and offer notices on the cards, and the popup) live in the front matter of `content/*/_index.md`, each with an `until` date; they disappear on the first build after that date.
 
 ## What only works on the deployed site
 
@@ -22,8 +24,14 @@ Shared data (links, address, opening hours, testimonials) is in `data/`, UI stri
 - **Decap CMS** at `/admin/` — uses Netlify Identity and Git Gateway, and commits to `main`. Run `npx decap-server` to edit locally (`local_backend: true`).
   Invite and password-reset links land on the home page with a `#…_token=` hash; `assets/js/modules/identity.ts` forwards them to `/admin/`.
 - **Headers and redirects** — security headers, the CSP and caching live in `static/_headers`; redirects in `static/_redirects`. `netlify.toml` only holds the build settings.
+- **Google Maps** on the contact page loads only after the visitor clicks "Prikaži kartu", because the embed sets Google cookies (`assets/js/modules/map.ts`).
 
-Deploy previews and branch deploys build with `HUGO_ENVIRONMENT=preview`, which adds `<meta name="robots" content="noindex">` and a `Disallow: /` robots.txt.
+## Branches and deploys
+
+Trunk-based: `main` is the only long-lived branch and is deployed to production by Netlify.
+Work happens on short-lived feature branches opened as pull requests; Netlify builds each one as a deploy preview, and it is squash-merged once the `build` check passes.
+Deploy previews build with `HUGO_ENVIRONMENT=preview`, which adds `<meta name="robots" content="noindex">` and a `Disallow: /` robots.txt.
+Releases are tagged `vX.Y.Z` on `main` with the same version in `package.json`.
 
 ## Layouts
 
@@ -44,12 +52,15 @@ Hook into markup with `data-*` attributes rather than ids, because shortcodes ca
 - No comments in code.
 - Commit messages: a short imperative sentence ("Add …", "Fix …"), no type prefixes, no AI attribution lines.
 - Tailwind classes toggled only from JS are not in `hugo_stats.json`; add them with `@source inline(...)` in `assets/css/main.css`, or toggle the `hidden` attribute instead.
-- Tailwind v4 syntax: `focus:ring-3`, `outline-hidden`, logical `ms-`/`me-`/`start-`/`end-`, important as a suffix (`h-full!`).
+- Tailwind v4 syntax: `size-*`, `rounded-sm`/`shadow-xs`, `focus:ring-3`, `outline-hidden`, logical `ms-`/`me-`/`start-`/`end-`, important as a suffix (`h-full!`).
+- Text on the light brand colours (ecru, tuscan, hazelnut, khaki, buff, french-beige) is `text-gray-900`; brand-coloured text and icons use `text-camel-dark`. Both pass WCAG AA; the lighter brand colours do not, so don't use them for text.
+- Edit files containing Croatian characters with an editor or `sed`, not `perl -e` with literal non-ASCII text, which double-encodes them.
 
 ## Checks
 
 CI (`.github/workflows/build.yml`) builds the site with `--panicOnWarning`, so a broken internal link or a missing image fails the build.
 Run the same locally with `hugo --gc --minify --panicOnWarning`. Netlify builds with the same flag, so a broken build never deploys.
+CI also checks that `static/admin/config.yml` parses as YAML; Decap publishes no JSON schema, so field-level mistakes in that file are only caught by opening `/admin/` (or `npx decap-server` locally).
 `main` is protected by a ruleset: no force pushes or deletions, linear history, and the `build` check must pass on pull requests.
 
 `.github/workflows/links.yml` checks external links in `content/` every Monday; a broken one fails the run and GitHub emails the failure.
