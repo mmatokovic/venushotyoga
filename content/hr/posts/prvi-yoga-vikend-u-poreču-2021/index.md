@@ -1,6 +1,5 @@
 ---
 title: Prvi yoga vikend u Poreču 2021
-description: I am description of blog post structure data
 author: Vjerna Nevistić
 date: 2023-01-20T10:15:37.576Z
 featured_image: images/featured.jpg

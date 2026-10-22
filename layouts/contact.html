@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- $links := hugo.Data.links }}
-{{- $input := "w-full rounded border border-gray-300 bg-white px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-camel focus:ring-2 focus:ring-tuscan" }}
+{{- $input := "w-full rounded-sm border border-gray-300 bg-white px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-camel focus:ring-2 focus:ring-tuscan" }}
 <div class="relative mx-auto max-w-7xl px-4 pb-8 text-gray-600 sm:px-6 sm:pb-12 lg:px-8 lg:pb-16">
   <h1 class="sr-only">{{ .Title }}</h1>
   <div class="mt-0 mb-8 flex flex-wrap sm:flex-nowrap md:mt-10">
@@ -26,7 +26,7 @@
           <label for="message" class="text-sm leading-7">{{ T "contact_message" }}</label>
           <textarea id="message" name="message" required class="{{ $input }} h-32 resize-none leading-6"></textarea>
         </div>
-        <button type="submit" class="cursor-pointer rounded border-0 bg-ecru px-6 py-2 text-lg text-white hover:bg-khaki focus:outline-hidden disabled:opacity-60">{{ T "contact_enquiry" }}</button>
+        <button type="submit" class="cursor-pointer rounded-sm border-0 bg-ecru px-6 py-2 text-lg text-white hover:bg-khaki focus:outline-hidden disabled:opacity-60">{{ T "contact_enquiry" }}</button>
         <p data-form-success hidden role="status" class="mt-2 text-sm text-green-700">{{ T "contact_success" }}</p>
         <p data-form-error hidden role="alert" class="mt-2 text-sm text-red-700">{{ T "form_error" }}</p>
       </form>
@@ -41,7 +41,7 @@
       <h2 class="text-xs font-semibold tracking-widest text-gray-900">{{ T "contact_email" }}</h2>
       <a href="mailto:{{ $links.mail }}" class="leading-relaxed text-camel">{{ $links.mail }}</a>
       <h2 class="mt-4 text-xs font-semibold tracking-widest text-gray-900">{{ T "contact_phone" }}</h2>
-      <a class="leading-relaxed" href="tel:{{ replaceRE `[^0-9+]` `` $links.tel }}">{{ replace $links.tel "-" "‑" }}</a>
+      <a class="leading-relaxed" href="tel:{{ partial "utils/phone-intl" $links.tel }}">{{ replace $links.tel "-" "‑" }}</a>
     </div>
   </div>
   <div class="prose max-w-none text-xl prose-h2:text-camel prose-h3:font-bold prose-img:h-96 prose-img:w-full prose-img:object-cover prose-td:inline-block md:prose-td:table-cell">

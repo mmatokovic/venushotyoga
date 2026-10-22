@@ -15,7 +15,7 @@
     "sameAs" $sameAs
   }}
   {{- with $logo }}{{ $business = merge $business (dict "logo" . "image" .) }}{{ end }}
-  {{- with $links.tel }}{{ $business = merge $business (dict "telephone" .) }}{{ end }}
+  {{- with $links.tel }}{{ $business = merge $business (dict "telephone" (partial "utils/phone-intl" .)) }}{{ end }}
   {{- with $links.mail }}{{ $business = merge $business (dict "email" .) }}{{ end }}
   {{- with hugo.Data.location }}
     {{- $business = merge $business (dict
@@ -42,7 +42,7 @@
 
 {{- else if and .IsPage (eq .Section "posts") }}
   {{- $rfc3339 := "2006-01-02T15:04:05Z07:00" }}
-  {{- $publisher := dict "@type" "Organization" "name" site.Params.orgName "url" $home }}
+  {{- $publisher := dict "@type" "HealthClub" "@id" (printf "%s#business" $home) "name" site.Params.orgName "url" $home }}
   {{- with $logo }}
     {{- $publisher = merge $publisher (dict "logo" (dict "@type" "ImageObject" "url" .)) }}
   {{- end }}

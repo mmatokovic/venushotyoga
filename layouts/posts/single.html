@@ -4,10 +4,10 @@
     <h1 class="mt-4 mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">{{ .Title }}</h1>
     <div class="mb-4 flex w-full flex-wrap items-center gap-3 border-b-2 border-gray-100 pb-4">
       {{- with .Params.tags }}
-      <p class="rounded bg-indigo-50 px-2 py-1 text-xs font-medium tracking-widest text-pink-700 uppercase">{{ delimit . ", " }}</p>
+      <p class="rounded-sm bg-indigo-50 px-2 py-1 text-xs font-medium tracking-widest text-pink-700 uppercase">{{ delimit . ", " }}</p>
       {{- end }}
       <p class="ms-auto inline-flex items-center border-e-2 border-gray-200 py-1 pe-3 text-sm leading-none text-gray-500">
-        <svg class="me-1 h-4 w-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <svg class="me-1 size-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         {{ T "reading_time" (partial "utils/reading-time" .) }}
       </p>
       <time class="text-sm leading-none text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
@@ -24,11 +24,11 @@
   <footer>
     <section class="mt-6 flex flex-col items-center justify-center border-t border-gray-200 py-6 text-center">
       <h2 class="font-semibold">{{ T "share_article" }}</h2>
-      {{- $share := "flex h-12 w-12 items-center justify-center rounded-full border border-gray-300 transition hover:border-camel hover:text-camel" }}
+      {{- $share := "flex size-12 items-center justify-center rounded-full border border-gray-300 transition hover:border-camel hover:text-camel" }}
       <ul class="mt-6 flex gap-8">
-        <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}">{{ partial "icons/facebook" "h-6 w-6" }}</a></li>
-        <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="X" href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}">{{ partial "icons/x" "h-5 w-5" }}</a></li>
-        <li><a class="{{ $share }}" aria-label="{{ T "contact_email" }}" href="mailto:?subject={{ printf "%s: %s" site.Params.orgName .Title | urlquery }}&amp;body={{ .Permalink | urlquery }}">{{ partial "icons/mail" "h-5 w-5" }}</a></li>
+        <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}">{{ partial "icons/facebook" "size-6" }}</a></li>
+        <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="X" href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}">{{ partial "icons/x" "size-5" }}</a></li>
+        <li><a class="{{ $share }}" aria-label="{{ T "contact_email" }}" href="mailto:?subject={{ printf "%s: %s" site.Params.orgName .Title | urlquery }}&amp;body={{ .Permalink | urlquery }}">{{ partial "icons/mail" "size-5" }}</a></li>
       </ul>
     </section>
     {{- if or .PrevInSection .NextInSection }}

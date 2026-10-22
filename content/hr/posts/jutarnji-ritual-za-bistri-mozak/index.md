@@ -1,6 +1,5 @@
 ---
 title: Jutarnji ritual za bistri mozak
-description: I am description of blog post structure data
 date: 2023-01-19T22:51:04.438Z
 author: Vjerna Nevistić
 featured_image: images/alarm-clock-2116007_1280.jpg

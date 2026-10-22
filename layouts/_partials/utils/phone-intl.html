@@ -1,0 +1,7 @@
+{{- $digits := replaceRE `[^0-9+]` `` . }}
+{{- if strings.HasPrefix $digits "00" }}
+  {{- $digits = printf "+%s" (strings.TrimPrefix "00" $digits) }}
+{{- else if strings.HasPrefix $digits "0" }}
+  {{- $digits = printf "+385%s" (strings.TrimPrefix "0" $digits) }}
+{{- end }}
+{{- return $digits }}

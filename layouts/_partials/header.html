@@ -22,13 +22,13 @@
       </div>
       <div class="ms-3.5 flex items-center gap-4">
         {{ partial "sections/language-switcher.html" . }}
-        <button type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false" class="cursor-pointer rounded p-2 text-gray-600 transition hover:text-gray-600/75 sm:hidden">{{ T "menu_name" }}</button>
+        <button type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false" class="cursor-pointer rounded-sm p-2 text-gray-600 transition hover:text-gray-600/75 sm:hidden">{{ T "menu_name" }}</button>
       </div>
     </div>
   </nav>
   <div id="mobile-menu" class="fixed inset-0 z-50 h-dvh w-full overflow-y-auto bg-white px-4 sm:px-6 lg:px-8" hidden>
     <div class="flex h-16 w-full items-center justify-end">
-      <button type="button" data-menu-close aria-controls="mobile-menu" aria-label="{{ T "close" }}" class="cursor-pointer rounded p-2">
+      <button type="button" data-menu-close aria-controls="mobile-menu" aria-label="{{ T "close" }}" class="cursor-pointer rounded-sm p-2">
         <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.41431" width="26" height="2" rx="1" transform="rotate(45 1.41431 0)" fill="currentColor"/><rect x="0.100586" y="18.4853" width="26" height="2" rx="1" transform="rotate(-45 0.100586 18.4853)" fill="currentColor"/></svg>
       </button>
     </div>
@@ -42,12 +42,12 @@
     <ul class="flex justify-center text-camel">
       {{- with $links.instagram }}
       <li class="m-2">
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">{{ partial "icons/instagram" "h-12 w-12" }}</a>
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">{{ partial "icons/instagram" "size-12" }}</a>
       </li>
       {{- end }}
       {{- with $links.facebook }}
       <li class="m-2">
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">{{ partial "icons/facebook" "h-12 w-12" }}</a>
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">{{ partial "icons/facebook" "size-12" }}</a>
       </li>
       {{- end }}
     </ul>

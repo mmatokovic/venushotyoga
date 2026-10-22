@@ -15,11 +15,13 @@
 <meta name="keywords" content="{{ delimit . ", " }}">
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
-{{- with site.Params.favicon }}
-<link rel="icon" href="{{ . | relURL }}">
-<link rel="apple-touch-icon" href="{{ . | relURL }}">
+{{- with site.Params.favicon | resources.Get }}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ (.Process "resize 32x32 png" | resources.Copy "favicon-32x32.png").RelPermalink }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ (.Process "resize 192x192 png" | resources.Copy "favicon.png").RelPermalink }}">
+<link rel="apple-touch-icon" href="{{ (.Process "resize 180x180 png" | resources.Copy "apple-touch-icon.png").RelPermalink }}">
 {{- end }}
 <meta name="theme-color" content="#ffffff">
+<link rel="preload" href="{{ "fonts/Lusitana-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
 {{- end }}
@@ -27,7 +29,7 @@
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
 {{- end }}
 {{- $shareImage := "" }}
-{{- with partial "utils/page-image" . }}
+{{- with or (partial "utils/page-image" .) (resources.Get site.Params.shareImage) }}
   {{- $shareImage = .Process "fill 1200x630 jpg" }}
 {{- end }}
 <meta name="twitter:card" content="{{ if $shareImage }}summary_large_image{{ else }}summary{{ end }}">

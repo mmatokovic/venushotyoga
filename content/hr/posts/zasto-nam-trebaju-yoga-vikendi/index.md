@@ -1,6 +1,5 @@
 ---
 title: Zašto nam trebaju yoga vikendi
-description: I am description of blog post structure data
 author: Vjerna Nevistić
 date: 2023-08-19T22:48:55.533Z
 featured_image: images/Padangustasana.jpg

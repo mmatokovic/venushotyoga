@@ -8,10 +8,10 @@
     <div class="my-4 border-b-4 border-buff">
       <h2 class="text-center text-2xl font-bold sm:text-4xl">{{ $section.heading }}</h2>
     </div>
-    <ul class="-m-4 flex flex-wrap py-5">
+    <ul class="grid gap-8 py-5 md:grid-cols-3">
       {{- range . }}
-      <li class="p-4 md:w-1/3">
-        <article class="group overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <li>
+        <article class="group overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
           <a href="{{ .RelPermalink }}" class="block">
             {{- with partial "utils/page-image" . }}
             <div class="overflow-hidden">

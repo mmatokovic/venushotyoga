@@ -1,6 +1,5 @@
 ---
 title: Što nas čini starijima?
-description: I am description of blog post structure data
 author: Vjerna Nevistić
 date: 2023-01-19T22:49:44.699Z
 featured_image: images/zasto-izgledamo-starije.jpg
