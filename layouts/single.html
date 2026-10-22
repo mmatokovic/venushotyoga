@@ -10,16 +10,16 @@
     {{ .Content }}
   </article>
   {{- $name := "" }}{{ with .File }}{{ $name = .ContentBaseName }}{{ end }}
-  <div class="mx-auto mt-12 max-w-208 gap-4 rounded-2xl bg-cosmic-latte/70 p-6 ring-1 ring-ink/5 sm:flex sm:items-center sm:justify-center sm:px-6">
+  <div class="mx-auto mt-12 flex max-w-208 flex-col items-center gap-4 rounded-2xl bg-cosmic-latte/70 p-6 text-center ring-1 ring-ink/5 sm:flex-row sm:justify-center sm:text-start">
     {{- if in (slice "rejuvenation" "hot-yoga") $name }}
       {{- with site.GetPage "/pricing" }}
-    <p class="text-center font-medium sm:text-start">{{ T "see_the_prices" }}</p>
-    <a class="btn mt-4 sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
+    <p class="font-medium">{{ T "see_the_prices" }}</p>
+    <a class="btn" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
       {{- end }}
     {{- else }}
       {{- with site.GetPage "/faq" }}
-    <p class="text-center font-medium sm:text-start">{{ T "questions" }}</p>
-    <a class="btn mt-4 sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <p class="font-medium">{{ T "questions" }}</p>
+    <a class="btn" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{- end }}
     {{- end }}
   </div>
