@@ -34,31 +34,31 @@
     </div>
     <div class="mt-8 grid grid-cols-1 gap-8 text-ink md:grid-cols-2 lg:grid-cols-3">
       {{- with site.GetPage "/about" }}
-      <a class="block rounded-xl bg-almond p-5 shadow-xl transition hover:shadow-2xl" href="{{ .RelPermalink }}">
-        <h3 class="text-xl font-bold">{{ T "about" }}</h3>
-        <p class="mt-1 text-base">{{ T "about_us_text" }}</p>
+      <a class="block bg-almond rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}">
+        <h3 class="text-xl font-semibold text-balance">{{ T "about" }}</h3>
+        <p class="mt-2 text-base text-pretty">{{ T "about_us_text" }}</p>
       </a>
       {{- end }}
       {{- with $hotYoga }}
-      <a class="relative block rounded-xl bg-hazelnut p-5 shadow-xl transition hover:shadow-2xl" href="{{ .RelPermalink }}#schedule">
+      <a class="relative block bg-hazelnut rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}#schedule">
         {{- with resources.Get "images/svg/om-svgrepo-com.svg" }}
         <div class="absolute inset-0 bg-contain bg-center bg-no-repeat" style="background-image: url('{{ .RelPermalink }}')" aria-hidden="true"></div>
         {{- end }}
         <div class="relative z-1">
-          <h3 class="text-xl font-bold">{{ T "schedule" }}</h3>
-          <p class="mt-1 text-base">{{ T "schedule_text" }}</p>
+          <h3 class="text-xl font-semibold text-balance">{{ T "schedule" }}</h3>
+          <p class="mt-2 text-base text-pretty">{{ T "schedule_text" }}</p>
           {{- with $enroll }}
-          <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 font-bold text-ink">{{ . }}</p>
+          <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 ring-1 ring-ink/10 font-bold text-ink">{{ . }}</p>
           {{- end }}
         </div>
       </a>
       {{- end }}
       {{- with $pricing }}
-      <a class="block rounded-xl bg-tuscan p-5 shadow-xl transition hover:shadow-2xl" href="{{ .RelPermalink }}">
-        <h3 class="text-xl font-bold">{{ T "prices" }}</h3>
-        <p class="mt-1 text-base">{{ T "offer_see" }}</p>
+      <a class="block bg-tuscan rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}">
+        <h3 class="text-xl font-semibold text-balance">{{ T "prices" }}</h3>
+        <p class="mt-2 text-base text-pretty">{{ T "offer_see" }}</p>
         {{- with $offer }}
-        <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 text-ink">{{ . }}</p>
+        <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 ring-1 ring-ink/10 text-ink">{{ . }}</p>
         {{- end }}
       </a>
       {{- end }}

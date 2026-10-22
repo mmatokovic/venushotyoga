@@ -65,7 +65,7 @@ Behaviour can be checked in a real browser: Playwright launching the installed E
 - Commit messages: a short imperative sentence ("Add …", "Fix …"), no type prefixes, no AI attribution lines.
 - Tailwind classes toggled only from JS are not in `hugo_stats.json`; add them with `@source inline(...)` in `assets/css/main.css`, or toggle the `hidden` attribute instead.
 - Tailwind v4 syntax: `size-*`, `rounded-sm`/`shadow-xs`, `focus:ring-3`, `outline-hidden`, logical `ms-`/`me-`/`start-`/`end-`, important as a suffix (`h-full!`).
-- Buttons use the `btn` utility from `main.css` (sleeve's button style in the brand colours), with `btn-secondary` for the outlined variant and `btn-sm` for the small size; don't style buttons with one-off classes.
+- Buttons use the `btn` utility from `main.css` (sleeve's button style in the brand colours), with `btn-secondary` for the outlined variant and `btn-sm` for the small size. Form inputs use the matching `field` utility. Don't style buttons or inputs with one-off classes.
 - Text on the light brand colours (ecru, tuscan, hazelnut, khaki, buff, french-beige) is `text-gray-900`; brand-coloured text and icons use `text-camel-dark`. Both pass WCAG AA; the lighter brand colours do not, so don't use them for text.
 - The font is Alegreya, self-hosted from Fontsource as variable WOFF2 (weights 400–900, normal and italic) in `static/fonts/`, split into `latin` and `latin-ext` files by `unicode-range`. Any replacement font must include the Croatian letters (č ć š ž đ); Lusitana, the previous font, did not.
 - Edit files containing Croatian characters with an editor or `sed`, not `perl -e` with literal non-ASCII text, which double-encodes them.

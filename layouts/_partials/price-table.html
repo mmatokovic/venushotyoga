@@ -1,20 +1,22 @@
-<table class="min-w-full bg-white">
-  <caption class="px-4 py-3 font-bold">{{ .caption }}</caption>
-  {{- range .groups }}
-  <tbody>
-    {{- if and $.showCategory .category }}
-    <tr class="font-medium">
-      <th colspan="2" scope="colgroup" class="px-4 pt-3 text-start">{{ .category }}</th>
-    </tr>
+<div class="overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-xs">
+  <table class="min-w-full divide-y divide-stone-200 text-base">
+    <caption class="border-b border-stone-200 bg-cosmic-latte/60 px-4 py-3 text-start text-lg font-semibold text-ink">{{ .caption }}</caption>
+    {{- range .groups }}
+    <tbody class="divide-y divide-stone-100">
+      {{- if and $.showCategory .category }}
+      <tr>
+        <th colspan="2" scope="colgroup" class="bg-stone-50 px-4 py-2 text-start text-sm font-semibold tracking-wide text-camel-dark uppercase">{{ strings.TrimSuffix ":" .category }}</th>
+      </tr>
+      {{- end }}
+      {{- range $p := .prices }}
+      <tr class="transition hover:bg-cosmic-latte/50">
+        <th scope="row" class="px-4 py-3 text-start font-medium text-ink">{{ $p.service }}</th>
+        <td class="px-4 py-3 text-end font-semibold whitespace-nowrap text-camel-dark tabular-nums">
+          {{- with $p.popust }}<del class="me-2 font-normal text-stone-500">{{ $p.price }}</del>{{ . }}{{ else }}{{ $p.price }}{{ end -}}
+        </td>
+      </tr>
+      {{- end }}
+    </tbody>
     {{- end }}
-    {{- range $i, $p := .prices }}
-    <tr class="{{ if modBool $i 2 }}bg-cosmic-latte{{ else }}bg-white{{ end }} text-start font-bold">
-      <th scope="row" class="px-4 py-3 text-start font-bold">{{ $p.service }}</th>
-      <td class="px-4 py-3 whitespace-nowrap text-amber-700">
-        {{- with $p.popust }}<del>{{ $p.price }}</del> {{ . }}{{ else }}{{ $p.price }}{{ end -}}
-      </td>
-    </tr>
-    {{- end }}
-  </tbody>
-  {{- end }}
-</table>
+  </table>
+</div>

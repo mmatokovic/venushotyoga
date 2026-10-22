@@ -47,13 +47,13 @@ rejuvenation:
       - service: "Hand massage (30 min)"
         price: "25 €"
       - service: "Hot Stone massage (50 min)"
-        price: "46€"
+        price: "46 €"
         popust: "39 €"
       - service: "Thai Yoga Treatment (60 min)"
-        price: "50€"
-        popust: "40"
+        price: "50 €"
+        popust: "40 €"
       - service: "Thai Yoga Treatment (90 min)"
-        price: "90€"
+        price: "90 €"
 ---
 
 ## Amenities

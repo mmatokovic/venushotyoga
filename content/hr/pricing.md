@@ -48,13 +48,13 @@ rejuvenation:
       - service: "Ručna masaža (30 min)"
         price: "25 €"
       - service: "Hot Stone masaža (50 min)"
-        price: "46€"
+        price: "46 €"
         popust: "39 €"
       - service: "Thai Yoga Tretman (60 min)"
-        price: "50€"
-        popust: "40"
+        price: "50 €"
+        popust: "40 €"
       - service: "Thai Yoga Tretman (90 min)"
-        price: "90€"
+        price: "90 €"
 ---
 
 ## Pogodnosti

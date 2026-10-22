@@ -5,13 +5,13 @@
     {{- $section := . }}
     {{- with where $.RegularPages "Params.category" .category }}
   <section class="text-stone-600">
-    <div class="my-4 border-b-4 border-buff">
-      <h2 class="text-center text-2xl font-bold sm:text-4xl">{{ $section.heading }}</h2>
+    <div class="mx-auto my-8 max-w-2xl text-center">
+      <h2 class="text-3xl font-semibold text-camel-dark sm:text-4xl">{{ $section.heading }}</h2>
     </div>
     <ul class="grid gap-8 py-5 md:grid-cols-3">
       {{- range . }}
       <li>
-        <article class="group overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+        <article class="group h-full overflow-hidden rounded-2xl bg-white shadow-xs ring-1 ring-stone-200 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none">
           <a href="{{ .RelPermalink }}" class="block">
             {{- with partial "utils/page-image" . }}
             <div class="overflow-hidden">

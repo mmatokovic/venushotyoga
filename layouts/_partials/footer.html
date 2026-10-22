@@ -64,16 +64,16 @@
           {{- end }}
         </li>
       </ul>
-      <div class="mt-8 space-y-4 lg:mt-0">
-        <p class="mt-8">{{ T "sign_up_text_1" }}</p>
-        <p>{{ T "sign_up_text_2" }}</p>
-        <form class="mt-6 w-full" name="newsletter" method="post" data-netlify="true" data-turbo="false" netlify-honeypot="bot-field">
+      <div class="mt-10 lg:mt-8">
+        <h2 class="text-xl font-semibold text-ink">{{ T "sign_up_text_1" }}</h2>
+        <p class="mt-2 text-pretty text-stone-600">{{ T "sign_up_text_2" }}</p>
+        <form class="mt-6 w-full max-w-xl" name="newsletter" method="post" data-netlify="true" data-turbo="false" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="newsletter">
           <p hidden><label>Bot field <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-          <div class="rounded-md border border-stone-100 p-2 sm:flex sm:items-center sm:gap-4">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
             <label for="subscriber" class="sr-only">{{ T "contact_email" }}</label>
-            <input name="subscriber" type="email" id="subscriber" autocomplete="email" placeholder="pero.peric@email.com" required class="h-full w-full bg-transparent sm:text-sm">
-            <button type="submit" class="btn mt-1 w-full sm:mt-0 sm:w-auto sm:shrink-0">{{ T "sign_up" }}</button>
+            <input name="subscriber" type="email" id="subscriber" autocomplete="email" placeholder="pero.peric@email.com" required class="field h-12 sm:flex-1">
+            <button type="submit" class="btn h-12 sm:shrink-0">{{ T "sign_up" }}</button>
           </div>
           <p data-form-success hidden role="status" class="mt-2 text-sm text-green-700">{{ T "form_success" }}</p>
           <p data-form-error hidden role="alert" class="mt-2 text-sm text-red-700">{{ T "form_error" }}</p>

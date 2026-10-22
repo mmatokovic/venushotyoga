@@ -15,13 +15,13 @@
     <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
       <div data-slider-track class="keen-slider">
         {{- range . }}
-        <div class="keen-slider__slide">
-          <figure class="flex h-full flex-col justify-between bg-white p-6 shadow-xs sm:p-8 lg:p-12">
+        <div class="keen-slider__slide p-1">
+          <figure class="flex h-full flex-col justify-between rounded-2xl bg-white p-6 shadow-xs ring-1 ring-stone-200 sm:p-8 lg:p-10">
             <div class="mt-4 flex items-center gap-4">
               {{ partial "image" (dict "src" .image "width" 192 "ratio" 1.0 "alt" "" "class" "size-24 rounded-full object-cover") }}
               <p class="text-2xl font-bold text-camel-dark sm:text-3xl">{{ .name }}</p>
             </div>
-            <blockquote class="mt-4 leading-relaxed text-stone-700">
+            <blockquote class="mt-4 leading-relaxed text-pretty text-stone-700">
               <p>{{ index .testimonial site.Language.Lang | default .testimonial.hr | truncate 550 "…" }}</p>
             </blockquote>
             <figcaption class="mt-4 text-sm font-medium text-stone-700 sm:mt-6">&mdash; {{ .name }}</figcaption>

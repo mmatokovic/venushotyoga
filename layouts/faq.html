@@ -12,14 +12,14 @@
   {{- with .Description }}
   <p class="my-8 text-2xl leading-8 font-light">{{ . }}</p>
   {{- end }}
-  <div class="space-y-4 text-xl">
+  <div class="mx-auto max-w-3xl space-y-3 text-xl">
     {{- range $i, $faq := .Params.faq }}
-    <details class="group"{{ if eq $i 0 }} open{{ end }}>
-      <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-stone-50 p-4 text-ink">
-        <h2 class="font-medium">{{ $faq.question }}</h2>
-        <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <details class="group rounded-xl border border-stone-200 bg-white transition open:bg-cosmic-latte/60 open:shadow-sm"{{ if eq $i 0 }} open{{ end }}>
+      <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-xl px-5 py-4 text-ink transition hover:bg-stone-50 group-open:hover:bg-transparent">
+        <h2 class="font-medium text-balance">{{ $faq.question }}</h2>
+        <svg class="size-5 shrink-0 text-camel-dark transition-transform duration-300 group-open:-rotate-180 motion-reduce:transition-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
       </summary>
-      <div class="prose prose-stone prose-headings:text-ink mt-4 max-w-none px-4 leading-relaxed text-stone-700">
+      <div class="prose prose-stone prose-headings:text-ink max-w-none px-5 pb-5 leading-relaxed text-stone-700">
         {{ $.RenderString (dict "display" "block") $faq.answer }}
       </div>
     </details>

@@ -85,6 +85,19 @@
     display: none !important;
   }
 
+  ::selection {
+    background-color: var(--color-tuscan);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  p, li, blockquote {
+    text-wrap: pretty;
+  }
+
   p:has(+ details[data-read-more]) {
     display: inline;
   }
@@ -100,4 +113,8 @@
 
 @utility btn-sm {
   @apply px-4 py-2 text-sm;
+}
+
+@utility field {
+  @apply w-full rounded-lg border-stone-300 bg-white px-3.5 py-2.5 text-base text-ink shadow-xs transition placeholder:text-stone-400 focus:border-camel focus:ring-1 focus:ring-camel;
 }

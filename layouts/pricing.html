@@ -2,14 +2,14 @@
 <div class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 sm:py-8 lg:px-8 lg:pb-8">
   <h1 class="sr-only">{{ .Title }}</h1>
   <section class="py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16" id="hot-yoga" aria-labelledby="hot-yoga-heading">
-    <div class="mx-auto mb-4 border-b-4 border-buff text-center">
-      <h2 id="hot-yoga-heading" class="text-3xl font-bold text-camel-dark sm:text-4xl">Hot Yoga</h2>
+    <div class="mx-auto mb-8 max-w-2xl text-center">
+      <h2 id="hot-yoga-heading" class="text-3xl font-semibold text-balance text-camel-dark sm:text-4xl">Hot Yoga</h2>
     </div>
-    <div class="flex flex-col md:flex-row">
-      <div class="mb-4 w-full md:w-1/2 lg:border-e-2 lg:border-buff">
-        {{ partial "image" (dict "sizes" "(min-width: 768px) 50vw, 100vw" "src" "images/plato_1_b_ISPRVAK_Facebook.jpg" "width" 800 "alt" "" "class" "h-auto w-full rounded-s-lg") }}
+    <div class="grid gap-8 md:grid-cols-2 md:items-start">
+      <div>
+        {{ partial "image" (dict "sizes" "(min-width: 768px) 50vw, 100vw" "src" "images/plato_1_b_ISPRVAK_Facebook.jpg" "width" 800 "alt" "" "class" "h-auto w-full rounded-2xl object-cover shadow-sm") }}
       </div>
-      <div class="w-full md:w-1/2">
+      <div>
         {{- with index .Params.hotyoga 0 }}
         {{ partial "price-table" (dict "caption" (T "training") "groups" (slice .)) }}
         {{- end }}
@@ -18,14 +18,14 @@
   </section>
   {{- with .Params.rejuvenation }}
   <section class="py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16" id="rejuvenation" aria-labelledby="rejuvenation-heading">
-    <div class="mx-auto mb-4 border-b-4 border-buff text-center">
-      <h2 id="rejuvenation-heading" class="text-3xl font-bold text-camel-dark sm:text-4xl">{{ T "rejuvenation" }}</h2>
+    <div class="mx-auto mb-8 max-w-2xl text-center">
+      <h2 id="rejuvenation-heading" class="text-3xl font-semibold text-balance text-camel-dark sm:text-4xl">{{ T "rejuvenation" }}</h2>
     </div>
-    <div class="flex flex-col md:flex-row">
-      <div class="mb-4 w-full md:w-1/2 lg:border-e-2 lg:border-buff">
+    <div class="grid gap-8 md:grid-cols-2 md:items-start">
+      <div>
         {{ partial "price-table" (dict "caption" "LPG Celu M6 Integral 2S" "groups" (first 2 .) "showCategory" true) }}
       </div>
-      <div class="w-full md:w-1/2">
+      <div>
         {{ partial "price-table" (dict "caption" (T "hand_massage") "groups" (after 2 .)) }}
       </div>
     </div>
