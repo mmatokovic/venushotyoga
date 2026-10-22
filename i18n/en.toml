@@ -198,7 +198,7 @@
   other = 'Cookies'
 
 [consent_text]
-  other = 'With your consent we use Google Analytics cookies to see how the site is used. Without consent no tracking code is loaded.'
+  other = 'With your consent we use Google Analytics cookies to see how the site is used, and show a Google Maps map on the Contact page. Without consent neither is loaded.'
 
 [consent_accept]
   other = 'Accept'

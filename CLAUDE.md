@@ -24,7 +24,7 @@ Time-limited home page texts (the enrolment and offer notices on the cards, and 
 - **Decap CMS** at `/admin/` — uses Netlify Identity and Git Gateway, and commits to `main`. Run `npx decap-server` to edit locally (`local_backend: true`).
   Invite and password-reset links land on the home page with a `#…_token=` hash; `assets/js/modules/identity.ts` forwards them to `/admin/`.
 - **Headers and redirects** — security headers, the CSP and caching live in `static/_headers`; redirects in `static/_redirects`. `netlify.toml` only holds the build settings.
-- **Google Maps** on the contact page loads only after the visitor clicks "Prikaži kartu", because the embed sets Google cookies (`assets/js/modules/map.ts`).
+- **Google Maps** on the contact page sets Google cookies, so it shares the cookie banner's consent: it loads automatically once the visitor has accepted, and otherwise only when they click "Prikaži kartu" (`assets/js/modules/map.ts`).
 
 ## Branches and deploys
 

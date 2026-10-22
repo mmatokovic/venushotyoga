@@ -199,7 +199,7 @@
   other = 'Kolačići'
 
 [consent_text]
-  other = 'Uz vašu privolu koristimo Google Analytics kolačiće kako bismo vidjeli kako se stranica koristi. Bez privole ne učitava se nikakav kod za praćenje.'
+  other = 'Uz vašu privolu koristimo kolačiće Google Analyticsa kako bismo vidjeli kako se stranica koristi, a na stranici Kontakt prikazujemo kartu s Google Mapsa. Bez privole ne učitava se ni jedno ni drugo.'
 
 [consent_accept]
   other = 'Prihvati'
