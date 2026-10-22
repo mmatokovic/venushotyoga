@@ -14,7 +14,7 @@ Versions are pinned in one place each: Hugo in `netlify.toml` (`HUGO_VERSION`), 
 Croatian is the default language and lives at the site root (`content/hr`); English is under `/en/` (`content/en`).
 Blog posts exist only in Croatian, as page bundles under `content/hr/posts/`; start one with `hugo new content content/hr/posts/<slug>/index.md`.
 All site configuration, including menus and per-language params, is in the root `hugo.toml`.
-Shared data (links, address, opening hours, testimonials) is in `data/`, UI strings in `i18n/`.
+Shared data (links, address, opening hours, testimonials) is in `data/`, UI strings in `i18n/`. Every page and string exists in both languages; testimonials carry `hr` and `en` text, and English pages must not fall back to Croatian.
 Time-limited home page texts (the enrolment and offer notices on the cards, and the popup) live in the front matter of `content/*/_index.md`, each with an `until` date; they disappear on the first build after that date.
 
 ## What only works on the deployed site
@@ -43,9 +43,21 @@ The site uses the Hugo 0.146+ template system: `layouts/baseof.html`, `home.html
 
 ### JavaScript
 
-`assets/js/main.ts` imports one module per feature from `assets/js/modules/`; each exports `init()` and does nothing on pages without its elements.
+As in sleeve, Turbo Drive (`@hotwired/turbo`) and Alpine.js (with `alpine-turbo-drive-adapter`) are bundled from `assets/js/turbo.ts` and `assets/js/alpine.ts` and switched on with `params.turbo` and `params.alpine` in `hugo.toml`.
+Small interactive UI belongs in Alpine attributes in the templates: the mobile menu (`header.html`) and the popup. Use `x-cloak` on anything hidden until Alpine starts.
+The read-more shortcode needs no JavaScript: `:has()` in `main.css` and Tailwind's `group-open:` handle it.
+
+`assets/js/main.ts` imports the remaining modules from `assets/js/modules/` (forms, map, slider, identity); each exports `init()` and does nothing on pages without its elements.
 `js.Build` bundles them into a single deferred, fingerprinted script loaded on every page. Keep it that way rather than loading scripts per page or per shortcode.
-Hook into markup with `data-*` attributes rather than ids, because shortcodes can appear more than once per page.
+
+Turbo replaces the `<body>` on navigation, so:
+
+- Per-page setup goes through `onPageLoad()` from `modules/page.ts` (runs on `turbo:load`, or `DOMContentLoaded` without Turbo), and anything that must be torn down before Turbo caches a page uses `onBeforeCache()` (the sliders do).
+- Listeners for things that can appear on any page are attached once to `document` and matched with `closest()` (forms, the map button, consent).
+- Links that leave the site through a `static/_redirects` rule, links to static files, and Netlify forms carry `data-turbo="false"`; the link render hook adds it automatically.
+- Hook into markup with `data-*` attributes rather than ids, because shortcodes can appear more than once per page.
+
+Behaviour can be checked in a real browser: Playwright launching the installed Edge (`chromium.launch({ channel: 'msedge' })`) works on this machine, whereas jsdom cannot run the ES module bundles for Turbo and Alpine.
 
 ## Conventions
 
@@ -53,6 +65,7 @@ Hook into markup with `data-*` attributes rather than ids, because shortcodes ca
 - Commit messages: a short imperative sentence ("Add …", "Fix …"), no type prefixes, no AI attribution lines.
 - Tailwind classes toggled only from JS are not in `hugo_stats.json`; add them with `@source inline(...)` in `assets/css/main.css`, or toggle the `hidden` attribute instead.
 - Tailwind v4 syntax: `size-*`, `rounded-sm`/`shadow-xs`, `focus:ring-3`, `outline-hidden`, logical `ms-`/`me-`/`start-`/`end-`, important as a suffix (`h-full!`).
+- Buttons use the `btn` utility from `main.css` (sleeve's button style in the brand colours), with `btn-secondary` for the outlined variant and `btn-sm` for the small size; don't style buttons with one-off classes.
 - Text on the light brand colours (ecru, tuscan, hazelnut, khaki, buff, french-beige) is `text-gray-900`; brand-coloured text and icons use `text-camel-dark`. Both pass WCAG AA; the lighter brand colours do not, so don't use them for text.
 - The font is Alegreya, self-hosted from Fontsource as variable WOFF2 (weights 400–900, normal and italic) in `static/fonts/`, split into `latin` and `latin-ext` files by `unicode-range`. Any replacement font must include the Croatian letters (č ć š ž đ); Lusitana, the previous font, did not.
 - Edit files containing Croatian characters with an editor or `sed`, not `perl -e` with literal non-ASCII text, which double-encodes them.
