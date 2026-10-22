@@ -12,84 +12,84 @@
 {{- $hotYoga := site.GetPage "/hot-yoga" }}
 {{- $pricing := site.GetPage "/pricing" }}
 {{- $rejuvenation := site.GetPage "/rejuvenation" }}
-<h1 class="sr-only">{{ site.Params.orgName }}</h1>
-<section class="relative mx-auto h-64 max-w-7xl overflow-hidden rounded-lg px-4 py-14 sm:h-80 sm:px-6 sm:py-32 md:p-12 lg:h-full lg:px-8 lg:py-72">
-  {{ partial "image" (dict "src" "images/homepage.webp" "width" 1600 "alt" "" "loading" "eager" "fetchpriority" "high" "class" "absolute inset-0 h-full w-full object-cover object-center") }}
-  {{- with $contact }}
-  <div class="relative z-1 hidden h-full flex-col justify-center lg:flex">
-    <a href="{{ .RelPermalink }}" class="btn mx-auto">{{ T "contact" }}</a>
-  </div>
-  {{- end }}
-</section>
-{{- with $contact }}
-<div class="mt-4 flex justify-center sm:mt-8 lg:hidden">
-  <a href="{{ .RelPermalink }}" class="btn">{{ T "contact" }}</a>
-</div>
-{{- end }}
-<section class="text-xl">
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    <div class="relative flex justify-center text-center">
-      <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-stone-500 to-transparent opacity-75"></div>
-      <h2 class="relative bg-white px-6">{{ T "home_hero_title" }}</h2>
-    </div>
-    <div class="mt-8 grid grid-cols-1 gap-8 text-ink md:grid-cols-2 lg:grid-cols-3">
-      {{- with site.GetPage "/about" }}
-      <a class="block bg-almond rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}">
-        <h3 class="text-xl font-semibold text-balance">{{ T "about" }}</h3>
-        <p class="mt-2 text-base text-pretty">{{ T "about_us_text" }}</p>
-      </a>
-      {{- end }}
-      {{- with $hotYoga }}
-      <a class="relative block bg-hazelnut rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}#schedule">
-        {{- with resources.Get "images/svg/om-svgrepo-com.svg" }}
-        <div class="absolute inset-0 bg-contain bg-center bg-no-repeat" style="background-image: url('{{ .RelPermalink }}')" aria-hidden="true"></div>
+{{- $fromPrice := "" }}
+{{- with $pricing }}{{ with .Params.hotyoga }}{{ with index . 0 }}{{ with index .prices 0 }}{{ $fromPrice = .price }}{{ end }}{{ end }}{{ end }}{{ end }}
+{{- $card := "rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" }}
+<section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="relative isolate flex min-h-104 items-end overflow-hidden rounded-2xl sm:min-h-128 lg:min-h-152">
+    {{ partial "image" (dict "src" "images/homepage.webp" "width" 1600 "alt" "" "loading" "eager" "fetchpriority" "high" "class" "absolute inset-0 -z-10 h-full w-full object-cover object-center") }}
+    <div class="absolute inset-0 -z-10 bg-linear-to-t from-ink/85 via-ink/30 to-transparent" aria-hidden="true"></div>
+    <div class="max-w-2xl p-6 sm:p-10 lg:p-14">
+      <h1 class="text-4xl font-semibold text-white sm:text-5xl">{{ T "hero_heading" }}</h1>
+      <p class="mt-4 text-lg text-white/90 sm:text-xl">{{ T "home_hero_title" }}</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        {{- with $contact }}
+        <a href="{{ .RelPermalink }}" class="btn">{{ T "contact" }}</a>
         {{- end }}
-        <div class="relative z-1">
-          <h3 class="text-xl font-semibold text-balance">{{ T "schedule" }}</h3>
-          <p class="mt-2 text-base text-pretty">{{ T "schedule_text" }}</p>
-          {{- with $enroll }}
-          <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 ring-1 ring-ink/10 font-bold text-ink">{{ . }}</p>
-          {{- end }}
-        </div>
-      </a>
-      {{- end }}
-      {{- with $pricing }}
-      <a class="block bg-tuscan rounded-2xl p-6 shadow-sm ring-1 ring-ink/5 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transform-none" href="{{ .RelPermalink }}">
-        <h3 class="text-xl font-semibold text-balance">{{ T "prices" }}</h3>
-        <p class="mt-2 text-base text-pretty">{{ T "offer_see" }}</p>
-        {{- with $offer }}
-        <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 ring-1 ring-ink/10 text-ink">{{ . }}</p>
+        {{- with $hotYoga }}
+        <a href="{{ .RelPermalink }}#schedule" class="btn btn-secondary">{{ T "schedule" }}</a>
         {{- end }}
-      </a>
-      {{- end }}
+      </div>
     </div>
   </div>
 </section>
-<section class="text-xl text-ink">
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    <div class="my-4 grid grid-cols-1 gap-8 sm:py-12 lg:grid-cols-2 lg:gap-16 lg:py-4">
-      <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
-        {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/dvorana.jpg" "width" 1000 "alt" (T "studio_alt") "class" "absolute inset-0 h-full w-full object-cover") }}
-      </div>
-      <div class="lg:py-16">
-        <p class="text-sm font-bold text-camel-dark uppercase">{{ T "focused_on_you" }}</p>
-        <h2 class="text-3xl font-bold text-camel-dark sm:text-4xl">{{ T "hot_yoga" }}</h2>
-        <p class="mt-4 font-bold text-stone-600">{{ T "hot_yoga_text" }}</p>
-        {{- with $hotYoga }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
-        {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#hot-yoga") "text" .Title) }}{{ end }}
-      </div>
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+  <div class="grid grid-cols-1 gap-6 text-ink md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+    {{- with site.GetPage "/about" }}
+    <a class="block bg-almond {{ $card }}" href="{{ .RelPermalink }}">
+      <h2 class="text-xl font-semibold">{{ T "about" }}</h2>
+      <p class="mt-2 text-base">{{ T "about_us_text" }}</p>
+    </a>
+    {{- end }}
+    {{- with $hotYoga }}
+    <a class="relative isolate block overflow-hidden bg-hazelnut {{ $card }}" href="{{ .RelPermalink }}#schedule">
+      {{- with resources.Get "images/svg/om-svgrepo-com.svg" }}
+      <img src="{{ .RelPermalink }}" alt="" width="160" height="160" class="pointer-events-none absolute -end-8 -bottom-8 -z-10 size-40 opacity-25">
+      {{- end }}
+      <h2 class="text-xl font-semibold">{{ T "schedule" }}</h2>
+      <p class="mt-2 text-base">{{ T "schedule_text" }}</p>
+      {{- with $enroll }}
+      <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 font-semibold ring-1 ring-ink/10">{{ . }}</p>
+      {{- end }}
+    </a>
+    {{- end }}
+    {{- with $pricing }}
+    <a class="block bg-tuscan {{ $card }}" href="{{ .RelPermalink }}">
+      <h2 class="text-xl font-semibold">{{ T "prices" }}</h2>
+      <p class="mt-2 text-base">{{ T "offer_see" }}</p>
+      {{- with $fromPrice }}
+      <p class="mt-4 text-3xl font-semibold">{{ T "price_from" }} <span class="tabular-nums">{{ . }}</span></p>
+      {{- end }}
+      {{- with $offer }}
+      <p class="mt-4 rounded-lg bg-cosmic-latte/80 px-3 py-2 ring-1 ring-ink/10">{{ . }}</p>
+      {{- end }}
+    </a>
+    {{- end }}
+  </div>
+</section>
+<section class="mx-auto max-w-7xl space-y-16 px-4 pb-16 sm:px-6 lg:space-y-24 lg:px-8 lg:pb-24">
+  <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
+    <div class="relative h-64 overflow-hidden rounded-2xl sm:h-80 lg:h-112">
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/dvorana.jpg" "width" 1000 "alt" (T "studio_alt") "class" "absolute inset-0 h-full w-full object-cover") }}
     </div>
-    <div class="my-8 grid grid-cols-1 gap-8 sm:py-12 lg:grid-cols-2 lg:gap-16 lg:py-4">
-      <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-        {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/slika_stroja.jpg" "width" 1000 "alt" (T "machine_alt") "class" "absolute inset-0 h-full w-full object-cover") }}
-      </div>
-      <div class="lg:py-16">
-        <p class="text-sm font-bold text-camel-dark uppercase">{{ T "for_you" }}</p>
-        <h2 class="text-3xl font-bold text-camel-dark sm:text-4xl">{{ T "rejuvenation" }}</h2>
-        <p class="mt-4 font-bold text-stone-600">{{ T "rejuvenation_text" }}</p>
-        {{- with $rejuvenation }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
-        {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#rejuvenation") "text" .Title) }}{{ end }}
-      </div>
+    <div>
+      <p class="text-sm font-semibold tracking-wide text-camel-dark uppercase">{{ T "focused_on_you" }}</p>
+      <h2 class="mt-2 text-3xl font-semibold text-camel-dark sm:text-4xl">{{ T "hot_yoga" }}</h2>
+      <p class="mt-4 text-lg text-stone-700">{{ T "hot_yoga_text" }}</p>
+      {{- with $hotYoga }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
+      {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#hot-yoga") "text" .Title) }}{{ end }}
+    </div>
+  </div>
+  <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
+    <div class="relative h-64 overflow-hidden rounded-2xl sm:h-80 lg:order-last lg:h-112">
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/slika_stroja.jpg" "width" 1000 "alt" (T "machine_alt") "class" "absolute inset-0 h-full w-full object-cover") }}
+    </div>
+    <div>
+      <p class="text-sm font-semibold tracking-wide text-camel-dark uppercase">{{ T "for_you" }}</p>
+      <h2 class="mt-2 text-3xl font-semibold text-camel-dark sm:text-4xl">{{ T "rejuvenation" }}</h2>
+      <p class="mt-4 text-lg text-stone-700">{{ T "rejuvenation_text" }}</p>
+      {{- with $rejuvenation }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
+      {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#rejuvenation") "text" .Title) }}{{ end }}
     </div>
   </div>
 </section>

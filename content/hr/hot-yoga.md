@@ -37,9 +37,6 @@ schedule:
 
 {{< schedule >}}
 
-Najavite nam svoj dolazak, na broj: [095 576 3818](tel:0955763818)
-
-[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
 ## Hot Yoga
 
@@ -100,7 +97,7 @@ Upute za ONLINE prijavu:
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
 {{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
-## BONTON
+## Bonton
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
 

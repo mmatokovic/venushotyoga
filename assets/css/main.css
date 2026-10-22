@@ -118,3 +118,10 @@
 @utility field {
   @apply w-full rounded-lg border-stone-300 bg-white px-3.5 py-2.5 text-base text-ink shadow-xs transition placeholder:text-stone-400 focus:border-camel focus:ring-1 focus:ring-camel;
 }
+
+@utility measure {
+  & > :where(:not(section, figure, .not-prose, .overflow-x-auto, table)) {
+    max-width: 44rem;
+    margin-inline: auto;
+  }
+}

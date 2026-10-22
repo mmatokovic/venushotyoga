@@ -1,6 +1,6 @@
-<section class="not-prose mx-auto my-4 max-w-7xl sm:py-12 lg:py-4">
+<section class="not-prose mx-auto my-10 max-w-7xl">
   <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-    <div data-slider="images" class="relative h-full overflow-hidden rounded-lg {{ .Get "class" }}">
+    <div data-slider="images" class="relative h-full overflow-hidden rounded-2xl {{ .Get "class" }}">
       <button type="button" data-slider-prev aria-label="{{ T "previous_slide" }}" class="absolute start-5 top-1/2 z-10 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-stone-100 shadow-md">&lsaquo;</button>
       <button type="button" data-slider-next aria-label="{{ T "next_slide" }}" class="absolute end-5 top-1/2 z-10 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-stone-100 shadow-md">&rsaquo;</button>
       <div data-slider-track class="keen-slider h-full">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="lg:py-4">
-      <div class="prose prose-stone prose-headings:text-ink space-y-4 text-xl text-stone-600 prose-h2:mt-0">
+      <div class="prose prose-lg prose-stone max-w-none prose-headings:text-ink prose-h2:mt-0 prose-h2:font-semibold prose-h2:text-camel-dark">
         {{ .Inner | .Page.RenderString (dict "display" "block") }}
       </div>
     </div>

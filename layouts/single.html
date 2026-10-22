@@ -2,15 +2,15 @@
 <div class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 sm:pb-12 lg:px-8 lg:pb-16">
   {{- with partial "utils/page-image" . }}
   <div class="mb-4">
-    {{ partial "image" (dict "resource" . "width" 1600 "ratio" (div 21.0 9.0) "alt" "" "loading" "eager" "fetchpriority" "high" "class" "aspect-21/9 h-auto w-full max-w-full rounded-lg object-cover") }}
+    {{ partial "image" (dict "resource" . "width" 1600 "ratio" (div 21.0 9.0) "alt" "" "loading" "eager" "fetchpriority" "high" "class" "aspect-21/9 h-auto w-full max-w-full rounded-2xl object-cover") }}
   </div>
   {{- end }}
-  <article class="prose prose-stone prose-headings:text-ink max-w-none text-xl prose-h2:text-camel-dark prose-h2:uppercase prose-h3:font-bold prose-ol:px-9 prose-img:my-0 prose-img:h-96 prose-img:w-full prose-img:object-contain">
+  <article class="measure prose prose-lg prose-stone max-w-none prose-headings:text-ink prose-h2:font-semibold prose-h2:text-camel-dark prose-h3:font-semibold prose-a:text-camel-dark prose-a:decoration-camel/40 prose-a:underline-offset-4 hover:prose-a:decoration-camel-dark prose-ol:px-9 prose-img:my-0 prose-img:h-96 prose-img:w-full prose-img:rounded-2xl prose-img:object-contain">
     <h1 class="sr-only">{{ .Title }}</h1>
     {{ .Content }}
   </article>
   {{- $name := "" }}{{ with .File }}{{ $name = .ContentBaseName }}{{ end }}
-  <div class="mx-auto mt-8 max-w-6xl rounded-lg border-2 border-buff bg-cosmic-latte px-4 py-3 sm:flex sm:items-center sm:justify-center sm:px-6">
+  <div class="mx-auto mt-12 max-w-3xl gap-4 rounded-2xl bg-cosmic-latte/70 p-6 ring-1 ring-ink/5 sm:flex sm:items-center sm:justify-center sm:px-6">
     {{- if in (slice "rejuvenation" "hot-yoga") $name }}
       {{- with site.GetPage "/pricing" }}
     <p class="text-center font-medium sm:text-start">{{ T "see_the_prices" }}</p>

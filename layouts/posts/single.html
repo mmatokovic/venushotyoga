@@ -4,7 +4,8 @@
     <h1 class="mt-4 mb-4 text-2xl font-medium text-ink sm:text-3xl">{{ .Title }}</h1>
     <div class="mb-4 flex w-full flex-wrap items-center gap-3 border-b-2 border-stone-100 pb-4">
       {{- with .Params.tags }}
-      <p class="rounded-sm bg-indigo-50 px-2 py-1 text-xs font-medium tracking-widest text-pink-700 uppercase">{{ delimit . ", " }}</p>
+      <p class="sr-only">{{ T "tags" }}:</p>
+      <ul class="flex flex-wrap gap-2">{{ range . }}<li class="rounded-full bg-cosmic-latte px-3 py-1 text-xs font-medium text-camel-dark ring-1 ring-camel/30">{{ . }}</li>{{ end }}</ul>
       {{- end }}
       <p class="ms-auto inline-flex items-center border-e-2 border-stone-200 py-1 pe-3 text-sm leading-none text-stone-500">
         <svg class="me-1 size-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -18,7 +19,7 @@
     </div>
     {{- end }}
   </header>
-  <div class="prose prose-stone prose-headings:text-ink mt-10 max-w-none prose-h2:text-pink-700 prose-h3:font-bold prose-img:h-auto prose-img:w-full prose-img:object-cover">
+  <div class="measure prose prose-lg prose-stone mt-10 max-w-none prose-headings:text-ink prose-h2:font-semibold prose-h2:text-camel-dark prose-h3:font-semibold prose-a:text-camel-dark prose-a:decoration-camel/40 prose-a:underline-offset-4 hover:prose-a:decoration-camel-dark prose-figcaption:text-center">
     {{ .Content }}
   </div>
   <footer>

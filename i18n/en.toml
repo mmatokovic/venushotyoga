@@ -229,3 +229,18 @@
 
 [buy]
   other = 'Buy'
+
+[schedule_cta_title]
+  other = 'Book your visit'
+
+[schedule_cta_text]
+  other = 'Call or email us before you come to class.'
+
+[hero_heading]
+  other = 'Hot yoga and rejuvenation in the heart of Zagreb'
+
+[price_from]
+  other = 'from'
+
+[tags]
+  other = 'Tags'

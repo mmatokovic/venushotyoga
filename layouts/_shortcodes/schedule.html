@@ -15,59 +15,71 @@
   {{- range .appointments }}{{ $times = $times | append (string .startTime) }}{{ end }}
 {{- end }}
 {{- $times = $times | uniq | sort }}
-<section class="overflow-x-auto" id="schedule" aria-labelledby="schedule-heading">
-  <div class="relative flex justify-center">
-    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-stone-500 to-transparent opacity-75"></div>
-    <h2 id="schedule-heading" class="relative bg-white px-6">{{ T "schedule" }}</h2>
-  </div>
-  <table class="hidden min-w-full divide-y-2 divide-stone-200 bg-white text-sm md:table">
-    <thead>
-      <tr class="px-4 py-2 text-center whitespace-nowrap text-ink">
-        <th scope="col">{{ T "time" }}</th>
-        {{- range $days }}
-        <th scope="col">{{ T . }}</th>
-        {{- end }}
-      </tr>
-    </thead>
-    <tbody class="divide-y divide-stone-200">
-      {{- range $i, $time := $times }}
-      <tr class="{{ if modBool $i 2 }}bg-stone-100{{ else }}bg-white{{ end }} font-bold">
-        <th scope="row" class="px-4 py-2 text-center font-medium whitespace-nowrap text-ink">{{ $time }}</th>
-        {{- range $days }}
-        <td class="px-4 py-2 text-center whitespace-nowrap">
-          {{- range where (index $byDay . | default slice) "startTime" $time }}
-          <div class="bg-tuscan">
-            {{ .service }}<br>
-            <span class="text-xs">{{ .startTime }} – {{ .endTime }}</span>
-            {{- with .description }}<br><span class="text-xs font-bold text-red-900 uppercase">{{ . }}</span>{{ end }}
-          </div>
+{{- $links := hugo.Data.links }}
+<section class="not-prose my-12" id="schedule" aria-labelledby="schedule-heading">
+  <h2 id="schedule-heading" class="mb-6 text-center text-3xl font-semibold text-camel-dark sm:text-4xl">{{ T "schedule" }}</h2>
+  <div class="hidden overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-xs md:block">
+    <table class="min-w-full table-fixed divide-y divide-stone-200 text-sm">
+      <thead class="bg-cosmic-latte/60">
+        <tr>
+          <th scope="col" class="w-20 px-3 py-3 text-start font-semibold text-ink">{{ T "time" }}</th>
+          {{- range $days }}
+          <th scope="col" class="px-2 py-3 text-center font-semibold text-ink">{{ T . }}</th>
           {{- end }}
-        </td>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-stone-100">
+        {{- range $time := $times }}
+        <tr>
+          <th scope="row" class="px-3 py-3 text-start font-medium whitespace-nowrap text-stone-600 tabular-nums">{{ $time }}</th>
+          {{- range $days }}
+          <td class="px-1.5 py-2 align-top">
+            {{- range where (index $byDay . | default slice) "startTime" $time }}
+            <div class="rounded-lg bg-tuscan/70 px-2 py-1.5 text-center ring-1 ring-ink/5">
+              <p class="font-semibold text-ink">{{ .service }}</p>
+              <p class="text-xs text-stone-700 tabular-nums">{{ .startTime }}–{{ .endTime }}</p>
+              {{- with .description }}<p class="mt-0.5 text-xs font-semibold text-camel-dark">{{ . }}</p>{{ end }}
+            </div>
+            {{- end }}
+          </td>
+          {{- end }}
+        </tr>
         {{- end }}
-      </tr>
-      {{- end }}
-    </tbody>
-  </table>
-  <table class="border-separate border-spacing-y-2 bg-tuscan px-3 text-sm md:hidden">
+      </tbody>
+    </table>
+  </div>
+  <ul class="grid gap-3 sm:grid-cols-2 md:hidden">
     {{- range $day := $days }}
       {{- with index $byDay $day }}
-    <tbody>
-      <tr class="text-sm font-bold text-ink">
-        <th colspan="2" scope="colgroup" class="px-3 text-start whitespace-nowrap">{{ T $day }}</th>
-      </tr>
-      {{- range . }}
-      <tr class="my-4 bg-white font-bold text-ink">
-        <td class="p-2">
-          <span class="font-bold">{{ .service }}</span>
-          {{- with .description }}<br><span class="text-xs capitalize">{{ . }}</span>{{ end }}
-        </td>
-        <td class="text-center align-middle">
-          <span class="bg-hazelnut p-2 font-bold text-ink">{{ .startTime }}</span><span class="bg-buff p-2 font-bold text-ink">{{ .endTime }}</span>
-        </td>
-      </tr>
-      {{- end }}
-    </tbody>
+    <li class="rounded-xl border border-stone-200 bg-white p-4 shadow-xs">
+      <h3 class="font-semibold text-camel-dark">{{ T $day }}</h3>
+      <ul class="mt-2 divide-y divide-stone-100">
+        {{- range . }}
+        <li class="flex items-center justify-between gap-3 py-2">
+          <span>
+            <span class="block font-medium text-ink">{{ .service }}</span>
+            {{- with .description }}<span class="block text-xs font-semibold text-camel-dark">{{ . }}</span>{{ end }}
+          </span>
+          <span class="rounded-full bg-tuscan/70 px-3 py-1 text-sm font-medium whitespace-nowrap text-ink tabular-nums">{{ .startTime }}–{{ .endTime }}</span>
+        </li>
+        {{- end }}
+      </ul>
+    </li>
       {{- end }}
     {{- end }}
-  </table>
+  </ul>
+  <div class="mt-6 flex flex-col items-center gap-4 rounded-2xl bg-cosmic-latte/70 p-6 text-center ring-1 ring-ink/5 sm:flex-row sm:justify-between sm:text-start">
+    <div>
+      <p class="text-lg font-semibold text-ink">{{ T "schedule_cta_title" }}</p>
+      <p class="mt-1 text-stone-700">{{ T "schedule_cta_text" }}</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3">
+      {{- with $links.tel }}
+      <a href="tel:{{ partial "utils/phone-intl" . }}" class="btn btn-sm">{{ partial "icons/phone" "size-4" }}<span class="whitespace-nowrap">{{ . }}</span></a>
+      {{- end }}
+      {{- with $links.mail }}
+      <a href="mailto:{{ . }}" class="btn btn-secondary btn-sm">{{ partial "icons/mail" "size-4" }}{{ T "contact_email" }}</a>
+      {{- end }}
+    </div>
+  </div>
 </section>

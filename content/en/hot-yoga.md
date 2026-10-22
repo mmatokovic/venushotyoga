@@ -36,9 +36,6 @@ schedule:
 ---
 {{< schedule >}}
 
-Announce your arrival, call: [095 576 3818](tel:0955763818)
-
-[hotyoga.dodir@gmail.com](mailto:hotyoga.dodir@gmail.com)
 
 ## Hot Yoga
 
@@ -99,7 +96,7 @@ Instructions for ONLINE registration:
 
 * Instructions on how to pay will also be sent to you via Email after you send a reservation for the desired classes. -->
 {{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
-## ETIQUETTE
+## Etiquette
 
 When practicing yoga in a classroom environment, you practice in a community. Be patient and compassionate with yourself and others – we are all working together!
 

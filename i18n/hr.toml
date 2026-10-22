@@ -230,3 +230,18 @@
 
 [buy]
   other = 'Kupite'
+
+[schedule_cta_title]
+  other = 'Najavite svoj dolazak'
+
+[schedule_cta_text]
+  other = 'Javite nam se telefonom ili e-mailom prije dolaska na sat.'
+
+[hero_heading]
+  other = 'Hot yoga i pomlađivanje u srcu Zagreba'
+
+[price_from]
+  other = 'od'
+
+[tags]
+  other = 'Oznake'

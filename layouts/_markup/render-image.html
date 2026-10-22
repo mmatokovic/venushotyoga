@@ -45,7 +45,7 @@
 {{- end }}
 {{- if .IsBlock }}
 <figure>
-  <img{{ $attrString | safeHTMLAttr }}>
+  <img class="mx-auto h-auto max-h-[70svh] w-auto max-w-full rounded-2xl"{{ $attrString | safeHTMLAttr }}>
   {{- with .Title }}
   <figcaption>{{ . }}</figcaption>
   {{- end }}
