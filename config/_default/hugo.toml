@@ -1,31 +1,36 @@
-baseURL = 'https://venushotyoga.hr'
-languageCode = 'hr'
+baseURL = 'https://venushotyoga.hr/'
+locale = 'hr-HR'
 title = 'Najbolja yoga Zagreb - ako tražite yoga usluge ili pomlađivanje - Venus hot yoga je mjesto za tebe'
 defaultContentLanguage = 'hr'
-
+disableDefaultLanguageRedirect = true
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
+disableKinds = ['taxonomy', 'term']
 
 [services]
   [services.googleAnalytics]
     id = 'G-WV6G3SGDB2'
 
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
+
 [languages]
   [languages.hr]
-    languageName = 'HR'
-    languageCode = 'hr'
+    locale = 'hr-HR'
+    label = 'Hrvatski'
     contentDir = 'content/hr'
     weight = 1
     [languages.hr.params]
-      LanguageEmoji = "images/svg/flag-for-croatia.svg"
+      flag = 'images/svg/flag-for-croatia.svg'
   [languages.en]
-    languageName = 'EN'
-    languageCode = 'en'
+    locale = 'en-US'
+    label = 'English'
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
-      LanguageEmoji = "images/svg/flag-for-united-states.svg"
+      flag = 'images/svg/flag-for-united-states.svg'
 
 [frontmatter]
   date = ['date', 'publishDate', 'pubdate', 'lastmod', 'modified']
@@ -33,45 +38,50 @@ enableEmoji = true
   lastmod = [':git', 'lastmod', 'modified', 'date', 'publishDate', 'pubdate']
   publishDate = ['publishDate', 'pubdate', 'date']
 
-[sitemap]
-  disable = false
-
-[build]
-  [build.buildStats]
-    enable = true
-  [[build.cachebusters]]
-    source = 'assets/notwatching/hugo_stats\.json'
-    target = 'css'
-  [[build.cachebusters]]
-    source = '(postcss|tailwind)\.config\.js'
-    target = 'css'
 [module]
   [module.hugoVersion]
-    extended = false
-    min      = "0.152.2"
+    min = '0.168.0'
   [[module.mounts]]
-    source = "assets"
-    target = "assets"
+    source = 'assets'
+    target = 'assets'
   [[module.mounts]]
-    disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
-  [[module.mounts]]
-    source = 'static/images'
-    target = 'assets/images'
-  [[module.mounts]]
-    source = "node_modules/alpine-turbo-drive-adapter/dist"
-    target = "assets/js/libs/alpinejs-turbolinks"
-  [[module.mounts]]
-    source = "node_modules/alpinejs/dist"
-    target = "assets/js/libs/alpinejs"
+    disableWatch = true
 
-# Set markup.goldmark.parser.wrapStandAloneImageWithinParagraph = false so standalone images will not be wrapped in <p>>/p> tags. Also set block = true to support attributes on block elements:
+[build.buildStats]
+  enable = true
+[[build.cachebusters]]
+  source = 'assets/notwatching/hugo_stats\.json'
+  target = 'css'
+[[build.cachebusters]]
+  source = 'layouts/.*'
+  target = 'css'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    maxAge = '4320h'
+
+[imaging]
+  resampleFilter = 'CatmullRom'
+  anchor = 'Smart'
+  [imaging.jpeg]
+    quality = 75
+  [imaging.webp]
+    quality = 75
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true # Allow HTML in md files
+      unsafe = true
     [markup.goldmark.parser]
       wrapStandAloneImageWithinParagraph = false
       [markup.goldmark.parser.attribute]
         block = true
+
+[security.node.permissions]
+  allowAddons = ['tailwindcss']
+  allowWorker = ['tailwindcss']
+[security.exec]
+  allow = ['^git$', '^node$', '^tailwindcss$']
