@@ -1,12 +1,14 @@
+{{- $style := "aspect-ratio: 3 / 2" }}
+{{- with .Get "1" }}{{ with or ($.Page.Resources.Get (strings.TrimPrefix "/" .)) (resources.Get (strings.TrimPrefix "/" .)) }}{{ $style = printf "aspect-ratio: %d / %d" .Width .Height }}{{ end }}{{ end }}
 <section class="not-prose my-10 overflow-hidden rounded-2xl bg-bright-yellow">
-  <div data-slider="images" class="relative aspect-3/2">
+  <div data-slider="images" class="relative" style="{{ $style | safeCSS }}">
     <button type="button" data-slider-prev aria-label="{{ T "previous_slide" }}" class="absolute start-4 top-1/2 z-10 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-ink shadow-md">&lsaquo;</button>
     <button type="button" data-slider-next aria-label="{{ T "next_slide" }}" class="absolute end-4 top-1/2 z-10 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/90 text-ink shadow-md">&rsaquo;</button>
     <div data-slider-track class="keen-slider h-full">
       {{- range slice "1" "2" "3" "4" }}
         {{- with $.Get . }}
       <div class="keen-slider__slide">
-        {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "src" . "page" $.Page "width" 1000 "alt" "" "class" "h-full w-full object-contain") }}
+        {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "src" . "page" $.Page "width" 1000 "alt" "" "class" "h-full w-full object-cover") }}
       </div>
         {{- end }}
       {{- end }}
