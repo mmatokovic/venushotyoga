@@ -1,0 +1,2 @@
+{{- $speed := site.Params.reading_speed | default 213 -}}
+{{- return (math.Max 1 (math.Ceil (div (float .WordCount) $speed)) | int) -}}

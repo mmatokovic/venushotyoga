@@ -1,0 +1,26 @@
+{{- $align := dict "left" "text-left" "center" "text-center" "right" "text-right" }}
+<div class="overflow-x-auto">
+  <table
+    {{- range $k, $v := .Attributes }}
+      {{- if $v }}{{ printf ` %s="%s"` $k (string $v | htmlEscape) | safeHTMLAttr }}{{ end }}
+    {{- end }}>
+    <thead>
+      {{- range .THead }}
+      <tr>
+        {{- range . }}
+        <th{{ with index $align .Alignment }} class="{{ . }}"{{ end }}>{{ .Text }}</th>
+        {{- end }}
+      </tr>
+      {{- end }}
+    </thead>
+    <tbody>
+      {{- range .TBody }}
+      <tr>
+        {{- range . }}
+        <td{{ with index $align .Alignment }} class="{{ . }}"{{ end }}>{{ .Text }}</td>
+        {{- end }}
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

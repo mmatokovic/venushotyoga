@@ -124,8 +124,12 @@
 [next_slide]
   other = 'Next slide'
 
-[minutes_of_reading]
-  other = 'minutes of reading'
+[reading_time]
+  one = '{{ .Count }} minute read'
+  other = '{{ .Count }} minute read'
+
+[opens_in_new_tab]
+  other = 'opens in a new tab'
 
 [share_article]
   other = 'Share this article'

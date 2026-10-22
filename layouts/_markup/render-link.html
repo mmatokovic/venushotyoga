@@ -18,4 +18,4 @@
   {{- end }}
 {{- end }}
 {{- $isHTTP := in (slice "http" "https") $u.Scheme -}}
-<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isHTTP }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text }}</a>
+<a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isHTTP }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text }}{{ if $isHTTP }}<span class="sr-only"> ({{ T "opens_in_new_tab" }})</span>{{ end }}</a>

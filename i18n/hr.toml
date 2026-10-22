@@ -124,8 +124,13 @@
 [next_slide]
   other = 'Sljedeći slajd'
 
-[minutes_of_reading]
-  other = 'minute čitanja'
+[reading_time]
+  one = '{{ .Count }} minuta čitanja'
+  few = '{{ .Count }} minute čitanja'
+  other = '{{ .Count }} minuta čitanja'
+
+[opens_in_new_tab]
+  other = 'otvara se u novoj kartici'
 
 [share_article]
   other = 'Podijelite ovaj članak'

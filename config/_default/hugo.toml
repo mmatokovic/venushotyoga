@@ -1,5 +1,6 @@
 baseURL = 'https://venushotyoga.hr/'
 locale = 'hr-HR'
+titleCaseStyle = 'firstupper'
 title = 'Najbolja yoga Zagreb - ako tražite yoga usluge ili pomlađivanje - Venus hot yoga je mjesto za tebe'
 defaultContentLanguage = 'hr'
 disableDefaultLanguageRedirect = true
@@ -23,6 +24,7 @@ disableKinds = ['taxonomy', 'term']
     contentDir = 'content/hr'
     weight = 1
     [languages.hr.params]
+      reading_speed = 180
       flag = 'images/svg/flag-for-croatia.svg'
   [languages.en]
     locale = 'en-US'
@@ -30,6 +32,7 @@ disableKinds = ['taxonomy', 'term']
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
+      reading_speed = 228
       flag = 'images/svg/flag-for-united-states.svg'
 
 [frontmatter]

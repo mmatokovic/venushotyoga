@@ -8,7 +8,7 @@
       {{- end }}
       <p class="ms-auto inline-flex items-center border-e-2 border-gray-200 py-1 pe-3 text-sm leading-none text-gray-500">
         <svg class="me-1 h-4 w-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        {{ .ReadingTime }} {{ T "minutes_of_reading" }}
+        {{ T "reading_time" (partial "utils/reading-time" .) }}
       </p>
       <time class="text-sm leading-none text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
     </div>
