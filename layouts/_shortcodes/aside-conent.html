@@ -1,7 +1,7 @@
 <section class="not-prose my-10 overflow-hidden rounded-2xl bg-bright-yellow">
   {{- with .Get "src" }}
-  <div class="h-72 sm:h-96 lg:h-104">
-    {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "h-full w-full object-cover") }}
+  <div class="flex justify-center">
+    {{ partial "image" (dict "sizes" "(min-width: 1024px) 52rem, 100vw" "src" . "page" $.Page "width" 1200 "alt" ($.Get "alt" | default "") "class" "h-auto max-h-144 w-auto max-w-full") }}
   </div>
   {{- end }}
   <div class="p-6 sm:p-8">
