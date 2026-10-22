@@ -1,6 +1,7 @@
-# Redirect default subdomain to primary domain
-https://venushotyoga.netlify.app/* https://venushotyoga.hr/:splat 301
-http://venushotyoga.netlify.app/* https://venushotyoga.hr/:splat 301
+https://venushotyoga.netlify.app/*  https://venushotyoga.hr/:splat  301!
+http://venushotyoga.netlify.app/*  https://venushotyoga.hr/:splat  301!
 
-/facebook https://facebook.com/hotyogazagreb/
-/vjernanevisticjoga https://cekape.com/proizvod/vjernanevisticjoga/
+/facebook  https://facebook.com/hotyogazagreb/  301
+/vjernanevisticjoga  https://cekape.com/proizvod/vjernanevisticjoga/  301
+
+/en/*  /en/404.html  404
