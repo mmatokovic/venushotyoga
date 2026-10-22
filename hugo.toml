@@ -1,0 +1,199 @@
+baseURL = 'https://venushotyoga.hr/'
+locale = 'hr-HR'
+titleCaseStyle = 'firstupper'
+title = 'Venus Hot Yoga'
+defaultContentLanguage = 'hr'
+disableDefaultLanguageRedirect = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+disableKinds = ['taxonomy', 'term']
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-WV6G3SGDB2'
+
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
+
+[params]
+  orgName = 'Venus Hot Yoga'
+  description = 'Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 33 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni, lagani i poletni.'
+  logo = 'images/svg/logo-crop.png'
+  favicon = 'images/favicon.png'
+  shareImage = 'images/homepage.webp'
+  dateFormat = '02. 01. 2006.'
+  [params.author]
+    name = 'Vjerna Nevistić'
+  [params.credit]
+    name = 'Mislav Matoković'
+    url = 'https://github.com/mmatokovic'
+
+[languages]
+  [languages.hr]
+    locale = 'hr-HR'
+    label = 'Hrvatski'
+    contentDir = 'content/hr'
+    weight = 1
+    [languages.hr.params]
+      reading_speed = 180
+      homeTitle = 'Venus Hot Yoga – hot yoga i pomlađivanje u Zagrebu'
+      flag = 'images/svg/flag-for-croatia.svg'
+    [languages.hr.menus]
+      [[languages.hr.menus.main]]
+        name = 'O Nama'
+        pageRef = '/about'
+        weight = 10
+      [[languages.hr.menus.main]]
+        name = 'Hot Yoga'
+        pageRef = '/hot-yoga'
+        weight = 20
+      [[languages.hr.menus.main]]
+        name = 'Pomlađivanje'
+        pageRef = '/rejuvenation'
+        weight = 30
+      [[languages.hr.menus.main]]
+        name = 'Blog'
+        pageRef = '/posts'
+        weight = 40
+      [[languages.hr.menus.main]]
+        name = 'Cijenik'
+        pageRef = '/pricing'
+        weight = 50
+      [[languages.hr.menus.main]]
+        name = 'Kontakt'
+        pageRef = '/contact'
+        weight = 60
+      [[languages.hr.menus.main]]
+        name = 'FAQ'
+        pageRef = '/faq'
+        weight = 70
+      [[languages.hr.menus.footer]]
+        name = 'Hot Yoga'
+        pageRef = '/hot-yoga'
+        weight = 10
+      [[languages.hr.menus.footer]]
+        name = 'Pomlađivanje'
+        pageRef = '/rejuvenation'
+        weight = 20
+      [[languages.hr.menus.footer]]
+        name = 'Cijenik'
+        pageRef = '/pricing'
+        weight = 30
+      [[languages.hr.menus.footer]]
+        name = 'Kontakt'
+        pageRef = '/contact'
+        weight = 40
+      [[languages.hr.menus.footer]]
+        name = 'FAQ'
+        pageRef = '/faq'
+        weight = 50
+  [languages.en]
+    locale = 'en-US'
+    label = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    [languages.en.params]
+      reading_speed = 228
+      homeTitle = 'Venus Hot Yoga – hot yoga and rejuvenation in Zagreb'
+      flag = 'images/svg/flag-for-united-states.svg'
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'About Us'
+        pageRef = '/about'
+        weight = 10
+      [[languages.en.menus.main]]
+        name = 'Hot Yoga'
+        pageRef = '/hot-yoga'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Rejuvenation'
+        pageRef = '/rejuvenation'
+        weight = 30
+      [[languages.en.menus.main]]
+        name = 'Pricing'
+        pageRef = '/pricing'
+        weight = 40
+      [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 50
+      [[languages.en.menus.main]]
+        name = 'FAQ'
+        pageRef = '/faq'
+        weight = 60
+      [[languages.en.menus.footer]]
+        name = 'Hot Yoga'
+        pageRef = '/hot-yoga'
+        weight = 10
+      [[languages.en.menus.footer]]
+        name = 'Rejuvenation'
+        pageRef = '/rejuvenation'
+        weight = 20
+      [[languages.en.menus.footer]]
+        name = 'Pricing'
+        pageRef = '/pricing'
+        weight = 30
+      [[languages.en.menus.footer]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 40
+      [[languages.en.menus.footer]]
+        name = 'FAQ'
+        pageRef = '/faq'
+        weight = 50
+
+[frontmatter]
+  date = ['date', 'publishDate', 'pubdate', 'lastmod', 'modified']
+  expiryDate = ['expiryDate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishDate', 'pubdate']
+  publishDate = ['publishDate', 'pubdate', 'date']
+
+[module]
+  [module.hugoVersion]
+    min = '0.168.0'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+    disableWatch = true
+
+[build.buildStats]
+  enable = true
+[[build.cachebusters]]
+  source = 'assets/notwatching/hugo_stats\.json'
+  target = 'css'
+[[build.cachebusters]]
+  source = 'layouts/.*'
+  target = 'css'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    maxAge = '4320h'
+
+[imaging]
+  resampleFilter = 'CatmullRom'
+  anchor = 'Smart'
+  [imaging.jpeg]
+    quality = 75
+  [imaging.webp]
+    quality = 75
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+
+[security.node.permissions]
+  allowAddons = ['tailwindcss']
+  allowWorker = ['tailwindcss']
+[security.exec]
+  allow = ['^git$', '^node$', '^tailwindcss$']
