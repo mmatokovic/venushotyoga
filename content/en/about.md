@@ -33,7 +33,7 @@ Venus hot yoga is also a place where friendships are made over tea after class, 
 
 Vjerna was born on March 2, 1972 in Zagreb. She is a Master of Kinesiology with a focus on the basics of kinesiological transformation (change through movement), and is currently enrolled in a doctoral program with a topic of yoga at the Faculty of Kinesiology. She started practicing yoga at the age of 14 as a supplement to her dance training, which she attended at the School of Rhythm and Dance Ana Maletić (graduated with the title of dance pedagogue). In 1992, yoga was also formally taught at the Faculty of Kinesiology. Vjerna has also been teaching the basics of yoga to students at the Faculty of Kinesiology in Zagreb for many years.
 
-{{< aside-conent src="/images/Akarna-Dhanurasana.jpg"  class="!h-full">}}
+{{< aside-conent src="/images/Akarna-Dhanurasana.jpg"  class="h-full!">}}
 
 * **1996** she moved to the USA where she lived and worked as a fitness and yoga instructor and personal trainer for the next seven years (Chicago, Dallas, Phoenix). She continued her education and explored yoga styles and schools. Her first two sons were born there, who have been practicing gymnastics, martial arts and yoga since they were little.
 
@@ -48,7 +48,7 @@ Regular trips to India are her passion and profession. She is a member of the bo
 
 In her long-standing yoga practice she has worked with different profiles of people:
 
-{{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last !h-full">}}
+{{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last h-full!">}}
 
 * with athletes who have chosen yoga as an additional activity, most often to increase flexibility, balance, coordination and better breathing function and relaxation, e.g. hockey players, runners, swimmers of younger categories, martial arts kickboxing and boxing, divers...
 

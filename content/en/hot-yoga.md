@@ -27,7 +27,7 @@ schedule:
         startTime: 10:00
         endTime: 11:30
         description:
-  - day: Nedelja
+  - day: Nedjelja
     appointments:
       - service: Hot Yoga
         startTime: 11:00
@@ -44,7 +44,9 @@ Announce your arrival, call: [095 576 3818](tel:0955763818)
 
 HOT YOGA is an intense training lasting 75 or 90 minutes, where you will increase strength, endurance, flexibility, balance, coordination, and have a good time.
 
-HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and about 30% humidity, with the room being ventilated, and the body cools through sweating, so the sensation is nowhere near standing in scorching heat. On the contrary, it is very pleasant, especially on colder days.{{< read-more >}}
+HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and about 30% humidity, with the room being ventilated, and the body cools through sweating, so the sensation is nowhere near standing in scorching heat. On the contrary, it is very pleasant, especially on colder days.
+
+{{< read-more >}}
 
 * Hatha yoga is a static system of practicing asanas (yoga poses) that encompass the entire body, from the musculoskeletal system to the internal organs and glands down to the cellular level.
 
@@ -58,7 +60,9 @@ HOT YOGA is Hatha yoga practiced in a room heated to 33 degrees Celsius and abou
 
 ## What are the benefits of hot yoga?
 
-The room's temperature aids in stretching, and sweating eliminates toxins. Body detoxification occurs completely naturally. Swelling decreases, and the skin becomes clean and radiant.{{< read-more >}}
+The room's temperature aids in stretching, and sweating eliminates toxins. Body detoxification occurs completely naturally. Swelling decreases, and the skin becomes clean and radiant.
+
+{{< read-more >}}
 
 * Practicing yoga in warmth is an intense cardio workout; the heart beats faster as more blood reaches the skin, allowing for cooling. According to measurements (Medicine and Science in Sports and Exercise, May 2014), during a hot yoga session, the heart works approximately as much as during brisk walking at 5.5 km/h.
 
@@ -74,6 +78,7 @@ The room's temperature aids in stretching, and sweating eliminates toxins. Body 
 
 The approach is individual, and instructors are familiar with the capabilities and limitations of each participant. Everyone is welcome to the classes – from complete beginners to advanced practitioners and athletes who often choose hot yoga as a complement to their sport.
 {{< /aside-conent >}}
+
 ## Who is hot yoga not suitable for?
 
 For **pregnant women** who haven't practiced in warmth before. 
@@ -93,7 +98,7 @@ Instructions for ONLINE registration:
 * After we receive confirmation that you have paid the membership fee, we will send you a LINK to your Email address from which you will connect to the ZOOM LIVE class.
 
 * Instructions on how to pay will also be sent to you via Email after you send a reservation for the desired classes. -->
-{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last !h-full" >}}
+{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
 ## ETIQUETTE
 
 When practicing yoga in a classroom environment, you practice in a community. Be patient and compassionate with yourself and others – we are all working together!

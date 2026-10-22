@@ -1,12 +1,11 @@
-+++
-draft = true
-title = '{{ replace .File.ContentBaseName `-` ` ` | title }}'
-description = "Detailed description of the blog post."
-author = "Your Name"
-date = {{ .Date }}
-featured_image: ""
-category: "blog"
-images: []
+---
+draft: true
+title: '{{ replace .File.ContentBaseName "-" " " | strings.FirstUpper }}'
+description: ''
+author: Vjerna Nevistić
+date: {{ .Date }}
+category: blog
+featured_image: ''
 tags: []
 keywords: []
-+++
+---

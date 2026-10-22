@@ -11,7 +11,7 @@ keywords: [Lifestyle, Strength, Philosophy]
 ## O Studiju
 
 Venus hot yoga studio otvoren je 2010 g. Nalazimo se u centru Zagreba u povijesnoj zgradi bana Jelačića koja je uspješno i neozlijeđeno preživjela tri velika potresa koliko je fleksibilna.
-Kod nas su svi dobrodošli i na satove yoge i na tretmane [pomlađivanja](/pomlađivanje "pomlađivanja") prirodnim i neinvanzivnim načinom. Uvijek možete kombinirati yogu sa nekim od tretmana ili ručnom masažom.
+Kod nas su svi dobrodošli i na satove yoge i na tretmane [pomlađivanja](/rejuvenation "pomlađivanja") prirodnim i neinvanzivnim načinom. Uvijek možete kombinirati yogu sa nekim od tretmana ili ručnom masažom.
 
 {{< aside-content-slider 1="/images/studio-7.jpg" 2="/images/studio-12.jpg" class="lg:order-last">}}
 
@@ -28,7 +28,7 @@ Venus hot yoga je i mjesto gdje se sklapaju prijateljstva uz čaj nakon sata, te
 
 Vjerna je rođena 2.3.1972 u Zagrebu. Magistara je kineziologije sa usmjerenjem osnove kineziološke transformacije (promjene putem pokreta), te upisuje doktorat s temom yoge na Kineziološkom fakuletetu. Yogu je počela vježbati sa 14. godina kao dodatak plesnim treninzima koje je pohađala u Školi za ritmiku i ples Ane Maletić (završila je školu sa zvanjem plesnog pedagoga). Davne 1992 na Kineziološkom fakuletu se i formalno predavala yoga. Vjerna takođe već niz godina predaje osnove yoge studentima na Kineziološkom fakultetu u Zagrebu.
 
-{{< aside-conent src="/images/Akarna-Dhanurasana.jpg"  class="!h-full">}}
+{{< aside-conent src="/images/Akarna-Dhanurasana.jpg"  class="h-full!">}}
 
 * **1996** godine seli se u SAD gdje živi i radi kao fitness i yoga instruktor te osobni trener slijedećih sedam godina (Chicago, Dallas, Phoenix). Dalje se obrazuje i istražuje yoga pravce i škole. Tamo su se rodila njezina prva dva sina koji od malena vježbaju gimnastiku, borilačke sportove i yogu.
 
@@ -43,7 +43,7 @@ Redoviti putevi u Indiju su joj strast i profesija. Član je upravnog odbora lit
 
 U svojoj dugogodišnjoj praksi yoge radila je s različitim profilima ljudi:
 
-{{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last !h-full">}}
+{{< aside-conent src="/images/Akarna-Dhanurasana-s-obrnutim-hvatom.jpg" class="lg:order-last h-full!">}}
 
 * sa sportašima koji su yogu izabrali kao dodatnu aktivnost najčešće za povećanje fleksibilnosti, ravnoteže koordinacije i bolje funkcije disanja te relaksacije, npr hokejaši, trkači i trkačice, plivači mlađih kategorija, borilački sportovi kick boksing i boks, ronioci...
 

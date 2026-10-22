@@ -27,7 +27,7 @@ schedule:
         startTime: 10:00
         endTime: 11:30
         description:
-  - day: Nedelja
+  - day: Nedjelja
     appointments:
       - service: Hot Yoga
         startTime: 11:00
@@ -45,7 +45,9 @@ Najavite nam svoj dolazak, na broj: [095 576 3818](tel:0955763818)
 
 HOT YOGA je intenzivan trening u trajanju 75 ili 90 minuta, na kojem ćete povećati snagu, izdržljivost, fleksibilnost, ravnotežu, koordinaciju i uz to se dobro zabaviti.
 
-HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 33 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima{{< read-more >}}
+HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 33 stupnjeva Celziusa i oko 30% vlažnosti., pri čemu je prostorija prozračena, a tijelo se znojenjem i hladi tako da osjećaj nije ni približan onome kao kad stojimo na zvizdanu i pržimo se na suncu. Dapače vrlo je ugodan, pogotovo u hladnijim danima
+
+{{< read-more >}}
 
 * Hatha yoga je statičan sustav vježbanja asana (yoga pozicija) kojima se obuhvaća cijelo tijelo, od mišićno koštanog sustava, preko unutarnjih organa i žlijezdi sve do nivoa stanice
 
@@ -59,7 +61,9 @@ HOT YOGA je Hatha yoga koja se izvodi u prostoriji zagrijanoj na 33 stupnjeva Ce
 
 ## Koje su dobrobiti hot yoge?
 
-Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna {{< read-more >}}
+Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. Detoksifikacija tijela pritom se odvija potpuno prirodnim putem. Smanjuje se otečenost, a koža postaje čista i sjajna
+
+{{< read-more >}}
 
 * Vježbanje yoge na toplini je intenzivan kardio trening, srce tuče brže jer više krvi dolazi do kože i omogućava hlađenje. Prema mjerenjima (Medicine and Science in sport and exscercise, Svibanj 2014) srce za vrijeme hot yoga sata radi otprilike kao kod brzog hodanja od 5,5 km na sat.
 
@@ -75,6 +79,7 @@ Temperatura u dvorani pomaže kod istezanja, te se znojenjem izbacuju toxini. De
 
 Pristup je individualan i instruktorice poznaju mogućnosti i boljke svakog polaznika. Na satove su dobro došli svi – od potpunih početnika do naprednih vježbača i sportaša koji često biraju hot yogu kao nadopunu svom sportu.
 {{< /aside-conent >}}
+
 ## Za koga hot yoga nije primjerena
 
 Za **trudnice** koje do sada nisu vježbale na toplini. 
@@ -94,7 +99,7 @@ Upute za ONLINE prijavu:
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
-{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last !h-full" >}}
+{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
 ## BONTON
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
