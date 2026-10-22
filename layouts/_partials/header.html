@@ -13,16 +13,16 @@
       </div>
       <div class="hidden items-center justify-center gap-6 font-medium sm:flex">
         {{- with site.GetPage "/hot-yoga" }}
-        <a class="text-gray-700 transition ease-in hover:text-camel-dark" href="{{ .RelPermalink }}#schedule">{{ T "schedule" }}</a>
+        <a class="text-stone-700 transition ease-in hover:text-camel-dark" href="{{ .RelPermalink }}#schedule">{{ T "schedule" }}</a>
         {{- end }}
         {{- range site.Menus.main }}
           {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
-        <a class="text-gray-700 transition ease-in hover:text-camel-dark{{ if $active }} underline decoration-buff decoration-2 underline-offset-4{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        <a class="text-stone-700 transition ease-in hover:text-camel-dark{{ if $active }} underline decoration-buff decoration-2 underline-offset-4{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
         {{- end }}
       </div>
       <div class="ms-3.5 flex items-center gap-4">
         {{ partial "sections/language-switcher.html" . }}
-        <button type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false" class="cursor-pointer rounded-sm p-2 text-gray-600 transition hover:text-gray-600/75 sm:hidden">{{ T "menu_name" }}</button>
+        <button type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false" class="cursor-pointer rounded-sm p-2 text-stone-600 transition hover:text-stone-600/75 sm:hidden">{{ T "menu_name" }}</button>
       </div>
     </div>
   </nav>

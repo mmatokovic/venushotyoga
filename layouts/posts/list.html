@@ -4,7 +4,7 @@
   {{- range slice (dict "category" "blog" "heading" (T "blogs") "ratio" 1.6) (dict "category" "ebook" "heading" (T "ebooks")) }}
     {{- $section := . }}
     {{- with where $.RegularPages "Params.category" .category }}
-  <section class="text-gray-600">
+  <section class="text-stone-600">
     <div class="my-4 border-b-4 border-buff">
       <h2 class="text-center text-2xl font-bold sm:text-4xl">{{ $section.heading }}</h2>
     </div>
@@ -19,12 +19,12 @@
             </div>
             {{- end }}
             <div class="bg-white p-4 sm:p-6">
-              <time class="block text-xs text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
+              <time class="block text-xs text-stone-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
               {{- with .Params.tags }}
-              <p class="mb-1 text-xs font-medium tracking-widest text-gray-600 capitalize">{{ delimit . ", " }}</p>
+              <p class="mb-1 text-xs font-medium tracking-widest text-stone-600 capitalize">{{ delimit . ", " }}</p>
               {{- end }}
-              <h3 class="mt-0.5 text-lg text-gray-900">{{ .Title }}</h3>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">{{ .Summary | plainify | htmlUnescape }}</p>
+              <h3 class="mt-0.5 text-lg text-ink">{{ .Title }}</h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-stone-500">{{ .Summary | plainify | htmlUnescape }}</p>
             </div>
           </a>
         </article>

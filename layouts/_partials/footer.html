@@ -12,12 +12,12 @@
       <ul class="mt-8 space-y-4 text-sm">
         {{- with hugo.Data.openingHours }}
         <li class="overflow-x-auto">
-          <table class="w-full max-w-sm border-y border-gray-200">
-            <caption class="mb-2 text-start font-medium text-gray-700">{{ T "opening_hours" }}</caption>
-            <tbody class="divide-y divide-gray-200">
+          <table class="w-full max-w-sm border-y border-stone-200">
+            <caption class="mb-2 text-start font-medium text-stone-700">{{ T "opening_hours" }}</caption>
+            <tbody class="divide-y divide-stone-200">
               {{- range . }}
                 {{- if ne .opens .closes }}
-              <tr class="text-gray-900">
+              <tr class="text-ink">
                 <th scope="row" class="py-2 pe-6 text-start font-normal whitespace-nowrap">
                   {{- if eq (len .days) 5 }}
                     {{- T "monday" }} &ndash; {{ T "friday" }}
@@ -36,31 +36,31 @@
         {{- with $links.mail }}
         <li>
           <a class="flex items-center justify-center gap-1.5 sm:justify-start" href="mailto:{{ . }}">
-            {{ partial "icons/mail" "size-5 shrink-0 text-gray-900" }}
-            <span class="flex-1 text-gray-700">{{ . }}</span>
+            {{ partial "icons/mail" "size-5 shrink-0 text-ink" }}
+            <span class="flex-1 text-stone-700">{{ . }}</span>
           </a>
         </li>
         {{- end }}
         {{- with $links.tel }}
         <li>
           <a class="flex items-center justify-center gap-1.5 sm:justify-start" href="tel:{{ partial "utils/phone-intl" . }}">
-            {{ partial "icons/phone" "size-5 shrink-0 text-gray-900" }}
-            <span class="flex-1 whitespace-nowrap text-gray-700">{{ . }}</span>
+            {{ partial "icons/phone" "size-5 shrink-0 text-ink" }}
+            <span class="flex-1 whitespace-nowrap text-stone-700">{{ . }}</span>
           </a>
         </li>
         {{- end }}
         {{- with $links.adresa }}
         <li class="flex items-start justify-center gap-1.5 sm:justify-start">
-          {{ partial "icons/location" "size-5 shrink-0 text-gray-900" }}
-          <address class="-mt-0.5 flex-1 text-gray-700 not-italic">{{ . }}</address>
+          {{ partial "icons/location" "size-5 shrink-0 text-ink" }}
+          <address class="-mt-0.5 flex-1 text-stone-700 not-italic">{{ . }}</address>
         </li>
         {{- end }}
         <li class="mt-6 flex justify-center gap-4 text-camel-dark lg:justify-start">
           {{- with $links.facebook }}
-          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-gray-900" aria-label="Facebook">{{ partial "icons/facebook" "size-6" }}</a>
+          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-ink" aria-label="Facebook">{{ partial "icons/facebook" "size-6" }}</a>
           {{- end }}
           {{- with $links.instagram }}
-          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-gray-900" aria-label="Instagram">{{ partial "icons/instagram" "size-6" }}</a>
+          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-ink" aria-label="Instagram">{{ partial "icons/instagram" "size-6" }}</a>
           {{- end }}
         </li>
       </ul>
@@ -70,10 +70,10 @@
         <form class="mt-6 w-full" name="newsletter" method="post" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="newsletter">
           <p hidden><label>Bot field <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-          <div class="rounded-md border border-gray-100 p-2 sm:flex sm:items-center sm:gap-4">
+          <div class="rounded-md border border-stone-100 p-2 sm:flex sm:items-center sm:gap-4">
             <label for="subscriber" class="sr-only">{{ T "contact_email" }}</label>
             <input name="subscriber" type="email" id="subscriber" autocomplete="email" placeholder="pero.peric@email.com" required class="h-full w-full bg-transparent sm:text-sm">
-            <button type="submit" class="mt-1 w-full cursor-pointer rounded-sm bg-ecru px-6 py-3 text-sm font-bold tracking-wide text-gray-900 uppercase transition hover:bg-khaki disabled:opacity-60 sm:mt-0 sm:w-auto sm:shrink-0">{{ T "sign_up" }}</button>
+            <button type="submit" class="mt-1 w-full cursor-pointer rounded-sm bg-ecru px-6 py-3 text-sm font-bold tracking-wide text-ink uppercase transition hover:bg-khaki disabled:opacity-60 sm:mt-0 sm:w-auto sm:shrink-0">{{ T "sign_up" }}</button>
           </div>
           <p data-form-success hidden role="status" class="mt-2 text-sm text-green-700">{{ T "form_success" }}</p>
           <p data-form-error hidden role="alert" class="mt-2 text-sm text-red-700">{{ T "form_error" }}</p>
@@ -81,15 +81,15 @@
       </div>
     </div>
   </div>
-  <div class="mt-12 border-t border-gray-100 pt-6 text-center text-sm text-gray-500 sm:flex sm:justify-between sm:text-start">
+  <div class="mt-12 border-t border-stone-100 pt-6 text-center text-sm text-stone-500 sm:flex sm:justify-between sm:text-start">
     {{- with site.Params.credit }}
-    <p>{{ T "site_credit" }} <a href="{{ .url }}" class="underline transition hover:text-gray-900">{{ .name }}</a></p>
+    <p>{{ T "site_credit" }} <a href="{{ .url }}" class="underline transition hover:text-ink">{{ .name }}</a></p>
     {{- end }}
     <p class="mt-4 sm:order-first sm:mt-0">&copy; {{ now.Year }} {{ site.Params.orgName }}. {{ T "rights" }}.</p>
   </div>
   {{- with partial "utils/analytics-id" . }}
   <p class="mt-4 text-center text-sm">
-    <button type="button" data-consent="open" class="cursor-pointer text-gray-500 underline transition hover:text-gray-500/75">{{ T "consent_settings" }}</button>
+    <button type="button" data-consent="open" class="cursor-pointer text-stone-500 underline transition hover:text-stone-500/75">{{ T "consent_settings" }}</button>
   </p>
   {{- end }}
 </footer>

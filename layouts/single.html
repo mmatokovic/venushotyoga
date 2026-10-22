@@ -5,7 +5,7 @@
     {{ partial "image" (dict "resource" . "width" 1600 "ratio" (div 21.0 9.0) "alt" "" "loading" "eager" "fetchpriority" "high" "class" "aspect-21/9 h-auto w-full max-w-full rounded-lg object-cover") }}
   </div>
   {{- end }}
-  <article class="prose max-w-none text-xl prose-h2:text-camel-dark prose-h2:uppercase prose-h3:font-bold prose-ol:px-9 prose-img:my-0 prose-img:h-96 prose-img:w-full prose-img:object-contain">
+  <article class="prose prose-stone prose-headings:text-ink max-w-none text-xl prose-h2:text-camel-dark prose-h2:uppercase prose-h3:font-bold prose-ol:px-9 prose-img:my-0 prose-img:h-96 prose-img:w-full prose-img:object-contain">
     <h1 class="sr-only">{{ .Title }}</h1>
     {{ .Content }}
   </article>
@@ -14,12 +14,12 @@
     {{- if in (slice "rejuvenation" "hot-yoga") $name }}
       {{- with site.GetPage "/pricing" }}
     <p class="text-center font-medium sm:text-start">{{ T "see_the_prices" }}</p>
-    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-gray-900 transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
+    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-ink transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}{{ if eq $name "rejuvenation" }}#rejuvenation{{ else }}#hot-yoga{{ end }}">{{ T "prices" }}</a>
       {{- end }}
     {{- else }}
       {{- with site.GetPage "/faq" }}
     <p class="text-center font-medium sm:text-start">{{ T "questions" }}</p>
-    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-gray-900 transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a class="mt-4 block rounded-lg bg-ecru px-5 py-3 text-center text-sm font-medium text-ink transition hover:bg-khaki focus:ring-3 focus:outline-hidden sm:ms-3 sm:mt-0" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{- end }}
     {{- end }}
   </div>

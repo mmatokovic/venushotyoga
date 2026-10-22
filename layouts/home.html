@@ -17,24 +17,24 @@
   {{ partial "image" (dict "src" "images/homepage.webp" "width" 1600 "alt" "" "loading" "eager" "fetchpriority" "high" "class" "absolute inset-0 h-full w-full object-cover object-center") }}
   {{- with $contact }}
   <div class="relative z-1 hidden h-full flex-col justify-center lg:flex">
-    <a href="{{ .RelPermalink }}" class="mx-auto inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-gray-900 uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
+    <a href="{{ .RelPermalink }}" class="mx-auto inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-ink uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
   </div>
   {{- end }}
 </section>
 {{- with $contact }}
 <div class="mt-4 flex justify-center sm:mt-8 lg:hidden">
-  <a href="{{ .RelPermalink }}" class="inline-block rounded-full bg-ecru px-4 py-3 text-sm font-medium text-gray-900 uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
+  <a href="{{ .RelPermalink }}" class="inline-block rounded-full bg-ecru px-4 py-3 text-sm font-medium text-ink uppercase transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "contact" }}</a>
 </div>
 {{- end }}
 <section class="text-xl">
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div class="relative flex justify-center text-center">
-      <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+      <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-stone-500 to-transparent opacity-75"></div>
       <h2 class="relative bg-white px-6">{{ T "home_hero_title" }}</h2>
     </div>
-    <div class="mt-8 grid grid-cols-1 gap-8 text-gray-900 md:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8 grid grid-cols-1 gap-8 text-ink md:grid-cols-2 lg:grid-cols-3">
       {{- with site.GetPage "/about" }}
-      <a class="block rounded-xl bg-french-beige p-5 shadow-xl transition hover:shadow-2xl" href="{{ .RelPermalink }}">
+      <a class="block rounded-xl bg-almond p-5 shadow-xl transition hover:shadow-2xl" href="{{ .RelPermalink }}">
         <h3 class="text-xl font-bold">{{ T "about" }}</h3>
         <p class="mt-1 text-base">{{ T "about_us_text" }}</p>
       </a>
@@ -48,7 +48,7 @@
           <h3 class="text-xl font-bold">{{ T "schedule" }}</h3>
           <p class="mt-1 text-base">{{ T "schedule_text" }}</p>
           {{- with $enroll }}
-          <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 font-bold text-black">{{ . }}</p>
+          <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 font-bold text-ink">{{ . }}</p>
           {{- end }}
         </div>
       </a>
@@ -58,14 +58,14 @@
         <h3 class="text-xl font-bold">{{ T "prices" }}</h3>
         <p class="mt-1 text-base">{{ T "offer_see" }}</p>
         {{- with $offer }}
-        <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 text-black">{{ . }}</p>
+        <p class="mt-4 rounded-sm border-2 border-yellow-100 bg-cosmic-latte p-2 text-ink">{{ . }}</p>
         {{- end }}
       </a>
       {{- end }}
     </div>
   </div>
 </section>
-<section class="text-xl text-black">
+<section class="text-xl text-ink">
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div class="my-4 grid grid-cols-1 gap-8 sm:py-12 lg:grid-cols-2 lg:gap-16 lg:py-4">
       <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
@@ -74,7 +74,7 @@
       <div class="lg:py-16">
         <p class="text-sm font-bold text-camel-dark uppercase">{{ T "focused_on_you" }}</p>
         <h2 class="text-3xl font-bold text-camel-dark sm:text-4xl">{{ T "hot_yoga" }}</h2>
-        <p class="mt-4 font-bold text-gray-600">{{ T "hot_yoga_text" }}</p>
+        <p class="mt-4 font-bold text-stone-600">{{ T "hot_yoga_text" }}</p>
         {{- with $hotYoga }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
         {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#hot-yoga") "text" .Title) }}{{ end }}
       </div>
@@ -86,7 +86,7 @@
       <div class="lg:py-16">
         <p class="text-sm font-bold text-camel-dark uppercase">{{ T "for_you" }}</p>
         <h2 class="text-3xl font-bold text-camel-dark sm:text-4xl">{{ T "rejuvenation" }}</h2>
-        <p class="mt-4 font-bold text-gray-600">{{ T "rejuvenation_text" }}</p>
+        <p class="mt-4 font-bold text-stone-600">{{ T "rejuvenation_text" }}</p>
         {{- with $rejuvenation }}{{ partial "button-link" (dict "href" .RelPermalink "text" .Title) }}{{ end }}
         {{- with $pricing }}{{ partial "button-link" (dict "href" (print .RelPermalink "#rejuvenation") "text" .Title) }}{{ end }}
       </div>

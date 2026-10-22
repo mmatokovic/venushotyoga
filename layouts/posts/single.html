@@ -1,16 +1,16 @@
 {{ define "main" }}
-<article class="mx-auto my-8 max-w-6xl px-5 py-5 text-gray-600">
+<article class="mx-auto my-8 max-w-6xl px-5 py-5 text-stone-600">
   <header>
-    <h1 class="mt-4 mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">{{ .Title }}</h1>
-    <div class="mb-4 flex w-full flex-wrap items-center gap-3 border-b-2 border-gray-100 pb-4">
+    <h1 class="mt-4 mb-4 text-2xl font-medium text-ink sm:text-3xl">{{ .Title }}</h1>
+    <div class="mb-4 flex w-full flex-wrap items-center gap-3 border-b-2 border-stone-100 pb-4">
       {{- with .Params.tags }}
       <p class="rounded-sm bg-indigo-50 px-2 py-1 text-xs font-medium tracking-widest text-pink-700 uppercase">{{ delimit . ", " }}</p>
       {{- end }}
-      <p class="ms-auto inline-flex items-center border-e-2 border-gray-200 py-1 pe-3 text-sm leading-none text-gray-500">
+      <p class="ms-auto inline-flex items-center border-e-2 border-stone-200 py-1 pe-3 text-sm leading-none text-stone-500">
         <svg class="me-1 size-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
         {{ T "reading_time" (partial "utils/reading-time" .) }}
       </p>
-      <time class="text-sm leading-none text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
+      <time class="text-sm leading-none text-stone-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
     </div>
     {{- with partial "utils/page-image" . }}
     <div class="overflow-hidden rounded-lg">
@@ -18,13 +18,13 @@
     </div>
     {{- end }}
   </header>
-  <div class="prose mt-10 max-w-none prose-h2:text-pink-700 prose-h3:font-bold prose-img:h-auto prose-img:w-full prose-img:object-cover">
+  <div class="prose prose-stone prose-headings:text-ink mt-10 max-w-none prose-h2:text-pink-700 prose-h3:font-bold prose-img:h-auto prose-img:w-full prose-img:object-cover">
     {{ .Content }}
   </div>
   <footer>
-    <section class="mt-6 flex flex-col items-center justify-center border-t border-gray-200 py-6 text-center">
+    <section class="mt-6 flex flex-col items-center justify-center border-t border-stone-200 py-6 text-center">
       <h2 class="font-semibold">{{ T "share_article" }}</h2>
-      {{- $share := "flex size-12 items-center justify-center rounded-full border border-gray-300 transition hover:border-camel hover:text-camel-dark" }}
+      {{- $share := "flex size-12 items-center justify-center rounded-full border border-stone-300 transition hover:border-camel hover:text-camel-dark" }}
       <ul class="mt-6 flex gap-8">
         <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}">{{ partial "icons/facebook" "size-6" }}</a></li>
         <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="X" href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}">{{ partial "icons/x" "size-5" }}</a></li>

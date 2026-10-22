@@ -1,16 +1,19 @@
-{{- with .Translations }}
+{{- $page := . }}
 <nav aria-label="{{ T "language" }}">
   <ul class="flex items-center gap-2">
-    {{- range . }}
-      {{- $label := .Language.Label }}
+    {{- range hugo.Sites }}
+      {{- if ne .Language.Lang site.Language.Lang }}
+        {{- $lang := .Language }}
+        {{- $target := .Home }}
+        {{- range $page.Translations }}{{ if eq .Language.Lang $lang.Lang }}{{ $target = . }}{{ end }}{{ end }}
     <li>
-      <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}" class="block py-2.5 text-sm text-gray-700 transition hover:text-gray-700/75" title="{{ $label }}">
-        {{- with .Language.Params.flag | resources.Get }}
-        <img src="{{ .RelPermalink }}" width="24" height="24" alt="{{ $label }}">
-        {{- else }}{{ $label }}{{ end }}
+      <a href="{{ $target.RelPermalink }}" hreflang="{{ $lang.Locale }}" lang="{{ $lang.Locale }}" class="block py-2.5 text-sm text-stone-700 transition hover:text-stone-700/75" title="{{ $lang.Label }}">
+        {{- with $lang.Params.flag | resources.Get }}
+        <img src="{{ .RelPermalink }}" width="24" height="24" alt="{{ $lang.Label }}">
+        {{- else }}{{ $lang.Label }}{{ end }}
       </a>
     </li>
+      {{- end }}
     {{- end }}
   </ul>
 </nav>
-{{- end }}

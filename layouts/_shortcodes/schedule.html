@@ -17,22 +17,22 @@
 {{- $times = $times | uniq | sort }}
 <section class="overflow-x-auto" id="schedule" aria-labelledby="schedule-heading">
   <div class="relative flex justify-center">
-    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-stone-500 to-transparent opacity-75"></div>
     <h2 id="schedule-heading" class="relative bg-white px-6">{{ T "schedule" }}</h2>
   </div>
-  <table class="hidden min-w-full divide-y-2 divide-gray-200 bg-white text-sm md:table">
+  <table class="hidden min-w-full divide-y-2 divide-stone-200 bg-white text-sm md:table">
     <thead>
-      <tr class="px-4 py-2 text-center whitespace-nowrap text-gray-900">
+      <tr class="px-4 py-2 text-center whitespace-nowrap text-ink">
         <th scope="col">{{ T "time" }}</th>
         {{- range $days }}
         <th scope="col">{{ T . }}</th>
         {{- end }}
       </tr>
     </thead>
-    <tbody class="divide-y divide-gray-200">
+    <tbody class="divide-y divide-stone-200">
       {{- range $i, $time := $times }}
-      <tr class="{{ if modBool $i 2 }}bg-gray-100{{ else }}bg-white{{ end }} font-bold">
-        <th scope="row" class="px-4 py-2 text-center font-medium whitespace-nowrap text-gray-900">{{ $time }}</th>
+      <tr class="{{ if modBool $i 2 }}bg-stone-100{{ else }}bg-white{{ end }} font-bold">
+        <th scope="row" class="px-4 py-2 text-center font-medium whitespace-nowrap text-ink">{{ $time }}</th>
         {{- range $days }}
         <td class="px-4 py-2 text-center whitespace-nowrap">
           {{- range where (index $byDay . | default slice) "startTime" $time }}
@@ -52,17 +52,17 @@
     {{- range $day := $days }}
       {{- with index $byDay $day }}
     <tbody>
-      <tr class="text-sm font-bold text-gray-900">
+      <tr class="text-sm font-bold text-ink">
         <th colspan="2" scope="colgroup" class="px-3 text-start whitespace-nowrap">{{ T $day }}</th>
       </tr>
       {{- range . }}
-      <tr class="my-4 bg-white font-bold text-gray-900">
+      <tr class="my-4 bg-white font-bold text-ink">
         <td class="p-2">
           <span class="font-bold">{{ .service }}</span>
           {{- with .description }}<br><span class="text-xs capitalize">{{ . }}</span>{{ end }}
         </td>
         <td class="text-center align-middle">
-          <span class="bg-hazelnut p-2 font-bold text-gray-900">{{ .startTime }}</span><span class="bg-buff p-2 font-bold text-gray-900">{{ .endTime }}</span>
+          <span class="bg-hazelnut p-2 font-bold text-ink">{{ .startTime }}</span><span class="bg-buff p-2 font-bold text-ink">{{ .endTime }}</span>
         </td>
       </tr>
       {{- end }}
