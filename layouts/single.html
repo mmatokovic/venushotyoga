@@ -10,7 +10,7 @@
     {{ .Content }}
   </article>
   {{- $name := "" }}{{ with .File }}{{ $name = .ContentBaseName }}{{ end }}
-  <div class="mx-auto mt-12 max-w-176 gap-4 rounded-2xl bg-cosmic-latte/70 p-6 ring-1 ring-ink/5 sm:flex sm:items-center sm:justify-center sm:px-6">
+  <div class="mx-auto mt-12 max-w-208 gap-4 rounded-2xl bg-cosmic-latte/70 p-6 ring-1 ring-ink/5 sm:flex sm:items-center sm:justify-center sm:px-6">
     {{- if in (slice "rejuvenation" "hot-yoga") $name }}
       {{- with site.GetPage "/pricing" }}
     <p class="text-center font-medium sm:text-start">{{ T "see_the_prices" }}</p>

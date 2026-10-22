@@ -117,7 +117,7 @@
 
 @utility measure {
   & > :where(:not(.overflow-x-auto, table, #schedule)) {
-    max-width: 44rem;
+    max-width: 52rem;
     margin-inline: auto;
   }
 }
