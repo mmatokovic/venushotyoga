@@ -70,7 +70,7 @@
 <section class="mx-auto max-w-7xl space-y-16 px-4 pb-16 sm:px-6 lg:space-y-24 lg:px-8 lg:pb-24">
   <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
     <div class="overflow-hidden rounded-2xl">
-      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/dvorana.jpg" "width" 1000 "alt" (T "studio_alt") "class" "h-auto w-full") }}
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/dvorana.jpg" "width" 1000 "ratio" 1.5 "alt" (T "studio_alt") "class" "aspect-3/2 h-auto w-full object-cover") }}
     </div>
     <div>
       <p class="text-sm font-semibold tracking-wide text-camel-dark uppercase">{{ T "focused_on_you" }}</p>
@@ -82,7 +82,7 @@
   </div>
   <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
     <div class="overflow-hidden rounded-2xl lg:order-last">
-      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/slika_stroja.jpg" "width" 1000 "alt" (T "machine_alt") "class" "h-auto w-full") }}
+      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" "images/slika_stroja.jpg" "width" 1000 "ratio" 1.5 "alt" (T "machine_alt") "class" "aspect-3/2 h-auto w-full object-cover") }}
     </div>
     <div>
       <p class="text-sm font-semibold tracking-wide text-camel-dark uppercase">{{ T "for_you" }}</p>
