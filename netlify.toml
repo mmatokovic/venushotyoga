@@ -1,7 +1,14 @@
 [build]
   publish = "public"
-  command = "hugo --gc --minify -d public;"
+  command = "hugo --gc --minify --panicOnWarning"
 
 [build.environment]
-  HUGO_VERSION = "0.152.2"
-  NODE_VERSION = "24.11.1"
+  HUGO_VERSION = "0.168.0"
+
+[context.branch-deploy]
+  environment = { HUGO_ENVIRONMENT = "preview" }
+  command = "hugo --gc --minify --panicOnWarning -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview]
+  environment = { HUGO_ENVIRONMENT = "preview" }
+  command = "hugo --gc --minify --panicOnWarning --buildFuture -b $DEPLOY_PRIME_URL"
