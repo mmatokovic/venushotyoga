@@ -19,11 +19,12 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   orgName = 'Venus Hot Yoga'
-  description = 'Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 33 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni, lagani i poletni.'
   logo = 'images/svg/logo-crop.png'
   favicon = 'images/favicon.png'
   shareImage = 'images/homepage.webp'
   dateFormat = '02. 01. 2006.'
+  alpine = true
+  turbo = true
   [params.author]
     name = 'Vjerna Nevistić'
   [params.credit]
@@ -39,6 +40,7 @@ disableKinds = ['taxonomy', 'term']
     [languages.hr.params]
       reading_speed = 180
       homeTitle = 'Venus Hot Yoga – hot yoga i pomlađivanje u Zagrebu'
+      description = 'Hot yoga je idealan način vježbanja za postizanje idealne tjelesne težine i oblika tijela, neovisno o tome da li ste početnik ili iskusan yogi. Na jednom satu hot yoge potroši se od 500 – 1000 kcal (ovisno o tome koliko se trudite). Temperatura od 33 stupnjeva C približna je fiziološkoj temperaturi našeg tijela pa se lakše i dublje mogu izvesti asane, a mogućnost ozljeda smanjena je na minimum. Nakon sata osjećati ćete se puni energije, opušteni, lagani i poletni.'
       flag = 'images/svg/flag-for-croatia.svg'
     [languages.hr.menus]
       [[languages.hr.menus.main]]
@@ -97,6 +99,7 @@ disableKinds = ['taxonomy', 'term']
     [languages.en.params]
       reading_speed = 228
       homeTitle = 'Venus Hot Yoga – hot yoga and rejuvenation in Zagreb'
+      description = "Hot yoga is the ideal way to exercise to reach your ideal body weight and shape, whether you are a beginner or an experienced yogi. One hot yoga class burns 500–1000 kcal, depending on how hard you work. The room temperature of 33 °C is close to the body's own, so asanas can be done more easily and deeply with minimal risk of injury. After class you will feel full of energy, relaxed, light and uplifted."
       flag = 'images/svg/flag-for-united-states.svg'
     [languages.en.menus]
       [[languages.en.menus.main]]

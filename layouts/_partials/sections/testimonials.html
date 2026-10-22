@@ -22,7 +22,7 @@
               <p class="text-2xl font-bold text-camel-dark sm:text-3xl">{{ .name }}</p>
             </div>
             <blockquote class="mt-4 leading-relaxed text-stone-700">
-              <p>{{ .testimonial | truncate 550 "…" }}</p>
+              <p>{{ index .testimonial site.Language.Lang | default .testimonial.hr | truncate 550 "…" }}</p>
             </blockquote>
             <figcaption class="mt-4 text-sm font-medium text-stone-700 sm:mt-6">&mdash; {{ .name }}</figcaption>
           </figure>
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="mx-auto mb-5 max-w-lg text-center">
-      <a href="/facebook" class="inline-block rounded-full bg-ecru px-12 py-3 text-sm font-medium text-ink transition hover:bg-khaki focus:ring-3 focus:ring-yellow-400 focus:outline-hidden">{{ T "show_more" }}</a>
+      <a href="/facebook" data-turbo="false" class="btn">{{ T "show_more" }}</a>
     </div>
   </div>
 </section>

@@ -7,7 +7,7 @@ layout: pricing
 hotyoga:
   - category: "Training"
     prices:
-      - service: 1 trening session / Drop in
+      - service: 1 training session / Drop in
         price: 26 €
       - service: 4 sessions per month (Drop-in)
         price: 85 €
@@ -49,15 +49,15 @@ rejuvenation:
       - service: "Hot Stone massage (50 min)"
         price: "46€"
         popust: "39 €"
-      - service: "Thai Yoga Tretman (60 min)"
+      - service: "Thai Yoga Treatment (60 min)"
         price: "50€"
         popust: "40"
-      - service: "Thai Yoga Tretman (90 min)"
+      - service: "Thai Yoga Treatment (90 min)"
         price: "90€"
 ---
 
-## Pogodnosti
+## Amenities
 
-* Yoga mat rental..
+* Yoga mat rental
 * Room rental
-* Please consider carefully before purchasing [Raspored](/hot-yoga).
+* Please check the [schedule](/hot-yoga) carefully before purchasing.

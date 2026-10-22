@@ -2,7 +2,7 @@
 draft: false
 title: FAQ
 date: 2022-07-06T00:30:07-08:00
-description: Frequently Asked Questions About Hot Yoga
+description: Često postavljana pitanja o hot yogi
 image: /images/FAQ.webp
 layout: faq
 faq:
@@ -46,4 +46,4 @@ faq:
       Naši instruktori joge prakticiraju jogu dugi niz godina i iz prve su ruke iskusili pozitivne promjene zdravlja i svjesnosti koje proizlaze iz prakticiranja vruće joge.
 ---
 
-## Frequently Asked Questions
+## Često postavljana pitanja
