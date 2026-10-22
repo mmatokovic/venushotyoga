@@ -95,7 +95,7 @@ Instructions for ONLINE registration:
 * After we receive confirmation that you have paid the membership fee, we will send you a LINK to your Email address from which you will connect to the ZOOM LIVE class.
 
 * Instructions on how to pay will also be sent to you via Email after you send a reservation for the desired classes. -->
-{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
+{{< aside-conent src="/images/bonton.jpeg"  >}}
 ## Etiquette
 
 When practicing yoga in a classroom environment, you practice in a community. Be patient and compassionate with yourself and others – we are all working together!

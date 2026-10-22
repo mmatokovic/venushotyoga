@@ -1,14 +1,12 @@
-<section class="not-prose mx-auto my-10 max-w-7xl">
-  <div class="grid grid-cols-1 gap-8 overflow-hidden rounded-2xl bg-bright-yellow lg:grid-cols-2 lg:gap-16">
-    {{- with .Get "src" }}
-    <div class="relative h-96! overflow-hidden rounded-2xl sm:h-full {{ $.Get "class" }}">
-      {{ partial "image" (dict "sizes" "(min-width: 1024px) 50vw, 100vw" "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "inset-0 h-full w-full object-cover") }}
-    </div>
-    {{- end }}
-    <div class="p-6 lg:py-8 lg:pe-8">
-      <div class="prose prose-lg prose-stone max-w-none prose-headings:text-ink prose-h2:mt-0 prose-h2:font-semibold prose-h2:text-camel-dark sm:p-1">
-        {{ .Inner | .Page.RenderString (dict "display" "block") }}
-      </div>
+<section class="not-prose my-10 overflow-hidden rounded-2xl bg-bright-yellow">
+  {{- with .Get "src" }}
+  <div class="h-72 sm:h-96">
+    {{ partial "image" (dict "sizes" "(min-width: 768px) 44rem, 100vw" "src" . "page" $.Page "width" 1000 "alt" ($.Get "alt" | default "") "class" "h-full w-full object-cover") }}
+  </div>
+  {{- end }}
+  <div class="p-6 sm:p-8">
+    <div class="prose prose-lg prose-stone max-w-none prose-headings:text-ink prose-h2:mt-0 prose-h2:font-semibold prose-h2:text-camel-dark">
+      {{ .Inner | .Page.RenderString (dict "display" "block") }}
     </div>
   </div>
 </section>

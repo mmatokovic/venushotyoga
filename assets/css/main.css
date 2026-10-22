@@ -97,10 +97,6 @@
   p, li, blockquote {
     text-wrap: pretty;
   }
-
-  p:has(+ details[data-read-more]) {
-    display: inline;
-  }
 }
 
 @utility btn {
@@ -120,7 +116,7 @@
 }
 
 @utility measure {
-  & > :where(:not(section, figure, .not-prose, .overflow-x-auto, table)) {
+  & > :where(:not(.overflow-x-auto, table, #schedule)) {
     max-width: 44rem;
     margin-inline: auto;
   }

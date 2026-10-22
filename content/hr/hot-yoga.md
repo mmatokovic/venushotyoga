@@ -96,7 +96,7 @@ Upute za ONLINE prijavu:
 * Nakon što dobijemo potvrdu da ste uplatili članarinu, na vašu E-mail adresu poslati ćemo vam LINK s kojeg ćete se spojiti na ZOOM LIVE sat.
 
 * Upute o načinu plaćanja također ćete dobiti putem E-maila, nakon što pošaljete rezervaciju željenih satova. -->
-{{< aside-conent src="/images/bonton.jpeg"  class="lg:order-last h-full!" >}}
+{{< aside-conent src="/images/bonton.jpeg"  >}}
 ## Bonton
 
 Kada vježbate jogu u razrednom okruženju, vježbate u zajednici. Budite strpljivi i suosjećajni sa sobom i drugima – svi radimo zajedno!
