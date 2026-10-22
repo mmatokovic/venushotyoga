@@ -1,9 +1,9 @@
 {{- $links := hugo.Data.links }}
 <footer class="mx-auto mb-4 max-w-6xl border-t-4 border-yellow-300 px-5 pt-10 pb-6 sm:px-6 lg:px-8 lg:pt-6">
   <nav aria-label="{{ T "footer_navigation" }}">
-    <ul class="mb-4 flex flex-wrap justify-center gap-6 text-yellow-600 md:gap-8 lg:gap-12">
+    <ul class="mb-4 flex flex-wrap justify-center gap-6 text-camel-dark md:gap-8 lg:gap-12">
       {{- range site.Menus.footer }}
-      <li class="transition hover:text-green-600/75"><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <li class="transition hover:underline"><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{- end }}
     </ul>
   </nav>
@@ -55,15 +55,12 @@
           <address class="-mt-0.5 flex-1 text-gray-700 not-italic">{{ . }}</address>
         </li>
         {{- end }}
-        <li class="mt-6 flex justify-center gap-4 text-camel lg:justify-start">
+        <li class="mt-6 flex justify-center gap-4 text-camel-dark lg:justify-start">
           {{- with $links.facebook }}
-          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-buff" aria-label="Facebook">{{ partial "icons/facebook" "size-6" }}</a>
+          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-gray-900" aria-label="Facebook">{{ partial "icons/facebook" "size-6" }}</a>
           {{- end }}
           {{- with $links.instagram }}
-          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-buff" aria-label="Instagram">{{ partial "icons/instagram" "size-6" }}</a>
-          {{- end }}
-          {{- with $links.github }}
-          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-buff" aria-label="GitHub">{{ partial "icons/github" "size-6" }}</a>
+          <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="transition hover:text-gray-900" aria-label="Instagram">{{ partial "icons/instagram" "size-6" }}</a>
           {{- end }}
         </li>
       </ul>
@@ -76,7 +73,7 @@
           <div class="rounded-md border border-gray-100 p-2 sm:flex sm:items-center sm:gap-4">
             <label for="subscriber" class="sr-only">{{ T "contact_email" }}</label>
             <input name="subscriber" type="email" id="subscriber" autocomplete="email" placeholder="pero.peric@email.com" required class="h-full w-full bg-transparent sm:text-sm">
-            <button type="submit" class="mt-1 w-full cursor-pointer rounded-sm bg-ecru px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition hover:bg-khaki disabled:opacity-60 sm:mt-0 sm:w-auto sm:shrink-0">{{ T "sign_up" }}</button>
+            <button type="submit" class="mt-1 w-full cursor-pointer rounded-sm bg-ecru px-6 py-3 text-sm font-bold tracking-wide text-gray-900 uppercase transition hover:bg-khaki disabled:opacity-60 sm:mt-0 sm:w-auto sm:shrink-0">{{ T "sign_up" }}</button>
           </div>
           <p data-form-success hidden role="status" class="mt-2 text-sm text-green-700">{{ T "form_success" }}</p>
           <p data-form-error hidden role="alert" class="mt-2 text-sm text-red-700">{{ T "form_error" }}</p>
@@ -85,7 +82,9 @@
     </div>
   </div>
   <div class="mt-12 border-t border-gray-100 pt-6 text-center text-sm text-gray-500 sm:flex sm:justify-between sm:text-start">
-    <p>{{ "Made with :heart: by mmatokovic." | emojify }}</p>
+    {{- with site.Params.credit }}
+    <p>{{ T "site_credit" }} <a href="{{ .url }}" class="underline transition hover:text-gray-900">{{ .name }}</a></p>
+    {{- end }}
     <p class="mt-4 sm:order-first sm:mt-0">&copy; {{ now.Year }} {{ site.Params.orgName }}. {{ T "rights" }}.</p>
   </div>
   {{- with partial "utils/analytics-id" . }}

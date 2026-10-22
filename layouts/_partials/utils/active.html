@@ -1,0 +1,8 @@
+{{- $active := false }}
+{{- with . }}
+  {{- $active = true }}
+  {{- with .until }}
+    {{- $active = ge (time.AsTime .).Unix (now.AddDate 0 0 -1).Unix }}
+  {{- end }}
+{{- end }}
+{{- return $active }}

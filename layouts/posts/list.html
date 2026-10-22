@@ -21,7 +21,7 @@
             <div class="bg-white p-4 sm:p-6">
               <time class="block text-xs text-gray-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format site.Params.dateFormat }}</time>
               {{- with .Params.tags }}
-              <p class="mb-1 text-xs font-medium tracking-widest text-gray-400 capitalize">{{ delimit . ", " }}</p>
+              <p class="mb-1 text-xs font-medium tracking-widest text-gray-600 capitalize">{{ delimit . ", " }}</p>
               {{- end }}
               <h3 class="mt-0.5 text-lg text-gray-900">{{ .Title }}</h3>
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">{{ .Summary | plainify | htmlUnescape }}</p>

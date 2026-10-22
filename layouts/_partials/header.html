@@ -3,7 +3,7 @@
   <nav aria-label="{{ T "main_navigation" }}" class="text-lg">
     <div class="mx-auto flex max-w-7xl items-center px-5 py-5">
       <div class="flex grow justify-start">
-        <a href="{{ site.Home.RelPermalink }}" class="me-4 flex items-center font-bold text-ecru">
+        <a href="{{ site.Home.RelPermalink }}" class="me-4 flex items-center font-bold text-camel-dark">
           {{- with resources.Get site.Params.logo }}
             {{- with .Process "resize 256x webp" }}
           <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ site.Params.orgName }}" class="absolute top-1 z-50 h-20 w-auto rounded-full md:h-32">
@@ -13,11 +13,11 @@
       </div>
       <div class="hidden items-center justify-center gap-6 font-medium sm:flex">
         {{- with site.GetPage "/hot-yoga" }}
-        <a class="text-gray-700 transition ease-in hover:text-camel" href="{{ .RelPermalink }}#schedule">{{ T "schedule" }}</a>
+        <a class="text-gray-700 transition ease-in hover:text-camel-dark" href="{{ .RelPermalink }}#schedule">{{ T "schedule" }}</a>
         {{- end }}
         {{- range site.Menus.main }}
           {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
-        <a class="text-gray-700 transition ease-in hover:text-camel{{ if $active }} underline decoration-buff decoration-2 underline-offset-4{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        <a class="text-gray-700 transition ease-in hover:text-camel-dark{{ if $active }} underline decoration-buff decoration-2 underline-offset-4{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
         {{- end }}
       </div>
       <div class="ms-3.5 flex items-center gap-4">
@@ -32,14 +32,14 @@
         <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.41431" width="26" height="2" rx="1" transform="rotate(45 1.41431 0)" fill="currentColor"/><rect x="0.100586" y="18.4853" width="26" height="2" rx="1" transform="rotate(-45 0.100586 18.4853)" fill="currentColor"/></svg>
       </button>
     </div>
-    <nav aria-label="{{ T "menu_name" }}" class="divide-y text-3xl font-extrabold text-ecru">
+    <nav aria-label="{{ T "menu_name" }}" class="divide-y text-3xl font-extrabold text-camel-dark">
       {{- range site.Menus.main }}
         {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
       <a class="block p-4{{ if $active }} underline underline-offset-4{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
       {{- end }}
     </nav>
-    <p class="text-center uppercase text-ecru">{{ T "menu_call_to_action" }}</p>
-    <ul class="flex justify-center text-camel">
+    <p class="text-center uppercase text-camel-dark">{{ T "menu_call_to_action" }}</p>
+    <ul class="flex justify-center text-camel-dark">
       {{- with $links.instagram }}
       <li class="m-2">
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">{{ partial "icons/instagram" "size-12" }}</a>

@@ -4,7 +4,9 @@
 <meta name="robots" content="noindex">
 {{- end }}
 {{ hugo.Generator }}
-<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+{{- $title := printf "%s | %s" .Title site.Title }}
+{{- if .IsHome }}{{ $title = site.Params.homeTitle | default site.Title }}{{ end }}
+<title>{{ $title }}</title>
 {{- $description := .Description }}
 {{- if and (not $description) .IsPage }}
   {{- $description = .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160 }}
@@ -33,9 +35,9 @@
   {{- $shareImage = .Process "fill 1200x630 jpg" }}
 {{- end }}
 <meta name="twitter:card" content="{{ if $shareImage }}summary_large_image{{ else }}summary{{ end }}">
-<meta name="twitter:title" content="{{ .Title | default site.Title }}">
+<meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ or $description site.Params.description }}">
-{{ partial "opengraph.html" (dict "page" . "description" (or $description site.Params.description)) }}
+{{ partial "opengraph.html" (dict "page" . "title" $title "description" (or $description site.Params.description)) }}
 {{- with $shareImage }}
 <meta property="og:image" content="{{ .Permalink }}">
 <meta property="og:image:width" content="{{ .Width }}">

@@ -6,6 +6,15 @@ description: Knjiga
 slug: knjiga
 layout: book
 image: /images/Joga-3D.webp
+book:
+  heading: Vjerna Nevistić, Joga – disciplinom do slobode
+  details:
+    - 'Nakladnik: Centar za kreativno pisanje'
+    - 277 stranica, tvrdi uvez
+    - ISBN 978-953-8019-39-5
+  price: 44,00 €
+  buyUrl: /vjernanevisticjoga
+  note: Također je možete nabaviti u Venus Hot Yoga studiju.
 ---
 
 Joga je, kao rekreativna aktivnost, prisutna u kineziologiji odavno, ali u prikrivenom obliku. Jer, što su vježbe istezanja nego dijelovi asana?

@@ -46,12 +46,6 @@
 [offer_see]
   other = 'Pogledajte našu ponudu'
 
-[enroll_text]
-  other = 'Satovi počinju 6.10.'
-
-[offer_text]
-  other = 'THAI YOGA TRETMAN promotivna cijena 40€ za 60 min do 22.2'
-
 [questions]
   other = 'Ako imate ikakvih pitanja'
 
@@ -186,12 +180,6 @@
 [sign_up]
   other = 'Prijavite se'
 
-[sign_up_text_1]
-  other = 'Znam da zvuči ludo, ali nekako će nas e-pošta spasiti od preopterećenja društvenim mrežama.'
-
-[sign_up_text_2]
-  other = 'Prijavite se za rijetke mailove o istaknutim profesionalnim i osobnim vijestima, novim izdanjima i pisanim događanjima itd.'
-
 [form_success]
   other = 'Hvala! Uspješno ste se pretplatili.'
 
@@ -221,3 +209,24 @@
 
 [consent_settings]
   other = 'Postavke kolačića'
+
+[sign_up_text_1]
+  other = 'Prijavite se na naš newsletter.'
+
+[sign_up_text_2]
+  other = 'Povremeno šaljemo novosti o rasporedu, radionicama i posebnim ponudama. Bez spama, a odjaviti se možete u bilo kojem trenutku.'
+
+[site_credit]
+  other = 'Izrada stranice:'
+
+[map_notice]
+  other = 'Karta se učitava s Google Mapsa, koji pritom postavlja svoje kolačiće.'
+
+[map_show]
+  other = 'Prikaži kartu'
+
+[map_open]
+  other = 'Otvori u Google Mapsu'
+
+[buy]
+  other = 'Kupite'

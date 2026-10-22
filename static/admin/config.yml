@@ -142,3 +142,47 @@ collections:
         name: faq-en
         file: content/en/faq.md
         fields: *faq_page
+
+  - name: home
+    label: Početna – obavijesti
+    editor:
+      preview: false
+    files:
+      - label: Početna (HR)
+        name: home-hr
+        file: content/hr/_index.md
+        fields: &home_page
+          - { label: Draft, name: draft, widget: boolean, default: false }
+          - { label: Naslov, name: title, widget: string }
+          - { label: Datum, name: date, widget: datetime }
+          - { label: Ključne riječi, name: keywords, widget: list, required: false }
+          - label: Obavijesti na karticama
+            name: notices
+            widget: object
+            collapsed: false
+            fields:
+              - label: Upisi (kartica Raspored)
+                name: enroll
+                widget: object
+                fields:
+                  - { label: Tekst, name: text, widget: string, required: false }
+                  - { label: Prikazuj do (uključivo), name: until, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD, required: false }
+              - label: Ponuda (kartica Cijenik)
+                name: offer
+                widget: object
+                fields:
+                  - { label: Tekst, name: text, widget: string, required: false }
+                  - { label: Prikazuj do (uključivo), name: until, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD, required: false }
+          - label: Skočni prozor
+            name: popup
+            widget: object
+            fields:
+              - { label: Prikaži, name: show, widget: boolean, default: false }
+              - { label: Naslov, name: title, widget: string, required: false }
+              - { label: Tekst, name: text, widget: markdown, required: false }
+              - { label: Slika, name: image, widget: image, required: false }
+              - { label: Prikazuj do (uključivo), name: until, widget: datetime, date_format: YYYY-MM-DD, time_format: false, format: YYYY-MM-DD, required: false }
+      - label: Početna (EN)
+        name: home-en
+        file: content/en/_index.md
+        fields: *home_page

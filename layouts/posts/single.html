@@ -24,7 +24,7 @@
   <footer>
     <section class="mt-6 flex flex-col items-center justify-center border-t border-gray-200 py-6 text-center">
       <h2 class="font-semibold">{{ T "share_article" }}</h2>
-      {{- $share := "flex size-12 items-center justify-center rounded-full border border-gray-300 transition hover:border-camel hover:text-camel" }}
+      {{- $share := "flex size-12 items-center justify-center rounded-full border border-gray-300 transition hover:border-camel hover:text-camel-dark" }}
       <ul class="mt-6 flex gap-8">
         <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}">{{ partial "icons/facebook" "size-6" }}</a></li>
         <li><a class="{{ $share }}" target="_blank" rel="noopener noreferrer" aria-label="X" href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}">{{ partial "icons/x" "size-5" }}</a></li>

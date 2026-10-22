@@ -46,12 +46,6 @@
 [offer_see]
   other = 'See our offer'
 
-[enroll_text]
-  other = 'Classes start on October 6.'
-
-[offer_text]
-  other = 'Thai Yoga Treatment – 60 minutes for €40, available until 22/2!'
-
 [questions]
   other = 'If you have any questions'
 
@@ -185,12 +179,6 @@
 [sign_up]
   other = 'Sign up'
 
-[sign_up_text_1]
-  other = 'I know it sounds crazy, but somehow email will save us from social media overload.'
-
-[sign_up_text_2]
-  other = 'Sign up for infrequent emails about featured professional and personal news, new releases and written events, etc.'
-
 [form_success]
   other = 'Thank you! You have successfully subscribed.'
 
@@ -220,3 +208,24 @@
 
 [consent_settings]
   other = 'Cookie settings'
+
+[sign_up_text_1]
+  other = 'Sign up for our newsletter.'
+
+[sign_up_text_2]
+  other = 'We occasionally send news about the schedule, workshops and special offers. No spam, and you can unsubscribe at any time.'
+
+[site_credit]
+  other = 'Website by'
+
+[map_notice]
+  other = 'The map is loaded from Google Maps, which sets its own cookies.'
+
+[map_show]
+  other = 'Show map'
+
+[map_open]
+  other = 'Open in Google Maps'
+
+[buy]
+  other = 'Buy'
